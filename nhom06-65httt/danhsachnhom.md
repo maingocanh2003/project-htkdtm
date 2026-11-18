@@ -11,12 +11,12 @@
 
 ## 2. Danh Sách Thành Viên
 
-| STT | Họ và Tên             | Mã Sinh Viên | Lớp Sinh Hoạt | Vai Trò       | Nhiệm Vụ Phân Công | Tỷ Lệ Đóng Góp (%) | Email                            |
-| :-: | :----------------------- | :------------: | :-------------: | :------------- | :--------------------- | :---------------------: | :------------------------------- |
-|  1  | Trần Mai Ngọc Anh      |   2351160504   |     65HTTT      | Nhóm trưởng |                        |                        | Tranmaingocanh1999.btf@gmail.com |
-|  2  | Trần Thị Thùy Dương |    23511605    |     65HTTT      | Thành viên   |                        |                        |                                  |
-|  3  | Nguyễn Thế Nguyên     |    23511605    |     65HTTT     | Thành viên   |                        |                        |                                  |
-|  4  | Hồ Sỹ Trung            |    23511605    |     65HTTT     | Thành viên   |                        |                        |                                  |
+| STT | Họ và Tên             | Mã Sinh Viên | Lớp Sinh Hoạt | Vai Trò       | Nhiệm Vụ Phân Công                                              | Tỷ Lệ Đóng Góp (%) | Email                            |
+| :-: | :----------------------- | :------------: | :-------------: | :------------- | :------------------------------------------------------------------ | :---------------------: | :------------------------------- |
+|  1  | Trần Mai Ngọc Anh      |   2351160504   |     65HTTT     | Nhóm trưởng | **Phân tích hệ thống – Cơ sở dữ liệu – Tích hợp** |           25%           | Tranmaingocanh1999.btf@gmail.com |
+|  2  | Trần Thị Thùy Dương |   2351160513   |     65HTTT     | Thành viên   | **Thu thập và xử lý dữ liệu**                           |          25%           | tranduong9125@gmail.com          |
+|  3  | Nguyễn Thế Nguyên     |   2351160539   |     65HTTT     | Thành viên   | **Phân tích thị hiếu và thị trường bằng AI**         |          25%           | nguyenthenguyen01222@gmail.com   |
+|  4  | Hồ Sỹ Trung            |   2351160560   |     65HTTT     | Thành viên   | **Website – Dashboard BI – Hỗ trợ quyết định**         |          25%           | trunghosy152@gmail.com           |
 
 ---
 
