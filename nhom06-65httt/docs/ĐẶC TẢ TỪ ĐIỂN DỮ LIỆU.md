@@ -9,22 +9,22 @@
 
 ## 1. Tổng Quan Các Nhóm Đối Tượng Dữ Liệu Cần Quản Lý
 
-Dựa trên tài liệu phân tích yêu cầu nghiệp vụ ([PHÂN TÍCH YÊU CẦU NGHIỆP VỤ.md](file:///d:/SUBJECTS/HTKDTM/project-htkdtm/nhom06-65httt/docs/01_phan_tich_yeu_cau_nghiep_vu.md)), hệ thống quản lý **5 nhóm đối tượng dữ liệu cốt lõi**, được chuẩn hóa thành **13 bảng thực thể** trong cơ sở dữ liệu PostgreSQL:
+Dựa trên tài liệu phân tích yêu cầu nghiệp vụ ([PHÂN TÍCH YÊU CẦU NGHIỆP C.md](file:///d:/SUBJECTS/HTKDTM/project-htkdtm/nhom06-65httt/docs/01_phan_tich_yeu_cau_nghiep_vu.md)), hệ thống quản lý **5 nhóm đối tượng dữ liệu cốt lõi**, được chuẩn hóa thành **13 bảng thực thể** trong cơ sở dữ liệu PostgreSQL:
 
 |     STT     | Nhóm đối tượng nghiệp vụ                   | Tên bảng vật lý (PostgreSQL) | Mô tả vai trò & Nguồn dữ liệu                                                                                                                     |
 | :---------: | :------------------------------------------------ | :------------------------------- | :------------------------------------------------------------------------------------------------------------------------------------------------------ |
 | **1** | **Thị trường & Xu hướng**              | `countries`                    | Danh mục hơn 130 quốc gia/vùng lãnh thổ giao thương gốm sứ (UN Comtrade, ITC).                                                                |
-|            |                                                   | `market_regions`               | Danh mục 51 bang/vùng lãnh thổ trực thuộc quốc gia phục vụ phân tích xu hướng vùng (Google Trends).                                       |
-|            |                                                   | `trade_statistics`             | Dữ liệu thống kê thương mại quốc tế giai đoạn 2021–2023 với 14 chỉ tiêu kinh tế (UN Comtrade, ITC).                                     |
-|            |                                                   | `search_trends`                | Chuỗi dữ liệu mức độ quan tâm tìm kiếm liên tục trong 52 tuần theo nhóm sản phẩm và vùng (Google Trends).                              |
-|            |                                                   | `trending_keywords`            | Danh mục các từ khóa gốm sứ thịnh hành và mức độ tăng trưởng bứt phá từ +140% đến +5.300% (Google Trends).                          |
-| **2** | **Sản phẩm & Thuộc tính**               | `product_categories`           | Danh mục chuẩn hóa 4 dòng sản phẩm gốm sứ chủ lực (Bộ ấm chén, Ly cốc sứ, Bát đĩa bàn ăn, Lọ hoa mỹ nghệ).                       |
-|            |                                                   | `market_products`              | Danh mục sản phẩm gốm sứ đang tiêu thụ trên thị trường quốc tế kèm 5 nhóm thuộc tính thị hiếu (Etsy, Amazon).                       |
-|            |                                                   | `supplier_products`            | Danh mục 341 sản phẩm gốm sứ nội địa của các xưởng Việt Nam kèm thuộc tính kỹ thuật và giá niêm yết (Minh Long 1, Bát Tràng).   |
+|            |                                                   | `market_regions`               | Danh mục các bang/vùng lãnh thổ trực thuộc quốc gia phục vụ phân tích xu hướng vùng (Google Trends).                                    |
+|            |                                                   | `trade_statistics`             | Dữ liệu thống kê thương mại quốc tế và các chỉ tiêu kinh tế (UN Comtrade, ITC).                                                          |
+|            |                                                   | `search_trends`                | Chuỗi dữ liệu mức độ quan tâm tìm kiếm liên tục  theo nhóm sản phẩm và vùng (Google Trends).                                           |
+|            |                                                   | `trending_keywords`            | Danh mục các từ khóa gốm sứ thịnh hành và mức độ tăng trưởng (Google Trends).                                                            |
+| **2** | **Sản phẩm & Thuộc tính**               | `product_categories`           | Danh mục chuẩn hóa các dòng sản phẩm gốm sứ chủ lực (Bộ ấm chén, Ly cốc sứ, Bát đĩa bàn ăn, Lọ hoa mỹ nghệ...).                |
+|            |                                                   | `market_products`              | Danh mục sản phẩm gốm sứ đang tiêu thụ trên thị trường quốc tế kèm nhóm thuộc tính thị hiếu (Etsy, Amazon).                         |
+|            |                                                   | `supplier_products`            | Danh mục các sản phẩm gốm sứ nội địa của các xưởng Việt Nam kèm thuộc tính kỹ thuật và giá niêm yết .                           |
 | **3** | **Khách hàng**                            | `customers`                    | Thông tin định danh người mua / người để lại đánh giá trên các sàn thương mại điện tử quốc tế (Etsy, Amazon).                   |
 | **4** | **Đánh giá & Phân tích AI/NLP**        | `product_reviews`              | Nội dung nhận xét, điểm sao (1–5) và nhãn cảm xúc tổng thể (Tích cực/Trung lập/Tiêu cực) do mô hình AI/NLP phân loại.              |
 |            |                                                   | `review_aspects`               | Các khía cạnh sản phẩm cụ thể được khách hàng khen ngợi hoặc phàn nàn (độ bền men, bao bì, chịu nhiệt...) do AI/NLP trích xuất. |
-| **5** | **Nhà cung cấp & Hỗ trợ quyết định** | `suppliers`                    | Hồ sơ năng lực các cơ sở sản xuất gốm sứ trong nước (Minh Long 1, Bát Tràng): công suất, thời gian giao hàng, liên hệ.             |
+| **5** | **Nhà cung cấp & Hỗ trợ quyết định** | `suppliers`                    | Hồ sơ năng lực các cơ sở sản xuất gốm sứ trong nước: công suất, thời gian giao hàng, liên hệ.                                        |
 |            |                                                   | `order_recommendations`        | Bảng lưu kết quả đối chiếu cung – cầu (Matching) và đề xuất sản phẩm, nhà cung cấp, số lượng đặt hàng theo thị trường.        |
 
 ---
@@ -59,7 +59,7 @@ Lưu trữ 51 bang/vùng lãnh thổ phục vụ phân tích mức độ quan t�
 
 #### Bảng 3: `trade_statistics` (Thống kê Thương mại Quốc tế UN Comtrade & ITC Trade Map)
 
-Lưu trữ các bản ghi giao thương xuất nhập khẩu gốm sứ liên tục trong 3 năm (2021–2023) với 14 chỉ tiêu kinh tế.
+Lưu trữ các bản ghi giao thương xuất nhập khẩu gốm sứ với các chỉ tiêu kinh tế.
 
 | STT | Tên trường (Column)  | Kiểu dữ liệu (PostgreSQL) | Ràng buộc                        | Mô tả chi tiết                                                         | Ví dụ giá trị                    |
 | :-: | :---------------------- | :--------------------------- | :--------------------------------- | :------------------------------------------------------------------------ | :----------------------------------- |
@@ -82,7 +82,7 @@ Lưu trữ các bản ghi giao thương xuất nhập khẩu gốm sứ liên t�
 
 #### Bảng 4: `search_trends` (Dữ liệu Xu hướng Tìm kiếm Google Trends)
 
-Lưu trữ chuỗi thời gian 52 tuần và mức độ quan tâm theo vùng địa lý đối với 4 nhóm sản phẩm gốm sứ chủ lực.
+Lưu trữ chuỗi thời gian  và mức độ quan tâm theo vùng địa lý đối với các nhóm sản phẩm gốm sứ chủ lực.
 
 | STT | Tên trường (Column) | Kiểu dữ liệu (PostgreSQL) | Ràng buộc                                  | Mô tả chi tiết                                              | Ví dụ giá trị                                    |
 | :-: | :--------------------- | :--------------------------- | :------------------------------------------- | :------------------------------------------------------------- | :--------------------------------------------------- |
@@ -97,7 +97,7 @@ Lưu trữ chuỗi thời gian 52 tuần và mức độ quan tâm theo vùng đ
 
 #### Bảng 5: `trending_keywords` (Danh mục Từ khóa Thịnh hành & Bứt phá)
 
-Lưu trữ các từ khóa phong cách gốm sứ có mức tăng trưởng tìm kiếm đột biến (+140% đến +5.300%).
+Lưu trữ các từ khóa phong cách gốm sứ có mức tăng trưởng tìm kiếm đột biến
 
 | STT | Tên trường (Column)     | Kiểu dữ liệu (PostgreSQL) | Ràng buộc                               | Mô tả chi tiết                                                             | Ví dụ giá trị                                   |
 | :-: | :------------------------- | :--------------------------- | :---------------------------------------- | :---------------------------------------------------------------------------- | :-------------------------------------------------- |
@@ -116,7 +116,7 @@ Lưu trữ các từ khóa phong cách gốm sứ có mức tăng trưởng tìm
 
 #### Bảng 6: `product_categories` (Danh mục Dòng sản phẩm gốm sứ chuẩn hóa)
 
-Bảng danh mục dùng chung để ánh xạ đồng nhất giữa sản phẩm quốc tế (Etsy/Amazon), xu hướng Google Trends và 341 sản phẩm nội địa (Minh Long 1, Bát Tràng).
+Bảng danh mục dùng chung để ánh xạ đồng nhất giữa sản phẩm quốc tế (Etsy/Amazon), xu hướng Google Trends và các sản phẩm nội địa.
 
 | STT | Tên trường (Column) | Kiểu dữ liệu (PostgreSQL) | Ràng buộc          | Mô tả chi tiết                                        | Ví dụ giá trị                                                                           |
 | :-: | :--------------------- | :--------------------------- | :------------------- | :------------------------------------------------------- | :------------------------------------------------------------------------------------------ |
@@ -151,9 +151,9 @@ Lưu trữ sản phẩm đang chào bán trên các sàn TMĐT quốc tế cùng
 | 17 | `image_url`          | `TEXT`                     | `NULL`                                  | Đường dẫn hình ảnh sản phẩm                                               | `'https://...'`                                     |
 | 18 | `product_url`        | `TEXT`                     | `NULL`                                  | Liên kết sản phẩm gốc trên sàn                                             | `'https://...'`                                     |
 
-#### Bảng 8: `supplier_products` (Danh mục 341 Sản phẩm gốm sứ nội địa)
+#### Bảng 8: `supplier_products` (Danh mục các Sản phẩm gốm sứ nội địa)
 
-Lưu trữ 341 sản phẩm thu thập từ Gốm sứ Minh Long 1 (297 sản phẩm) và Gốm sứ Bát Tràng (44 sản phẩm), có cấu trúc thuộc tính tương đồng với `market_products` để phục vụ thuật toán đối chiếu cung – cầu.
+Lưu trữ các sản phẩm thu thập được, có cấu trúc thuộc tính tương đồng với `market_products` để phục vụ thuật toán đối chiếu cung – cầu.
 
 | STT | Tên trường (Column)  | Kiểu dữ liệu (PostgreSQL) | Ràng buộc                                | Mô tả chi tiết                                                                     | Ví dụ giá trị                                   |
 | :-: | :---------------------- | :--------------------------- | :----------------------------------------- | :------------------------------------------------------------------------------------ | :-------------------------------------------------- |
@@ -272,8 +272,8 @@ Lưu trữ kết quả phân tích đối chiếu giữa thị hiếu từng qu�
 Để đảm bảo dữ liệu do **Dương (Thu thập & ETL)**, **Nguyên (AI/NLP)** và **Trung (Website & Dashboard BI)** kết nối trơn tru trên cơ sở dữ liệu của **Ngọc Anh**, các bảng trên tuân thủ 3 quy tắc tích hợp:
 
 1. **Chuẩn hóa Khóa ngoại Danh mục (`category_id` và `country_id`):**
-   - Mọi dữ liệu thương mại (UN Comtrade), xu hướng (Google Trends), sản phẩm quốc tế (Etsy/Amazon) và sản phẩm nội địa (Minh Long 1, Bát Tràng) đều ánh xạ chung về bảng `countries` (theo mã ISO3) và bảng `product_categories` (4 dòng sản phẩm chính).
-2. **Đồng bộ Bộ 5 Thuộc tính Sản phẩm giữa Quốc tế và Nội địa:**
+   - Mọi dữ liệu thương mại (UN Comtrade), xu hướng (Google Trends), sản phẩm quốc tế (Etsy/Amazon) và sản phẩm nội địa (Minh Long 1, Bát Tràng...) đều ánh xạ chung về bảng `countries` (theo mã ISO3) và bảng `product_categories` (4 dòng sản phẩm chính).
+2. **Đồng bộ Bộ Thuộc tính Sản phẩm giữa Quốc tế và Nội địa:**
    - Hai bảng `market_products` và `supplier_products` cùng chia sẻ bộ cột thuộc tính chuẩn hóa: `color` (Màu sắc), `shape` (Hình dạng), `material` (Chất liệu), `style` (Phong cách), và `is_dishwasher_safe` / `is_heat_resistant` (Đặc tính kỹ thuật) để thuật toán đối chiếu (Matching) có thể so khớp trực tiếp bằng truy vấn SQL hoặc Python.
 3. **Lưu trữ đầu ra của AI/NLP trực tiếp trong CSDL:**
-   - Kết quả mô hình phân loại cảm xúc của bạn Nguyên sẽ cập nhật trực tiếp vào cột `sentiment_label`, `sentiment_score` của bảng `product_reviews` và bảng chi tiết `review_aspects`, giúp bạn Trung truy vấn vẽ Dashboard 3 mà không cần chạy lại mô hình AI mỗi lần tải trang.
+   - Kết quả mô hình phân loại cảm xúc của sẽ cập nhật trực tiếp vào cột `sentiment_label`, `sentiment_score` của bảng `product_reviews` và bảng chi tiết `review_aspects`, giúp truy vấn vẽ Dashboard 3 mà không cần chạy lại mô hình AI mỗi lần tải trang.
