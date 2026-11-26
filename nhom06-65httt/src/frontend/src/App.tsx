@@ -42,6 +42,7 @@ import { CountryDetailDrawer } from './components/CountryDetailDrawer';
 import { CountryFlag } from './components/CountryFlag';
 import { CountryMultiSelect } from './components/CountryMultiSelect';
 import { DataSchemaModal } from './components/DataSchemaModal';
+import { KilnScopeLogo } from './components/KilnScopeLogo';
 import { TasteDashboard } from './components/TasteDashboard';
 import { CustomerSentimentDashboard } from './components/CustomerSentimentDashboard';
 import { SuppliersProductsDashboard } from './components/SuppliersProductsDashboard';
@@ -288,18 +289,8 @@ export function App() {
       {/* Refined Dark Sidebar */}
       <aside className="hidden w-64 shrink-0 flex-col border-r border-slate-800/90 bg-[#0F172A] text-slate-100 lg:flex">
         {/* Brand */}
-        <div className="flex items-center gap-3 border-b border-slate-800/80 px-5 py-4.5">
-          <div className="flex h-9 w-9 items-center justify-center rounded-lg border border-indigo-400/25 bg-indigo-500/15 text-indigo-300">
-            <Globe2 className="h-4.5 w-4.5" />
-          </div>
-          <div>
-            <p className="font-display text-sm font-bold tracking-tight text-white">
-              KilnScope
-            </p>
-            <p className="text-[11px] font-medium text-slate-400">
-              Nhóm 06 • 65HTTT
-            </p>
-          </div>
+        <div className="border-b border-slate-800/80 px-5 py-4">
+          <KilnScopeLogo size={38} subtitle="Nhóm 06 • 65HTTT" />
         </div>
 
         {/* Navigation */}
@@ -392,7 +383,7 @@ export function App() {
           />
           <div className="relative z-10 flex w-64 flex-col bg-[#0F172A] p-4 text-slate-100">
             <div className="mb-4 flex items-center justify-between">
-              <span className="font-display text-sm font-bold text-white">KilnScope</span>
+              <KilnScopeLogo size={32} subtitle="Nhóm 06 • 65HTTT" />
               <button
                 type="button"
                 onClick={() => setMobileMenuOpen(false)}
