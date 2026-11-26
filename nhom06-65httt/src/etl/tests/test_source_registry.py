@@ -141,6 +141,98 @@ class SourceRegistryTests(unittest.TestCase):
                 endpoint="https://user:password@example.test/api",
             )
 
+    def test_register_and_validate_type_checks(self):
+        registry = SourceRegistry()
+        with self.assertRaisesRegex(TypeError, "source must be a Source"):
+            registry.register("not_a_source")  # type: ignore
+
+        with self.assertRaisesRegex(TypeError, "metadata must be CollectionMetadata"):
+            registry.validate_metadata("not_metadata")  # type: ignore
+
+    def test_invalid_source_enums_and_urls_are_rejected(self):
+        base_kwargs = {
+            "source_id": "valid_id",
+            "source_name": "Valid Source",
+            "source_type": SourceType.API,
+            "base_url": "https://example.test",
+            "status": SourceStatus.PLANNED,
+            "description": "Valid description.",
+            "source_group": SourceGroup.UN_COMTRADE,
+        }
+
+        # Invalid source_type enum
+        with self.assertRaisesRegex(ValueError, "source_type must be a SourceType"):
+            Source(**{**base_kwargs, "source_type": "api"})  # type: ignore
+
+        # Invalid status enum
+        with self.assertRaisesRegex(ValueError, "status must be a SourceStatus"):
+            Source(**{**base_kwargs, "status": "planned"})  # type: ignore
+
+        # Invalid source_group enum
+        with self.assertRaisesRegex(ValueError, "source_group must be a SourceGroup"):
+            Source(**{**base_kwargs, "source_group": "un_comtrade"})  # type: ignore
+
+        # Invalid URL schemes / fragments / empty host
+        with self.assertRaisesRegex(ValueError, "base_url must be an HTTP"):
+            Source(**{**base_kwargs, "base_url": "ftp://example.test"})
+        with self.assertRaisesRegex(ValueError, "base_url must be an HTTP"):
+            Source(**{**base_kwargs, "base_url": "https://example.test#fragment"})
+        with self.assertRaisesRegex(ValueError, "base_url must be an HTTP"):
+            Source(**{**base_kwargs, "base_url": "http://"})
+
+    def test_collection_metadata_validation_edge_cases(self):
+        valid_time = datetime(2026, 1, 2, 3, 4, tzinfo=timezone.utc)
+
+        # collected_at must be datetime
+        with self.assertRaisesRegex(ValueError, "collected_at must be a datetime"):
+            CollectionMetadata(
+                collected_at="2026-01-02T03:04:00Z",  # type: ignore
+                source_id="un_comtrade",
+                data_format="json",
+            )
+
+        # source_id must not be empty
+        with self.assertRaisesRegex(ValueError, "source_id must not be empty"):
+            CollectionMetadata(
+                collected_at=valid_time,
+                source_id="   ",
+                data_format="json",
+            )
+
+        # version must not be empty when provided
+        with self.assertRaisesRegex(ValueError, "version must not be empty"):
+            CollectionMetadata(
+                collected_at=valid_time,
+                source_id="un_comtrade",
+                data_format="json",
+                version="   ",
+            )
+
+        # endpoint must not be empty when provided
+        with self.assertRaisesRegex(ValueError, "endpoint must not be empty"):
+            CollectionMetadata(
+                collected_at=valid_time,
+                source_id="un_comtrade",
+                data_format="json",
+                endpoint="   ",
+            )
+
+        # relative endpoint must not contain query or fragment
+        with self.assertRaisesRegex(ValueError, "endpoint must not contain a query or fragment"):
+            CollectionMetadata(
+                collected_at=valid_time,
+                source_id="un_comtrade",
+                data_format="json",
+                endpoint="/api/v1/preview?param=1",
+            )
+        with self.assertRaisesRegex(ValueError, "endpoint must not contain a query or fragment"):
+            CollectionMetadata(
+                collected_at=valid_time,
+                source_id="un_comtrade",
+                data_format="json",
+                endpoint="/api/v1/preview#section",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
