@@ -23,8 +23,8 @@ ASPECT_KEYWORDS: dict[str, tuple[str, ...]] = {
     ),
     "Design & Color": (
         "design", "color", "colour", "pattern", "shape", "aesthetic", "minimalist",
-        "cobalt", "speckled", "motif", "tones", "earthy", "silhouette", "craftsmanship",
-        "artisanal", "hand-painted", "handle", "rim", "wobbles", "asymmetrical", "dull",
+        "cobalt", "speckled", "motif", "tones", "earthy", "silhouette",
+        "artisanal", "hand-painted", "shaped handle", "rim", "wobbles", "asymmetrical", "dull",
     ),
     "Heat/Dishwasher": (
         "dishwasher", "microwave", "oven", "heat", "boiling", "hot", "warm",
