@@ -212,6 +212,32 @@ class EtsyReviewCollectorTests(unittest.TestCase):
         ):
             self.collector.collect_listing(LISTING_ID)
 
+    def test_page_size_and_api_key_validation(self):
+        with self.assertRaisesRegex(ValueError, "page_size must be an integer between 1 and 100"):
+            EtsyReviewCollector(self.http_client, self.storage, self.registry, API_KEY, page_size=0)
+        with self.assertRaisesRegex(ValueError, "page_size must be an integer between 1 and 100"):
+            EtsyReviewCollector(self.http_client, self.storage, self.registry, API_KEY, page_size=101)
+        with self.assertRaisesRegex(ValueError, "page_size must be an integer between 1 and 100"):
+            EtsyReviewCollector(self.http_client, self.storage, self.registry, API_KEY, page_size="10")  # type: ignore
+        with self.assertRaisesRegex(ValueError, "api_key must not be empty"):
+            EtsyReviewCollector(self.http_client, self.storage, self.registry, "   ")
+
+    def test_malformed_page_envelope_errors(self):
+        # Non-dict body
+        self.http_client.get.return_value = HttpResponse(200, {}, b'["not_dict"]', "https://openapi.etsy.com/reviews")
+        with self.assertRaisesRegex(ReviewCollectionError, "must be a JSON object"):
+            self.collector.collect_listing(LISTING_ID)
+
+        # Negative count
+        self.http_client.get.return_value = HttpResponse(200, {}, b'{"count": -1, "results": []}', "https://openapi.etsy.com/reviews")
+        with self.assertRaisesRegex(ReviewCollectionError, "valid count and results list"):
+            self.collector.collect_listing(LISTING_ID)
+
+        # Results is not a list
+        self.http_client.get.return_value = HttpResponse(200, {}, b'{"count": 0, "results": "not_list"}', "https://openapi.etsy.com/reviews")
+        with self.assertRaisesRegex(ReviewCollectionError, "valid count and results list"):
+            self.collector.collect_listing(LISTING_ID)
+
 
 if __name__ == "__main__":
     unittest.main()

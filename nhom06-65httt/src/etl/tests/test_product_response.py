@@ -159,6 +159,53 @@ class ProductResponseAdapterTests(unittest.TestCase):
                     {"fixture": True},
                 )
 
+    def test_etsy_malformed_price_and_taxonomy_errors(self):
+        # Etsy price divisor <= 0
+        payload_div_zero = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "price": {"amount": 100, "divisor": 0, "currency_code": "USD"}}],
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "amount, divisor, currency"):
+            self.etsy_adapter.parse(payload_div_zero, COLLECTED_AT)
+
+        # Etsy price missing currency
+        payload_no_curr = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "price": {"amount": 100, "divisor": 100, "currency_code": " "}}],
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "amount, divisor, currency"):
+            self.etsy_adapter.parse(payload_no_curr, COLLECTED_AT)
+
+        # Etsy taxonomy_id not integer or < 1
+        payload_bad_tax = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "taxonomy_id": "not_an_int"}],
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "positive integer"):
+            self.etsy_adapter.parse(payload_bad_tax, COLLECTED_AT)
+
+        payload_neg_tax = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "taxonomy_id": -5}],
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "positive integer"):
+            self.etsy_adapter.parse(payload_neg_tax, COLLECTED_AT)
+
+    def test_amazon_malformed_title_and_asin_errors(self):
+        # Non-string displayValue
+        payload_bad_title = json.dumps({
+            "itemsResult": {"items": [{"asin": "B001", "itemInfo": {"title": {"displayValue": 12345}}}]}
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "Amazon item title must be a string"):
+            self.amazon_adapter.parse(payload_bad_title, COLLECTED_AT)
+
+        # Non-dict item
+        payload_bad_item = json.dumps({
+            "itemsResult": {"items": ["not_a_dict"]}
+        }).encode()
+        with self.assertRaisesRegex(ProductResponseError, "Amazon items must contain item objects"):
+            self.amazon_adapter.parse(payload_bad_item, COLLECTED_AT)
+
 
 if __name__ == "__main__":
     unittest.main()

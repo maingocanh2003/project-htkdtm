@@ -172,6 +172,58 @@ class TradeCollectorTests(unittest.TestCase):
             {"ingestion_method": "local_file"},
         )
 
+    def test_collect_validates_numeric_codes_and_parameters(self):
+        with self.assertRaisesRegex(ValueError, "reporter_code"):
+            self.collector.collect("US842", "6911", 2022, TradeFlow.EXPORT)
+        with self.assertRaisesRegex(ValueError, "hs_code"):
+            self.collector.collect("842", "69.11", 2022, TradeFlow.EXPORT)
+        with self.assertRaisesRegex(ValueError, "partner_code"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT, partner_code="VN")
+        with self.assertRaisesRegex(ValueError, "flow must be a TradeFlow"):
+            self.collector.collect("842", "6911", 2022, "EXPORT")  # type: ignore
+        with self.assertRaisesRegex(ValueError, "four-digit integer"):
+            self.collector.collect("842", "6911", 999, TradeFlow.EXPORT)
+        with self.assertRaisesRegex(ValueError, "four-digit integer"):
+            self.collector.collect("842", "6911", 10000, TradeFlow.EXPORT)
+        with self.assertRaisesRegex(ValueError, "four-digit integer"):
+            self.collector.collect("842", "6911", "2022", TradeFlow.EXPORT)  # type: ignore
+
+    def test_un_comtrade_malformed_envelope_responses(self):
+        # Response is a JSON list instead of object
+        self.http_client.get.return_value = HttpResponse(
+            200, {}, b'[{"cmdCode": "6911"}]', "https://comtradeapi.un.org/preview"
+        )
+        with self.assertRaisesRegex(TradeResponseError, "must be a JSON object"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT)
+
+        # Count is negative
+        self.http_client.get.return_value = HttpResponse(
+            200, {}, b'{"count": -1, "data": []}', "https://comtradeapi.un.org/preview"
+        )
+        with self.assertRaisesRegex(TradeResponseError, "nonnegative integer"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT)
+
+        # Data is not a list
+        self.http_client.get.return_value = HttpResponse(
+            200, {}, b'{"count": 0, "data": "not a list"}', "https://comtradeapi.un.org/preview"
+        )
+        with self.assertRaisesRegex(TradeResponseError, "must be a list of objects"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT)
+
+        # Data contains non-dict element
+        self.http_client.get.return_value = HttpResponse(
+            200, {}, b'{"count": 1, "data": ["not-a-dict"]}', "https://comtradeapi.un.org/preview"
+        )
+        with self.assertRaisesRegex(TradeResponseError, "must be a list of objects"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT)
+
+        # Count smaller than len(records)
+        self.http_client.get.return_value = HttpResponse(
+            200, {}, b'{"count": 1, "data": [{"cmdCode":"6911"}, {"cmdCode":"6912"}]}', "https://comtradeapi.un.org/preview"
+        )
+        with self.assertRaisesRegex(TradeResponseError, "smaller than its data list"):
+            self.collector.collect("842", "6911", 2022, TradeFlow.EXPORT)
+
 
 if __name__ == "__main__":
     unittest.main()

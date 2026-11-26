@@ -164,6 +164,35 @@ class GoogleTrendsExportAdapterTests(unittest.TestCase):
         with self.assertRaisesRegex(TypeError, "payload must be bytes"):
             self.adapter.ingest("not bytes", self.request)
 
+    def test_request_validation_for_geo_and_search_type(self):
+        with self.assertRaisesRegex(ValueError, "geo"):
+            GoogleTrendsRequest(
+                keywords=("mug",),
+                period_start=date(2025, 1, 1),
+                period_end=date(2025, 12, 31),
+                geo="   ",
+                data_type=TrendsDataType.RELATED_QUERIES,
+                search_type="web",
+            )
+        with self.assertRaisesRegex(ValueError, "search_type"):
+            GoogleTrendsRequest(
+                keywords=("mug",),
+                period_start=date(2025, 1, 1),
+                period_end=date(2025, 12, 31),
+                geo="US",
+                data_type=TrendsDataType.RELATED_QUERIES,
+                search_type="   ",
+            )
+        with self.assertRaisesRegex(ValueError, "keywords"):
+            GoogleTrendsRequest(
+                keywords=("",),
+                period_start=date(2025, 1, 1),
+                period_end=date(2025, 12, 31),
+                geo="US",
+                data_type=TrendsDataType.RELATED_QUERIES,
+                search_type="web",
+            )
+
 
 if __name__ == "__main__":
     unittest.main()
