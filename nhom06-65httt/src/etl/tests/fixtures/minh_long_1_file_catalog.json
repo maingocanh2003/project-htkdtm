@@ -1,0 +1,19 @@
+{
+  "supplier": null,
+  "products": [
+    {
+      "source_product_id": "ML1-S-0012",
+      "name": "Bộ chén cơm sứ trắng Minh Long",
+      "description": "Bộ 6 chén cơm sứ trắng, men bóng, an toàn thực phẩm.",
+      "product_url": null,
+      "category": "Bộ chén cơm",
+      "material": "Sứ",
+      "origin_region": "Bình Dương",
+      "price_vnd": null,
+      "currency": null,
+      "moq": null,
+      "lead_time_days": null,
+      "wholesale_available": null
+    }
+  ]
+}

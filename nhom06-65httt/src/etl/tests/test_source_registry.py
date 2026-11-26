@@ -78,7 +78,7 @@ class SourceRegistryTests(unittest.TestCase):
     def test_project_catalog_declares_groups_and_all_source_types(self):
         sources = create_project_source_registry().list_sources()
 
-        self.assertEqual(len(sources), 7)
+        self.assertEqual(len(sources), 9)  # updated for D9: +thegioigom, +goc_gom_viet
         self.assertEqual(
             {source.source_group for source in sources},
             set(SourceGroup),

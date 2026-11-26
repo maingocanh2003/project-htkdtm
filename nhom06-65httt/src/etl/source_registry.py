@@ -184,19 +184,49 @@ def create_project_source_registry() -> SourceRegistry:
         Source(
             source_id="minh_long_1",
             source_name="Minh Long 1",
-            source_type=SourceType.MANUAL,
+            source_type=SourceType.FILE_DATASET,
             base_url=None,
             status=SourceStatus.PLANNED,
-            description="Domestic supplier product catalog; website URL not specified.",
+            description=(
+                "Domestic ceramic supplier (Binh Duong); catalog collected as "
+                "file export — website does not expose a public JSON API."
+            ),
             source_group=SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
         ),
         Source(
             source_id="bat_trang",
             source_name="Bat Trang suppliers",
-            source_type=SourceType.MANUAL,
+            source_type=SourceType.FILE_DATASET,
             base_url=None,
             status=SourceStatus.PLANNED,
-            description="Domestic supplier product catalogs; website URL not specified.",
+            description=(
+                "Bat Trang ceramic village suppliers; catalog collected as "
+                "file export — no single authoritative public API."
+            ),
+            source_group=SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+        ),
+        Source(
+            source_id="thegioigom",
+            source_name="The Gioi Gom",
+            source_type=SourceType.API,
+            base_url="https://thegioigom.com",
+            status=SourceStatus.PLANNED,
+            description=(
+                "Vietnamese ceramic retailer with public product catalog pages; "
+                "access and retention requirements must be confirmed before collection."
+            ),
+            source_group=SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+        ),
+        Source(
+            source_id="goc_gom_viet",
+            source_name="Goc Gom Viet",
+            source_type=SourceType.API,
+            base_url="https://gocgomviet.com",
+            status=SourceStatus.PLANNED,
+            description=(
+                "Vietnamese handcraft ceramic supplier with public catalog; "
+                "access and retention requirements must be confirmed before collection."
+            ),
             source_group=SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
         ),
     )
