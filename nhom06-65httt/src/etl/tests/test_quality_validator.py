@@ -475,6 +475,228 @@ class RecordAndBatchValidationTests(BaseQualityValidatorTest):
         self.assertTrue(res.is_valid)
         self.assertEqual(len(res.errors), 0)
 
+    def test_validate_batch_all_entity_types_and_unknown_type(self):
+        # market_products
+        prod = NormalizedProductRecord(
+            provenance=self.provenance,
+            raw_record={},
+            source_product_id=NormalizedField("P1", "P1", NormalizationStatus.CONFIRMED),
+            product_name=NormalizedField("Bowl", "Bowl", NormalizationStatus.CONFIRMED),
+            product_url=NormalizedField(None, None, NormalizationStatus.MISSING),
+            category=NormalizedField("DINNERWARE", "DINNERWARE", NormalizationStatus.CONFIRMED),
+            price=NormalizedCurrency(
+                raw_amount="15.00",
+                raw_currency="USD",
+                amount=Decimal("15.00"),
+                currency_code="USD",
+                currency_status=NormalizationStatus.CONFIRMED,
+                converted_amount=Decimal("15.00"),
+                target_currency="USD",
+                conversion_status=NormalizationStatus.CONFIRMED,
+            ),
+        )
+        self.assertEqual(DataQualityValidator.validate_batch([prod], "market_products").valid_records, 1)
+
+        # product_reviews
+        rev = NormalizedReviewRecord(
+            provenance=self.provenance,
+            raw_record={},
+            product_reference=NormalizedField("P1", "P1", NormalizationStatus.CONFIRMED),
+            rating=NormalizedField(5, 5, NormalizationStatus.CONFIRMED),
+            review_text=NormalizedField(None, None, NormalizationStatus.MISSING),  # WARNING only
+            reviewed_at_iso=NormalizedField(None, None, NormalizationStatus.MISSING),
+            language=NormalizedField("en", "en", NormalizationStatus.CONFIRMED),
+        )
+        rev_batch = DataQualityValidator.validate_batch([rev], "product_reviews")
+        self.assertEqual(rev_batch.valid_records, 1)
+        self.assertEqual(rev_batch.records_with_warnings, 1)
+
+        # search_trends
+        trend = NormalizedTrendsRow(
+            provenance=self.provenance,
+            raw_row={},
+            period_label=NormalizedField("2025-01-05", "2025-01-05", NormalizationStatus.CONFIRMED),
+            keyword_scores=(("mug", NormalizedField(0.0, 0.0, NormalizationStatus.CONFIRMED)),),
+        )
+        self.assertEqual(DataQualityValidator.validate_batch([trend], "search_trends").valid_records, 1)
+
+        # supplier_products
+        dom = NormalizedDomesticProductRecord(
+            provenance=self.provenance,
+            raw_record={},
+            source_product_id=NormalizedField("D1", "D1", NormalizationStatus.CONFIRMED),
+            product_name=NormalizedField("Cốc sứ", "Cốc sứ", NormalizationStatus.CONFIRMED),
+            category=NormalizedField("MUG_CUP", "MUG_CUP", NormalizationStatus.CONFIRMED),
+            material=NormalizedField(None, None, NormalizationStatus.MISSING),
+            origin_region=NormalizedField(None, None, NormalizationStatus.MISSING),
+            price_vnd=NormalizedField(Decimal("0"), Decimal("0"), NormalizationStatus.CONFIRMED),
+            moq=NormalizedField(None, None, NormalizationStatus.MISSING),
+            lead_time_days=NormalizedField(None, None, NormalizationStatus.MISSING),
+            wholesale_available=NormalizedField(None, None, NormalizationStatus.MISSING),
+        )
+        self.assertEqual(DataQualityValidator.validate_batch([dom], "supplier_products").valid_records, 1)
+
+        # Unknown entity_type raises ValueError
+        with self.assertRaises(ValueError):
+            DataQualityValidator.validate_batch([prod], "unknown_table")
+
+    def test_parsed_records_and_unsupported_types_across_validators(self):
+        from etl.parsed_record import (
+            ParsedCommercialInfo,
+            ParsedDomesticProductRecord,
+            ParsedPriceInfo,
+            ParsedProductRecord,
+            ParsedReviewRecord,
+            ParsedTradeRecord,
+            ParsedTrendsRow,
+        )
+
+        # ParsedTradeRecord
+        pt = ParsedTradeRecord(
+            provenance=self.provenance,
+            raw_record={},
+            reporter_code="842",
+            partner_code="704",
+            hs_code="6911",
+            period="2022",
+            flow_code="X",
+            net_weight_kg=10.0,
+            trade_value_usd=100.0,
+            reporter_name=None,
+            partner_name=None,
+            product_description=None,
+        )
+        self.assertTrue(TradeQualityValidator.validate(pt).is_valid)
+
+        # ParsedProductRecord
+        pp = ParsedProductRecord(
+            provenance=self.provenance,
+            raw_record={},
+            source_product_id="P1",
+            product_url=None,
+            name="Tea Set",
+            category="TEA_SET",
+            category_id=None,
+            prices=(ParsedPriceInfo("25.00", "USD", "offer"),),
+        )
+        self.assertTrue(MarketProductQualityValidator.validate(pp).is_valid)
+
+        # ParsedReviewRecord
+        pr = ParsedReviewRecord(
+            provenance=self.provenance,
+            raw_record={},
+            product_reference="P1",
+            rating=4,
+            review_text="Nice",
+            reviewed_at_iso=None,
+            language="en",
+        )
+        self.assertTrue(ReviewQualityValidator.validate(pr).is_valid)
+
+        # ParsedTrendsRow
+        ptr = ParsedTrendsRow(
+            provenance=self.provenance,
+            raw_row={},
+            period_label="2025-01-05",
+            keyword_values=(("mug", "50"),),
+        )
+        self.assertTrue(SearchTrendsQualityValidator.validate(ptr).is_valid)
+
+        # ParsedDomesticProductRecord
+        pd = ParsedDomesticProductRecord(
+            provenance=self.provenance,
+            raw_record={},
+            source_product_id="D1",
+            product_url=None,
+            name="Bình hoa",
+            description=None,
+            category="VASE_DECOR",
+            material=None,
+            origin_region=None,
+            commercial=ParsedCommercialInfo("120000", "VND", 10, 7, True),
+        )
+        self.assertTrue(DomesticProductQualityValidator.validate(pd).is_valid)
+
+        # Unsupported record types -> is_valid=False, INVALID_DATA_TYPE, provenance=None
+        for validator in (
+            TradeQualityValidator,
+            MarketProductQualityValidator,
+            ReviewQualityValidator,
+            SearchTrendsQualityValidator,
+            DomesticProductQualityValidator,
+        ):
+            res = validator.validate("unsupported_type")  # type: ignore[arg-type]
+            self.assertFalse(res.is_valid)
+            self.assertIsNone(res.provenance)
+            self.assertEqual(res.errors[0].code, ValidationIssueCode.INVALID_DATA_TYPE)
+
+    def test_additional_domain_error_and_warning_branches(self):
+        # Trade: negative net_weight_kg, unconfirmed flow_code, and invalid dict fields
+        trade_bad_wgt = NormalizedTradeRecord(
+            provenance=self.provenance,
+            raw_record={},
+            reporter_country=NormalizedField("842", "USA", NormalizationStatus.CONFIRMED),
+            partner_country=NormalizedField("704", "VNM", NormalizationStatus.CONFIRMED),
+            hs_code=NormalizedField("6911", "6911", NormalizationStatus.CONFIRMED),
+            period=NormalizedField("2101", "2101", NormalizationStatus.CONFIRMED),  # > 2100
+            flow_code=NormalizedField("RE", None, NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1),
+            net_weight_kg=NormalizedField(-1.0, -1.0, NormalizationStatus.CONFIRMED),
+            trade_value_usd=NormalizedField(100.0, 100.0, NormalizationStatus.CONFIRMED),
+            product_description=NormalizedField(None, None, NormalizationStatus.MISSING),
+        )
+        res_t = TradeQualityValidator.validate(trade_bad_wgt)
+        self.assertFalse(res_t.is_valid)
+        self.assertTrue(res_t.has_warnings)
+        err_fields = {e.field_name for e in res_t.errors}
+        self.assertEqual(err_fields, {"year", "net_weight_kg"})
+
+        # Review: missing product_reference and invalid review_date
+        rev_bad = NormalizedReviewRecord(
+            provenance=self.provenance,
+            raw_record={},
+            product_reference=NormalizedField(None, None, NormalizationStatus.MISSING),
+            rating=NormalizedField(5, 5, NormalizationStatus.CONFIRMED),
+            review_text=NormalizedField(None, None, NormalizationStatus.MISSING),
+            reviewed_at_iso=NormalizedField("bad-date", None, NormalizationStatus.INVALID),
+            language=NormalizedField(None, None, NormalizationStatus.MISSING),
+        )
+        res_r = ReviewQualityValidator.validate(rev_bad)
+        self.assertFalse(res_r.is_valid)
+        self.assertTrue(res_r.has_warnings)
+        self.assertEqual({e.field_name for e in res_r.errors}, {"product_reference", "review_date"})
+
+        # Trends: missing period, invalid score type, negative score
+        trend_bad = NormalizedTrendsRow(
+            provenance=self.provenance,
+            raw_row={},
+            period_label=NormalizedField(None, None, NormalizationStatus.MISSING),
+            keyword_scores=(
+                ("kw_bad", NormalizedField("abc", None, NormalizationStatus.INVALID)),
+                ("kw_neg", NormalizedField(-5.0, -5.0, NormalizationStatus.CONFIRMED)),
+            ),
+        )
+        res_tr = SearchTrendsQualityValidator.validate(trend_bad)
+        self.assertFalse(res_tr.is_valid)
+        self.assertEqual(len(res_tr.errors), 3)
+
+        # Domestic: missing name, missing category, invalid price_vnd
+        dom_bad = NormalizedDomesticProductRecord(
+            provenance=self.provenance,
+            raw_record={},
+            source_product_id=NormalizedField("D1", "D1", NormalizationStatus.CONFIRMED),
+            product_name=NormalizedField(None, None, NormalizationStatus.MISSING),
+            category=NormalizedField(None, None, NormalizationStatus.MISSING),
+            material=NormalizedField(None, None, NormalizationStatus.MISSING),
+            origin_region=NormalizedField(None, None, NormalizationStatus.MISSING),
+            price_vnd=NormalizedField("abc", None, NormalizationStatus.INVALID),
+            moq=NormalizedField(None, None, NormalizationStatus.MISSING),
+            lead_time_days=NormalizedField(None, None, NormalizationStatus.MISSING),
+            wholesale_available=NormalizedField(None, None, NormalizationStatus.MISSING),
+        )
+        res_d = DomesticProductQualityValidator.validate(dom_bad)
+        self.assertFalse(res_d.is_valid)
+        self.assertEqual({e.field_name for e in res_d.errors}, {"product_name", "category", "price_vnd"})
+
 
 if __name__ == "__main__":
     unittest.main()
