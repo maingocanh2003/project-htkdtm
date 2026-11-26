@@ -215,8 +215,10 @@ def load_sample_dataset(sample_dir: Path | None = None) -> AnalysisDataset:
     return AnalysisDataset(
         countries=pd.read_csv(folder / "countries.csv"),
         market_regions=pd.read_csv(folder / "market_regions.csv"),
-        product_categories=pd.read_csv(folder / "product_categories.csv"),
-        trade_statistics=pd.read_csv(folder / "trade_statistics.csv"),
+        product_categories=pd.read_csv(
+            folder / "product_categories.csv", dtype={"hs_code_mapping": str}
+        ),
+        trade_statistics=pd.read_csv(folder / "trade_statistics.csv", dtype={"hs_code": str}),
         search_trends=pd.read_csv(folder / "search_trends.csv", parse_dates=["week_start_date"]),
         trending_keywords=pd.read_csv(folder / "trending_keywords.csv"),
         market_products=pd.read_csv(folder / "market_products.csv"),

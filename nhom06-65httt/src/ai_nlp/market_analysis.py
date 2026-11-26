@@ -200,6 +200,7 @@ def compare_key_markets(
     )
     key_hs = latest_hs[latest_hs["country_code"].isin(codes)].copy()
     if not key_hs.empty:
+        key_hs["hs_code"] = key_hs["hs_code"].astype(str)
         country_tot = key_hs.groupby("country_code")["trade_value_usd"].transform("sum")
         key_hs["hs_share_within_country_pct"] = np.where(
             country_tot > 0, (key_hs["trade_value_usd"] / country_tot) * 100.0, 0.0
