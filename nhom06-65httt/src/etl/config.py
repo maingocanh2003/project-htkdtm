@@ -3,6 +3,7 @@
 import logging
 import os
 from dataclasses import dataclass
+from pathlib import Path
 from typing import Mapping, Optional
 
 
@@ -12,6 +13,7 @@ class Settings:
 
     environment: str = "development"
     log_level: str = "INFO"
+    raw_data_dir: Path = Path("data/raw")
 
     @classmethod
     def from_env(
@@ -27,4 +29,12 @@ class Settings:
         if not isinstance(logging.getLevelName(log_level), int):
             raise ValueError("ETL_LOG_LEVEL must be a recognized logging level")
 
-        return cls(environment=environment, log_level=log_level)
+        raw_data_dir_value = values.get("ETL_RAW_DATA_DIR", "data/raw").strip()
+        if not raw_data_dir_value:
+            raise ValueError("ETL_RAW_DATA_DIR must not be empty")
+
+        return cls(
+            environment=environment,
+            log_level=log_level,
+            raw_data_dir=Path(raw_data_dir_value),
+        )

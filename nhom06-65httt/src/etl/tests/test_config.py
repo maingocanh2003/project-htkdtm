@@ -1,4 +1,5 @@
 import unittest
+from pathlib import Path
 
 from etl.config import Settings
 
@@ -9,6 +10,18 @@ class SettingsTests(unittest.TestCase):
 
         self.assertEqual(settings.environment, "development")
         self.assertEqual(settings.log_level, "INFO")
+        self.assertEqual(settings.raw_data_dir, Path("data/raw"))
+
+    def test_raw_data_directory_can_be_configured(self):
+        settings = Settings.from_env(
+            {"ETL_RAW_DATA_DIR": "  local/raw-data  "}
+        )
+
+        self.assertEqual(settings.raw_data_dir, Path("local/raw-data"))
+
+    def test_empty_raw_data_directory_is_rejected(self):
+        with self.assertRaisesRegex(ValueError, "ETL_RAW_DATA_DIR"):
+            Settings.from_env({"ETL_RAW_DATA_DIR": " "})
 
     def test_environment_values_are_trimmed_and_log_level_normalized(self):
         settings = Settings.from_env(
