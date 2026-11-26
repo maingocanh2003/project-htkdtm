@@ -1,0 +1,29 @@
+platform_source,country_code,country_name,category_code,category_name_vi,total_reviews,avg_rating_score,avg_sentiment_confidence,positive_count,neutral_count,negative_count,positive_sentiment_rate_pct,negative_sentiment_rate_pct
+Amazon,DEU,Germany,MUG_CUP,Ly cốc sứ,30,3.57,0.9487,17,5,8,56.67,26.67
+Amazon,DEU,Germany,TEA_SET,Bộ ấm chén,30,3.07,0.9558,12,5,13,40.0,43.33
+Etsy,DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,30,3.77,0.9498,17,5,8,56.67,26.67
+Etsy,DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,30,3.7,0.9481,17,5,8,56.67,26.67
+Etsy,FRA,France,DINNERWARE,Bát đĩa bàn ăn,24,3.92,0.9383,16,4,4,66.67,16.67
+Etsy,FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,24,3.83,0.9479,16,4,4,66.67,16.67
+Etsy,FRA,France,TEA_SET,Bộ ấm chén,16,3.44,0.9613,8,4,4,50.0,25.0
+Etsy,FRA,France,MUG_CUP,Ly cốc sứ,14,3.57,0.9539,8,2,4,57.14,28.57
+Amazon,FRA,France,MUG_CUP,Ly cốc sứ,10,3.0,0.9579,2,4,4,20.0,40.0
+Amazon,FRA,France,TEA_SET,Bộ ấm chén,8,4.88,0.9606,8,0,0,100.0,0.0
+Etsy,GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,24,3.5,0.9389,12,6,6,50.0,25.0
+Etsy,GBR,United Kingdom,MUG_CUP,Ly cốc sứ,24,3.5,0.9501,12,6,6,50.0,25.0
+Amazon,GBR,United Kingdom,TEA_SET,Bộ ấm chén,20,3.6,0.95,12,2,6,60.0,30.0
+Amazon,GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,16,2.75,0.9458,6,2,8,37.5,50.0
+Etsy,GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,8,2.62,0.9566,2,2,4,25.0,50.0
+Etsy,GBR,United Kingdom,TEA_SET,Bộ ấm chén,4,3.0,0.9745,0,4,0,0.0,0.0
+Etsy,JPN,Japan,MUG_CUP,Ly cốc sứ,36,3.81,0.9426,21,9,6,58.33,16.67
+Etsy,JPN,Japan,TEA_SET,Bộ ấm chén,36,3.75,0.9398,21,9,6,58.33,16.67
+Etsy,JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,24,3.38,0.9525,12,3,9,50.0,37.5
+Etsy,JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,21,3.43,0.9523,12,3,6,57.14,28.57
+Amazon,JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,15,3.87,0.9547,9,6,0,60.0,0.0
+Amazon,JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,12,2.42,0.9659,0,6,6,0.0,50.0
+Etsy,USA,United States,DINNERWARE,Bát đĩa bàn ăn,36,3.83,0.9467,24,6,6,66.67,16.67
+Etsy,USA,United States,MUG_CUP,Ly cốc sứ,36,3.89,0.95,24,6,6,66.67,16.67
+Amazon,USA,United States,TEA_SET,Bộ ấm chén,24,3.33,0.9516,12,3,9,50.0,37.5
+Amazon,USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,24,4.08,0.9552,18,3,3,75.0,12.5
+Etsy,USA,United States,TEA_SET,Bộ ấm chén,12,3.5,0.9587,6,3,3,50.0,25.0
+Etsy,USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,12,3.58,0.9487,6,3,3,50.0,25.0
