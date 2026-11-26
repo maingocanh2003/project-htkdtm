@@ -1,0 +1,20 @@
+{
+  "collection_id": "e95c7f8ae06f41919e569944f124fb09",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "f5749557372de74b90d8d3c18da5a0d97780c3ad2a037d45b0edb7e68c90de9d"
+    },
+    "collected_at": "2026-11-26T16:04:20.234360+00:00",
+    "data_format": "json",
+    "endpoint": "/wp-json/wc/store/products",
+    "request_parameters": {
+      "pages_fetched": 5,
+      "source_url": "https://thegioigom.com/wp-json/wc/store/products"
+    },
+    "source_id": "thegioigom",
+    "status": "success",
+    "version": "d9/v1"
+  },
+  "payload_file": "payload.bin"
+}
