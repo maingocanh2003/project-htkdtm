@@ -1,0 +1,81 @@
+country_code,country_name,category_code,category_name_vi,quarter,quarter_avg_interest,seasonality_index
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,1,70.46,108.72
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,2,52.23,80.59
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,3,53.92,83.2
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,4,82.62,127.48
+DEU,Germany,MUG_CUP,Ly cốc sứ,1,75.0,106.24
+DEU,Germany,MUG_CUP,Ly cốc sứ,2,58.46,82.81
+DEU,Germany,MUG_CUP,Ly cốc sứ,3,60.92,86.3
+DEU,Germany,MUG_CUP,Ly cốc sứ,4,88.0,124.65
+DEU,Germany,TEA_SET,Bộ ấm chén,1,59.15,107.55
+DEU,Germany,TEA_SET,Bộ ấm chén,2,44.15,80.28
+DEU,Germany,TEA_SET,Bộ ấm chén,3,45.38,82.52
+DEU,Germany,TEA_SET,Bộ ấm chén,4,71.31,129.65
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,1,66.46,108.71
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,2,49.46,80.91
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,3,51.08,83.55
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,4,77.54,126.83
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,1,69.0,110.84
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,2,49.46,79.46
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,3,51.92,83.41
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,4,78.62,126.29
+FRA,France,MUG_CUP,Ly cốc sứ,1,73.92,109.14
+FRA,France,MUG_CUP,Ly cốc sứ,2,53.15,78.48
+FRA,France,MUG_CUP,Ly cốc sứ,3,58.31,86.09
+FRA,France,MUG_CUP,Ly cốc sứ,4,85.54,126.29
+FRA,France,TEA_SET,Bộ ấm chén,1,57.38,108.59
+FRA,France,TEA_SET,Bộ ấm chén,2,40.69,77.0
+FRA,France,TEA_SET,Bộ ấm chén,3,44.31,83.84
+FRA,France,TEA_SET,Bộ ấm chén,4,69.0,130.57
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,1,63.62,108.49
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,2,47.38,80.81
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,3,48.08,81.99
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,4,75.46,128.7
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,1,69.0,108.07
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,2,51.77,81.08
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,3,54.15,84.82
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,4,80.46,126.02
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,1,73.92,108.56
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,2,56.38,82.8
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,3,58.77,86.3
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,4,83.31,122.34
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,1,60.31,109.19
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,2,41.92,75.91
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,3,45.62,82.59
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,4,73.08,132.31
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,1,64.77,109.0
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,2,45.31,76.25
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,3,50.0,84.14
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,4,77.62,130.61
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,1,73.15,109.18
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,2,54.54,81.4
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,3,56.92,84.96
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,4,83.38,124.45
+JPN,Japan,MUG_CUP,Ly cốc sứ,1,78.69,107.97
+JPN,Japan,MUG_CUP,Ly cốc sứ,2,59.62,81.79
+JPN,Japan,MUG_CUP,Ly cốc sứ,3,62.62,85.91
+JPN,Japan,MUG_CUP,Ly cốc sứ,4,90.62,124.33
+JPN,Japan,TEA_SET,Bộ ấm chén,1,62.15,106.67
+JPN,Japan,TEA_SET,Bộ ấm chén,2,46.46,79.74
+JPN,Japan,TEA_SET,Bộ ấm chén,3,49.77,85.41
+JPN,Japan,TEA_SET,Bộ ấm chén,4,74.69,128.18
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,1,68.54,109.06
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,2,51.0,81.15
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,3,51.92,82.62
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,4,79.92,127.17
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,1,77.54,107.46
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,2,59.77,82.84
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,3,62.69,86.89
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,4,88.62,122.81
+USA,United States,MUG_CUP,Ly cốc sứ,1,85.85,107.54
+USA,United States,MUG_CUP,Ly cốc sứ,2,69.08,86.53
+USA,United States,MUG_CUP,Ly cốc sứ,3,70.54,88.36
+USA,United States,MUG_CUP,Ly cốc sứ,4,93.85,117.56
+USA,United States,TEA_SET,Bộ ấm chén,1,67.23,105.62
+USA,United States,TEA_SET,Bộ ấm chén,2,52.23,82.05
+USA,United States,TEA_SET,Bộ ấm chén,3,54.62,85.8
+USA,United States,TEA_SET,Bộ ấm chén,4,80.54,126.53
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,1,74.54,108.27
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,2,56.62,82.23
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,3,60.77,88.27
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,4,83.46,121.23

@@ -1,0 +1,21 @@
+country_id,country_code,country_name,category_id,category_code,category_name_vi,search_term,avg_interest_score,max_interest_score,min_interest_score,peak_week_number,trend_slope_per_week,h2_vs_h1_change_pct,trend_direction
+1,USA,United States,2,MUG_CUP,Ly cốc sứ,handmade ceramic mug,79.83,100,56,44,0.2123,6.11,Seasonal Stable
+2,JPN,Japan,2,MUG_CUP,Ly cốc sứ,handmade ceramic mug,72.88,100,49,48,0.3078,10.79,Strong Uptrend
+1,USA,United States,3,DINNERWARE,Bát đĩa bàn ăn,minimalist stoneware dinnerware,72.15,100,50,45,0.2794,10.2,Strong Uptrend
+3,DEU,Germany,2,MUG_CUP,Ly cốc sứ,handmade ceramic mug,70.6,100,49,45,0.3089,11.59,Strong Uptrend
+1,USA,United States,4,VASE_DECOR,Lọ hoa mỹ nghệ,artisan ceramic vase,68.85,98,49,49,0.2623,9.97,Strong Uptrend
+5,GBR,United Kingdom,2,MUG_CUP,Ly cốc sứ,handmade ceramic mug,68.1,97,47,52,0.2375,9.03,Seasonal Stable
+4,FRA,France,2,MUG_CUP,Ly cốc sứ,handmade ceramic mug,67.73,97,45,49,0.3125,13.2,Strong Uptrend
+2,JPN,Japan,3,DINNERWARE,Bát đĩa bàn ăn,minimalist stoneware dinnerware,67.0,96,43,48,0.2585,9.88,Strong Uptrend
+3,DEU,Germany,3,DINNERWARE,Bát đĩa bàn ăn,minimalist stoneware dinnerware,64.81,97,41,47,0.2971,11.29,Strong Uptrend
+5,GBR,United Kingdom,3,DINNERWARE,Bát đĩa bàn ăn,minimalist stoneware dinnerware,63.85,92,40,52,0.2885,11.46,Strong Uptrend
+1,USA,United States,1,TEA_SET,Bộ ấm chén,ceramic tea set,63.65,92,41,50,0.3325,13.14,Strong Uptrend
+2,JPN,Japan,4,VASE_DECOR,Lọ hoa mỹ nghệ,artisan ceramic vase,62.85,93,39,50,0.272,10.3,Strong Uptrend
+4,FRA,France,3,DINNERWARE,Bát đĩa bàn ăn,minimalist stoneware dinnerware,62.25,91,39,50,0.2413,10.19,Strong Uptrend
+3,DEU,Germany,4,VASE_DECOR,Lọ hoa mỹ nghệ,artisan ceramic vase,61.13,89,39,49,0.2533,10.95,Strong Uptrend
+5,GBR,United Kingdom,4,VASE_DECOR,Lọ hoa mỹ nghệ,artisan ceramic vase,59.42,92,36,51,0.3433,15.93,Strong Uptrend
+4,FRA,France,4,VASE_DECOR,Lọ hoa mỹ nghệ,artisan ceramic vase,58.63,90,39,52,0.2855,11.3,Strong Uptrend
+2,JPN,Japan,1,TEA_SET,Bộ ấm chén,ceramic tea set,58.27,88,33,51,0.3238,14.59,Strong Uptrend
+5,GBR,United Kingdom,1,TEA_SET,Bộ ấm chén,ceramic tea set,55.23,89,33,47,0.3182,16.1,Strong Uptrend
+3,DEU,Germany,1,TEA_SET,Bộ ấm chén,ceramic tea set,55.0,87,30,50,0.2808,12.96,Strong Uptrend
+4,FRA,France,1,TEA_SET,Bộ ấm chén,ceramic tea set,52.85,83,29,51,0.2971,15.53,Strong Uptrend
