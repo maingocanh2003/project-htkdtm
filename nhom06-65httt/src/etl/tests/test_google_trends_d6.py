@@ -29,6 +29,7 @@ from etl.google_trends_csv_importer import (
     GoogleTrendsCsvImporter,
     _parse_filename,
     _build_request,
+    _infer_cadence,
     _infer_period,
     _sha256_hex,
 )
@@ -206,6 +207,7 @@ class RelatedQueriesParserTests(unittest.TestCase):
         kv = dict(breakout_rows[0].keyword_values)
         self.assertEqual(kv["ceramic tableware"], "Breakout")
         self.assertEqual(breakout_rows[0].raw_row["section"], "Rising")
+        self.assertEqual(breakout_rows[0].related_section, "rising")
 
     def test_rising_numeric_value_kept_as_string(self):
         """Rising value như 350 phải là str, không phải int."""
@@ -236,10 +238,30 @@ class RelatedQueriesParserTests(unittest.TestCase):
         self.assertEqual(values["ceramic bowl set"], "0")
         self.assertEqual(values["handmade ceramic"], "Breakout")
         self.assertEqual(result.rows[0].raw_row["section"], "Top")
+        self.assertEqual(result.rows[0].related_section, "top")
+        self.assertEqual(result.rows[1].related_section, "rising")
 
     def test_related_queries_data_type_hint(self):
         result = self.parser.parse(RQ_FIXTURE.read_bytes(), CID)
         self.assertIn("Related queries", result.data_type_hint or "")
+
+    def test_flat_related_queries_export_keeps_all_columns(self):
+        payload = (
+            b"query,search interest,increase percent\n"
+            b"ceramic bowl set,100,0\n"
+            b"handmade ceramic,Breakout,250\n"
+        )
+        result = self.parser.parse(payload, CID)
+
+        self.assertEqual(result.data_type_hint, "Related queries")
+        self.assertEqual(result.row_count, 2)
+        row = result.rows[1]
+        self.assertEqual(row.period_label, "handmade ceramic")
+        self.assertEqual(
+            row.keyword_values,
+            (("search interest", "Breakout"), ("increase percent", "250")),
+        )
+        self.assertEqual(row.raw_row["query"], "handmade ceramic")
 
 
 # ---------------------------------------------------------------------------
@@ -266,6 +288,66 @@ class RelatedTopicsParserTests(unittest.TestCase):
     def test_related_topics_data_type_hint(self):
         result = self.parser.parse(RT_FIXTURE.read_bytes(), CID)
         self.assertIn("Related topics", result.data_type_hint or "")
+
+    def test_flat_related_topics_export_keeps_all_columns(self):
+        payload = (
+            b"topic,search interest,increase percent\n"
+            b"home decor,100,0\n"
+            b"ceramic art,Breakout,300\n"
+        )
+        result = self.parser.parse(payload, CID)
+
+        self.assertEqual(result.data_type_hint, "Related topics")
+        self.assertEqual(result.row_count, 2)
+        row = result.rows[1]
+        self.assertEqual(row.period_label, "ceramic art")
+        self.assertEqual(
+            row.keyword_values,
+            (("search interest", "Breakout"), ("increase percent", "300")),
+        )
+        self.assertEqual(row.raw_row["topic"], "ceramic art")
+
+
+class RelatedSectionMetadataTests(unittest.TestCase):
+    def test_metadata_section_is_attached_without_mutating_raw_row(self):
+        cases = (
+            (b"query,search interest,increase percent\nterm,10,20\n", "top"),
+            (b"query,search interest,increase percent\nterm,10,Breakout\n", "rising"),
+            (b"topic,search interest,increase percent\nterm,10,20\n", "top"),
+            (b"topic,search interest,increase percent\nterm,10,Breakout\n", "rising"),
+        )
+        parser = GoogleTrendsParser()
+
+        for payload, section in cases:
+            with self.subTest(section=section, header=payload.split(b",", 1)[0]):
+                result = parser.parse(payload, CID, related_section=section)
+                self.assertEqual(result.row_count, 1)
+                self.assertEqual(result.rows[0].related_section, section)
+                self.assertNotIn("section", result.rows[0].raw_row)
+
+    def test_legacy_parser_call_keeps_related_section_optional(self):
+        payload = b"query,search interest,increase percent\nterm,10,20\n"
+        result = GoogleTrendsParser().parse(payload, CID)
+        self.assertIsNone(result.rows[0].related_section)
+
+
+class CadenceInferenceTests(unittest.TestCase):
+    def test_monthly_dates_are_recognized(self):
+        self.assertEqual(
+            _infer_cadence(("2021-11-01", "2021-12-01", "2022-01-01")),
+            "monthly",
+        )
+
+    def test_weekly_dates_are_recognized(self):
+        self.assertEqual(
+            _infer_cadence(("2026-10-25", "2026-11-01", "2026-11-08")),
+            "weekly",
+        )
+
+    def test_irregular_dates_remain_unknown(self):
+        self.assertIsNone(
+            _infer_cadence(("2026-10-25", "2026-11-01", "2026-11-15"))
+        )
 
 
 # ---------------------------------------------------------------------------
@@ -398,6 +480,20 @@ class FilenameParsingTests(unittest.TestCase):
         self.assertEqual(result[1], "US")
         self.assertEqual(result[2], "related_queries")
 
+    def test_related_top_and_rising_filenames_preserve_section(self):
+        cases = (
+            ("g1_VN_related_queries_top_20261120.csv", "related_queries_top"),
+            ("g1_VN_related_queries_rising_20261120.csv", "related_queries_rising"),
+            ("g1_VN_related_topics_top_20261120.csv", "related_topics_top"),
+            ("g1_VN_related_topics_rising_20261120.csv", "related_topics_rising"),
+        )
+        for filename, expected_type in cases:
+            with self.subTest(filename=filename):
+                result = _parse_filename(filename)
+                self.assertIsNotNone(result)
+                self.assertEqual(result[2], expected_type)
+                self.assertEqual(result[3], "20261120")
+
     def test_valid_ibr_filename(self):
         result = _parse_filename("g4_VN_interest_by_region_20261120.csv")
         self.assertIsNotNone(result)
@@ -406,6 +502,7 @@ class FilenameParsingTests(unittest.TestCase):
     def test_invalid_filename_no_match(self):
         self.assertIsNone(_parse_filename("random_file.csv"))
         self.assertIsNone(_parse_filename("g1_VN_bad_type_20261120.csv"))
+        self.assertIsNone(_parse_filename("g1_VN_related_queries_unknown_20261120.csv"))
         self.assertIsNone(_parse_filename("trends_export.csv"))
 
     def test_build_request_iot(self):
@@ -413,13 +510,34 @@ class FilenameParsingTests(unittest.TestCase):
         self.assertIsNotNone(req)
         self.assertEqual(req.geo, "VN")
         self.assertEqual(req.data_type, TrendsDataType.INTEREST_OVER_TIME)
-        self.assertEqual(req.interval, "weekly")
+        self.assertIsNone(req.interval)
         self.assertIn("ceramic tableware", req.keywords)
+
+    def test_build_request_accepts_inferred_interval(self):
+        req = _build_request(
+            "g1", "VN", "interest_over_time", "20261120", interval="weekly"
+        )
+        self.assertIsNotNone(req)
+        self.assertEqual(req.interval, "weekly")
 
     def test_build_request_related_queries_no_interval(self):
         req = _build_request("g3", "US", "related_queries", "20261120")
         self.assertIsNotNone(req)
         self.assertIsNone(req.interval)
+
+    def test_build_request_preserves_related_section(self):
+        cases = (
+            ("related_queries_top", TrendsDataType.RELATED_QUERIES, "top"),
+            ("related_queries_rising", TrendsDataType.RELATED_QUERIES, "rising"),
+            ("related_topics_top", TrendsDataType.RELATED_TOPICS, "top"),
+            ("related_topics_rising", TrendsDataType.RELATED_TOPICS, "rising"),
+        )
+        for filename_type, data_type, section in cases:
+            with self.subTest(filename_type=filename_type):
+                req = _build_request("g1", "VN", filename_type, "20261120")
+                self.assertIsNotNone(req)
+                self.assertEqual(req.data_type, data_type)
+                self.assertEqual(req.related_section, section)
 
     def test_build_request_unknown_group_returns_none(self):
         req = _build_request("g99", "US", "interest_over_time", "20261120")
@@ -490,6 +608,100 @@ class ImporterDuplicateTests(unittest.TestCase):
         results = self._make_importer().run()
         skipped = [r for r in results if r["status"] == "skipped_duplicate"]
         self.assertEqual(len(skipped), 1)
+
+    def test_import_records_monthly_cadence_and_keyword_header_mismatch(self):
+        payload = (
+            b"Time,ceramic\n"
+            b"2021-11-01,16\n"
+            b"2021-12-01,15\n"
+            b"2022-01-01,14\n"
+        )
+        filename = "g1_VN_interest_over_time_20261127.csv"
+        self._place_csv(filename, payload)
+
+        results = self._make_importer().run()
+        imported = next(result for result in results if result["status"] == "imported")
+        manifest = RawStorage(
+            self.raw, create_project_source_registry()
+        ).read_manifest("google_trends", imported["collection_id"])
+        request = manifest["metadata"]["request_parameters"]
+
+        self.assertEqual(request["interval"], "monthly")
+        self.assertEqual(request["keywords"], ["ceramic"])
+        self.assertEqual(len(request["requested_keywords"]), 5)
+        self.assertFalse(request["keyword_header_matches_request"])
+
+    def test_import_records_weekly_cadence(self):
+        payload = (
+            b"Week,ceramic tableware\n"
+            b"2026-10-25,10\n"
+            b"2026-11-01,11\n"
+            b"2026-11-08,12\n"
+        )
+        self._place_csv("g1_VN_interest_over_time_20261127.csv", payload)
+
+        results = self._make_importer().run()
+        imported = next(result for result in results if result["status"] == "imported")
+        manifest = RawStorage(
+            self.raw, create_project_source_registry()
+        ).read_manifest("google_trends", imported["collection_id"])
+        self.assertEqual(
+            manifest["metadata"]["request_parameters"]["interval"], "weekly"
+        )
+
+    def test_top_and_rising_imports_keep_distinct_manifest_metadata(self):
+        query_payload = (
+            b"query,search interest,increase percent\n"
+            b"ceramic bowl set,100,0\n"
+        )
+        topic_payload = (
+            b"topic,search interest,increase percent\n"
+            b"home decor,100,0\n"
+        )
+        files = (
+            ("g1_VN_related_queries_top_20261120.csv", query_payload, "queries", "top"),
+            ("g1_VN_related_queries_rising_20261120.csv", query_payload, "queries", "rising"),
+            ("g1_VN_related_topics_top_20261120.csv", topic_payload, "topics", "top"),
+            ("g1_VN_related_topics_rising_20261120.csv", topic_payload, "topics", "rising"),
+        )
+        for filename, payload, _kind, _section in files:
+            self._place_csv(filename, payload)
+
+        results = self._make_importer().run()
+        imported = [result for result in results if result["status"] == "imported"]
+        self.assertEqual(len(imported), 4)
+        self.assertEqual(len({result["collection_id"] for result in imported}), 4)
+
+        registry = create_project_source_registry()
+        storage = RawStorage(self.raw, registry)
+        expected = {
+            filename: (f"related_{kind}", section)
+            for filename, _payload, kind, section in files
+        }
+        for result in imported:
+            manifest = storage.read_manifest(
+                "google_trends", result["collection_id"]
+            )
+            request = manifest["metadata"]["request_parameters"]
+            expected_type, expected_section = expected[result["file"]]
+            self.assertEqual(request["data_type"], expected_type)
+            self.assertEqual(request["related_section"], expected_section)
+            self.assertEqual(request["original_filename"], result["file"])
+            parsed_payload = GoogleTrendsParser().parse(
+                storage.read_payload("google_trends", result["collection_id"]),
+                result["collection_id"],
+                related_section=request["related_section"],
+            )
+            self.assertEqual(
+                parsed_payload.rows[0].related_section, expected_section
+            )
+            self.assertNotIn("section", parsed_payload.rows[0].raw_row)
+
+        second_run = self._make_importer().run()
+        self.assertEqual(
+            sum(result["status"] == "skipped_duplicate" for result in second_run),
+            4,
+        )
 
     def test_same_payload_with_different_country_is_not_duplicate(self):
         payload = IOT_FIXTURE.read_bytes()

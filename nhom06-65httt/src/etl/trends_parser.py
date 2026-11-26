@@ -51,7 +51,16 @@ class GoogleTrendsParser:
         source_id: str = "google_trends",
         collected_at_iso: str = "",
         source_url: Optional[str] = None,
+        related_section: Optional[str] = None,
     ) -> ParsedTrendsPayload:
+        if related_section is not None:
+            if (
+                not isinstance(related_section, str)
+                or related_section.strip().lower() not in {"top", "rising"}
+            ):
+                raise ValueError("related_section must be 'top', 'rising', or None")
+            related_section = related_section.strip().lower()
+
         provenance = RecordProvenance(
             source_id=source_id,
             raw_collection_id=raw_collection_id,
@@ -81,13 +90,55 @@ class GoogleTrendsParser:
         )
 
         normalized_hint = (data_type_hint or "").strip().lower()
+        if related_section is not None and normalized_hint not in {
+            "related queries",
+            "related topics",
+        }:
+            raise ValueError(
+                "related_section can only be supplied for related queries or topics"
+            )
         if normalized_hint in {"related queries", "related topics"}:
+            if period_col.strip().lower() in {"query", "topic"}:
+                reader = csv.DictReader(
+                    io.StringIO("\n".join(lines[header_index:]))
+                )
+                try:
+                    raw_rows = list(reader)
+                except csv.Error as exc:
+                    raise ParseError(
+                        source_id,
+                        raw_collection_id,
+                        "",
+                        ParseErrorKind.INVALID_STRUCTURE,
+                        f"CSV parse error: {exc}",
+                    ) from exc
+
+                rows = tuple(
+                    self._parse_row(
+                        row,
+                        i,
+                        provenance,
+                        period_col,
+                        keyword_cols,
+                        related_section=related_section,
+                    )
+                    for i, row in enumerate(raw_rows)
+                )
+                return ParsedTrendsPayload(
+                    provenance=provenance,
+                    keywords=tuple(keyword_cols),
+                    rows=rows,
+                    row_count=len(rows),
+                    data_type_hint=data_type_hint,
+                )
+
             return _parse_related_rows(
                 lines[header_index + 1:],
                 provenance,
                 data_type_hint,
                 source_id,
                 raw_collection_id,
+                related_section=related_section,
             )
 
         data_lines = lines[header_index:]
@@ -121,6 +172,7 @@ class GoogleTrendsParser:
         provenance: RecordProvenance,
         period_col: str,
         keyword_cols: List[str],
+        related_section: Optional[str] = None,
     ) -> ParsedTrendsRow:
         sid = provenance.source_id
         cid = provenance.raw_collection_id
@@ -147,6 +199,7 @@ class GoogleTrendsParser:
             raw_row=dict(raw),
             period_label=period,
             keyword_values=tuple(keyword_values),
+            related_section=related_section,
         )
 
 
@@ -163,9 +216,33 @@ def _locate_header(
     """Find the data-header line; return (line_index, period_col, keyword_cols, hint).
 
     ``hint`` is the content of the first non-empty line before the header,
-    which in Trends exports is the data-type label (e.g. 'Interest over time').
+    except flat related-query/topic exports, whose first row is their table
+    header and identifies the related-data type directly.
     """
     data_type_hint: Optional[str] = None
+
+    for i, line in enumerate(lines):
+        stripped = line.strip()
+        if not stripped:
+            continue
+        try:
+            cols = next(csv.reader(io.StringIO(stripped)))
+        except (csv.Error, StopIteration):
+            break
+        if (
+            len(cols) >= 2
+            and cols[0].strip().lower() in {"query", "topic"}
+            and cols[1].strip().lower()
+            in {"search interest", "search volume", "value"}
+        ):
+            kind = "queries" if cols[0].strip().lower() == "query" else "topics"
+            return (
+                i,
+                cols[0],
+                [column for column in cols[1:] if column.strip()],
+                f"Related {kind}",
+            )
+        break
 
     for i, line in enumerate(lines):
         stripped = line.strip()
@@ -225,9 +302,10 @@ def _parse_related_rows(
     data_type_hint: str,
     source_id: str,
     raw_collection_id: str,
+    related_section: Optional[str] = None,
 ) -> ParsedTrendsPayload:
     """Parse Google Trends Top/Rising tables without interpreting their values."""
-    section: Optional[str] = None
+    section = related_section.title() if related_section is not None else None
     keyword = "Value"
     rows: List[ParsedTrendsRow] = []
 
@@ -282,6 +360,7 @@ def _parse_related_rows(
                 raw_row=raw_row,
                 period_label=label,
                 keyword_values=((keyword, value),),
+                related_section=section.lower() if section is not None else None,
             )
         )
 

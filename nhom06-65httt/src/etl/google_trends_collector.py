@@ -38,6 +38,9 @@ class GoogleTrendsRequest:
     original_filename: Optional[str] = None
     export_date: Optional[date] = None
     export_timestamp: Optional[datetime] = None
+    related_section: Optional[str] = None
+    exported_keywords: Optional[Tuple[str, ...]] = None
+    keyword_header_matches_request: Optional[bool] = None
 
     def __post_init__(self) -> None:
         if not all(isinstance(keyword, str) for keyword in self.keywords):
@@ -52,17 +55,39 @@ class GoogleTrendsRequest:
             raise ValueError("data_type must be a TrendsDataType")
         if not self.search_type.strip():
             raise ValueError("search_type must not be empty")
-        if (
-            self.data_type is TrendsDataType.INTEREST_OVER_TIME
-            and (self.interval is None or not self.interval.strip())
-        ):
-            raise ValueError("interest_over_time requires an explicit interval")
         if self.interval is not None and not self.interval.strip():
             raise ValueError("interval must not be empty when provided")
         if self.category is not None and not self.category.strip():
             raise ValueError("category must not be empty when provided")
         if self.original_filename is not None and not self.original_filename.strip():
             raise ValueError("original_filename must not be empty when provided")
+        if self.related_section is not None and (
+            self.related_section not in {"top", "rising"}
+        ):
+            raise ValueError("related_section must be 'top' or 'rising'")
+        if self.related_section is not None and self.data_type not in {
+            TrendsDataType.RELATED_QUERIES,
+            TrendsDataType.RELATED_TOPICS,
+        }:
+            raise ValueError(
+                "related_section is only valid for related queries or topics"
+            )
+        if self.exported_keywords is not None and not all(
+            isinstance(keyword, str) and keyword.strip()
+            for keyword in self.exported_keywords
+        ):
+            raise ValueError("exported_keywords must contain non-empty strings")
+        if self.keyword_header_matches_request is not None and not isinstance(
+            self.keyword_header_matches_request, bool
+        ):
+            raise ValueError("keyword_header_matches_request must be a bool or None")
+        if (
+            self.keyword_header_matches_request is not None
+            and self.exported_keywords is None
+        ):
+            raise ValueError(
+                "keyword_header_matches_request requires exported_keywords"
+            )
         if self.export_date is not None and (
             not isinstance(self.export_date, date)
             or isinstance(self.export_date, datetime)
@@ -108,7 +133,15 @@ class GoogleTrendsExportAdapter:
             raise TypeError("request must be a GoogleTrendsRequest")
         request_parameters = {
             "collection_method": "google_trends_ui_csv_export",
-            "keywords": list(request.keywords),
+            "keywords": list(
+                request.exported_keywords
+                if request.exported_keywords is not None
+                else request.keywords
+            ),
+            "requested_keywords": list(request.keywords),
+            "keyword_header_matches_request": (
+                request.keyword_header_matches_request
+            ),
             "period_start": request.period_start.isoformat(),
             "period_end": request.period_end.isoformat(),
             "geo": request.geo,
@@ -117,6 +150,7 @@ class GoogleTrendsExportAdapter:
             "interval": request.interval,
             "category": request.category,
             "original_filename": request.original_filename,
+            "related_section": request.related_section,
             "export_date": (
                 request.export_date.isoformat()
                 if request.export_date is not None

@@ -150,15 +150,15 @@ class GoogleTrendsExportAdapterTests(unittest.TestCase):
                 search_type="web",
                 interval="weekly",
             )
-        with self.assertRaisesRegex(ValueError, "explicit interval"):
-            GoogleTrendsRequest(
-                keywords=("ceramic dinnerware",),
-                period_start=date(2025, 1, 1),
-                period_end=date(2025, 12, 31),
-                geo="US",
-                data_type=TrendsDataType.INTEREST_OVER_TIME,
-                search_type="web",
-            )
+        request = GoogleTrendsRequest(
+            keywords=("ceramic dinnerware",),
+            period_start=date(2025, 1, 1),
+            period_end=date(2025, 12, 31),
+            geo="US",
+            data_type=TrendsDataType.INTEREST_OVER_TIME,
+            search_type="web",
+        )
+        self.assertIsNone(request.interval)
 
     def test_invalid_export_type_is_rejected(self):
         with self.assertRaisesRegex(TypeError, "payload must be bytes"):

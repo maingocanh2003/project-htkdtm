@@ -28,7 +28,7 @@ import hashlib
 import json
 import re
 import sys
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 from typing import Dict, List, Optional, Tuple
 
@@ -42,8 +42,10 @@ from etl.google_trends_collector import (  # noqa: E402
     GoogleTrendsRequest,
     TrendsDataType,
 )
+from etl.parsed_record import ParseError  # noqa: E402
 from etl.raw_storage import RawStorage  # noqa: E402
 from etl.source_registry import create_project_source_registry  # noqa: E402
+from etl.trends_parser import GoogleTrendsParser  # noqa: E402
 
 
 # ---------------------------------------------------------------------------
@@ -89,7 +91,11 @@ _DATA_TYPE_MAP: Dict[str, TrendsDataType] = {
     "interest_over_time": TrendsDataType.INTEREST_OVER_TIME,
     "interest_by_region": TrendsDataType.INTEREST_BY_REGION,
     "related_queries": TrendsDataType.RELATED_QUERIES,
+    "related_queries_top": TrendsDataType.RELATED_QUERIES,
+    "related_queries_rising": TrendsDataType.RELATED_QUERIES,
     "related_topics": TrendsDataType.RELATED_TOPICS,
+    "related_topics_top": TrendsDataType.RELATED_TOPICS,
+    "related_topics_rising": TrendsDataType.RELATED_TOPICS,
 }
 
 # Pattern: {group}_{geo}_{data_type}_{date}.csv
@@ -97,6 +103,7 @@ _DATA_TYPE_MAP: Dict[str, TrendsDataType] = {
 _FILENAME_RE = re.compile(
     r"^(?P<group>g\w+)_(?P<geo>[A-Z]{2,3})_"
     r"(?P<data_type>interest_over_time|interest_by_region|related_queries|related_topics)"
+    r"(?:_(?P<related_section>top|rising))?"
     r"_(?P<date>\d{8})\.csv$",
     re.IGNORECASE,
 )
@@ -126,6 +133,8 @@ def _import_fingerprint(sha256: str, request: GoogleTrendsRequest) -> str:
         "interval": request.interval,
         "category": request.category,
     }
+    if request.related_section is not None:
+        identity["related_section"] = request.related_section
     encoded = json.dumps(identity, ensure_ascii=False, sort_keys=True).encode("utf-8")
     return _sha256_hex(encoded)
 
@@ -162,12 +171,11 @@ def _parse_filename(filename: str) -> Optional[Tuple[str, str, str, str]]:
         datetime.strptime(date_str, "%Y%m%d")
     except ValueError:
         return None
-    return (
-        m.group("group").lower(),
-        m.group("geo").upper(),
-        m.group("data_type").lower(),
-        date_str,
-    )
+    data_type = m.group("data_type").lower()
+    related_section = m.group("related_section")
+    if related_section:
+        data_type = f"{data_type}_{related_section.lower()}"
+    return (m.group("group").lower(), m.group("geo").upper(), data_type, date_str)
 
 
 def _infer_period(date_str: str) -> Tuple[date, date]:
@@ -182,12 +190,58 @@ def _infer_period(date_str: str) -> Tuple[date, date]:
     return period_start, period_end
 
 
+def _infer_cadence(period_labels: Tuple[str, ...]) -> Optional[str]:
+    """Infer a regular cadence from parsed date labels, or leave it unknown."""
+    if len(period_labels) < 2:
+        return None
+
+    periods: List[date] = []
+    for label in period_labels:
+        parsed_date: Optional[date] = None
+        for date_format in ("%Y-%m-%d", "%Y-%m", "%Y/%m/%d", "%Y/%m"):
+            try:
+                parsed_date = datetime.strptime(label.strip(), date_format).date()
+                break
+            except ValueError:
+                continue
+        if parsed_date is None:
+            return None
+        periods.append(parsed_date)
+
+    if any(current <= previous for previous, current in zip(periods, periods[1:])):
+        return None
+
+    if all(current - previous == timedelta(days=7) for previous, current in zip(periods, periods[1:])):
+        return "weekly"
+    if all(
+        previous.day == current.day == 1
+        and (current.year - previous.year) * 12 + current.month - previous.month == 1
+        for previous, current in zip(periods, periods[1:])
+    ):
+        return "monthly"
+    if all(current - previous == timedelta(days=1) for previous, current in zip(periods, periods[1:])):
+        return "daily"
+    return None
+
+
+def _keyword_headers_match(
+    requested_keywords: Tuple[str, ...],
+    exported_keywords: Tuple[str, ...],
+) -> bool:
+    requested = tuple(keyword.strip().casefold() for keyword in requested_keywords)
+    exported = tuple(keyword.strip().casefold() for keyword in exported_keywords)
+    return requested == exported
+
+
 def _build_request(
     group: str,
     geo: str,
     data_type_str: str,
     date_str: str,
     original_filename: Optional[str] = None,
+    interval: Optional[str] = None,
+    exported_keywords: Optional[Tuple[str, ...]] = None,
+    keyword_header_matches_request: Optional[bool] = None,
 ) -> Optional[GoogleTrendsRequest]:
     """Tạo GoogleTrendsRequest từ thông tin tên file."""
     keywords = _KEYWORD_GROUPS.get(group)
@@ -200,8 +254,12 @@ def _build_request(
         print(f"  [WARN] Unknown data type: '{data_type_str}' - skipped")
         return None
 
+    related_section = (
+        data_type_str.rsplit("_", 1)[1]
+        if data_type_str.endswith(("_top", "_rising"))
+        else None
+    )
     period_start, period_end = _infer_period(date_str)
-    interval = "weekly" if data_type is TrendsDataType.INTEREST_OVER_TIME else None
 
     return GoogleTrendsRequest(
         keywords=keywords,
@@ -213,6 +271,9 @@ def _build_request(
         interval=interval,
         original_filename=original_filename,
         export_date=datetime.strptime(date_str, "%Y%m%d").date(),
+        related_section=related_section,
+        exported_keywords=exported_keywords,
+        keyword_header_matches_request=keyword_header_matches_request,
     )
 
 
@@ -278,8 +339,52 @@ class GoogleTrendsCsvImporter:
             return {"file": filename, "status": "skipped_empty"}
 
         sha256 = _sha256_hex(payload)
+        requested_keywords = _KEYWORD_GROUPS.get(group)
+        interval: Optional[str] = None
+        exported_keywords: Optional[Tuple[str, ...]] = None
+        keyword_header_matches_request: Optional[bool] = None
+        if (
+            requested_keywords is not None
+            and data_type_str in {"interest_over_time", "interest_by_region"}
+        ):
+            try:
+                preview = GoogleTrendsParser().parse(
+                    payload, raw_collection_id="import-metadata-preview"
+                )
+            except ParseError as exc:
+                print(
+                    "  [WARN] Could not inspect CSV metadata "
+                    f"({exc.kind.value}); cadence and exported keywords remain unknown"
+                )
+            else:
+                exported_keywords = preview.keywords
+                keyword_header_matches_request = _keyword_headers_match(
+                    requested_keywords, exported_keywords
+                )
+                if not keyword_header_matches_request:
+                    print(
+                        "  [WARN] Requested keywords differ from CSV keyword columns; "
+                        "both will be recorded"
+                    )
+                if data_type_str == "interest_over_time":
+                    interval = _infer_cadence(
+                        tuple(row.period_label for row in preview.rows)
+                    )
+                    if interval is None:
+                        print(
+                            "  [WARN] Could not infer Interest Over Time cadence "
+                            "from CSV dates; interval remains unknown"
+                        )
+
         request = _build_request(
-            group, geo, data_type_str, date_str, original_filename=filename
+            group,
+            geo,
+            data_type_str,
+            date_str,
+            original_filename=filename,
+            interval=interval,
+            exported_keywords=exported_keywords,
+            keyword_header_matches_request=keyword_header_matches_request,
         )
         if request is None:
             return {"file": filename, "status": "skipped_bad_request"}

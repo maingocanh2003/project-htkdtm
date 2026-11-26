@@ -185,12 +185,13 @@ class ParsedTrendsRow:
     """One data row from a Google Trends UI CSV export."""
 
     provenance: RecordProvenance
-    raw_row: Dict[str, str]            # source cell strings; related rows include section
+    raw_row: Dict[str, str]            # original source cells, never augmented
 
     period_label: str                  # e.g. "2025-01-05" (week) or "2025-01"
     keyword_values: Tuple[Tuple[str, str], ...]
     # each entry: (keyword_column_header, raw_value_string)
     # Values are kept as strings — semantics documented in manifest, not assumed
+    related_section: Optional[str] = None  # "top" / "rising" from export or manifest
 
 
 @dataclass(frozen=True)
