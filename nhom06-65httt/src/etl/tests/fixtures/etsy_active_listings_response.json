@@ -1,0 +1,16 @@
+{
+  "count": 1,
+  "results": [
+    {
+      "listing_id": 123456789,
+      "title": "Synthetic Ceramic Serving Bowl",
+      "url": "https://example.invalid/fixture/etsy-listing-1",
+      "taxonomy_id": 4321,
+      "price": {
+        "amount": 2499,
+        "divisor": 100,
+        "currency_code": "USD"
+      }
+    }
+  ]
+}

@@ -160,19 +160,25 @@ def create_project_source_registry() -> SourceRegistry:
         Source(
             source_id="etsy",
             source_name="Etsy",
-            source_type=SourceType.MANUAL,
-            base_url="https://www.etsy.com",
+            source_type=SourceType.API,
+            base_url="https://openapi.etsy.com",
             status=SourceStatus.PLANNED,
-            description="International marketplace product and review source.",
+            description=(
+                "Official marketplace API; access and retention requirements "
+                "must be confirmed before collection."
+            ),
             source_group=SourceGroup.MARKETPLACE_PRODUCTS,
         ),
         Source(
             source_id="amazon",
             source_name="Amazon",
-            source_type=SourceType.MANUAL,
-            base_url="https://www.amazon.com",
+            source_type=SourceType.API,
+            base_url="https://creatorsapi.amazon",
             status=SourceStatus.PLANNED,
-            description="International marketplace product and review source.",
+            description=(
+                "Official Creators API; program eligibility and retention "
+                "requirements must be confirmed before collection."
+            ),
             source_group=SourceGroup.MARKETPLACE_PRODUCTS,
         ),
         Source(
