@@ -499,7 +499,7 @@ export const TasteDashboard: React.FC = () => {
                       style={{ height: `${Math.max(16, pr.sharePct * 2)}%` }}
                     />
                   </div>
-                  <span className="text-[10px] font-medium text-slate-500">{pr.label}</span>
+                  <span className="text-[10px] font-medium text-slate-500">{pr.name}</span>
                 </div>
               ))}
             </div>
