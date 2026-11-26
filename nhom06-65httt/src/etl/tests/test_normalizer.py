@@ -1,0 +1,498 @@
+"""Unit tests for D11 — Cleaning and normalization layer."""
+
+import unittest
+from datetime import date, datetime, timezone
+from decimal import Decimal
+
+from etl.normalizer import (
+    NormalizationStatus,
+    NormalizedField,
+    normalize_category,
+    normalize_country,
+    normalize_currency,
+    normalize_date,
+    normalize_domestic_product,
+    normalize_hs_code,
+    normalize_number,
+    normalize_product_record,
+    normalize_review_record,
+    normalize_text,
+    normalize_trade_record,
+    normalize_trends_row,
+    normalize_unit,
+)
+from etl.parsed_record import (
+    ParsedCommercialInfo,
+    ParsedDomesticProductRecord,
+    ParsedPriceInfo,
+    ParsedProductRecord,
+    ParsedReviewRecord,
+    ParsedTradeRecord,
+    ParsedTrendsRow,
+    RecordProvenance,
+)
+
+
+class NormalizeTextTests(unittest.TestCase):
+    """Yêu cầu 1: Chuẩn hóa khoảng trắng, chuỗi và ký tự."""
+
+    def test_strip_and_collapse_whitespace(self):
+        raw = "  Bộ   ấm\t\nchén   gốm   sứ  "
+        res = normalize_text(raw)
+        self.assertEqual(res.value, "Bộ ấm chén gốm sứ")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+        self.assertEqual(res.raw, raw)
+
+    def test_unicode_nfc_normalization(self):
+        # NFD: e + combining acute accent -> NFC: é
+        decomposed = "g\u006f\u0301m"  # g + o + acute accent
+        res = normalize_text(decomposed)
+        self.assertEqual(res.value, "góm")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+    def test_strip_control_characters(self):
+        raw_with_ctrl = "Sản phẩm\x00 gốm\x1f sứ\x08 cao cấp"
+        res = normalize_text(raw_with_ctrl)
+        self.assertEqual(res.value, "Sản phẩm gốm sứ cao cấp")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+    def test_none_input_gives_missing_status(self):
+        # Yêu cầu 6: Không tự suy đoán giá trị bị thiếu
+        res = normalize_text(None)
+        self.assertIsNone(res.value)
+        self.assertEqual(res.status, NormalizationStatus.MISSING)
+        self.assertIsNone(res.raw)
+
+    def test_empty_string_gives_missing_status(self):
+        res = normalize_text("   \t  \n  ")
+        self.assertIsNone(res.value)
+        self.assertEqual(res.status, NormalizationStatus.MISSING)
+
+    def test_non_string_converted_cleanly(self):
+        res = normalize_text(12345)
+        self.assertEqual(res.value, "12345")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+
+class NormalizeDateAndNumberTests(unittest.TestCase):
+    """Yêu cầu 2: Chuẩn hóa ngày tháng, số và đơn vị đo."""
+
+    def test_normalize_date_iso_and_year(self):
+        # YYYY
+        res = normalize_date("2022")
+        self.assertEqual(res.value, "2022")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # YYYY-MM
+        res = normalize_date("2023/10")
+        self.assertEqual(res.value, "2023-10")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # YYYYMM
+        res = normalize_date("202310")
+        self.assertEqual(res.value, "2023-10")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # YYYY-MM-DD
+        res = normalize_date("2023/11/15")
+        self.assertEqual(res.value, "2023-11-15")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # YYYYMMDD
+        res = normalize_date("20231115")
+        self.assertEqual(res.value, "2023-11-15")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # datetime object
+        dt = datetime(2023, 11, 15, 12, 0, 0, tzinfo=timezone.utc)
+        res = normalize_date(dt)
+        self.assertEqual(res.value, dt.isoformat())
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # date object
+        d = date(2023, 11, 15)
+        res = normalize_date(d)
+        self.assertEqual(res.value, "2023-11-15")
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # Unix timestamp int
+        res = normalize_date(1700000000)
+        self.assertIn("2023", res.value)
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+    def test_normalize_date_missing_and_invalid(self):
+        res_none = normalize_date(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+        # Invalid date
+        res_inv = normalize_date("2023-02-30")
+        self.assertIsNone(res_inv.value)
+        self.assertEqual(res_inv.status, NormalizationStatus.INVALID)
+
+        # Unconfirmed format
+        res_unconfirmed = normalize_date("Hôm qua")
+        self.assertIsNone(res_unconfirmed.value)
+        self.assertEqual(
+            res_unconfirmed.status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+    def test_normalize_number_formats(self):
+        # String with commas
+        res = normalize_number(" 145,230,000.50 ")
+        self.assertAlmostEqual(res.value, 145230000.50)
+        self.assertEqual(res.status, NormalizationStatus.CONFIRMED)
+
+        # As Decimal
+        res_dec = normalize_number("48.99", as_decimal=True)
+        self.assertEqual(res_dec.value, Decimal("48.99"))
+        self.assertEqual(res_dec.status, NormalizationStatus.CONFIRMED)
+
+        # Int & float
+        self.assertEqual(normalize_number(100).value, 100.0)
+        self.assertEqual(normalize_number(12.5).value, 12.5)
+
+        # Missing
+        res_none = normalize_number(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+        # Invalid boolean
+        res_bool = normalize_number(True)
+        self.assertIsNone(res_bool.value)
+        self.assertEqual(res_bool.status, NormalizationStatus.INVALID)
+
+        # Negative when not allowed
+        res_neg = normalize_number("-50.0", allow_negative=False)
+        self.assertIsNone(res_neg.value)
+        self.assertEqual(res_neg.status, NormalizationStatus.INVALID)
+
+        # Negative when allowed
+        res_neg_allowed = normalize_number("-50.0", allow_negative=True)
+        self.assertEqual(res_neg_allowed.value, -50.0)
+        self.assertEqual(res_neg_allowed.status, NormalizationStatus.CONFIRMED)
+
+    def test_normalize_unit(self):
+        # Confirmed units
+        self.assertEqual(normalize_unit("kg").value, "kg")
+        self.assertEqual(normalize_unit("kilograms").value, "kg")
+        self.assertEqual(normalize_unit("KGS").value, "kg")
+        self.assertEqual(normalize_unit("Number of items").value, "item")
+        self.assertEqual(normalize_unit("pcs").value, "item")
+        self.assertEqual(normalize_unit("Sản phẩm").value, "item")
+        self.assertEqual(normalize_unit("%").value, "%")
+
+        # Missing unit
+        res_none = normalize_unit(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+        # Unconfirmed unit -> WAITING_CONFIRMATION_MEMBER_1
+        res_unconfirmed = normalize_unit("thùng gỗ")
+        self.assertIsNone(res_unconfirmed.value)
+        self.assertEqual(
+            res_unconfirmed.status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+
+class NormalizeCurrencyTests(unittest.TestCase):
+    """Yêu cầu 3: Xử lý tiền tệ nhưng không quy đổi nếu thiếu tỷ giá và thời điểm tỷ giá."""
+
+    def test_currency_code_normalization(self):
+        curr = normalize_currency("100.0", "usd")
+        self.assertEqual(curr.currency_code, "USD")
+        self.assertEqual(curr.amount, Decimal("100.0"))
+        self.assertEqual(curr.currency_status, NormalizationStatus.CONFIRMED)
+
+        curr_vnd = normalize_currency("450000", "đ")
+        self.assertEqual(curr_vnd.currency_code, "VND")
+        self.assertEqual(curr_vnd.amount, Decimal("450000"))
+        self.assertEqual(curr_vnd.currency_status, NormalizationStatus.CONFIRMED)
+
+    def test_no_conversion_when_target_is_same_or_none(self):
+        curr = normalize_currency("50.0", "USD", target_currency="USD")
+        self.assertEqual(curr.converted_amount, Decimal("50.0"))
+        self.assertEqual(curr.conversion_status, NormalizationStatus.CONFIRMED)
+
+    def test_no_conversion_if_rate_or_timestamp_missing(self):
+        # Thiếu tỷ giá
+        curr_no_rate = normalize_currency(
+            amount_raw="450000",
+            currency_raw="VND",
+            target_currency="USD",
+            exchange_rate=None,
+            rate_timestamp=datetime.now(timezone.utc),
+        )
+        self.assertIsNone(curr_no_rate.converted_amount)
+        self.assertEqual(
+            curr_no_rate.conversion_status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+        # Thiếu thời điểm tỷ giá
+        curr_no_ts = normalize_currency(
+            amount_raw="450000",
+            currency_raw="VND",
+            target_currency="USD",
+            exchange_rate=Decimal("0.00004"),
+            rate_timestamp=None,
+        )
+        self.assertIsNone(curr_no_ts.converted_amount)
+        self.assertEqual(
+            curr_no_ts.conversion_status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+    def test_conversion_succeeds_when_both_rate_and_timestamp_present(self):
+        rate_time = datetime(2023, 11, 15, 8, 0, 0, tzinfo=timezone.utc)
+        curr = normalize_currency(
+            amount_raw="450000",
+            currency_raw="VND",
+            target_currency="USD",
+            exchange_rate=Decimal("0.00004"),
+            rate_timestamp=rate_time,
+        )
+        self.assertEqual(curr.amount, Decimal("450000"))
+        self.assertEqual(curr.converted_amount, Decimal("18.00"))
+        self.assertEqual(curr.conversion_status, NormalizationStatus.CONFIRMED)
+
+    def test_unconfirmed_currency_code(self):
+        curr = normalize_currency("100", "XYZ")
+        self.assertIsNone(curr.currency_code)
+        self.assertEqual(
+            curr.currency_status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+
+class NormalizeCountryCategoryHSTests(unittest.TestCase):
+    """Yêu cầu 4: Chuẩn hóa quốc gia, category và HS code theo danh mục đã được xác nhận."""
+
+    def test_normalize_country_confirmed(self):
+        self.assertEqual(normalize_country("USA").value, "USA")
+        self.assertEqual(normalize_country("US").value, "USA")
+        self.assertEqual(normalize_country("842").value, "USA")
+        self.assertEqual(normalize_country("United States").value, "USA")
+        self.assertEqual(normalize_country("Hoa Kỳ").value, "USA")
+
+        self.assertEqual(normalize_country("VNM").value, "VNM")
+        self.assertEqual(normalize_country("704").value, "VNM")
+        self.assertEqual(normalize_country("Việt Nam").value, "VNM")
+
+        self.assertEqual(normalize_country("JPN").value, "JPN")
+        self.assertEqual(normalize_country("DEU").value, "DEU")
+        self.assertEqual(normalize_country("CHN").value, "CHN")
+        self.assertEqual(normalize_country("FRA").value, "FRA")
+        self.assertEqual(normalize_country("IND").value, "IND")
+        self.assertEqual(normalize_country("0").value, "WLD")
+
+    def test_normalize_country_unconfirmed(self):
+        res = normalize_country("Atlantis")
+        self.assertIsNone(res.value)
+        self.assertEqual(
+            res.status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+        res_none = normalize_country(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+    def test_normalize_category_confirmed_4_lines(self):
+        # 1. TEA_SET
+        self.assertEqual(normalize_category("Bộ ấm chén").value, "TEA_SET")
+        self.assertEqual(normalize_category("Ceramic Tea Set").value, "TEA_SET")
+        self.assertEqual(normalize_category("Ấm trà gốm").value, "TEA_SET")
+
+        # 2. MUG_CUP
+        self.assertEqual(normalize_category("Ly cốc sứ").value, "MUG_CUP")
+        self.assertEqual(normalize_category("Ceramic Mug & Cup").value, "MUG_CUP")
+        self.assertEqual(normalize_category("Cốc").value, "MUG_CUP")
+
+        # 3. DINNERWARE
+        self.assertEqual(normalize_category("Bát đĩa bàn ăn").value, "DINNERWARE")
+        self.assertEqual(normalize_category("Dinnerware Set").value, "DINNERWARE")
+        self.assertEqual(normalize_category("Bộ chén cơm").value, "DINNERWARE")
+        self.assertEqual(normalize_category("Serving Bowl").value, "DINNERWARE")
+
+        # 4. VASE_DECOR
+        self.assertEqual(normalize_category("Lọ hoa mỹ nghệ").value, "VASE_DECOR")
+        self.assertEqual(normalize_category("Decorative Vase").value, "VASE_DECOR")
+        self.assertEqual(normalize_category("Bình hoa").value, "VASE_DECOR")
+
+    def test_normalize_category_unconfirmed(self):
+        res = normalize_category("Đồ chơi trẻ em")
+        self.assertIsNone(res.value)
+        self.assertEqual(
+            res.status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+        res_none = normalize_category(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+    def test_normalize_hs_code_confirmed_chapter_69(self):
+        self.assertEqual(normalize_hs_code("6911").value, "6911")
+        self.assertEqual(normalize_hs_code("6911.10.00").value, "6911")
+        self.assertEqual(normalize_hs_code("6912").value, "6912")
+        self.assertEqual(normalize_hs_code("6913").value, "6913")
+
+    def test_normalize_hs_code_unconfirmed(self):
+        # Mã ngoài 6911, 6912, 6913
+        res = normalize_hs_code("8471")
+        self.assertIsNone(res.value)
+        self.assertEqual(
+            res.status,
+            NormalizationStatus.WAITING_CONFIRMATION_MEMBER_1,
+        )
+
+        res_none = normalize_hs_code(None)
+        self.assertIsNone(res_none.value)
+        self.assertEqual(res_none.status, NormalizationStatus.MISSING)
+
+
+class NormalizeRecordAdaptersTests(unittest.TestCase):
+    """Yêu cầu 5 & 6: Giữ raw value và normalized value, không suy đoán giá trị thiếu."""
+
+    def setUp(self):
+        self.provenance = RecordProvenance(
+            source_id="test_source",
+            raw_collection_id="11223344" * 4,
+            collected_at_iso="2026-01-01T00:00:00+00:00",
+            source_url="https://example.invalid",
+        )
+
+    def test_normalize_trade_record(self):
+        raw_dict = {
+            "cmdCode": "6911",
+            "reporterCode": "842",
+            "partnerCode": "704",
+            "flowCode": "M",
+            "netWgt": 12.5,
+            "primaryValue": 20.0,
+            "cmdDesc": "  Porcelain tableware  ",
+        }
+        parsed = ParsedTradeRecord(
+            provenance=self.provenance,
+            raw_record=raw_dict,
+            reporter_code="842",
+            partner_code="704",
+            hs_code="6911",
+            period="2022",
+            flow_code="M",
+            net_weight_kg=12.5,
+            trade_value_usd=20.0,
+            reporter_name=None,
+            partner_name=None,
+            product_description="  Porcelain tableware  ",
+        )
+        norm = normalize_trade_record(parsed)
+
+        # Traceability: Raw record and provenance kept intact
+        self.assertEqual(norm.provenance, self.provenance)
+        self.assertEqual(norm.raw_record, raw_dict)
+
+        # Fields normalized
+        self.assertEqual(norm.reporter_country.value, "USA")
+        self.assertEqual(norm.partner_country.value, "VNM")
+        self.assertEqual(norm.hs_code.value, "6911")
+        self.assertEqual(norm.period.value, "2022")
+        self.assertEqual(norm.flow_code.value, "Import")
+        self.assertEqual(norm.net_weight_kg.value, 12.5)
+        self.assertEqual(norm.trade_value_usd.value, 20.0)
+        self.assertEqual(norm.product_description.value, "Porcelain tableware")
+
+    def test_normalize_product_record(self):
+        raw_dict = {"listing_id": 123456, "title": "  White Vase  "}
+        parsed = ParsedProductRecord(
+            provenance=self.provenance,
+            raw_record=raw_dict,
+            source_product_id="123456",
+            product_url="https://example.invalid/p/1",
+            name="  White Vase  ",
+            category="Bình hoa",
+            category_id="4321",
+            prices=(
+                ParsedPriceInfo(
+                    amount_str="24.99",
+                    currency_code="USD",
+                    basis="minimum_listing_price",
+                ),
+            ),
+        )
+        norm = normalize_product_record(parsed)
+
+        self.assertEqual(norm.source_product_id.value, "123456")
+        self.assertEqual(norm.product_name.value, "White Vase")
+        self.assertEqual(norm.category.value, "VASE_DECOR")
+        self.assertEqual(norm.price.amount, Decimal("24.99"))
+        self.assertEqual(norm.price.currency_code, "USD")
+
+    def test_normalize_review_record(self):
+        raw_dict = {"listing_id": 123, "rating": 5, "review": "  Tuyệt vời!  "}
+        parsed = ParsedReviewRecord(
+            provenance=self.provenance,
+            raw_record=raw_dict,
+            product_reference="123",
+            rating=5,
+            review_text="  Tuyệt vời!  ",
+            reviewed_at_iso="2023-11-15T08:00:00+00:00",
+            language="vi",
+        )
+        norm = normalize_review_record(parsed)
+
+        self.assertEqual(norm.product_reference.value, "123")
+        self.assertEqual(norm.rating.value, 5)
+        self.assertEqual(norm.review_text.value, "Tuyệt vời!")
+        self.assertEqual(norm.reviewed_at_iso.value, "2023-11-15T08:00:00+00:00")
+
+    def test_normalize_trends_row(self):
+        raw_dict = {"week": "2023-10-01", "ceramic_mug": "84"}
+        parsed = ParsedTrendsRow(
+            provenance=self.provenance,
+            raw_row=raw_dict,
+            period_label="2023-10-01",
+            keyword_values=(("ceramic_mug", "84"),),
+        )
+        norm = normalize_trends_row(parsed)
+
+        self.assertEqual(norm.period_label.value, "2023-10-01")
+        self.assertEqual(norm.keyword_scores[0][0], "ceramic_mug")
+        self.assertEqual(norm.keyword_scores[0][1].value, 84.0)
+
+    def test_normalize_domestic_product(self):
+        raw_dict = {"source_product_id": "ML-01", "name": "Bộ ấm chén"}
+        parsed = ParsedDomesticProductRecord(
+            provenance=self.provenance,
+            raw_record=raw_dict,
+            source_product_id="ML-01",
+            product_url=None,
+            name="  Bộ ấm chén Minh Long  ",
+            description=None,
+            category="Bộ ấm chén",
+            material="Sứ cao cấp",
+            origin_region="Bình Dương",
+            commercial=ParsedCommercialInfo(
+                price_vnd_str="450000",
+                currency="VND",
+                moq=100,
+                lead_time_days=14,
+                wholesale_available=True,
+            ),
+        )
+        norm = normalize_domestic_product(parsed)
+
+        self.assertEqual(norm.source_product_id.value, "ML-01")
+        self.assertEqual(norm.product_name.value, "Bộ ấm chén Minh Long")
+        self.assertEqual(norm.category.value, "TEA_SET")
+        self.assertEqual(norm.price_vnd.value, Decimal("450000"))
+        self.assertEqual(norm.moq.value, 100)
+        self.assertEqual(norm.lead_time_days.value, 14)
+        self.assertTrue(norm.wholesale_available.value)
+
+
+if __name__ == "__main__":
+    unittest.main()
