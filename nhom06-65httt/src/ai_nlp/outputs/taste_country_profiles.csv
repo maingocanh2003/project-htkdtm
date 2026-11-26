@@ -1,0 +1,6 @@
+country_code,country_name,sample_products,top_category,top_colors,top_shape,top_material,top_style,dominant_price_segment,avg_market_price_usd,dishwasher_safe_pct,heat_resistant_pct,avg_rating_score
+DEU,Germany,48,Bát đĩa bàn ăn (25.0%),"Cobalt Blue (35.4%), Gray (22.9%)",Oval (35.4%),Porcelain (50.0%),Modern (54.2%),Mid-range $20-$60 (64.6%),51.27,95.83,72.92,4.17
+FRA,France,48,Bát đĩa bàn ăn (25.0%),"Cobalt Blue (29.2%), Multicolor (29.2%)",Round (35.4%),Earthenware (43.8%),Traditional (33.3%),Premium >$60 (70.8%),73.88,79.17,85.42,4.17
+GBR,United Kingdom,48,Bộ ấm chén (25.0%),"White (45.8%), Cobalt Blue (27.1%)",Oval (50.0%),Stoneware (54.2%),Modern (35.4%),Mid-range $20-$60 (64.6%),48.0,83.33,83.33,4.18
+JPN,Japan,48,Ly cốc sứ (25.0%),"Brown (33.3%), Celadon Green (27.1%)",Organic Artistic (39.6%),Stoneware (54.2%),Handmade Rustic (41.7%),Premium >$60 (64.6%),68.55,66.67,79.17,4.14
+USA,United States,48,Bộ ấm chén (25.0%),"Natural Beige (25.0%), Cobalt Blue (25.0%)",Oval (37.5%),Earthenware (35.4%),Modern (37.5%),Mid-range $20-$60 (52.1%),60.17,91.67,81.25,4.08
