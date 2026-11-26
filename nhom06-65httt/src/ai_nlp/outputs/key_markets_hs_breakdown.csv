@@ -1,0 +1,31 @@
+country_code,country_name,hs_code,cmd_desc,trade_value_usd,net_weight_kg,yoy_growth_rate,hs_share_within_country_pct
+AUS,Australia,6911,Porcelain or china tableware and kitchenware,42906083.58,9220419.19,12.96,45.2
+AUS,Australia,6912,"Ceramic tableware, kitchenware other than porcelain",33260942.65,8210018.73,11.84,35.04
+AUS,Australia,6913,Statuettes and other ornamental ceramic articles,18749427.37,4023937.47,12.8,19.75
+CAN,Canada,6911,Porcelain or china tableware and kitchenware,46178185.19,12922383.37,9.59,45.19
+CAN,Canada,6912,"Ceramic tableware, kitchenware other than porcelain",36402789.5,8194036.97,10.87,35.62
+CAN,Canada,6913,Statuettes and other ornamental ceramic articles,19602981.86,4692214.68,8.94,19.18
+CHN,China,6911,Porcelain or china tableware and kitchenware,109678424.26,21555922.87,9.83,47.65
+CHN,China,6912,"Ceramic tableware, kitchenware other than porcelain",75046260.2,17302887.01,2.37,32.61
+CHN,China,6913,Statuettes and other ornamental ceramic articles,45441031.25,12441252.21,4.31,19.74
+DEU,Germany,6911,Porcelain or china tableware and kitchenware,91154723.68,21771549.75,12.3,45.36
+DEU,Germany,6912,"Ceramic tableware, kitchenware other than porcelain",68817032.62,14193246.6,9.67,34.24
+DEU,Germany,6913,Statuettes and other ornamental ceramic articles,40983962.82,10900469.14,11.45,20.39
+FRA,France,6911,Porcelain or china tableware and kitchenware,59739599.97,13504337.72,7.06,43.26
+FRA,France,6912,"Ceramic tableware, kitchenware other than porcelain",50393622.02,11407917.99,9.94,36.49
+FRA,France,6913,Statuettes and other ornamental ceramic articles,27973652.58,7087122.31,9.42,20.26
+GBR,United Kingdom,6911,Porcelain or china tableware and kitchenware,65323467.04,18637515.92,4.73,44.63
+GBR,United Kingdom,6912,"Ceramic tableware, kitchenware other than porcelain",51814506.54,10769970.04,6.15,35.4
+GBR,United Kingdom,6913,Statuettes and other ornamental ceramic articles,29229113.54,8494658.0,5.68,19.97
+IND,India,6911,Porcelain or china tableware and kitchenware,41229577.42,11471991.65,16.26,45.27
+IND,India,6912,"Ceramic tableware, kitchenware other than porcelain",30978741.66,7615862.88,14.55,34.02
+IND,India,6913,Statuettes and other ornamental ceramic articles,18862899.29,4807485.16,17.86,20.71
+JPN,Japan,6911,Porcelain or china tableware and kitchenware,100785030.83,20126341.6,11.45,45.2
+JPN,Japan,6912,"Ceramic tableware, kitchenware other than porcelain",76944930.51,20921904.82,9.73,34.51
+JPN,Japan,6913,Statuettes and other ornamental ceramic articles,45257741.73,11128512.84,7.98,20.3
+KOR,South Korea,6911,Porcelain or china tableware and kitchenware,53807322.35,12544887.08,13.44,44.84
+KOR,South Korea,6912,"Ceramic tableware, kitchenware other than porcelain",41826157.43,11282815.65,10.62,34.86
+KOR,South Korea,6913,Statuettes and other ornamental ceramic articles,24364567.82,7080568.22,14.27,20.3
+USA,United States,6911,Porcelain or china tableware and kitchenware,243973535.87,51146939.97,11.4,44.56
+USA,United States,6912,"Ceramic tableware, kitchenware other than porcelain",193931410.73,38264530.13,15.76,35.42
+USA,United States,6913,Statuettes and other ornamental ceramic articles,109647029.47,24929679.81,12.28,20.02
