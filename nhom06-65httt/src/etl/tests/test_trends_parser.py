@@ -123,6 +123,25 @@ class GoogleTrendsParserTests(unittest.TestCase):
         self.assertEqual(kv0["kw"], "100")
         self.assertEqual(kv1["kw"], "0")
 
+    # --- additional boundary checks ---
+
+    def test_period_only_header_produces_empty_keywords_tuple(self):
+        """When the CSV has only a period column, keywords should be an empty tuple."""
+        csv_bytes = b"Week\n2025-01-01\n"
+        result = self.parser.parse(csv_bytes, CID)
+        self.assertEqual(result.keywords, ())
+        self.assertEqual(result.row_count, 1)
+        self.assertEqual(result.rows[0].period_label, "2025-01-01")
+
+    def test_single_keyword_column_parsed_correctly(self):
+        """A CSV with exactly one keyword column works correctly."""
+        csv_bytes = b"Week,kw_a\n2025-01-05,55\n"
+        result = self.parser.parse(csv_bytes, CID)
+        self.assertEqual(result.keywords, ("kw_a",))
+        self.assertEqual(result.row_count, 1)
+        kv = dict(result.rows[0].keyword_values)
+        self.assertEqual(kv["kw_a"], "55")
+
 
 if __name__ == "__main__":
     unittest.main()

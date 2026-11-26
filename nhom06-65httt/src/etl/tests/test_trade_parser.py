@@ -229,6 +229,38 @@ class ITCTradeMapParserTests(unittest.TestCase):
         result = self.parser.parse(csv_bytes, CID)
         self.assertEqual(result.record_count, 0)
 
+    def test_exporter_column_used_as_reporter_name(self):
+        """'Exporter' column is treated as the reporter when 'Reporter' is absent."""
+        csv_bytes = b"Exporter,Commodity code,Period,Trade Value (USD)\nVN,6911,2022,100\n"
+        result = self.parser.parse(csv_bytes, CID)
+        self.assertEqual(result.records[0].reporter_name, "VN")
+
+    def test_importer_column_used_as_reporter_name(self):
+        """'Importer' column is treated as the reporter when others are absent."""
+        csv_bytes = b"Importer,Commodity code,Period,Trade Value (USD)\nDE,6911,2022,200\n"
+        result = self.parser.parse(csv_bytes, CID)
+        self.assertEqual(result.records[0].reporter_name, "DE")
+
+    def test_empty_hs_cell_gives_none_hs_code(self):
+        """An empty HS cell is treated as absent, not an error."""
+        csv_bytes = b"Reporter,Commodity code,Period,Trade Value (USD)\nVN,,2022,100\n"
+        result = self.parser.parse(csv_bytes, CID)
+        self.assertIsNone(result.records[0].hs_code)
+
+
+class UNComtradeCountDataMismatchTests(unittest.TestCase):
+    """count field may legitimately exceed actual data items (pagination)."""
+
+    def setUp(self):
+        self.parser = UNComtradeParser()
+
+    def test_count_greater_than_data_length_does_not_raise(self):
+        """When count > len(data), parser accepts it (count is total, not page size)."""
+        payload = json.dumps({"count": 5, "data": [], "error": ""}).encode()
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.record_count, 0)
+        self.assertEqual(result.reported_count, 5)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -259,6 +259,46 @@ class DomesticSupplierCatalogParserTests(unittest.TestCase):
             self.parser.parse(payload, CID, SID)
         self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_TYPE)
 
+    # -----------------------------------------------------------------------
+    # Additional boundary / edge-case tests
+    # -----------------------------------------------------------------------
+
+    def test_blank_currency_raises_wrong_format(self):
+        """A blank (whitespace-only) currency string must raise WRONG_FORMAT."""
+        payload = json.dumps({
+            "products": [{"source_product_id": "X1", "price_vnd": 100, "currency": "  "}]
+        }).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID, SID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_FORMAT)
+
+    def test_float_lead_time_days_raises_wrong_type(self):
+        """lead_time_days must be an integer; a float must raise WRONG_TYPE."""
+        payload = json.dumps({
+            "products": [{"source_product_id": "X1", "lead_time_days": 1.5}]
+        }).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID, SID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_TYPE)
+
+    def test_float_price_vnd_stored_as_decimal_string(self):
+        """A float price_vnd is accepted and stored as a decimal string."""
+        payload = json.dumps({
+            "products": [{"source_product_id": "X1", "price_vnd": 45000.5}]
+        }).encode()
+        result = self.parser.parse(payload, CID, SID)
+        price_str = result.products[0].commercial.price_vnd_str
+        self.assertIsInstance(price_str, str)
+        self.assertIn("45000", price_str)  # value preserved, not truncated
+
+    def test_lead_time_days_zero_is_valid(self):
+        """lead_time_days=0 is nonnegative and must be accepted."""
+        payload = json.dumps({
+            "products": [{"source_product_id": "X1", "lead_time_days": 0}]
+        }).encode()
+        result = self.parser.parse(payload, CID, SID)
+        self.assertEqual(result.products[0].commercial.lead_time_days, 0)
+
 
 if __name__ == "__main__":
     unittest.main()

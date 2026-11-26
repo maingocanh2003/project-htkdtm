@@ -207,6 +207,35 @@ class EtsyReviewParserTests(unittest.TestCase):
             self.parser.parse(b"[]", CID)
         self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
 
+    # --- additional boundary / envelope checks ---
+
+    def test_count_less_than_results_length_raises_wrong_format(self):
+        """count must not be smaller than the number of items in results."""
+        payload = json.dumps({
+            "count": 0,
+            "results": [{"listing_id": 1, "rating": 5}],
+        }).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_FORMAT)
+
+    def test_non_dict_review_in_results_raises_wrong_type(self):
+        """A non-object element in results must raise WRONG_TYPE."""
+        payload = json.dumps({"count": 1, "results": ["not-a-dict"]}).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_TYPE)
+
+    def test_create_timestamp_fallback_key_produces_iso_string(self):
+        """'create_timestamp' (without 'd') is accepted as a timestamp fallback."""
+        payload = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "rating": 3, "create_timestamp": 1760000000}],
+        }).encode()
+        result = self.parser.parse(payload, CID)
+        self.assertIsNotNone(result.records[0].reviewed_at_iso)
+        self.assertIn("+00:00", result.records[0].reviewed_at_iso)
+
 
 if __name__ == "__main__":
     unittest.main()

@@ -173,6 +173,30 @@ class EtsyListingParserTests(unittest.TestCase):
             self.parser.parse(payload, CID)
         self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_FORMAT)
 
+    def test_count_less_than_results_length_raises_wrong_format(self):
+        """count field must not be less than the number of items in results."""
+        payload = json.dumps({"count": 0, "results": [{"listing_id": 1}]}).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_FORMAT)
+
+    def test_taxonomy_id_zero_raises_wrong_format(self):
+        """taxonomy_id=0 is non-positive and therefore invalid."""
+        payload = json.dumps({
+            "count": 1,
+            "results": [{"listing_id": 1, "taxonomy_id": 0}],
+        }).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_FORMAT)
+
+    def test_non_dict_listing_in_results_raises_wrong_type(self):
+        """A non-object element in results must raise WRONG_TYPE."""
+        payload = json.dumps({"count": 1, "results": ["not-a-dict"]}).encode()
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.WRONG_TYPE)
+
     # --- invalid structure ---
 
     def test_non_json_raises_invalid_structure(self):
