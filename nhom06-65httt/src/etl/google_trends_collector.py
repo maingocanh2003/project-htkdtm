@@ -35,6 +35,9 @@ class GoogleTrendsRequest:
     search_type: str
     interval: Optional[str] = None
     category: Optional[str] = None
+    original_filename: Optional[str] = None
+    export_date: Optional[date] = None
+    export_timestamp: Optional[datetime] = None
 
     def __post_init__(self) -> None:
         if not all(isinstance(keyword, str) for keyword in self.keywords):
@@ -58,6 +61,22 @@ class GoogleTrendsRequest:
             raise ValueError("interval must not be empty when provided")
         if self.category is not None and not self.category.strip():
             raise ValueError("category must not be empty when provided")
+        if self.original_filename is not None and not self.original_filename.strip():
+            raise ValueError("original_filename must not be empty when provided")
+        if self.export_date is not None and (
+            not isinstance(self.export_date, date)
+            or isinstance(self.export_date, datetime)
+        ):
+            raise ValueError("export_date must be a date")
+        if self.export_timestamp is not None and not isinstance(
+            self.export_timestamp, datetime
+        ):
+            raise ValueError("export_timestamp must be a datetime")
+        if self.export_timestamp is not None and (
+            self.export_timestamp.tzinfo is None
+            or self.export_timestamp.utcoffset() is None
+        ):
+            raise ValueError("export_timestamp must include a timezone")
 
 
 class GoogleTrendsExportError(ValueError):
@@ -97,6 +116,17 @@ class GoogleTrendsExportAdapter:
             "search_type": request.search_type,
             "interval": request.interval,
             "category": request.category,
+            "original_filename": request.original_filename,
+            "export_date": (
+                request.export_date.isoformat()
+                if request.export_date is not None
+                else None
+            ),
+            "export_timestamp": (
+                request.export_timestamp.isoformat()
+                if request.export_timestamp is not None
+                else None
+            ),
             "value_semantics": _value_semantics(request.data_type),
             "attribution_required": True,
             "attribution_text": "Data source: Google Trends (https://trends.google.com).",

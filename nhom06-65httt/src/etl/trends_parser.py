@@ -25,8 +25,12 @@ from .parsed_record import (
 )
 
 
-# Column names that Google Trends uses for the period dimension
-_PERIOD_COLUMN_CANDIDATES = ("Week", "Day", "Month", "week", "day", "month")
+# Google Trends uses date columns for time series and location columns for
+# regional exports.
+_PERIOD_COLUMN_CANDIDATES = (
+    "Week", "Day", "Month", "Region", "Subregion", "City", "Metro",
+    "week", "day", "month", "region", "subregion", "city", "metro",
+)
 
 
 class GoogleTrendsParser:
@@ -75,6 +79,16 @@ class GoogleTrendsParser:
         header_index, period_col, keyword_cols, data_type_hint = (
             _locate_header(lines, source_id, raw_collection_id)
         )
+
+        normalized_hint = (data_type_hint or "").strip().lower()
+        if normalized_hint in {"related queries", "related topics"}:
+            return _parse_related_rows(
+                lines[header_index + 1:],
+                provenance,
+                data_type_hint,
+                source_id,
+                raw_collection_id,
+            )
 
         data_lines = lines[header_index:]
         reader = csv.DictReader(io.StringIO("\n".join(data_lines)))
@@ -167,8 +181,12 @@ def _locate_header(
 
         period_col: Optional[str] = None
         for cand in _PERIOD_COLUMN_CANDIDATES:
-            if cand in cols:
-                period_col = cand
+            matching_column = next(
+                (column for column in cols if column.strip().lower() == cand.lower()),
+                None,
+            )
+            if matching_column is not None:
+                period_col = matching_column
                 break
 
         if period_col is not None:
@@ -198,4 +216,79 @@ def _locate_header(
         source_id, raw_collection_id, "",
         ParseErrorKind.MISSING_FIELD,
         "CSV contains no recognisable data header row",
+    )
+
+
+def _parse_related_rows(
+    lines: List[str],
+    provenance: RecordProvenance,
+    data_type_hint: str,
+    source_id: str,
+    raw_collection_id: str,
+) -> ParsedTrendsPayload:
+    """Parse Google Trends Top/Rising tables without interpreting their values."""
+    section: Optional[str] = None
+    keyword = "Value"
+    rows: List[ParsedTrendsRow] = []
+
+    for line_number, line in enumerate(lines, start=1):
+        if not line.strip():
+            continue
+        try:
+            fields = next(csv.reader([line]))
+        except csv.Error as exc:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                f"line[{line_number}]",
+                ParseErrorKind.INVALID_STRUCTURE,
+                f"CSV parse error: {exc}",
+            ) from exc
+
+        fields = [field.strip() for field in fields]
+        if not fields:
+            continue
+
+        first = fields[0].lower()
+        if first in {"top", "rising"}:
+            section = fields[0]
+            if len(fields) > 1 and fields[1]:
+                keyword = fields[1]
+            continue
+
+        if first in {"query", "topic", "related query", "related topic"}:
+            if len(fields) > 1 and fields[1].lower() in {"value", "search volume"}:
+                keyword = fields[1]
+                continue
+
+        if section is None or len(fields) < 2:
+            continue
+
+        label, value = fields[0], fields[1]
+        if not label:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                f"line[{line_number}]",
+                ParseErrorKind.MISSING_FIELD,
+                "related query/topic label is empty",
+            )
+
+        row_label = "query" if "quer" in data_type_hint.lower() else "topic"
+        raw_row = {"section": section, row_label: label, "value": value}
+        rows.append(
+            ParsedTrendsRow(
+                provenance=provenance,
+                raw_row=raw_row,
+                period_label=label,
+                keyword_values=((keyword, value),),
+            )
+        )
+
+    return ParsedTrendsPayload(
+        provenance=provenance,
+        keywords=(keyword,),
+        rows=tuple(rows),
+        row_count=len(rows),
+        data_type_hint=data_type_hint,
     )

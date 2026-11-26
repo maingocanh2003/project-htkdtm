@@ -185,7 +185,7 @@ class ParsedTrendsRow:
     """One data row from a Google Trends UI CSV export."""
 
     provenance: RecordProvenance
-    raw_row: Dict[str, str]            # column→raw-string mapping, unchanged
+    raw_row: Dict[str, str]            # source cell strings; related rows include section
 
     period_label: str                  # e.g. "2025-01-05" (week) or "2025-01"
     keyword_values: Tuple[Tuple[str, str], ...]
