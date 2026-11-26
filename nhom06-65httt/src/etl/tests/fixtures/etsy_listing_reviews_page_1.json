@@ -1,0 +1,14 @@
+{
+  "count": 2,
+  "results": [
+    {
+      "shop_id": 12345,
+      "listing_id": 987654321,
+      "rating": 4,
+      "review": null,
+      "language": "en",
+      "create_timestamp": 1760000100,
+      "created_timestamp": 1760000100
+    }
+  ]
+}
