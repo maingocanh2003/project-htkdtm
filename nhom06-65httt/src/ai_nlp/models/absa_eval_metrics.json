@@ -1,0 +1,45 @@
+{
+  "evaluated_reviews": 120,
+  "aspect_category_detection": {
+    "precision": 0.9275,
+    "recall": 0.989,
+    "f1_score": 0.9572
+  },
+  "joint_aspect_sentiment": {
+    "precision": 0.9275,
+    "recall": 0.989,
+    "f1_score": 0.9572
+  },
+  "per_aspect_category": {
+    "Glaze Durability": {
+      "precision": 0.8542,
+      "recall": 1.0,
+      "f1_score": 0.9213,
+      "support": 41
+    },
+    "Packaging": {
+      "precision": 1.0,
+      "recall": 1.0,
+      "f1_score": 1.0,
+      "support": 35
+    },
+    "Design & Color": {
+      "precision": 0.8966,
+      "recall": 0.9286,
+      "f1_score": 0.9123,
+      "support": 28
+    },
+    "Heat/Dishwasher": {
+      "precision": 0.9512,
+      "recall": 1.0,
+      "f1_score": 0.975,
+      "support": 39
+    },
+    "Price/Value": {
+      "precision": 0.95,
+      "recall": 1.0,
+      "f1_score": 0.9744,
+      "support": 38
+    }
+  }
+}
