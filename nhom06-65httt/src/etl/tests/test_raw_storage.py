@@ -150,6 +150,78 @@ class RawStorageTests(unittest.TestCase):
             (configured / "un_comtrade" / collection_id / "payload.bin").is_file()
         )
 
+    def test_save_rejects_non_mapping_parameters_and_invalid_status(self):
+        with self.assertRaisesRegex(TypeError, "request_parameters must be a mapping"):
+            self.storage.save(
+                b"payload", self.make_metadata(), ["not", "a", "mapping"]  # type: ignore
+            )
+
+        with self.assertRaisesRegex(TypeError, "status must be a CollectionStatus"):
+            self.storage.save(
+                b"payload", self.make_metadata(), {}, status="success"  # type: ignore
+            )
+
+    def test_manifest_validation_rejects_tampered_metadata(self):
+        cid = self.storage.save(b"payload", self.make_metadata(), {})
+        manifest_path = self.root / "un_comtrade" / cid / "manifest.json"
+
+        # Tampered collection_id in manifest
+        original_bytes = manifest_path.read_bytes()
+        tampered_cid = original_bytes.replace(cid.encode(), b"0" * 32)
+        manifest_path.write_bytes(tampered_cid)
+        with self.assertRaisesRegex(ValueError, "manifest does not match"):
+            self.storage.read_manifest("un_comtrade", cid)
+
+        # Tampered source_id in manifest
+        tampered_source = original_bytes.replace(b'"un_comtrade"', b'"itc_trade_map"')
+        manifest_path.write_bytes(tampered_source)
+        with self.assertRaisesRegex(ValueError, "manifest does not match"):
+            self.storage.read_manifest("un_comtrade", cid)
+
+        # Tampered payload_file filename
+        tampered_file = original_bytes.replace(b'"payload.bin"', b'"other.bin"')
+        manifest_path.write_bytes(tampered_file)
+        with self.assertRaisesRegex(ValueError, "manifest does not match"):
+            self.storage.read_manifest("un_comtrade", cid)
+
+    def test_read_payload_rejects_unsupported_checksum_algorithm(self):
+        cid = self.storage.save(b"payload", self.make_metadata(), {})
+        manifest_path = self.root / "un_comtrade" / cid / "manifest.json"
+        tampered = manifest_path.read_bytes().replace(b'"sha256"', b'"md5"')
+        manifest_path.write_bytes(tampered)
+
+        with self.assertRaisesRegex(ValueError, "unsupported payload checksum algorithm"):
+            self.storage.read_payload("un_comtrade", cid)
+
+    def test_collection_id_format_boundary_checks(self):
+        # Length 31 (too short)
+        with self.assertRaisesRegex(ValueError, "collection_id must be a 32-character UUID hex value"):
+            self.storage.read_payload("un_comtrade", "a" * 31)
+
+        # Length 33 (too long)
+        with self.assertRaisesRegex(ValueError, "collection_id must be a 32-character UUID hex value"):
+            self.storage.read_payload("un_comtrade", "a" * 33)
+
+        # Non-hex characters
+        with self.assertRaisesRegex(ValueError, "collection_id must be a 32-character UUID hex value"):
+            self.storage.read_payload("un_comtrade", "g" * 32)
+
+    def test_manifest_write_failure_cleans_up_payload_and_directory(self):
+        original_open = Path.open
+
+        def fail_manifest_open(path, *args, **kwargs):
+            if path.name == "manifest.json":
+                raise OSError("manifest disk write error")
+            return original_open(path, *args, **kwargs)
+
+        with patch.object(Path, "open", fail_manifest_open):
+            with self.assertRaisesRegex(OSError, "manifest disk write error"):
+                self.storage.save(b"payload", self.make_metadata(), {})
+
+        source_dir = self.root / "un_comtrade"
+        self.assertTrue(source_dir.is_dir())
+        self.assertEqual(list(source_dir.iterdir()), [])
+
 
 if __name__ == "__main__":
     unittest.main()
