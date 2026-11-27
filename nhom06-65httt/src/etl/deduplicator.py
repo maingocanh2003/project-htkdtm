@@ -123,6 +123,17 @@ def _hash_candidate(parts: Tuple[str, ...]) -> str:
     return hashlib.sha256(joined.encode("utf-8")).hexdigest()[:24]
 
 
+def _raw_record_fingerprint(raw_record: Dict[str, Any]) -> str:
+    serialized = json.dumps(
+        raw_record,
+        ensure_ascii=False,
+        allow_nan=False,
+        sort_keys=True,
+        separators=(",", ":"),
+    )
+    return _hash_candidate((serialized,))
+
+
 class DeduplicationIndex:
     """Non-destructive deduplication index supporting in-memory or locked JSON storage."""
 
@@ -230,6 +241,22 @@ class DeduplicationIndex:
             if confirmed_key is not None:
                 existing = confirmed_map.get(confirmed_key)
                 if existing is not None:
+                    if existing.candidate_key != candidate_key:
+                        return DeduplicationResult(
+                            entity_type=resolved_type,
+                            status=DuplicateStatus.POTENTIAL_DUPLICATE,
+                            is_duplicate=True,
+                            key_used=key_desc,
+                            key_confirmed=False,
+                            needs_confirmation=True,
+                            matched_record_id=existing.record_id,
+                            matched_collection_id=existing.collection_id,
+                            reason=(
+                                "Confirmed business key matches, but source values differ; "
+                                "retained as a potential duplicate for review"
+                            ),
+                            provenance=provenance,
+                        )
                     return DeduplicationResult(
                         entity_type=resolved_type,
                         status=DuplicateStatus.EXACT_DUPLICATE,
@@ -387,7 +414,13 @@ class DeduplicationIndex:
                 else _norm_name(record.name)
             )
             confirmed = f"{src}:{pid}" if pid else None
-            return ("market_products", confirmed, None, name, "source_id+source_product_id")
+            return (
+                "market_products",
+                confirmed,
+                _raw_record_fingerprint(record.raw_record),
+                name,
+                "source_id+source_product_id",
+            )
 
         # --- Domestic Supplier Products (product_code UNIQUE) ---
         if isinstance(record, (NormalizedDomesticProductRecord, ParsedDomesticProductRecord)):
@@ -403,7 +436,13 @@ class DeduplicationIndex:
                 else _norm_name(record.name)
             )
             confirmed = f"{src}:{pid}" if pid else None
-            return ("supplier_products", confirmed, None, name, "source_id+source_product_id")
+            return (
+                "supplier_products",
+                confirmed,
+                _raw_record_fingerprint(record.raw_record),
+                name,
+                "source_id+source_product_id",
+            )
 
         # --- Suppliers (supplier_code UNIQUE; tax_code/name unconfirmed) ---
         if isinstance(record, ParsedSupplierInfo):
@@ -422,7 +461,7 @@ class DeduplicationIndex:
         if isinstance(record, (NormalizedTradeRecord, ParsedTradeRecord)):
             src = record.provenance.source_id
             if isinstance(record, NormalizedTradeRecord):
-                parts = (
+                identity_parts = (
                     src,
                     record.reporter_country.value or "",
                     record.partner_country.value or "",
@@ -430,8 +469,13 @@ class DeduplicationIndex:
                     record.flow_code.value or "",
                     record.hs_code.value or "",
                 )
+                value_parts = (
+                    str(record.net_weight_kg.value or ""),
+                    str(record.trade_value_usd.value or ""),
+                    record.product_description.value or "",
+                )
             else:
-                parts = (
+                identity_parts = (
                     src,
                     _clean_str(record.reporter_code or record.reporter_name) or "",
                     _clean_str(record.partner_code or record.partner_name) or "",
@@ -439,7 +483,22 @@ class DeduplicationIndex:
                     _clean_str(record.flow_code) or "",
                     _clean_str(record.hs_code) or "",
                 )
-            cand = _hash_candidate(parts) if any(parts[1:]) else None
+                value_parts = (
+                    str(record.net_weight_kg or ""),
+                    str(record.trade_value_usd or ""),
+                    _clean_str(record.product_description) or "",
+                )
+            raw_record = json.dumps(
+                record.raw_record,
+                ensure_ascii=False,
+                sort_keys=True,
+                separators=(",", ":"),
+            )
+            cand = (
+                _hash_candidate((*identity_parts, *value_parts, raw_record))
+                if all(identity_parts[1:])
+                else None
+            )
             return (
                 "trade_statistics",
                 None,
@@ -481,17 +540,43 @@ class DeduplicationIndex:
             src = record.provenance.source_id
             if isinstance(record, NormalizedTrendsRow):
                 period = record.period_label.value or ""
-                kws = ",".join(f"{k}={v.value}" for k, v in record.keyword_scores)
+                kws = ",".join(
+                    f"{k}={_clean_str(v.raw) or ''}"
+                    for k, v in record.keyword_scores
+                )
             else:
                 period = _clean_str(record.period_label) or ""
                 kws = ",".join(f"{k}={v}" for k, v in record.keyword_values)
-            cand = _hash_candidate((src, period, kws)) if period else None
+            provenance = record.provenance
+            data_type = _clean_str(record.data_type_hint) or ""
+            period_kind = _clean_str(record.period_kind) or ""
+            source_keyword = _clean_str(record.source_keyword) or ""
+            related_section = _clean_str(record.related_section) or ""
+            has_related_context = period_kind != "related_term" or (
+                bool(source_keyword) and related_section in {"top", "rising"}
+            )
+            context = (
+                src,
+                provenance.raw_collection_id,
+                provenance.collected_at_iso,
+                period_kind,
+                data_type,
+                source_keyword,
+                related_section,
+                period,
+                kws,
+            )
+            cand = (
+                _hash_candidate(context)
+                if period and data_type and period_kind and kws and has_related_context
+                else None
+            )
             return (
                 "search_trends",
                 None,
                 cand,
                 None,
-                "period_label+keywords (unconfirmed)",
+                "source+collection+collected_at+period_kind+data_type+keyword+section+period+values (unconfirmed)",
             )
 
         # --- Generic Dict Payload ---
@@ -507,7 +592,13 @@ class DeduplicationIndex:
                 )
                 name = _norm_name(record.get("product_name") or record.get("name"))
                 confirmed = f"{src}:{pid}" if pid else None
-                return (etype, confirmed, None, name, "source_id+source_product_id")
+                return (
+                    etype,
+                    confirmed,
+                    _raw_record_fingerprint(record),
+                    name,
+                    "source_id+source_product_id",
+                )
 
             if etype == "suppliers":
                 scode = _clean_str(record.get("supplier_code"))

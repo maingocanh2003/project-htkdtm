@@ -77,6 +77,64 @@ class NormalizeTextTests(unittest.TestCase):
 class NormalizeDateAndNumberTests(unittest.TestCase):
     """Yêu cầu 2: Chuẩn hóa ngày tháng, số và đơn vị đo."""
 
+    def test_normalize_month_period_boundaries(self):
+        for raw, expected in (
+            ("2025-01", "2025-01"),
+            ("2025-12", "2025-12"),
+            ("202501", "2025-01"),
+            ("202512", "2025-12"),
+            ("2025/01", "2025-01"),
+            ("1900-01", "1900-01"),
+            ("2100-12", "2100-12"),
+        ):
+            with self.subTest(raw=raw):
+                result = normalize_date(raw)
+                self.assertEqual(result.value, expected)
+                self.assertEqual(result.status, NormalizationStatus.CONFIRMED)
+                self.assertEqual(result.raw, raw)
+
+        for raw in (
+            "2025-13",
+            "2025-00",
+            "202513",
+            "202500",
+            "1899-12",
+            "2101-01",
+            "2025/13",
+            "2025/01-15",
+        ):
+            with self.subTest(raw=raw):
+                result = normalize_date(raw)
+                self.assertIsNone(result.value)
+                self.assertEqual(result.status, NormalizationStatus.INVALID)
+                self.assertEqual(result.raw, raw)
+
+    def test_normalize_date_rejects_out_of_range_years_and_invalid_months(self):
+        for raw in (
+            "1899",
+            "2101",
+            "2025-13-01",
+            "2025/00/01",
+            "20251301",
+            "1899-12-31",
+            "2101-01-01T00:00:00Z",
+            "2025-02-29",
+            2025.5,
+            float("nan"),
+            int(datetime(2101, 1, 1, tzinfo=timezone.utc).timestamp()),
+        ):
+            with self.subTest(raw=raw):
+                result = normalize_date(raw)
+                self.assertIsNone(result.value)
+                self.assertEqual(result.status, NormalizationStatus.INVALID)
+
+        unicode_digits = normalize_date("٢٠٢٥-٠١")
+        self.assertNotEqual(unicode_digits.status, NormalizationStatus.CONFIRMED)
+
+        leap_day = normalize_date("2024-02-29")
+        self.assertEqual(leap_day.value, "2024-02-29")
+        self.assertEqual(leap_day.status, NormalizationStatus.CONFIRMED)
+
     def test_normalize_date_iso_and_year(self):
         # YYYY
         res = normalize_date("2022")

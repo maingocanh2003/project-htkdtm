@@ -928,8 +928,32 @@ class SearchTrendsQualityValidator:
             provenance = record.provenance
             rec_id = record_id or record.period_label.value or "search_trend"
 
-            # 1. week_start_date
-            if record.period_label.status == NormalizationStatus.INVALID:
+            is_text_period = record.period_kind in {"region", "related_term"}
+            if is_text_period:
+                if (
+                    record.period_label.status == NormalizationStatus.MISSING
+                    or not record.period_label.value
+                ):
+                    issues.append(
+                        ValidationIssue(
+                            field_name="period_label",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                            message="Trường nhãn khu vực/related bị thiếu",
+                            raw_value=record.period_label.raw,
+                        )
+                    )
+                elif record.period_label.status == NormalizationStatus.INVALID:
+                    issues.append(
+                        ValidationIssue(
+                            field_name="period_label",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.INVALID_FORMAT,
+                            message=f"Nhãn khu vực/related không hợp lệ: '{record.period_label.raw}'",
+                            raw_value=record.period_label.raw,
+                        )
+                    )
+            elif record.period_label.status == NormalizationStatus.INVALID:
                 issues.append(
                     ValidationIssue(
                         field_name="week_start_date",
@@ -960,20 +984,97 @@ class SearchTrendsQualityValidator:
                     )
                 )
 
-            # 2. Check each keyword score (0 - 100)
-            for kw, score_field in record.keyword_scores:
-                if score_field.status == NormalizationStatus.INVALID:
+            if record.period_kind == "related_term":
+                data_type = (record.data_type_hint or "").casefold()
+                if not (
+                    "related queries" in data_type
+                    or "related topics" in data_type
+                ):
                     issues.append(
                         ValidationIssue(
-                            field_name=f"interest_score[{kw}]",
+                            field_name="data_type",
                             severity=ValidationSeverity.ERROR,
-                            code=ValidationIssueCode.INVALID_DATA_TYPE,
-                            message=f"interest_score không hợp lệ: '{score_field.raw}'",
-                            raw_value=score_field.raw,
+                            code=ValidationIssueCode.INVALID_FORMAT,
+                            message="Related record thiếu loại Queries/Topics hợp lệ",
+                            raw_value=record.data_type_hint,
                         )
                     )
-                elif score_field.value is not None:
-                    if not (0 <= score_field.value <= 100):
+                if record.related_section not in {"top", "rising"}:
+                    issues.append(
+                        ValidationIssue(
+                            field_name="related_section",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.INVALID_FORMAT,
+                            message="Related record thiếu phân loại Top/Rising hợp lệ",
+                            raw_value=record.related_section,
+                        )
+                    )
+                if not record.source_keyword:
+                    issues.append(
+                        ValidationIssue(
+                            field_name="source_keyword",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                            message="Related record thiếu từ khóa nguồn",
+                            raw_value=record.source_keyword,
+                        )
+                    )
+                if not record.keyword_scores:
+                    issues.append(
+                        ValidationIssue(
+                            field_name="related_values",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                            message="Related record thiếu các trường dữ liệu",
+                            raw_value=None,
+                        )
+                    )
+                for kw, score_field in record.keyword_scores:
+                    if score_field.raw is None or not str(score_field.raw).strip():
+                        issues.append(
+                            ValidationIssue(
+                                field_name=f"related_value[{kw}]",
+                                severity=ValidationSeverity.ERROR,
+                                code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                                message=f"Giá trị Related '{kw}' bị thiếu",
+                                raw_value=score_field.raw,
+                            )
+                        )
+            else:
+                if not record.keyword_scores:
+                    issues.append(
+                        ValidationIssue(
+                            field_name="keyword_scores",
+                            severity=ValidationSeverity.ERROR,
+                            code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                            message="Bản ghi thiếu giá trị theo từ khóa",
+                            raw_value=None,
+                        )
+                    )
+                for kw, score_field in record.keyword_scores:
+                    if score_field.status == NormalizationStatus.INVALID:
+                        issues.append(
+                            ValidationIssue(
+                                field_name=f"interest_score[{kw}]",
+                                severity=ValidationSeverity.ERROR,
+                                code=ValidationIssueCode.INVALID_DATA_TYPE,
+                                message=f"interest_score không hợp lệ: '{score_field.raw}'",
+                                raw_value=score_field.raw,
+                            )
+                        )
+                    elif score_field.status == NormalizationStatus.MISSING:
+                        issues.append(
+                            ValidationIssue(
+                                field_name=f"interest_score[{kw}]",
+                                severity=ValidationSeverity.ERROR,
+                                code=ValidationIssueCode.MISSING_REQUIRED_FIELD,
+                                message=f"interest_score của '{kw}' bị thiếu",
+                                raw_value=score_field.raw,
+                            )
+                        )
+                    elif score_field.value is not None and not (
+                        0 <= score_field.value <= 100
+                    ):
                         issues.append(
                             ValidationIssue(
                                 field_name=f"interest_score[{kw}]",

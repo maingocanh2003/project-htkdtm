@@ -192,6 +192,9 @@ class ParsedTrendsRow:
     # each entry: (keyword_column_header, raw_value_string)
     # Values are kept as strings — semantics documented in manifest, not assumed
     related_section: Optional[str] = None  # "top" / "rising" from export or manifest
+    period_kind: str = "date"  # date, region, or related_term
+    source_keyword: Optional[str] = None
+    data_type_hint: Optional[str] = None
 
 
 @dataclass(frozen=True)
@@ -202,7 +205,9 @@ class ParsedTrendsPayload:
     keywords: Tuple[str, ...]          # column headers from the data section
     rows: Tuple[ParsedTrendsRow, ...]
     row_count: int
-    data_type_hint: Optional[str]      # first header cell if present
+    data_type_hint: Optional[str]      # recognized chart title or source hint
+    dimension_column: Optional[str] = None  # Week, Month, Region, Query, etc.
+    source_keyword: Optional[str] = None
 
 
 # ---------------------------------------------------------------------------

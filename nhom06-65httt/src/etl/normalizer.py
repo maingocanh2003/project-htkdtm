@@ -12,6 +12,7 @@ Quy tắc thực hiện:
 
 from __future__ import annotations
 
+import math
 import re
 import unicodedata
 from dataclasses import dataclass
@@ -287,23 +288,47 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
         )
 
     if isinstance(raw, datetime):
-        if raw.tzinfo is None:
-            raw = raw.replace(tzinfo=timezone.utc)
+        if not 1900 <= raw.year <= 2100:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm ngoài khoảng cho phép: {raw.year}",
+            )
+        normalized_datetime = (
+            raw.replace(tzinfo=timezone.utc) if raw.tzinfo is None else raw
+        )
         return NormalizedField(
             raw=raw,
-            value=raw.isoformat(),
+            value=normalized_datetime.isoformat(),
             status=NormalizationStatus.CONFIRMED,
         )
 
     if isinstance(raw, date):
+        if not 1900 <= raw.year <= 2100:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm ngoài khoảng cho phép: {raw.year}",
+            )
         return NormalizedField(
             raw=raw,
             value=raw.isoformat(),
             status=NormalizationStatus.CONFIRMED,
         )
 
-    if isinstance(raw, (int, float)):
+    if isinstance(raw, (int, float)) and not isinstance(raw, bool):
         # Trường hợp timestamp int lớn hoặc năm 4 chữ số
+        if isinstance(raw, float) and (
+            not math.isfinite(raw) or not raw.is_integer()
+        ):
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Giá trị ngày tháng dạng số không nguyên: {raw}",
+            )
         val_int = int(raw)
         if 1900 <= val_int <= 2100:
             return NormalizedField(
@@ -315,6 +340,13 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
         if val_int >= 100_000_000:
             try:
                 dt = datetime.fromtimestamp(val_int, timezone.utc)
+                if not 1900 <= dt.year <= 2100:
+                    return NormalizedField(
+                        raw=raw,
+                        value=None,
+                        status=NormalizationStatus.INVALID,
+                        note=f"Năm ngoài khoảng cho phép: {dt.year}",
+                    )
                 return NormalizedField(
                     raw=raw,
                     value=dt.isoformat(),
@@ -327,6 +359,14 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
                     status=NormalizationStatus.INVALID,
                     note=f"Timestamp ngoài khoảng cho phép: {raw}",
                 )
+
+    if isinstance(raw, bool):
+        return NormalizedField(
+            raw=raw,
+            value=None,
+            status=NormalizationStatus.INVALID,
+            note="Boolean không phải giá trị ngày tháng hợp lệ",
+        )
 
     if not isinstance(raw, str):
         return NormalizedField(
@@ -346,28 +386,62 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
         )
 
     # 1. Khớp YYYY
-    if re.fullmatch(r"\d{4}", text):
+    if re.fullmatch(r"[0-9]{4}", text):
         year = int(text)
         if 1900 <= year <= 2100:
             return NormalizedField(
                 raw=raw, value=text, status=NormalizationStatus.CONFIRMED
             )
+        return NormalizedField(
+            raw=raw,
+            value=None,
+            status=NormalizationStatus.INVALID,
+            note=f"Năm ngoài khoảng cho phép: {year}",
+        )
 
     # 2. Khớp YYYY-MM hoặc YYYY/MM hoặc YYYYMM
-    if re.fullmatch(r"\d{4}[-/]\d{2}", text):
-        norm = text.replace("/", "-")
-        return NormalizedField(
-            raw=raw, value=norm, status=NormalizationStatus.CONFIRMED
+    month_match = re.fullmatch(r"([0-9]{4})[-/]([0-9]{2})", text)
+    if month_match or re.fullmatch(r"[0-9]{6}", text):
+        year, month = (
+            (int(month_match.group(1)), int(month_match.group(2)))
+            if month_match
+            else (int(text[:4]), int(text[4:6]))
         )
-    if re.fullmatch(r"\d{6}", text):
-        norm = f"{text[:4]}-{text[4:6]}"
+        if not 1900 <= year <= 2100 or not 1 <= month <= 12:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm hoặc tháng không hợp lệ: {text}",
+            )
+        norm = f"{year:04d}-{month:02d}"
         return NormalizedField(
             raw=raw, value=norm, status=NormalizationStatus.CONFIRMED
         )
 
     # 3. Khớp YYYY-MM-DD hoặc YYYY/MM/DD hoặc YYYYMMDD
-    if re.fullmatch(r"\d{4}[-/]\d{2}[-/]\d{2}", text):
-        norm = text.replace("/", "-")
+    date_match = re.fullmatch(
+        r"([0-9]{4})([-/])([0-9]{2})\2([0-9]{2})", text
+    )
+    if not date_match and re.fullmatch(
+        r"[0-9]{4}[-/][0-9]{2}[-/][0-9]{2}", text
+    ):
+        return NormalizedField(
+            raw=raw,
+            value=None,
+            status=NormalizationStatus.INVALID,
+            note=f"Định dạng ngày không hợp lệ: {text}",
+        )
+    if date_match:
+        year = int(date_match.group(1))
+        norm = f"{date_match.group(1)}-{date_match.group(3)}-{date_match.group(4)}"
+        if not 1900 <= year <= 2100:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm ngoài khoảng cho phép: {year}",
+            )
         try:
             datetime.strptime(norm, "%Y-%m-%d")
             return NormalizedField(
@@ -381,8 +455,16 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
                 note=f"Ngày không hợp lệ: {text}",
             )
 
-    if re.fullmatch(r"\d{8}", text):
+    if re.fullmatch(r"[0-9]{8}", text):
+        year = int(text[:4])
         norm = f"{text[:4]}-{text[4:6]}-{text[6:8]}"
+        if not 1900 <= year <= 2100:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm ngoài khoảng cho phép: {year}",
+            )
         try:
             datetime.strptime(norm, "%Y-%m-%d")
             return NormalizedField(
@@ -399,6 +481,13 @@ def normalize_date(raw: Any) -> NormalizedField[str]:
     # 4. ISO-8601 full timestamp
     try:
         dt = datetime.fromisoformat(text.replace("Z", "+00:00"))
+        if not 1900 <= dt.year <= 2100:
+            return NormalizedField(
+                raw=raw,
+                value=None,
+                status=NormalizationStatus.INVALID,
+                note=f"Năm ngoài khoảng cho phép: {dt.year}",
+            )
         return NormalizedField(
             raw=raw,
             value=dt.isoformat(),
@@ -887,6 +976,10 @@ class NormalizedTrendsRow:
 
     period_label: NormalizedField[str]
     keyword_scores: Tuple[Tuple[str, NormalizedField[float]], ...]
+    period_kind: str = "date"
+    related_section: Optional[str] = None
+    source_keyword: Optional[str] = None
+    data_type_hint: Optional[str] = None
 
 
 @dataclass(frozen=True)
@@ -995,11 +1088,20 @@ def normalize_trends_row(parsed: ParsedTrendsRow) -> NormalizedTrendsRow:
         (kw, normalize_number(score_str))
         for kw, score_str in parsed.keyword_values
     )
+    period_label = (
+        normalize_text(parsed.period_label)
+        if parsed.period_kind in {"region", "related_term"}
+        else normalize_date(parsed.period_label)
+    )
     return NormalizedTrendsRow(
         provenance=parsed.provenance,
         raw_row=parsed.raw_row,
-        period_label=normalize_date(parsed.period_label),
+        period_label=period_label,
         keyword_scores=keyword_scores,
+        period_kind=parsed.period_kind,
+        related_section=parsed.related_section,
+        source_keyword=parsed.source_keyword,
+        data_type_hint=parsed.data_type_hint,
     )
 
 
