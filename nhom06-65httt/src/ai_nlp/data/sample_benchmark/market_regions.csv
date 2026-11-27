@@ -1,0 +1,58 @@
+region_id,country_id,region_code,region_name
+1,1,US-AL,Alabama
+2,1,US-AK,Alaska
+3,1,US-AZ,Arizona
+4,1,US-AR,Arkansas
+5,1,US-CA,California
+6,1,US-CO,Colorado
+7,1,US-CT,Connecticut
+8,1,US-DE,Delaware
+9,1,US-DC,District of Columbia
+10,1,US-FL,Florida
+11,1,US-GA,Georgia
+12,1,US-HI,Hawaii
+13,1,US-ID,Idaho
+14,1,US-IL,Illinois
+15,1,US-IN,Indiana
+16,1,US-IA,Iowa
+17,1,US-KS,Kansas
+18,1,US-KY,Kentucky
+19,1,US-LA,Louisiana
+20,1,US-ME,Maine
+21,1,US-MD,Maryland
+22,1,US-MA,Massachusetts
+23,1,US-MI,Michigan
+24,1,US-MN,Minnesota
+25,1,US-MS,Mississippi
+26,1,US-MO,Missouri
+27,1,US-MT,Montana
+28,1,US-NE,Nebraska
+29,1,US-NV,Nevada
+30,1,US-NH,New Hampshire
+31,1,US-NJ,New Jersey
+32,1,US-NM,New Mexico
+33,1,US-NY,New York
+34,1,US-NC,North Carolina
+35,1,US-ND,North Dakota
+36,1,US-OH,Ohio
+37,1,US-OK,Oklahoma
+38,1,US-OR,Oregon
+39,1,US-PA,Pennsylvania
+40,1,US-RI,Rhode Island
+41,1,US-SC,South Carolina
+42,1,US-SD,South Dakota
+43,1,US-TN,Tennessee
+44,1,US-TX,Texas
+45,1,US-UT,Utah
+46,1,US-VT,Vermont
+47,1,US-VA,Virginia
+48,1,US-WA,Washington
+49,1,US-WV,West Virginia
+50,1,US-WI,Wisconsin
+51,1,US-WY,Wyoming
+52,2,JP-13,Tokyo
+53,2,JP-27,Osaka
+54,2,JP-26,Kyoto
+55,3,DE-BY,Bavaria
+56,3,DE-BE,Berlin
+57,4,FR-IDF,Ile-de-France

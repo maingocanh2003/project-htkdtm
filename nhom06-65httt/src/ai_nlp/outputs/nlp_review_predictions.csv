@@ -1,0 +1,601 @@
+review_id,market_product_id,rating_stars,review_title,review_date,sentiment_label,sentiment_score
+1,1,5,Love the glaze and safe packaging,2023-01-10,Positive,0.9392
+2,2,4,Gorgeous ceramic quality!,2023-01-13,Positive,0.8858
+3,3,5,Love the glaze and safe packaging,2023-01-16,Positive,0.9733
+4,4,5,Beautiful craftsmanship and value,2023-01-19,Positive,0.9706
+5,5,4,Beautiful craftsmanship and value,2023-01-22,Positive,0.966
+6,6,5,Gorgeous ceramic quality!,2023-01-25,Positive,0.9719
+7,7,5,Exceeded expectations for daily use,2023-01-28,Positive,0.9433
+8,8,4,Exceeded expectations for daily use,2023-01-31,Positive,0.9633
+9,9,5,Gorgeous ceramic quality!,2023-02-03,Positive,0.9161
+10,10,5,Love the glaze and safe packaging,2023-02-06,Positive,0.9274
+11,11,4,Exceeded expectations for daily use,2023-02-09,Positive,0.9644
+12,12,3,Decent ceramic piece for the price,2023-02-12,Neutral,0.9804
+13,13,3,Nice design but mixed experience,2023-02-15,Neutral,0.9368
+14,14,3,Decent ceramic piece for the price,2023-02-18,Neutral,0.9654
+15,15,3,Nice design but mixed experience,2023-02-21,Neutral,0.9651
+16,16,1,Not dishwasher safe as advertised,2023-02-24,Negative,0.969
+17,17,1,Not dishwasher safe as advertised,2023-02-27,Negative,0.9614
+18,18,1,Disappointed with glaze durability,2023-03-02,Negative,0.972
+19,19,1,Not dishwasher safe as advertised,2023-03-05,Negative,0.9681
+20,20,1,Arrived damaged due to poor packaging,2023-03-08,Negative,0.9603
+21,21,4,Beautiful craftsmanship and value,2023-03-11,Positive,0.958
+22,22,5,Beautiful craftsmanship and value,2023-03-14,Positive,0.9497
+23,23,5,Exceeded expectations for daily use,2023-03-17,Positive,0.9586
+24,24,5,Beautiful craftsmanship and value,2023-03-20,Positive,0.9385
+25,25,4,Exceeded expectations for daily use,2023-03-23,Positive,0.94
+26,26,5,Love the glaze and safe packaging,2023-03-26,Positive,0.9477
+27,27,5,Beautiful craftsmanship and value,2023-03-29,Positive,0.9583
+28,28,4,Love the glaze and safe packaging,2023-04-01,Positive,0.9274
+29,29,4,Gorgeous ceramic quality!,2023-04-04,Positive,0.9618
+30,30,5,Love the glaze and safe packaging,2023-04-07,Positive,0.9537
+31,31,5,Exceeded expectations for daily use,2023-04-10,Positive,0.97
+32,32,3,Nice design but mixed experience,2023-04-13,Neutral,0.9783
+33,33,3,Decent ceramic piece for the price,2023-04-16,Neutral,0.9084
+34,34,3,Nice design but mixed experience,2023-04-19,Neutral,0.9856
+35,35,3,Nice design but mixed experience,2023-04-22,Neutral,0.9508
+36,36,2,Not dishwasher safe as advertised,2023-04-25,Negative,0.9451
+37,37,2,"Cracked quickly, would not recommend",2023-04-28,Negative,0.9521
+38,38,1,"Cracked quickly, would not recommend",2023-05-01,Negative,0.9585
+39,39,2,Arrived damaged due to poor packaging,2023-05-04,Negative,0.9648
+40,40,1,Disappointed with glaze durability,2023-05-07,Negative,0.9442
+41,41,5,Beautiful craftsmanship and value,2023-05-10,Positive,0.9756
+42,42,4,Gorgeous ceramic quality!,2023-05-13,Positive,0.9225
+43,43,5,Love the glaze and safe packaging,2023-05-16,Positive,0.9384
+44,44,5,Love the glaze and safe packaging,2023-05-19,Positive,0.9372
+45,45,5,Beautiful craftsmanship and value,2023-05-22,Positive,0.9701
+46,46,5,Exceeded expectations for daily use,2023-05-25,Positive,0.9794
+47,47,4,Gorgeous ceramic quality!,2023-05-28,Positive,0.9274
+48,48,5,Love the glaze and safe packaging,2023-05-31,Positive,0.9394
+49,49,4,Gorgeous ceramic quality!,2023-06-03,Positive,0.8811
+50,50,5,Love the glaze and safe packaging,2023-06-06,Positive,0.928
+51,51,5,Beautiful craftsmanship and value,2023-06-09,Positive,0.9706
+52,52,3,Nice design but mixed experience,2023-06-12,Neutral,0.9736
+53,53,3,Nice design but mixed experience,2023-06-15,Neutral,0.9239
+54,54,3,Nice design but mixed experience,2023-06-18,Neutral,0.9838
+55,55,3,Nice design but mixed experience,2023-06-21,Neutral,0.9285
+56,56,2,Disappointed with glaze durability,2023-06-24,Negative,0.9685
+57,57,2,Not dishwasher safe as advertised,2023-06-27,Negative,0.9223
+58,58,1,Not dishwasher safe as advertised,2023-06-30,Negative,0.9627
+59,59,2,Arrived damaged due to poor packaging,2023-07-03,Negative,0.9192
+60,60,1,Disappointed with glaze durability,2023-07-06,Negative,0.97
+61,61,5,Gorgeous ceramic quality!,2023-07-09,Positive,0.9462
+62,62,4,Love the glaze and safe packaging,2023-07-12,Positive,0.9501
+63,63,5,Gorgeous ceramic quality!,2023-07-15,Positive,0.9511
+64,64,4,Exceeded expectations for daily use,2023-07-18,Positive,0.9735
+65,65,5,Gorgeous ceramic quality!,2023-07-21,Positive,0.9394
+66,66,5,Gorgeous ceramic quality!,2023-07-24,Positive,0.9414
+67,67,5,Love the glaze and safe packaging,2023-07-27,Positive,0.9709
+68,68,5,Beautiful craftsmanship and value,2023-07-30,Positive,0.9605
+69,69,5,Gorgeous ceramic quality!,2023-08-02,Positive,0.9038
+70,70,5,Love the glaze and safe packaging,2023-08-05,Positive,0.9422
+71,71,5,Love the glaze and safe packaging,2023-08-08,Positive,0.9145
+72,72,3,Nice design but mixed experience,2023-08-11,Neutral,0.9733
+73,73,3,Decent ceramic piece for the price,2023-08-14,Neutral,0.9247
+74,74,3,Nice design but mixed experience,2023-08-17,Neutral,0.9856
+75,75,3,Nice design but mixed experience,2023-08-20,Neutral,0.951
+76,76,1,Arrived damaged due to poor packaging,2023-08-23,Negative,0.9729
+77,77,2,"Cracked quickly, would not recommend",2023-08-26,Negative,0.9519
+78,78,1,Arrived damaged due to poor packaging,2023-08-29,Negative,0.9687
+79,79,2,Not dishwasher safe as advertised,2023-09-01,Negative,0.9627
+80,80,2,Disappointed with glaze durability,2023-09-04,Negative,0.9731
+81,81,4,Gorgeous ceramic quality!,2023-09-07,Positive,0.9657
+82,82,5,Beautiful craftsmanship and value,2023-09-10,Positive,0.9672
+83,83,5,Love the glaze and safe packaging,2023-09-13,Positive,0.9468
+84,84,5,Exceeded expectations for daily use,2023-09-16,Positive,0.933
+85,85,4,Love the glaze and safe packaging,2023-09-19,Positive,0.9082
+86,86,4,Beautiful craftsmanship and value,2023-09-22,Positive,0.9579
+87,87,5,Love the glaze and safe packaging,2023-09-25,Positive,0.9349
+88,88,5,Gorgeous ceramic quality!,2023-09-28,Positive,0.9722
+89,89,4,Love the glaze and safe packaging,2023-10-01,Positive,0.9723
+90,90,4,Beautiful craftsmanship and value,2023-10-04,Positive,0.9672
+91,91,5,Love the glaze and safe packaging,2023-10-07,Positive,0.966
+92,92,3,"Okay overall, some pros and cons",2023-10-10,Neutral,0.9767
+93,93,3,"Okay overall, some pros and cons",2023-10-13,Neutral,0.903
+94,94,3,Nice design but mixed experience,2023-10-16,Neutral,0.9819
+95,95,3,Nice design but mixed experience,2023-10-19,Neutral,0.9335
+96,96,2,"Cracked quickly, would not recommend",2023-10-22,Negative,0.9348
+97,97,2,"Cracked quickly, would not recommend",2023-10-25,Negative,0.9545
+98,98,2,"Cracked quickly, would not recommend",2023-10-28,Negative,0.9601
+99,99,1,"Cracked quickly, would not recommend",2023-10-31,Negative,0.9727
+100,100,1,Not dishwasher safe as advertised,2023-11-03,Negative,0.9669
+101,101,5,Beautiful craftsmanship and value,2023-11-06,Positive,0.9633
+102,102,5,Love the glaze and safe packaging,2023-11-09,Positive,0.9145
+103,103,5,Beautiful craftsmanship and value,2023-11-12,Positive,0.9554
+104,104,5,Exceeded expectations for daily use,2023-11-15,Positive,0.9693
+105,105,5,Gorgeous ceramic quality!,2023-11-18,Positive,0.9478
+106,106,5,Gorgeous ceramic quality!,2023-11-21,Positive,0.9038
+107,107,5,Love the glaze and safe packaging,2023-11-24,Positive,0.9384
+108,108,4,Beautiful craftsmanship and value,2023-11-27,Positive,0.958
+109,109,5,Beautiful craftsmanship and value,2023-11-30,Positive,0.9706
+110,110,5,Love the glaze and safe packaging,2023-12-03,Positive,0.9223
+111,111,5,Exceeded expectations for daily use,2023-12-06,Positive,0.9735
+112,112,3,Decent ceramic piece for the price,2023-12-09,Neutral,0.9637
+113,113,3,Decent ceramic piece for the price,2023-12-12,Neutral,0.8929
+114,114,3,"Okay overall, some pros and cons",2023-12-15,Neutral,0.9767
+115,115,3,Nice design but mixed experience,2023-12-18,Neutral,0.9388
+116,116,2,"Cracked quickly, would not recommend",2023-12-21,Negative,0.9535
+117,117,2,"Cracked quickly, would not recommend",2023-12-24,Negative,0.9308
+118,118,2,Arrived damaged due to poor packaging,2023-01-11,Negative,0.9667
+119,119,2,Not dishwasher safe as advertised,2023-01-14,Negative,0.9547
+120,120,1,Not dishwasher safe as advertised,2023-01-17,Negative,0.9673
+121,121,5,Love the glaze and safe packaging,2023-01-20,Positive,0.9654
+122,122,4,Love the glaze and safe packaging,2023-01-23,Positive,0.9349
+123,123,5,Exceeded expectations for daily use,2023-01-26,Positive,0.9757
+124,124,4,Exceeded expectations for daily use,2023-01-29,Positive,0.9718
+125,125,5,Exceeded expectations for daily use,2023-02-01,Positive,0.9666
+126,126,4,Gorgeous ceramic quality!,2023-02-04,Positive,0.9382
+127,127,5,Beautiful craftsmanship and value,2023-02-07,Positive,0.958
+128,128,5,Exceeded expectations for daily use,2023-02-10,Positive,0.9678
+129,129,4,Gorgeous ceramic quality!,2023-02-13,Positive,0.9147
+130,130,5,Exceeded expectations for daily use,2023-02-16,Positive,0.9409
+131,131,5,Exceeded expectations for daily use,2023-02-19,Positive,0.9653
+132,132,3,"Okay overall, some pros and cons",2023-02-22,Neutral,0.9624
+133,133,3,Nice design but mixed experience,2023-02-25,Neutral,0.9328
+134,134,3,Nice design but mixed experience,2023-02-28,Neutral,0.9856
+135,135,3,Decent ceramic piece for the price,2023-03-03,Neutral,0.8584
+136,136,2,Arrived damaged due to poor packaging,2023-03-06,Negative,0.9677
+137,137,2,Not dishwasher safe as advertised,2023-03-09,Negative,0.9468
+138,138,2,Disappointed with glaze durability,2023-03-12,Negative,0.952
+139,139,2,"Cracked quickly, would not recommend",2023-03-15,Negative,0.942
+140,140,2,Not dishwasher safe as advertised,2023-03-18,Negative,0.9453
+141,141,5,Beautiful craftsmanship and value,2023-03-21,Positive,0.9674
+142,142,4,Love the glaze and safe packaging,2023-03-24,Positive,0.9477
+143,143,4,Exceeded expectations for daily use,2023-03-27,Positive,0.9604
+144,144,5,Beautiful craftsmanship and value,2023-03-30,Positive,0.9701
+145,145,5,Exceeded expectations for daily use,2023-04-02,Positive,0.951
+146,146,5,Gorgeous ceramic quality!,2023-04-05,Positive,0.954
+147,147,5,Beautiful craftsmanship and value,2023-04-08,Positive,0.967
+148,148,5,Beautiful craftsmanship and value,2023-04-11,Positive,0.9583
+149,149,4,Gorgeous ceramic quality!,2023-04-14,Positive,0.9536
+150,150,4,Beautiful craftsmanship and value,2023-04-17,Positive,0.9728
+151,151,5,Exceeded expectations for daily use,2023-04-20,Positive,0.9501
+152,152,3,"Okay overall, some pros and cons",2023-04-23,Neutral,0.9767
+153,153,3,"Okay overall, some pros and cons",2023-04-26,Neutral,0.9288
+154,154,3,Decent ceramic piece for the price,2023-04-29,Neutral,0.9733
+155,155,3,Nice design but mixed experience,2023-05-02,Neutral,0.8371
+156,156,2,"Cracked quickly, would not recommend",2023-05-05,Negative,0.9663
+157,157,1,Disappointed with glaze durability,2023-05-08,Negative,0.9527
+158,158,2,Arrived damaged due to poor packaging,2023-05-11,Negative,0.9603
+159,159,1,Disappointed with glaze durability,2023-05-14,Negative,0.9649
+160,160,2,"Cracked quickly, would not recommend",2023-05-17,Negative,0.9725
+161,161,4,Love the glaze and safe packaging,2023-05-20,Positive,0.9589
+162,162,4,Exceeded expectations for daily use,2023-05-23,Positive,0.9662
+163,163,5,Beautiful craftsmanship and value,2023-05-26,Positive,0.9734
+164,164,5,Love the glaze and safe packaging,2023-05-29,Positive,0.9663
+165,165,5,Love the glaze and safe packaging,2023-06-01,Positive,0.9468
+166,166,5,Beautiful craftsmanship and value,2023-06-04,Positive,0.9406
+167,167,5,Love the glaze and safe packaging,2023-06-07,Positive,0.928
+168,168,5,Gorgeous ceramic quality!,2023-06-10,Positive,0.9495
+169,169,5,Gorgeous ceramic quality!,2023-06-13,Positive,0.9394
+170,170,5,Beautiful craftsmanship and value,2023-06-16,Positive,0.9657
+171,171,5,Love the glaze and safe packaging,2023-06-19,Positive,0.9589
+172,172,3,"Okay overall, some pros and cons",2023-06-22,Neutral,0.9767
+173,173,3,Decent ceramic piece for the price,2023-06-25,Neutral,0.93
+174,174,3,"Okay overall, some pros and cons",2023-06-28,Neutral,0.9767
+175,175,3,"Okay overall, some pros and cons",2023-07-01,Neutral,0.9023
+176,176,1,Disappointed with glaze durability,2023-07-04,Negative,0.9685
+177,177,1,"Cracked quickly, would not recommend",2023-07-07,Negative,0.9242
+178,178,2,Disappointed with glaze durability,2023-07-10,Negative,0.96
+179,179,2,Not dishwasher safe as advertised,2023-07-13,Negative,0.9716
+180,180,2,Not dishwasher safe as advertised,2023-07-16,Negative,0.9362
+181,181,5,Love the glaze and safe packaging,2023-07-19,Positive,0.9502
+182,182,5,Exceeded expectations for daily use,2023-07-22,Positive,0.9593
+183,183,5,Gorgeous ceramic quality!,2023-07-25,Positive,0.9382
+184,184,5,Love the glaze and safe packaging,2023-07-28,Positive,0.9527
+185,185,5,Love the glaze and safe packaging,2023-07-31,Positive,0.9468
+186,186,5,Beautiful craftsmanship and value,2023-08-03,Positive,0.9554
+187,187,4,Beautiful craftsmanship and value,2023-08-06,Positive,0.9688
+188,188,4,Exceeded expectations for daily use,2023-08-09,Positive,0.9604
+189,189,4,Beautiful craftsmanship and value,2023-08-12,Positive,0.9661
+190,190,4,Exceeded expectations for daily use,2023-08-15,Positive,0.9584
+191,191,4,Beautiful craftsmanship and value,2023-08-18,Positive,0.9393
+192,192,3,Decent ceramic piece for the price,2023-08-21,Neutral,0.9804
+193,193,3,Nice design but mixed experience,2023-08-24,Neutral,0.9257
+194,194,3,Decent ceramic piece for the price,2023-08-27,Neutral,0.9766
+195,195,3,Nice design but mixed experience,2023-08-30,Neutral,0.925
+196,196,1,"Cracked quickly, would not recommend",2023-09-02,Negative,0.9252
+197,197,1,Disappointed with glaze durability,2023-09-05,Negative,0.937
+198,198,2,Arrived damaged due to poor packaging,2023-09-08,Negative,0.9643
+199,199,2,"Cracked quickly, would not recommend",2023-09-11,Negative,0.9289
+200,200,2,Not dishwasher safe as advertised,2023-09-14,Negative,0.9553
+201,201,5,Gorgeous ceramic quality!,2023-09-17,Positive,0.9509
+202,202,5,Gorgeous ceramic quality!,2023-09-20,Positive,0.8811
+203,203,5,Gorgeous ceramic quality!,2023-09-23,Positive,0.938
+204,204,5,Love the glaze and safe packaging,2023-09-26,Positive,0.9655
+205,205,5,Exceeded expectations for daily use,2023-09-29,Positive,0.9735
+206,206,4,Love the glaze and safe packaging,2023-10-02,Positive,0.9468
+207,207,4,Exceeded expectations for daily use,2023-10-05,Positive,0.9187
+208,208,4,Love the glaze and safe packaging,2023-10-08,Positive,0.9324
+209,209,5,Beautiful craftsmanship and value,2023-10-11,Positive,0.9651
+210,210,5,Love the glaze and safe packaging,2023-10-14,Positive,0.9402
+211,211,5,Beautiful craftsmanship and value,2023-10-17,Positive,0.9583
+212,212,3,"Okay overall, some pros and cons",2023-10-20,Neutral,0.9522
+213,213,3,Nice design but mixed experience,2023-10-23,Neutral,0.9011
+214,214,3,Nice design but mixed experience,2023-10-26,Neutral,0.9871
+215,215,3,Decent ceramic piece for the price,2023-10-29,Neutral,0.8814
+216,216,2,Arrived damaged due to poor packaging,2023-11-01,Negative,0.9648
+217,217,2,Disappointed with glaze durability,2023-11-04,Negative,0.9689
+218,218,2,Arrived damaged due to poor packaging,2023-11-07,Negative,0.9674
+219,219,2,"Cracked quickly, would not recommend",2023-11-10,Negative,0.9532
+220,220,1,"Cracked quickly, would not recommend",2023-11-13,Negative,0.9236
+221,221,4,Beautiful craftsmanship and value,2023-11-16,Positive,0.9709
+222,222,5,Exceeded expectations for daily use,2023-11-19,Positive,0.9399
+223,223,4,Love the glaze and safe packaging,2023-11-22,Positive,0.9409
+224,224,4,Love the glaze and safe packaging,2023-11-25,Positive,0.9676
+225,225,5,Exceeded expectations for daily use,2023-11-28,Positive,0.9539
+226,226,4,Exceeded expectations for daily use,2023-12-01,Positive,0.9433
+227,227,5,Beautiful craftsmanship and value,2023-12-04,Positive,0.958
+228,228,4,Love the glaze and safe packaging,2023-12-07,Positive,0.9441
+229,229,5,Exceeded expectations for daily use,2023-12-10,Positive,0.9655
+230,230,5,Love the glaze and safe packaging,2023-12-13,Positive,0.9719
+231,231,5,Beautiful craftsmanship and value,2023-12-16,Positive,0.9554
+232,232,3,"Okay overall, some pros and cons",2023-12-19,Neutral,0.9507
+233,233,3,"Okay overall, some pros and cons",2023-12-22,Neutral,0.9136
+234,234,3,Decent ceramic piece for the price,2023-12-25,Neutral,0.9654
+235,235,3,Nice design but mixed experience,2023-01-12,Neutral,0.9388
+236,236,1,Not dishwasher safe as advertised,2023-01-15,Negative,0.9138
+237,237,1,Not dishwasher safe as advertised,2023-01-18,Negative,0.9624
+238,238,1,Disappointed with glaze durability,2023-01-21,Negative,0.9689
+239,239,1,Not dishwasher safe as advertised,2023-01-24,Negative,0.9518
+240,240,1,Arrived damaged due to poor packaging,2023-01-27,Negative,0.946
+241,1,5,Exceeded expectations for daily use,2023-01-30,Positive,0.9644
+242,2,4,Beautiful craftsmanship and value,2023-02-02,Positive,0.9587
+243,3,5,Beautiful craftsmanship and value,2023-02-05,Positive,0.9707
+244,4,5,Exceeded expectations for daily use,2023-02-08,Positive,0.9656
+245,5,4,Love the glaze and safe packaging,2023-02-11,Positive,0.9101
+246,6,5,Exceeded expectations for daily use,2023-02-14,Positive,0.964
+247,7,4,Gorgeous ceramic quality!,2023-02-17,Positive,0.9618
+248,8,4,Exceeded expectations for daily use,2023-02-20,Positive,0.9716
+249,9,4,Exceeded expectations for daily use,2023-02-23,Positive,0.9647
+250,10,5,Gorgeous ceramic quality!,2023-02-26,Positive,0.9045
+251,11,5,Exceeded expectations for daily use,2023-03-01,Positive,0.9626
+252,12,3,"Okay overall, some pros and cons",2023-03-04,Neutral,0.9522
+253,13,3,Decent ceramic piece for the price,2023-03-07,Neutral,0.9151
+254,14,3,Decent ceramic piece for the price,2023-03-10,Neutral,0.9597
+255,15,3,"Okay overall, some pros and cons",2023-03-13,Neutral,0.9014
+256,16,2,Disappointed with glaze durability,2023-03-16,Negative,0.9688
+257,17,1,Disappointed with glaze durability,2023-03-19,Negative,0.9689
+258,18,2,Arrived damaged due to poor packaging,2023-03-22,Negative,0.9568
+259,19,2,Not dishwasher safe as advertised,2023-03-25,Negative,0.9562
+260,20,2,Disappointed with glaze durability,2023-03-28,Negative,0.9615
+261,21,5,Beautiful craftsmanship and value,2023-03-31,Positive,0.9661
+262,22,5,Exceeded expectations for daily use,2023-04-03,Positive,0.9484
+263,23,4,Beautiful craftsmanship and value,2023-04-06,Positive,0.9573
+264,24,4,Gorgeous ceramic quality!,2023-04-09,Positive,0.938
+265,25,5,Gorgeous ceramic quality!,2023-04-12,Positive,0.9274
+266,26,5,Love the glaze and safe packaging,2023-04-15,Positive,0.9571
+267,27,4,Beautiful craftsmanship and value,2023-04-18,Positive,0.9706
+268,28,4,Beautiful craftsmanship and value,2023-04-21,Positive,0.964
+269,29,4,Love the glaze and safe packaging,2023-04-24,Positive,0.9412
+270,30,5,Beautiful craftsmanship and value,2023-04-27,Positive,0.9551
+271,31,4,Exceeded expectations for daily use,2023-04-30,Positive,0.9735
+272,32,3,Decent ceramic piece for the price,2023-05-03,Neutral,0.9674
+273,33,3,Nice design but mixed experience,2023-05-06,Neutral,0.9579
+274,34,3,"Okay overall, some pros and cons",2023-05-09,Neutral,0.9767
+275,35,3,Nice design but mixed experience,2023-05-12,Neutral,0.9457
+276,36,2,Disappointed with glaze durability,2023-05-15,Negative,0.9336
+277,37,2,Arrived damaged due to poor packaging,2023-05-18,Negative,0.9562
+278,38,2,Disappointed with glaze durability,2023-05-21,Negative,0.9642
+279,39,1,Arrived damaged due to poor packaging,2023-05-24,Negative,0.9343
+280,40,1,Disappointed with glaze durability,2023-05-27,Negative,0.9642
+281,41,5,Gorgeous ceramic quality!,2023-05-30,Positive,0.9471
+282,42,4,Gorgeous ceramic quality!,2023-06-02,Positive,0.9247
+283,43,4,Love the glaze and safe packaging,2023-06-05,Positive,0.9363
+284,44,5,Gorgeous ceramic quality!,2023-06-08,Positive,0.9358
+285,45,5,Exceeded expectations for daily use,2023-06-11,Positive,0.9647
+286,46,4,Gorgeous ceramic quality!,2023-06-14,Positive,0.9247
+287,47,5,Gorgeous ceramic quality!,2023-06-17,Positive,0.9336
+288,48,5,Exceeded expectations for daily use,2023-06-20,Positive,0.9219
+289,49,4,Exceeded expectations for daily use,2023-06-23,Positive,0.933
+290,50,5,Love the glaze and safe packaging,2023-06-26,Positive,0.9349
+291,51,4,Exceeded expectations for daily use,2023-06-29,Positive,0.9501
+292,52,3,Nice design but mixed experience,2023-07-02,Neutral,0.9378
+293,53,3,Decent ceramic piece for the price,2023-07-05,Neutral,0.9247
+294,54,3,Decent ceramic piece for the price,2023-07-08,Neutral,0.9733
+295,55,3,Decent ceramic piece for the price,2023-07-11,Neutral,0.8986
+296,56,2,"Cracked quickly, would not recommend",2023-07-14,Negative,0.9611
+297,57,2,Not dishwasher safe as advertised,2023-07-17,Negative,0.9094
+298,58,1,Not dishwasher safe as advertised,2023-07-20,Negative,0.9453
+299,59,2,Not dishwasher safe as advertised,2023-07-23,Negative,0.9256
+300,60,2,Not dishwasher safe as advertised,2023-07-26,Negative,0.9572
+301,61,5,Beautiful craftsmanship and value,2023-07-29,Positive,0.9344
+302,62,5,Exceeded expectations for daily use,2023-08-01,Positive,0.9346
+303,63,5,Beautiful craftsmanship and value,2023-08-04,Positive,0.9579
+304,64,4,Exceeded expectations for daily use,2023-08-07,Positive,0.9601
+305,65,5,Beautiful craftsmanship and value,2023-08-10,Positive,0.9669
+306,66,5,Exceeded expectations for daily use,2023-08-13,Positive,0.9573
+307,67,5,Love the glaze and safe packaging,2023-08-16,Positive,0.9312
+308,68,5,Beautiful craftsmanship and value,2023-08-19,Positive,0.9655
+309,69,4,Gorgeous ceramic quality!,2023-08-22,Positive,0.952
+310,70,5,Exceeded expectations for daily use,2023-08-25,Positive,0.9501
+311,71,5,Love the glaze and safe packaging,2023-08-28,Positive,0.9375
+312,72,3,Nice design but mixed experience,2023-08-31,Neutral,0.9819
+313,73,3,"Okay overall, some pros and cons",2023-09-03,Neutral,0.9335
+314,74,3,Decent ceramic piece for the price,2023-09-06,Neutral,0.9637
+315,75,3,"Okay overall, some pros and cons",2023-09-09,Neutral,0.9053
+316,76,2,Disappointed with glaze durability,2023-09-12,Negative,0.9707
+317,77,2,Not dishwasher safe as advertised,2023-09-15,Negative,0.9634
+318,78,1,Arrived damaged due to poor packaging,2023-09-18,Negative,0.8999
+319,79,1,Disappointed with glaze durability,2023-09-21,Negative,0.9642
+320,80,2,Arrived damaged due to poor packaging,2023-09-24,Negative,0.9615
+321,81,5,Love the glaze and safe packaging,2023-09-27,Positive,0.9468
+322,82,5,Love the glaze and safe packaging,2023-09-30,Positive,0.9591
+323,83,4,Gorgeous ceramic quality!,2023-10-03,Positive,0.9693
+324,84,5,Exceeded expectations for daily use,2023-10-06,Positive,0.9468
+325,85,5,Beautiful craftsmanship and value,2023-10-09,Positive,0.9666
+326,86,4,Beautiful craftsmanship and value,2023-10-12,Positive,0.9587
+327,87,5,Exceeded expectations for daily use,2023-10-15,Positive,0.9635
+328,88,5,Exceeded expectations for daily use,2023-10-18,Positive,0.9564
+329,89,4,Love the glaze and safe packaging,2023-10-21,Positive,0.921
+330,90,4,Beautiful craftsmanship and value,2023-10-24,Positive,0.9406
+331,91,4,Exceeded expectations for daily use,2023-10-27,Positive,0.933
+332,92,3,Decent ceramic piece for the price,2023-10-30,Neutral,0.9597
+333,93,3,Nice design but mixed experience,2023-11-02,Neutral,0.9303
+334,94,3,Nice design but mixed experience,2023-11-05,Neutral,0.9696
+335,95,3,"Okay overall, some pros and cons",2023-11-08,Neutral,0.9075
+336,96,2,Disappointed with glaze durability,2023-11-11,Negative,0.9555
+337,97,2,Arrived damaged due to poor packaging,2023-11-14,Negative,0.9724
+338,98,2,Arrived damaged due to poor packaging,2023-11-17,Negative,0.9615
+339,99,2,Disappointed with glaze durability,2023-11-20,Negative,0.9675
+340,100,1,Disappointed with glaze durability,2023-11-23,Negative,0.9607
+341,101,5,Love the glaze and safe packaging,2023-11-26,Positive,0.9726
+342,102,5,Love the glaze and safe packaging,2023-11-29,Positive,0.9651
+343,103,5,Beautiful craftsmanship and value,2023-12-02,Positive,0.9766
+344,104,5,Gorgeous ceramic quality!,2023-12-05,Positive,0.9587
+345,105,5,Gorgeous ceramic quality!,2023-12-08,Positive,0.9509
+346,106,5,Gorgeous ceramic quality!,2023-12-11,Positive,0.9576
+347,107,5,Beautiful craftsmanship and value,2023-12-14,Positive,0.923
+348,108,5,Beautiful craftsmanship and value,2023-12-17,Positive,0.9666
+349,109,5,Exceeded expectations for daily use,2023-12-20,Positive,0.96
+350,110,5,Beautiful craftsmanship and value,2023-12-23,Positive,0.9701
+351,111,5,Beautiful craftsmanship and value,2023-01-10,Positive,0.956
+352,112,3,Decent ceramic piece for the price,2023-01-13,Neutral,0.9597
+353,113,3,Decent ceramic piece for the price,2023-01-16,Neutral,0.9337
+354,114,3,"Okay overall, some pros and cons",2023-01-19,Neutral,0.9466
+355,115,3,Decent ceramic piece for the price,2023-01-22,Neutral,0.9285
+356,116,2,Arrived damaged due to poor packaging,2023-01-25,Negative,0.9707
+357,117,2,Not dishwasher safe as advertised,2023-01-28,Negative,0.969
+358,118,2,Not dishwasher safe as advertised,2023-01-31,Negative,0.9542
+359,119,1,Disappointed with glaze durability,2023-02-03,Negative,0.9688
+360,120,1,Disappointed with glaze durability,2023-02-06,Negative,0.9527
+361,121,4,Beautiful craftsmanship and value,2023-02-09,Positive,0.9701
+362,122,4,Love the glaze and safe packaging,2023-02-12,Positive,0.906
+363,123,5,Exceeded expectations for daily use,2023-02-15,Positive,0.9766
+364,124,5,Love the glaze and safe packaging,2023-02-18,Positive,0.906
+365,125,5,Love the glaze and safe packaging,2023-02-21,Positive,0.9409
+366,126,4,Gorgeous ceramic quality!,2023-02-24,Positive,0.9396
+367,127,5,Beautiful craftsmanship and value,2023-02-27,Positive,0.9439
+368,128,5,Gorgeous ceramic quality!,2023-03-02,Positive,0.9618
+369,129,5,Love the glaze and safe packaging,2023-03-05,Positive,0.9573
+370,130,4,Beautiful craftsmanship and value,2023-03-08,Positive,0.9557
+371,131,5,Love the glaze and safe packaging,2023-03-11,Positive,0.9641
+372,132,3,Nice design but mixed experience,2023-03-14,Neutral,0.9783
+373,133,3,"Okay overall, some pros and cons",2023-03-17,Neutral,0.895
+374,134,3,"Okay overall, some pros and cons",2023-03-20,Neutral,0.9767
+375,135,3,"Okay overall, some pros and cons",2023-03-23,Neutral,0.8856
+376,136,2,Arrived damaged due to poor packaging,2023-03-26,Negative,0.9239
+377,137,2,"Cracked quickly, would not recommend",2023-03-29,Negative,0.9584
+378,138,1,Disappointed with glaze durability,2023-04-01,Negative,0.9765
+379,139,1,Not dishwasher safe as advertised,2023-04-04,Negative,0.9616
+380,140,1,Disappointed with glaze durability,2023-04-07,Negative,0.9337
+381,141,5,Beautiful craftsmanship and value,2023-04-10,Positive,0.9605
+382,142,4,Gorgeous ceramic quality!,2023-04-13,Positive,0.9335
+383,143,5,Beautiful craftsmanship and value,2023-04-16,Positive,0.9622
+384,144,5,Exceeded expectations for daily use,2023-04-19,Positive,0.9571
+385,145,5,Gorgeous ceramic quality!,2023-04-22,Positive,0.9536
+386,146,5,Gorgeous ceramic quality!,2023-04-25,Positive,0.9618
+387,147,5,Gorgeous ceramic quality!,2023-04-28,Positive,0.9542
+388,148,5,Beautiful craftsmanship and value,2023-05-01,Positive,0.9674
+389,149,5,Gorgeous ceramic quality!,2023-05-04,Positive,0.9514
+390,150,4,Gorgeous ceramic quality!,2023-05-07,Positive,0.9557
+391,151,4,Love the glaze and safe packaging,2023-05-10,Positive,0.9701
+392,152,3,"Okay overall, some pros and cons",2023-05-13,Neutral,0.9624
+393,153,3,Decent ceramic piece for the price,2023-05-16,Neutral,0.9096
+394,154,3,Nice design but mixed experience,2023-05-19,Neutral,0.9871
+395,155,3,Decent ceramic piece for the price,2023-05-22,Neutral,0.9071
+396,156,2,"Cracked quickly, would not recommend",2023-05-25,Negative,0.942
+397,157,2,Arrived damaged due to poor packaging,2023-05-28,Negative,0.9437
+398,158,1,Disappointed with glaze durability,2023-05-31,Negative,0.9595
+399,159,2,"Cracked quickly, would not recommend",2023-06-03,Negative,0.9418
+400,160,2,"Cracked quickly, would not recommend",2023-06-06,Negative,0.9371
+401,161,4,Love the glaze and safe packaging,2023-06-09,Positive,0.9578
+402,162,5,Exceeded expectations for daily use,2023-06-12,Positive,0.9697
+403,163,5,Beautiful craftsmanship and value,2023-06-15,Positive,0.9508
+404,164,5,Exceeded expectations for daily use,2023-06-18,Positive,0.9597
+405,165,4,Love the glaze and safe packaging,2023-06-21,Positive,0.948
+406,166,4,Love the glaze and safe packaging,2023-06-24,Positive,0.9508
+407,167,5,Gorgeous ceramic quality!,2023-06-27,Positive,0.9158
+408,168,4,Love the glaze and safe packaging,2023-06-30,Positive,0.9145
+409,169,5,Exceeded expectations for daily use,2023-07-03,Positive,0.9597
+410,170,5,Exceeded expectations for daily use,2023-07-06,Positive,0.9676
+411,171,5,Love the glaze and safe packaging,2023-07-09,Positive,0.9563
+412,172,3,Nice design but mixed experience,2023-07-12,Neutral,0.9838
+413,173,3,Nice design but mixed experience,2023-07-15,Neutral,0.9437
+414,174,3,Nice design but mixed experience,2023-07-18,Neutral,0.9838
+415,175,3,Decent ceramic piece for the price,2023-07-21,Neutral,0.8617
+416,176,1,"Cracked quickly, would not recommend",2023-07-24,Negative,0.9725
+417,177,2,Disappointed with glaze durability,2023-07-27,Negative,0.9642
+418,178,2,Arrived damaged due to poor packaging,2023-07-30,Negative,0.9202
+419,179,2,Disappointed with glaze durability,2023-08-02,Negative,0.944
+420,180,2,Arrived damaged due to poor packaging,2023-08-05,Negative,0.9096
+421,181,4,Beautiful craftsmanship and value,2023-08-08,Positive,0.9326
+422,182,5,Beautiful craftsmanship and value,2023-08-11,Positive,0.9448
+423,183,4,Exceeded expectations for daily use,2023-08-14,Positive,0.9539
+424,184,5,Gorgeous ceramic quality!,2023-08-17,Positive,0.9505
+425,185,5,Exceeded expectations for daily use,2023-08-20,Positive,0.96
+426,186,5,Beautiful craftsmanship and value,2023-08-23,Positive,0.9632
+427,187,5,Gorgeous ceramic quality!,2023-08-26,Positive,0.9382
+428,188,5,Beautiful craftsmanship and value,2023-08-29,Positive,0.9323
+429,189,5,Beautiful craftsmanship and value,2023-09-01,Positive,0.9766
+430,190,5,Love the glaze and safe packaging,2023-09-04,Positive,0.9589
+431,191,4,Gorgeous ceramic quality!,2023-09-07,Positive,0.9255
+432,192,3,Nice design but mixed experience,2023-09-10,Neutral,0.9378
+433,193,3,Nice design but mixed experience,2023-09-13,Neutral,0.948
+434,194,3,Decent ceramic piece for the price,2023-09-16,Neutral,0.9827
+435,195,3,Decent ceramic piece for the price,2023-09-19,Neutral,0.8647
+436,196,2,Not dishwasher safe as advertised,2023-09-22,Negative,0.9614
+437,197,1,Arrived damaged due to poor packaging,2023-09-25,Negative,0.956
+438,198,2,"Cracked quickly, would not recommend",2023-09-28,Negative,0.9549
+439,199,1,"Cracked quickly, would not recommend",2023-10-01,Negative,0.9683
+440,200,1,Disappointed with glaze durability,2023-10-04,Negative,0.9373
+441,201,5,Exceeded expectations for daily use,2023-10-07,Positive,0.9693
+442,202,4,Beautiful craftsmanship and value,2023-10-10,Positive,0.9554
+443,203,5,Beautiful craftsmanship and value,2023-10-13,Positive,0.969
+444,204,5,Gorgeous ceramic quality!,2023-10-16,Positive,0.9542
+445,205,5,Beautiful craftsmanship and value,2023-10-19,Positive,0.9632
+446,206,4,Love the glaze and safe packaging,2023-10-22,Positive,0.9471
+447,207,5,Exceeded expectations for daily use,2023-10-25,Positive,0.97
+448,208,5,Beautiful craftsmanship and value,2023-10-28,Positive,0.9579
+449,209,5,Exceeded expectations for daily use,2023-10-31,Positive,0.9671
+450,210,4,Love the glaze and safe packaging,2023-11-03,Positive,0.9397
+451,211,5,Beautiful craftsmanship and value,2023-11-06,Positive,0.9701
+452,212,3,"Okay overall, some pros and cons",2023-11-09,Neutral,0.9678
+453,213,3,Decent ceramic piece for the price,2023-11-12,Neutral,0.9385
+454,214,3,Nice design but mixed experience,2023-11-15,Neutral,0.9677
+455,215,3,Decent ceramic piece for the price,2023-11-18,Neutral,0.8926
+456,216,1,Arrived damaged due to poor packaging,2023-11-21,Negative,0.9677
+457,217,2,Disappointed with glaze durability,2023-11-24,Negative,0.9688
+458,218,2,"Cracked quickly, would not recommend",2023-11-27,Negative,0.955
+459,219,2,Disappointed with glaze durability,2023-11-30,Negative,0.9689
+460,220,2,"Cracked quickly, would not recommend",2023-12-03,Negative,0.9655
+461,221,4,Beautiful craftsmanship and value,2023-12-06,Positive,0.9646
+462,222,5,Gorgeous ceramic quality!,2023-12-09,Positive,0.9045
+463,223,4,Gorgeous ceramic quality!,2023-12-12,Positive,0.9038
+464,224,5,Gorgeous ceramic quality!,2023-12-15,Positive,0.9266
+465,225,5,Love the glaze and safe packaging,2023-12-18,Positive,0.9471
+466,226,5,Gorgeous ceramic quality!,2023-12-21,Positive,0.9584
+467,227,5,Gorgeous ceramic quality!,2023-12-24,Positive,0.9358
+468,228,4,Exceeded expectations for daily use,2023-01-11,Positive,0.9433
+469,229,5,Exceeded expectations for daily use,2023-01-14,Positive,0.9571
+470,230,5,Exceeded expectations for daily use,2023-01-17,Positive,0.9501
+471,231,4,Gorgeous ceramic quality!,2023-01-20,Positive,0.9542
+472,232,3,Decent ceramic piece for the price,2023-01-23,Neutral,0.9326
+473,233,3,Nice design but mixed experience,2023-01-26,Neutral,0.9105
+474,234,3,Decent ceramic piece for the price,2023-01-29,Neutral,0.9733
+475,235,3,Decent ceramic piece for the price,2023-02-01,Neutral,0.9143
+476,236,1,Disappointed with glaze durability,2023-02-04,Negative,0.9707
+477,237,1,Not dishwasher safe as advertised,2023-02-07,Negative,0.9248
+478,238,2,Not dishwasher safe as advertised,2023-02-10,Negative,0.9572
+479,239,2,"Cracked quickly, would not recommend",2023-02-13,Negative,0.9727
+480,240,2,"Cracked quickly, would not recommend",2023-02-16,Negative,0.9603
+481,1,5,Gorgeous ceramic quality!,2023-02-19,Positive,0.9045
+482,2,5,Love the glaze and safe packaging,2023-02-22,Positive,0.9274
+483,3,5,Love the glaze and safe packaging,2023-02-25,Positive,0.9477
+484,4,5,Love the glaze and safe packaging,2023-02-28,Positive,0.9549
+485,5,5,Beautiful craftsmanship and value,2023-03-03,Positive,0.9706
+486,6,5,Beautiful craftsmanship and value,2023-03-06,Positive,0.9605
+487,7,5,Beautiful craftsmanship and value,2023-03-09,Positive,0.9384
+488,8,4,Beautiful craftsmanship and value,2023-03-12,Positive,0.9497
+489,9,5,Gorgeous ceramic quality!,2023-03-15,Positive,0.9666
+490,10,5,Gorgeous ceramic quality!,2023-03-18,Positive,0.9382
+491,11,5,Love the glaze and safe packaging,2023-03-21,Positive,0.9468
+492,12,3,Decent ceramic piece for the price,2023-03-24,Neutral,0.9733
+493,13,3,Decent ceramic piece for the price,2023-03-27,Neutral,0.9289
+494,14,3,"Okay overall, some pros and cons",2023-03-30,Neutral,0.9782
+495,15,3,"Okay overall, some pros and cons",2023-04-02,Neutral,0.9038
+496,16,2,Disappointed with glaze durability,2023-04-05,Negative,0.9531
+497,17,2,Disappointed with glaze durability,2023-04-08,Negative,0.9597
+498,18,1,Not dishwasher safe as advertised,2023-04-11,Negative,0.9616
+499,19,2,Not dishwasher safe as advertised,2023-04-14,Negative,0.9624
+500,20,2,Arrived damaged due to poor packaging,2023-04-17,Negative,0.9371
+501,21,5,Love the glaze and safe packaging,2023-04-20,Positive,0.9402
+502,22,5,Exceeded expectations for daily use,2023-04-23,Positive,0.9729
+503,23,5,Gorgeous ceramic quality!,2023-04-26,Positive,0.9439
+504,24,5,Gorgeous ceramic quality!,2023-04-29,Positive,0.9672
+505,25,5,Gorgeous ceramic quality!,2023-05-02,Positive,0.9536
+506,26,5,Exceeded expectations for daily use,2023-05-05,Positive,0.9682
+507,27,5,Exceeded expectations for daily use,2023-05-08,Positive,0.9567
+508,28,5,Beautiful craftsmanship and value,2023-05-11,Positive,0.9574
+509,29,4,Beautiful craftsmanship and value,2023-05-14,Positive,0.9587
+510,30,4,Exceeded expectations for daily use,2023-05-17,Positive,0.9797
+511,31,4,Gorgeous ceramic quality!,2023-05-20,Positive,0.9475
+512,32,3,"Okay overall, some pros and cons",2023-05-23,Neutral,0.9624
+513,33,3,"Okay overall, some pros and cons",2023-05-26,Neutral,0.9216
+514,34,3,Decent ceramic piece for the price,2023-05-29,Neutral,0.9685
+515,35,3,Nice design but mixed experience,2023-06-01,Neutral,0.9201
+516,36,2,Disappointed with glaze durability,2023-06-04,Negative,0.9649
+517,37,2,Not dishwasher safe as advertised,2023-06-07,Negative,0.9249
+518,38,2,Arrived damaged due to poor packaging,2023-06-10,Negative,0.9562
+519,39,2,Disappointed with glaze durability,2023-06-13,Negative,0.9688
+520,40,2,"Cracked quickly, would not recommend",2023-06-16,Negative,0.9331
+521,41,4,Gorgeous ceramic quality!,2023-06-19,Positive,0.9367
+522,42,5,Love the glaze and safe packaging,2023-06-22,Positive,0.9556
+523,43,5,Gorgeous ceramic quality!,2023-06-25,Positive,0.9382
+524,44,5,Gorgeous ceramic quality!,2023-06-28,Positive,0.9533
+525,45,4,Gorgeous ceramic quality!,2023-07-01,Positive,0.9469
+526,46,5,Love the glaze and safe packaging,2023-07-04,Positive,0.9274
+527,47,5,Gorgeous ceramic quality!,2023-07-07,Positive,0.9381
+528,48,5,Love the glaze and safe packaging,2023-07-10,Positive,0.9392
+529,49,4,Beautiful craftsmanship and value,2023-07-13,Positive,0.9701
+530,50,5,Exceeded expectations for daily use,2023-07-16,Positive,0.9438
+531,51,4,Beautiful craftsmanship and value,2023-07-19,Positive,0.9605
+532,52,3,Decent ceramic piece for the price,2023-07-22,Neutral,0.9637
+533,53,3,Nice design but mixed experience,2023-07-25,Neutral,0.9241
+534,54,3,Decent ceramic piece for the price,2023-07-28,Neutral,0.9654
+535,55,3,Nice design but mixed experience,2023-07-31,Neutral,0.9354
+536,56,1,"Cracked quickly, would not recommend",2023-08-03,Negative,0.8879
+537,57,2,Arrived damaged due to poor packaging,2023-08-06,Negative,0.9522
+538,58,1,Arrived damaged due to poor packaging,2023-08-09,Negative,0.9683
+539,59,2,Disappointed with glaze durability,2023-08-12,Negative,0.9678
+540,60,2,Arrived damaged due to poor packaging,2023-08-15,Negative,0.9511
+541,61,4,Love the glaze and safe packaging,2023-08-18,Positive,0.9441
+542,62,4,Gorgeous ceramic quality!,2023-08-21,Positive,0.9486
+543,63,5,Exceeded expectations for daily use,2023-08-24,Positive,0.9713
+544,64,5,Gorgeous ceramic quality!,2023-08-27,Positive,0.9335
+545,65,5,Gorgeous ceramic quality!,2023-08-30,Positive,0.938
+546,66,5,Exceeded expectations for daily use,2023-09-02,Positive,0.9693
+547,67,5,Gorgeous ceramic quality!,2023-09-05,Positive,0.9335
+548,68,5,Exceeded expectations for daily use,2023-09-08,Positive,0.933
+549,69,5,Beautiful craftsmanship and value,2023-09-11,Positive,0.9701
+550,70,4,Beautiful craftsmanship and value,2023-09-14,Positive,0.923
+551,71,4,Gorgeous ceramic quality!,2023-09-17,Positive,0.9335
+552,72,3,Decent ceramic piece for the price,2023-09-20,Neutral,0.9804
+553,73,3,Nice design but mixed experience,2023-09-23,Neutral,0.9332
+554,74,3,Nice design but mixed experience,2023-09-26,Neutral,0.9783
+555,75,3,Decent ceramic piece for the price,2023-09-29,Neutral,0.9033
+556,76,2,Disappointed with glaze durability,2023-10-02,Negative,0.9525
+557,77,2,Disappointed with glaze durability,2023-10-05,Negative,0.9578
+558,78,1,Not dishwasher safe as advertised,2023-10-08,Negative,0.9722
+559,79,2,Disappointed with glaze durability,2023-10-11,Negative,0.9589
+560,80,2,Disappointed with glaze durability,2023-10-14,Negative,0.9498
+561,81,5,Love the glaze and safe packaging,2023-10-17,Positive,0.9592
+562,82,5,Love the glaze and safe packaging,2023-10-20,Positive,0.9463
+563,83,5,Love the glaze and safe packaging,2023-10-23,Positive,0.9705
+564,84,4,Gorgeous ceramic quality!,2023-10-26,Positive,0.9358
+565,85,5,Beautiful craftsmanship and value,2023-10-29,Positive,0.9601
+566,86,5,Gorgeous ceramic quality!,2023-11-01,Positive,0.905
+567,87,4,Love the glaze and safe packaging,2023-11-04,Positive,0.9441
+568,88,4,Gorgeous ceramic quality!,2023-11-07,Positive,0.9536
+569,89,5,Beautiful craftsmanship and value,2023-11-10,Positive,0.9762
+570,90,4,Gorgeous ceramic quality!,2023-11-13,Positive,0.8901
+571,91,5,Beautiful craftsmanship and value,2023-11-16,Positive,0.9587
+572,92,3,Decent ceramic piece for the price,2023-11-19,Neutral,0.9654
+573,93,3,Nice design but mixed experience,2023-11-22,Neutral,0.9221
+574,94,3,Nice design but mixed experience,2023-11-25,Neutral,0.9838
+575,95,3,"Okay overall, some pros and cons",2023-11-28,Neutral,0.9024
+576,96,2,Disappointed with glaze durability,2023-12-01,Negative,0.9483
+577,97,2,Arrived damaged due to poor packaging,2023-12-04,Negative,0.9437
+578,98,2,Not dishwasher safe as advertised,2023-12-07,Negative,0.9452
+579,99,2,Disappointed with glaze durability,2023-12-10,Negative,0.9197
+580,100,1,Disappointed with glaze durability,2023-12-13,Negative,0.927
+581,101,4,Exceeded expectations for daily use,2023-12-16,Positive,0.96
+582,102,5,Exceeded expectations for daily use,2023-12-19,Positive,0.9584
+583,103,4,Exceeded expectations for daily use,2023-12-22,Positive,0.9604
+584,104,5,Love the glaze and safe packaging,2023-12-25,Positive,0.9212
+585,105,5,Love the glaze and safe packaging,2023-01-12,Positive,0.9573
+586,106,5,Love the glaze and safe packaging,2023-01-15,Positive,0.9441
+587,107,5,Beautiful craftsmanship and value,2023-01-18,Positive,0.9248
+588,108,4,Love the glaze and safe packaging,2023-01-21,Positive,0.9753
+589,109,5,Love the glaze and safe packaging,2023-01-24,Positive,0.9384
+590,110,4,Gorgeous ceramic quality!,2023-01-27,Positive,0.9221
+591,111,5,Beautiful craftsmanship and value,2023-01-30,Positive,0.9557
+592,112,3,Nice design but mixed experience,2023-02-02,Neutral,0.9838
+593,113,3,Decent ceramic piece for the price,2023-02-05,Neutral,0.9385
+594,114,3,Decent ceramic piece for the price,2023-02-08,Neutral,0.9827
+595,115,3,Nice design but mixed experience,2023-02-11,Neutral,0.9285
+596,116,2,Arrived damaged due to poor packaging,2023-02-14,Negative,0.948
+597,117,2,Disappointed with glaze durability,2023-02-17,Negative,0.9615
+598,118,2,Arrived damaged due to poor packaging,2023-02-20,Negative,0.9225
+599,119,2,Not dishwasher safe as advertised,2023-02-23,Negative,0.9455
+600,120,2,"Cracked quickly, would not recommend",2023-02-26,Negative,0.9236

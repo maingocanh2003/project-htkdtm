@@ -1,0 +1,93 @@
+country_code,country_name,attribute_group,attribute_value,product_count,attribute_share_pct,avg_market_price_usd,avg_rating_score,total_reviews
+DEU,Germany,category,Bát đĩa bàn ăn,12,25.0,53.5,4.36,1591
+DEU,Germany,category,Ly cốc sứ,12,25.0,49.81,4.24,1118
+DEU,Germany,category,Bộ ấm chén,12,25.0,52.02,4.21,1746
+DEU,Germany,category,Lọ hoa mỹ nghệ,12,25.0,49.77,3.89,1536
+DEU,Germany,color,Cobalt Blue,17,35.42,52.79,4.2,1858
+DEU,Germany,color,Gray,11,22.92,47.17,4.1,1495
+DEU,Germany,color,White,10,20.83,60.6,4.2,1367
+DEU,Germany,color,Natural Beige,10,20.83,43.89,4.18,1271
+DEU,Germany,material,Porcelain,24,50.0,55.41,4.25,2867
+DEU,Germany,material,Stoneware,24,50.0,47.14,4.1,3124
+DEU,Germany,price_segment,Mid-range $20-$60,31,64.58,39.26,4.12,3732
+DEU,Germany,price_segment,Premium >$60,17,35.42,73.19,4.27,2259
+DEU,Germany,shape,Oval,17,35.42,48.08,4.19,2506
+DEU,Germany,shape,Square,16,33.33,53.5,4.19,1841
+DEU,Germany,shape,Round,15,31.25,52.52,4.14,1644
+DEU,Germany,style,Modern,26,54.17,50.66,4.16,3391
+DEU,Germany,style,Minimalist,22,45.83,52.01,4.2,2600
+FRA,France,category,Bát đĩa bàn ăn,12,25.0,64.27,4.25,1565
+FRA,France,category,Lọ hoa mỹ nghệ,12,25.0,77.49,4.18,1890
+FRA,France,category,Bộ ấm chén,12,25.0,77.02,4.15,1707
+FRA,France,category,Ly cốc sứ,12,25.0,76.74,4.11,1598
+FRA,France,color,Cobalt Blue,14,29.17,70.96,4.25,1960
+FRA,France,color,Multicolor,14,29.17,72.2,4.2,1942
+FRA,France,color,Natural Beige,13,27.08,77.62,4.12,1479
+FRA,France,color,White,7,14.58,76.14,4.05,1379
+FRA,France,material,Earthenware,21,43.75,74.53,4.12,2894
+FRA,France,material,Porcelain,16,33.33,70.1,4.18,2447
+FRA,France,material,Crackle Glaze,11,22.92,78.14,4.25,1419
+FRA,France,price_segment,Premium >$60,34,70.83,85.26,4.22,4706
+FRA,France,price_segment,Mid-range $20-$60,14,29.17,46.24,4.05,2054
+FRA,France,shape,Round,17,35.42,76.63,4.18,2487
+FRA,France,shape,Oval,16,33.33,72.03,4.15,2020
+FRA,France,shape,Organic Artistic,15,31.25,72.74,4.18,2253
+FRA,France,style,Traditional,16,33.33,78.45,4.32,2260
+FRA,France,style,Modern,16,33.33,71.44,4.19,2326
+FRA,France,style,Handmade Rustic,16,33.33,71.75,4.0,2174
+GBR,United Kingdom,category,Bộ ấm chén,12,25.0,46.12,4.33,1516
+GBR,United Kingdom,category,Lọ hoa mỹ nghệ,12,25.0,43.83,4.18,1293
+GBR,United Kingdom,category,Bát đĩa bàn ăn,12,25.0,53.4,4.12,1460
+GBR,United Kingdom,category,Ly cốc sứ,12,25.0,48.64,4.09,1956
+GBR,United Kingdom,color,White,22,45.83,49.57,4.3,2432
+GBR,United Kingdom,color,Cobalt Blue,13,27.08,48.78,4.11,2033
+GBR,United Kingdom,color,Natural Beige,13,27.08,44.56,4.06,1760
+GBR,United Kingdom,material,Stoneware,26,54.17,45.46,4.15,3227
+GBR,United Kingdom,material,Porcelain,22,45.83,50.99,4.23,2998
+GBR,United Kingdom,price_segment,Mid-range $20-$60,31,64.58,37.81,4.18,4026
+GBR,United Kingdom,price_segment,Premium >$60,17,35.42,66.58,4.19,2199
+GBR,United Kingdom,shape,Oval,24,50.0,44.44,4.22,3194
+GBR,United Kingdom,shape,Round,24,50.0,51.55,4.15,3031
+GBR,United Kingdom,style,Modern,17,35.42,53.04,4.1,2078
+GBR,United Kingdom,style,Minimalist,16,33.33,48.84,4.29,2145
+GBR,United Kingdom,style,Traditional,15,31.25,41.39,4.16,2002
+JPN,Japan,category,Ly cốc sứ,12,25.0,61.57,4.33,1707
+JPN,Japan,category,Lọ hoa mỹ nghệ,12,25.0,60.94,4.24,1905
+JPN,Japan,category,Bát đĩa bàn ăn,12,25.0,72.66,4.01,1723
+JPN,Japan,category,Bộ ấm chén,12,25.0,79.04,3.96,1716
+JPN,Japan,color,Brown,16,33.33,61.41,4.2,2497
+JPN,Japan,color,Celadon Green,13,27.08,62.5,4.15,1979
+JPN,Japan,color,Natural Beige,10,20.83,79.75,4.06,1404
+JPN,Japan,color,White,9,18.75,77.55,4.1,1171
+JPN,Japan,material,Stoneware,26,54.17,66.26,4.15,3710
+JPN,Japan,material,Porcelain,13,27.08,71.38,4.05,2074
+JPN,Japan,material,Crackle Glaze,9,18.75,71.11,4.22,1267
+JPN,Japan,price_segment,Premium >$60,31,64.58,81.05,4.07,4227
+JPN,Japan,price_segment,Mid-range $20-$60,17,35.42,45.77,4.26,2824
+JPN,Japan,shape,Organic Artistic,19,39.58,72.52,4.13,2822
+JPN,Japan,shape,Round,15,31.25,60.6,4.1,2403
+JPN,Japan,shape,Oval,14,29.17,71.69,4.18,1826
+JPN,Japan,style,Handmade Rustic,20,41.67,72.71,4.08,2814
+JPN,Japan,style,Minimalist,19,39.58,68.29,4.19,2614
+JPN,Japan,style,Traditional,9,18.75,59.88,4.15,1623
+USA,United States,category,Bộ ấm chén,12,25.0,54.0,4.14,1866
+USA,United States,category,Bát đĩa bàn ăn,12,25.0,59.04,4.11,1426
+USA,United States,category,Ly cốc sứ,12,25.0,63.24,4.05,1923
+USA,United States,category,Lọ hoa mỹ nghệ,12,25.0,64.43,4.01,1973
+USA,United States,color,Natural Beige,12,25.0,55.89,4.31,1991
+USA,United States,color,Cobalt Blue,12,25.0,61.87,4.01,1569
+USA,United States,color,Multicolor,12,25.0,62.21,4.01,1805
+USA,United States,color,White,12,25.0,60.72,3.98,1823
+USA,United States,material,Earthenware,17,35.42,68.03,4.03,2544
+USA,United States,material,Stoneware,16,33.33,61.07,4.06,2319
+USA,United States,material,Porcelain,15,31.25,50.31,4.16,2325
+USA,United States,price_segment,Mid-range $20-$60,25,52.08,43.51,3.99,3647
+USA,United States,price_segment,Premium >$60,23,47.92,78.29,4.18,3541
+USA,United States,shape,Oval,18,37.5,64.08,4.1,2509
+USA,United States,shape,Organic Artistic,14,29.17,57.36,4.15,2100
+USA,United States,shape,Square,11,22.92,56.73,3.92,1880
+USA,United States,shape,Round,5,10.42,61.58,4.13,699
+USA,United States,style,Modern,18,37.5,62.65,4.04,2749
+USA,United States,style,Minimalist,11,22.92,58.41,4.19,1883
+USA,United States,style,Handmade Rustic,11,22.92,56.1,3.98,1589
+USA,United States,style,Traditional,8,16.67,62.64,4.16,967

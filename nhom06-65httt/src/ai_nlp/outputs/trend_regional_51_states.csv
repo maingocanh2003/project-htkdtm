@@ -1,0 +1,52 @@
+country_code,country_name,region_code,region_name,avg_interest_score,max_interest_score,categories_tracked,region_rank_in_country
+USA,United States,US-OR,Oregon,88.75,100,4,1
+USA,United States,US-CO,Colorado,85.25,95,4,2
+USA,United States,US-FL,Florida,82.0,91,4,3
+USA,United States,US-WA,Washington,81.75,89,4,4
+USA,United States,US-NY,New York,81.0,87,4,5
+USA,United States,US-TX,Texas,79.75,87,4,6
+USA,United States,US-CA,California,79.25,81,4,7
+USA,United States,US-AL,Alabama,75.0,96,4,8
+USA,United States,US-MA,Massachusetts,74.25,79,4,9
+USA,United States,US-VT,Vermont,73.0,80,4,10
+USA,United States,US-ND,North Dakota,72.75,88,4,11
+USA,United States,US-NJ,New Jersey,70.75,94,4,12
+USA,United States,US-SC,South Carolina,70.25,82,4,13
+USA,United States,US-ME,Maine,69.75,77,4,14
+USA,United States,US-NH,New Hampshire,69.75,74,4,14
+USA,United States,US-WI,Wisconsin,69.75,77,4,14
+USA,United States,US-AZ,Arizona,69.25,73,4,15
+USA,United States,US-WV,West Virginia,69.25,81,4,15
+USA,United States,US-NM,New Mexico,69.0,87,4,16
+USA,United States,US-UT,Utah,68.5,74,4,17
+USA,United States,US-NV,Nevada,68.25,75,4,18
+USA,United States,US-AR,Arkansas,68.0,73,4,19
+USA,United States,US-WY,Wyoming,67.0,80,4,20
+USA,United States,US-ID,Idaho,66.25,80,4,21
+USA,United States,US-MS,Mississippi,66.25,77,4,21
+USA,United States,US-TN,Tennessee,66.25,82,4,21
+USA,United States,US-MT,Montana,66.0,77,4,22
+USA,United States,US-OH,Ohio,66.0,82,4,22
+USA,United States,US-HI,Hawaii,65.75,78,4,23
+USA,United States,US-KS,Kansas,65.75,76,4,23
+USA,United States,US-NC,North Carolina,65.5,69,4,24
+USA,United States,US-MD,Maryland,65.25,73,4,25
+USA,United States,US-GA,Georgia,64.75,66,4,26
+USA,United States,US-CT,Connecticut,64.25,69,4,27
+USA,United States,US-SD,South Dakota,64.25,84,4,27
+USA,United States,US-VA,Virginia,64.25,75,4,27
+USA,United States,US-MO,Missouri,64.0,69,4,28
+USA,United States,US-OK,Oklahoma,64.0,70,4,28
+USA,United States,US-AK,Alaska,63.75,67,4,29
+USA,United States,US-DC,District of Columbia,63.75,72,4,29
+USA,United States,US-LA,Louisiana,63.75,78,4,29
+USA,United States,US-IA,Iowa,63.0,77,4,30
+USA,United States,US-IN,Indiana,62.75,74,4,31
+USA,United States,US-PA,Pennsylvania,62.75,76,4,31
+USA,United States,US-RI,Rhode Island,62.75,75,4,31
+USA,United States,US-DE,Delaware,62.0,65,4,32
+USA,United States,US-MN,Minnesota,61.75,68,4,33
+USA,United States,US-MI,Michigan,60.75,68,4,34
+USA,United States,US-NE,Nebraska,60.0,75,4,35
+USA,United States,US-KY,Kentucky,59.75,64,4,36
+USA,United States,US-IL,Illinois,57.5,70,4,37

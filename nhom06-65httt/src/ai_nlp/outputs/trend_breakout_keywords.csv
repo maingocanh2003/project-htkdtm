@@ -1,0 +1,13 @@
+keyword_id,country_id,category_id,keyword_text,related_attribute_type,growth_pct,trend_classification,recorded_period,country_code,country_name,category_code,category_name_vi,keyword_rank
+1,1,4,wabi sabi ceramic vase,style,5300.0,Breakout,Last 12 Months,USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,1
+5,2,1,minimalist natural clay tea set,style,2400.0,Breakout,Last 12 Months,JPN,Japan,TEA_SET,Bộ ấm chén,2
+2,1,3,speckled stoneware dinnerware,material,1850.0,Breakout,Last 12 Months,USA,United States,DINNERWARE,Bát đĩa bàn ăn,3
+6,2,3,japanese earth tone ceramic bowl,color,980.0,Breakout,Last 12 Months,JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,4
+10,4,4,artisan terracotta table vase,material,760.0,Rising,Last 12 Months,FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,5
+3,1,2,dishwasher safe ceramic mug,feature,640.0,Rising,Last 12 Months,USA,United States,MUG_CUP,Ly cốc sứ,6
+8,3,3,functional round porcelain dinner set,shape,520.0,Rising,Last 12 Months,DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,7
+4,1,4,matte white organic vase,color,420.0,Rising,Last 12 Months,USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,8
+7,2,1,handcrafted celadon teapot,material,350.0,Rising,Last 12 Months,JPN,Japan,TEA_SET,Bộ ấm chén,9
+9,3,2,heat resistant porcelain coffee cup,feature,310.0,Rising,Last 12 Months,DEU,Germany,MUG_CUP,Ly cốc sứ,10
+11,4,1,cobalt blue ceramic tea service,color,210.0,Rising,Last 12 Months,FRA,France,TEA_SET,Bộ ấm chén,11
+12,5,2,handmade rustic stoneware mug,style,145.0,Rising,Last 12 Months,GBR,United Kingdom,MUG_CUP,Ly cốc sứ,12

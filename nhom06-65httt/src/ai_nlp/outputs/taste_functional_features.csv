@@ -1,0 +1,21 @@
+country_code,country_name,category_code,category_name_vi,product_count,dishwasher_safe_pct,heat_resistant_pct,avg_market_price_usd,avg_rating_score
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,12,100.0,83.33,53.5,4.36
+DEU,Germany,MUG_CUP,Ly cốc sứ,12,100.0,50.0,49.81,4.24
+DEU,Germany,TEA_SET,Bộ ấm chén,12,91.67,83.33,52.02,4.21
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,12,91.67,75.0,49.77,3.89
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,12,91.67,83.33,64.27,4.25
+FRA,France,MUG_CUP,Ly cốc sứ,12,66.67,58.33,76.74,4.11
+FRA,France,TEA_SET,Bộ ấm chén,12,91.67,100.0,77.02,4.15
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,12,66.67,100.0,77.49,4.18
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,12,83.33,75.0,53.4,4.12
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,12,66.67,91.67,48.64,4.09
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,12,100.0,91.67,46.12,4.33
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,12,83.33,75.0,43.83,4.18
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,12,58.33,58.33,72.66,4.01
+JPN,Japan,MUG_CUP,Ly cốc sứ,12,83.33,91.67,61.57,4.33
+JPN,Japan,TEA_SET,Bộ ấm chén,12,66.67,91.67,79.04,3.96
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,12,58.33,75.0,60.94,4.24
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,12,91.67,91.67,59.04,4.11
+USA,United States,MUG_CUP,Ly cốc sứ,12,83.33,83.33,63.24,4.05
+USA,United States,TEA_SET,Bộ ấm chén,12,91.67,91.67,54.0,4.14
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,12,100.0,58.33,64.43,4.01

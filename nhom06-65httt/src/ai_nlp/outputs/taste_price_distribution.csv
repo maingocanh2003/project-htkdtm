@@ -1,0 +1,21 @@
+country_code,country_name,category_code,category_name_vi,product_count,min_price_usd,p25_price_usd,median_price_usd,mean_price_usd,p75_price_usd,max_price_usd
+DEU,Germany,DINNERWARE,Bát đĩa bàn ăn,12,23.28,35.72,54.92,53.5,70.59,81.83
+DEU,Germany,TEA_SET,Bộ ấm chén,12,22.88,34.93,46.3,52.02,73.26,79.46
+DEU,Germany,MUG_CUP,Ly cốc sứ,12,25.7,35.08,47.29,49.81,64.91,78.47
+DEU,Germany,VASE_DECOR,Lọ hoa mỹ nghệ,12,22.46,37.43,49.01,49.77,61.36,75.31
+FRA,France,VASE_DECOR,Lọ hoa mỹ nghệ,12,36.78,60.62,83.08,77.49,96.54,114.65
+FRA,France,TEA_SET,Bộ ấm chén,12,45.83,60.38,75.4,77.02,91.66,119.11
+FRA,France,MUG_CUP,Ly cốc sứ,12,41.91,63.41,72.97,76.74,88.7,119.79
+FRA,France,DINNERWARE,Bát đĩa bàn ăn,12,30.55,45.62,60.29,64.27,76.56,108.2
+GBR,United Kingdom,DINNERWARE,Bát đĩa bàn ăn,12,28.12,40.1,60.36,53.4,63.86,69.52
+GBR,United Kingdom,MUG_CUP,Ly cốc sứ,12,20.51,30.4,51.81,48.64,67.98,77.03
+GBR,United Kingdom,TEA_SET,Bộ ấm chén,12,26.27,30.5,46.18,46.12,60.82,71.33
+GBR,United Kingdom,VASE_DECOR,Lọ hoa mỹ nghệ,12,24.19,34.2,39.66,43.83,51.64,68.73
+JPN,Japan,TEA_SET,Bộ ấm chén,12,40.5,67.38,74.72,79.04,96.45,103.7
+JPN,Japan,DINNERWARE,Bát đĩa bàn ăn,12,37.63,55.59,68.42,72.66,87.86,109.22
+JPN,Japan,MUG_CUP,Ly cốc sứ,12,36.68,47.16,55.46,61.57,72.44,109.71
+JPN,Japan,VASE_DECOR,Lọ hoa mỹ nghệ,12,33.83,44.6,61.04,60.94,70.63,103.68
+USA,United States,VASE_DECOR,Lọ hoa mỹ nghệ,12,30.03,51.75,68.03,64.43,74.2,93.19
+USA,United States,MUG_CUP,Ly cốc sứ,12,31.55,35.72,59.61,63.24,90.66,94.16
+USA,United States,DINNERWARE,Bát đĩa bàn ăn,12,35.34,43.64,57.32,59.04,69.18,91.66
+USA,United States,TEA_SET,Bộ ấm chén,12,34.9,39.15,49.5,54.0,63.13,83.71

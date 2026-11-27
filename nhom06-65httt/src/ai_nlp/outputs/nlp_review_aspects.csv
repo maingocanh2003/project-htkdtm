@@ -1,0 +1,947 @@
+review_id,aspect_category,aspect_sentiment,extracted_phrase
+1,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+2,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+3,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+3,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+4,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+5,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+5,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+6,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+6,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+7,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+7,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+8,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+8,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+9,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+9,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+10,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+11,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+11,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+12,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+13,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+13,Packaging,Negative,"terrible packaging, two plates shattered during delivery due to thin cardboard"
+14,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+15,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+15,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+16,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+17,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+18,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+18,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+18,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+19,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+19,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+20,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+20,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+21,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+22,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+23,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+23,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+24,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+24,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+25,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+25,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+26,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+27,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+28,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+28,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+29,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+30,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+30,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+31,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+31,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+32,Heat/Dishwasher,Neutral,Holds heat moderately well
+33,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+33,Glaze Durability,Negative,the glaze chipped along the rim after only two weeks of gentle use
+33,Design & Color,Negative,the glaze chipped along the rim after only two weeks of gentle use
+34,Price/Value,Neutral,Fair price for an everyday ceramic set
+35,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+35,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+36,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+37,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+37,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+38,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+38,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+39,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+39,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+40,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+40,Glaze Durability,Negative,Noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+41,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+41,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+42,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+43,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+44,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+44,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+45,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+46,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+46,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+47,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+48,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+48,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+49,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+50,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+51,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+52,Price/Value,Neutral,Priced about right for mid-range imported tableware
+53,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+53,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+53,Glaze Durability,Negative,poorly packed box resulted in a chipped spout upon arrival
+53,Packaging,Negative,poorly packed box resulted in a chipped spout upon arrival
+54,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+55,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+55,Heat/Dishwasher,Negative,got burning hot in the microwave even
+56,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+56,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+57,Packaging,Negative,Zero foam dividers inside so the teapot lid cracked in transit
+58,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+58,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+59,Packaging,Negative,Zero foam dividers inside so the teapot lid cracked in transit
+60,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+61,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+61,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+61,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+62,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+62,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+63,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+63,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+64,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+65,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+66,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+66,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+67,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+67,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+68,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+69,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+70,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+71,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+71,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+72,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+73,Glaze Durability,Negative,too expensive considering the minor flaws and basic finish
+73,Price/Value,Negative,too expensive considering the minor flaws and basic finish
+74,Price/Value,Neutral,Fair price for an everyday ceramic set
+75,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+76,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+76,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+77,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+78,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+79,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+79,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+80,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+80,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+81,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+81,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+82,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+82,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+83,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+84,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+85,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+86,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+87,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+88,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+88,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+89,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+89,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+90,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+90,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+91,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+91,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+92,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+93,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+93,Glaze Durability,Negative,noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+94,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+95,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+95,Price/Value,Negative,not worth the premium price tag given the mediocre craftsmanship
+96,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+97,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+97,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+98,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+98,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+99,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+99,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+100,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+100,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+100,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+101,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+101,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+102,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+103,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+104,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+105,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+105,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+106,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+107,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+108,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+109,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+110,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+111,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+112,Price/Value,Neutral,Priced about right for mid-range imported tableware
+113,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+113,Glaze Durability,Negative,the glaze chipped along the rim after only two weeks of gentle use
+113,Design & Color,Negative,the glaze chipped along the rim after only two weeks of gentle use
+114,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+115,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+115,Heat/Dishwasher,Negative,cracked right down the middle when I poured boiling water for tea
+116,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+116,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+117,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+117,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+118,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+118,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+118,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+119,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+119,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+120,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+120,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+121,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+122,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+123,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+123,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+124,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+124,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+125,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+125,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+126,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+127,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+128,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+128,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+129,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+129,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+130,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+130,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+131,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+131,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+132,Heat/Dishwasher,Neutral,Holds heat moderately well
+133,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+133,Glaze Durability,Negative,noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+134,Price/Value,Neutral,Fair price for an everyday ceramic set
+135,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+135,Heat/Dishwasher,Negative,"not actually dishwasher safe, the gold trim faded after three cycles"
+136,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+136,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+137,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+138,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+139,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+140,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+140,Glaze Durability,Negative,Uneven glaze finish with tiny pinholes and rough spots on the bottom
+141,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+141,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+142,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+143,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+144,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+145,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+145,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+146,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+146,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+147,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+147,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+148,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+149,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+149,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+150,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+150,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+151,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+152,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+153,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+153,Glaze Durability,Negative,surface glaze feels thin and scratches way too easily
+154,Heat/Dishwasher,Neutral,Holds heat moderately well
+155,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+155,Heat/Dishwasher,Negative,got burning hot in the microwave even
+156,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+157,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+158,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+158,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+159,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+160,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+160,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+160,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+161,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+161,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+162,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+162,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+163,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+163,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+164,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+164,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+165,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+166,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+167,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+168,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+168,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+169,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+170,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+170,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+171,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+171,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+172,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+173,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+173,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+174,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+175,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+175,Design & Color,Negative,design looks mass-produced and the pattern print is blurry
+176,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+176,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+177,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+178,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+179,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+179,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+180,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+181,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+181,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+182,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+182,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+183,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+183,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+184,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+185,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+186,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+187,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+187,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+188,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+189,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+189,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+190,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+191,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+191,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+192,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+193,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+193,Glaze Durability,Negative,glaze started flaking off near the handle after a few washes
+194,Price/Value,Neutral,Fair price for an everyday ceramic set
+195,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+195,Heat/Dishwasher,Negative,handle overheats in the microwave and makes it hard to lift safely
+196,Glaze Durability,Negative,Uneven glaze finish with tiny pinholes and rough spots on the bottom
+197,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+198,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+198,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+199,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+199,Glaze Durability,Negative,Noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+200,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+201,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+201,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+202,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+203,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+204,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+205,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+206,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+207,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+208,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+208,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+209,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+209,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+210,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+210,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+211,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+212,Glaze Durability,Neutral,"Glaze is acceptable, neither exceptional nor flawed"
+213,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+213,Glaze Durability,Negative,glaze started flaking off near the handle after a few washes
+214,Glaze Durability,Neutral,The glaze finish is decent for the price
+214,Price/Value,Neutral,The glaze finish is decent for the price
+215,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+215,Design & Color,Negative,size is smaller than expected and the asymmetrical shape wobbles slightly
+216,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+216,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+217,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+218,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+218,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+219,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+219,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+220,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+220,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+221,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+221,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+222,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+222,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+222,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+223,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+224,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+224,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+224,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+225,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+226,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+226,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+227,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+228,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+229,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+229,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+230,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+230,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+231,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+232,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+233,Packaging,Negative,arrived with a broken handle because the outer box had almost no padding
+234,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+235,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+235,Heat/Dishwasher,Negative,cracked right down the middle when I poured boiling water for tea
+236,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+236,Glaze Durability,Negative,Noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+237,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+238,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+239,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+239,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+240,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+240,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+240,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+241,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+241,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+242,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+243,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+243,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+244,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+244,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+245,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+245,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+246,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+246,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+247,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+248,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+248,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+249,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+249,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+250,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+251,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+251,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+252,Glaze Durability,Neutral,"Glaze is acceptable, neither exceptional nor flawed"
+253,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+253,Glaze Durability,Negative,surface glaze feels thin and scratches way too easily
+254,Packaging,Neutral,"Standard shipping box, could use slightly better corner protection"
+255,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+255,Glaze Durability,Negative,the glaze chipped along the rim after only two weeks of gentle use
+255,Design & Color,Negative,the glaze chipped along the rim after only two weeks of gentle use
+256,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+257,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+258,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+258,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+259,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+259,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+260,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+261,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+261,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+262,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+262,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+263,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+263,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+264,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+265,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+266,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+266,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+267,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+268,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+268,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+269,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+270,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+271,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+272,Glaze Durability,Neutral,"Glaze is acceptable, neither exceptional nor flawed"
+273,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+273,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+274,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+275,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+275,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+276,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+277,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+278,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+279,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+279,Glaze Durability,Negative,Poorly packed box resulted in a chipped spout upon arrival
+279,Packaging,Negative,Poorly packed box resulted in a chipped spout upon arrival
+280,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+281,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+281,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+281,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+282,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+283,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+283,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+284,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+285,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+285,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+286,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+287,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+287,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+288,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+289,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+290,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+291,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+292,Packaging,Neutral,Packaging was basic cardboard with paper wrap
+293,Glaze Durability,Negative,too expensive considering the minor flaws and basic finish
+293,Price/Value,Negative,too expensive considering the minor flaws and basic finish
+294,Heat/Dishwasher,Neutral,Holds heat moderately well
+295,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+295,Design & Color,Negative,the color looked dull and muddy compared to the bright photos online
+296,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+296,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+297,Glaze Durability,Negative,Poorly packed box resulted in a chipped spout upon arrival
+297,Packaging,Negative,Poorly packed box resulted in a chipped spout upon arrival
+297,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+298,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+298,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+299,Glaze Durability,Negative,Uneven glaze finish with tiny pinholes and rough spots on the bottom
+300,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+300,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+301,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+302,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+303,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+304,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+305,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+305,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+306,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+306,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+307,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+307,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+308,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+308,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+309,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+309,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+310,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+311,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+311,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+312,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+313,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+313,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+314,Price/Value,Neutral,Priced about right for mid-range imported tableware
+315,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+315,Glaze Durability,Negative,uneven glaze finish with tiny pinholes and rough spots on the bottom
+316,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+316,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+316,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+317,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+318,Glaze Durability,Negative,Poorly packed box resulted in a chipped spout upon arrival
+318,Packaging,Negative,Poorly packed box resulted in a chipped spout upon arrival
+319,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+320,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+321,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+322,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+322,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+323,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+323,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+324,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+324,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+325,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+325,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+326,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+327,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+327,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+327,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+328,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+328,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+329,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+329,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+330,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+331,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+332,Packaging,Neutral,"Standard shipping box, could use slightly better corner protection"
+333,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+333,Glaze Durability,Negative,too expensive considering the minor flaws and basic finish
+333,Price/Value,Negative,too expensive considering the minor flaws and basic finish
+334,Glaze Durability,Neutral,"Glaze is acceptable, neither exceptional nor flawed"
+335,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+335,Design & Color,Negative,the color looked dull and muddy compared to the bright photos online
+336,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+336,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+337,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+337,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+338,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+339,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+339,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+340,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+340,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+341,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+341,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+342,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+342,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+343,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+343,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+344,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+344,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+345,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+345,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+346,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+346,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+347,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+348,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+348,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+349,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+350,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+350,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+351,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+351,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+351,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+352,Packaging,Neutral,"Standard shipping box, could use slightly better corner protection"
+353,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+353,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+353,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+354,Packaging,Neutral,"Standard shipping box, could use slightly better corner protection"
+355,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+355,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+355,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+356,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+356,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+357,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+358,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+358,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+358,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+359,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+360,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+361,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+362,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+363,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+363,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+364,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+365,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+366,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+366,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+367,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+367,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+368,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+368,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+369,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+370,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+370,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+371,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+371,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+372,Heat/Dishwasher,Neutral,Holds heat moderately well
+373,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+373,Heat/Dishwasher,Negative,handle overheats in the microwave and makes it hard to lift safely
+374,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+375,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+375,Packaging,Negative,arrived with a broken handle because the outer box had almost no padding
+376,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+377,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+377,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+378,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+378,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+378,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+379,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+379,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+380,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+381,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+382,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+383,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+383,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+384,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+385,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+386,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+387,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+387,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+388,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+388,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+389,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+389,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+390,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+390,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+391,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+391,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+392,Heat/Dishwasher,Neutral,Holds heat moderately well
+393,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+393,Glaze Durability,Negative,glaze started flaking off near the handle after a few washes
+394,Glaze Durability,Neutral,The glaze finish is decent for the price
+394,Price/Value,Neutral,The glaze finish is decent for the price
+395,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+395,Price/Value,Negative,not worth the premium price tag given the mediocre craftsmanship
+396,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+397,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+398,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+398,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+399,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+400,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+400,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+401,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+401,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+402,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+402,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+403,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+404,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+405,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+405,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+406,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+406,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+407,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+407,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+408,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+409,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+410,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+410,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+411,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+411,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+412,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+413,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+413,Packaging,Negative,"terrible packaging, two plates shattered during delivery due to thin cardboard"
+414,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+415,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+415,Design & Color,Negative,size is smaller than expected and the asymmetrical shape wobbles slightly
+416,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+416,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+416,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+417,Design & Color,Negative,Awkwardly shaped handle and uneven rim make the mug feel clumsy
+418,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+418,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+418,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+419,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+420,Glaze Durability,Negative,Noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+421,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+422,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+422,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+423,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+424,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+424,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+425,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+426,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+426,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+427,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+428,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+429,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+429,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+430,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+430,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+431,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+431,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+432,Packaging,Neutral,Packaging was basic cardboard with paper wrap
+433,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+433,Glaze Durability,Negative,poorly packed box resulted in a chipped spout upon arrival
+433,Packaging,Negative,poorly packed box resulted in a chipped spout upon arrival
+434,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+435,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+435,Design & Color,Negative,awkwardly shaped handle and uneven rim make the mug feel clumsy
+436,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+437,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+438,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+438,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+439,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+439,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+439,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+440,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+440,Glaze Durability,Negative,Uneven glaze finish with tiny pinholes and rough spots on the bottom
+441,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+442,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+443,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+443,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+444,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+444,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+445,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+445,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+446,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+447,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+447,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+448,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+449,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+449,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+450,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+450,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+451,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+452,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+453,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+453,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+454,Packaging,Neutral,"Standard shipping box, could use slightly better corner protection"
+455,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+455,Design & Color,Negative,size is smaller than expected and the asymmetrical shape wobbles slightly
+456,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+456,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+457,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+458,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+459,Heat/Dishwasher,Negative,Handle overheats in the microwave and makes it hard to lift safely
+460,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+460,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+461,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+461,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+462,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+463,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+464,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+464,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+465,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+466,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+466,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+467,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+468,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+468,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+469,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+470,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+471,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+471,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+472,Packaging,Neutral,Packaging was basic cardboard with paper wrap
+473,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+473,Design & Color,Negative,size is smaller than expected and the asymmetrical shape wobbles slightly
+474,Heat/Dishwasher,Neutral,Holds heat moderately well
+475,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+475,Price/Value,Negative,not worth the premium price tag given the mediocre craftsmanship
+476,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+476,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+476,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+477,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+477,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+478,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+479,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+479,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+480,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+481,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+482,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+483,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+484,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+484,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+485,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+486,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+487,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+488,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+489,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+489,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+490,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+491,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+492,Heat/Dishwasher,Neutral,Holds heat moderately well
+493,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+493,Design & Color,Negative,design looks mass-produced and the pattern print is blurry
+494,Glaze Durability,Neutral,The glaze finish is decent for the price
+494,Price/Value,Neutral,The glaze finish is decent for the price
+495,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+495,Packaging,Negative,arrived with a broken handle because the outer box had almost no padding
+496,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+496,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+496,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+497,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+497,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+498,Glaze Durability,Negative,Too expensive considering the minor flaws and basic finish
+498,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+499,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+500,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+500,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+501,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+502,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+502,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+503,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+503,Price/Value,Positive,Worth every penny for an authentic ceramic tableware collection
+504,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+504,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+505,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+506,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+506,Heat/Dishwasher,Positive,No warping or cracking after repeated high-heat dishwasher cycles
+507,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+508,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+509,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+510,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+510,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+511,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+511,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+511,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+512,Heat/Dishwasher,Neutral,Holds heat moderately well
+513,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+513,Price/Value,Negative,overpriced for the thin ceramic quality you actually receive
+514,Glaze Durability,Neutral,The glaze finish is decent for the price
+514,Price/Value,Neutral,The glaze finish is decent for the price
+515,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+515,Glaze Durability,Negative,uneven glaze finish with tiny pinholes and rough spots on the bottom
+516,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+517,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+517,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use
+518,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+518,Heat/Dishwasher,Negative,"Not actually dishwasher safe, the gold trim faded after three cycles"
+519,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+520,Glaze Durability,Negative,Poorly packed box resulted in a chipped spout upon arrival
+520,Packaging,Negative,Poorly packed box resulted in a chipped spout upon arrival
+520,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+521,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+522,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+522,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+523,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+524,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+524,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+525,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+525,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+526,Design & Color,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+526,Heat/Dishwasher,Positive,Elegant organic shape and warm earthy brown tones elevate my dining table
+527,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+527,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+528,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+529,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+530,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+530,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+531,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+532,Price/Value,Neutral,Priced about right for mid-range imported tableware
+533,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+533,Packaging,Negative,"terrible packaging, two plates shattered during delivery due to thin cardboard"
+534,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+535,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+535,Glaze Durability,Negative,noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+536,Glaze Durability,Negative,Noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+537,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+537,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+538,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+538,Design & Color,Negative,Design looks mass-produced and the pattern print is blurry
+539,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+539,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+540,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+541,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+542,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+542,Heat/Dishwasher,Positive,Retains tea heat well and goes straight into the dishwasher without fading
+543,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+543,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+544,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+545,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+546,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+547,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+548,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+549,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+550,Packaging,Positive,"Double-boxed with thick molded foam, every piece arrived completely intact"
+551,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+552,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+553,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+553,Glaze Durability,Negative,surface glaze feels thin and scratches way too easily
+554,Heat/Dishwasher,Neutral,Holds heat moderately well
+555,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+555,Glaze Durability,Negative,noticeable crazing and dark cutlery scratches appeared on the glaze quickly
+556,Heat/Dishwasher,Negative,Got burning hot in the microwave even
+556,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+557,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+557,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+558,Design & Color,Negative,Size is smaller than expected and the asymmetrical shape wobbles slightly
+558,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+559,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+559,Packaging,Negative,"Terrible packaging, two plates shattered during delivery due to thin cardboard"
+560,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+561,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+561,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+562,Heat/Dishwasher,Positive,Truly dishwasher safe and stays cool enough to handle out of the microwave
+562,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+563,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+563,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+564,Design & Color,Positive,Craftsmanship and hand-painted floral motif look truly artisanal
+565,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+565,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+566,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+567,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+568,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+569,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+569,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+570,Design & Color,Positive,Gorgeous minimalist aesthetic and the natural speckled white color looks stunning
+571,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+572,Heat/Dishwasher,Neutral,Works fine in the dishwasher on the top rack
+573,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+573,Packaging,Negative,"terrible packaging, two plates shattered during delivery due to thin cardboard"
+574,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+575,Glaze Durability,Positive,Glaze quality feels durable and holds up wonderfully without knife marks
+575,Packaging,Negative,poorly packed box resulted in a chipped spout upon arrival
+576,Glaze Durability,Negative,Uneven glaze finish with tiny pinholes and rough spots on the bottom
+576,Price/Value,Negative,Too expensive considering the minor flaws and basic finish
+577,Price/Value,Negative,Overpriced for the thin ceramic quality you actually receive
+578,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+578,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+579,Packaging,Negative,Zero foam dividers inside so the teapot lid cracked in transit
+579,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+580,Glaze Durability,Negative,Surface glaze feels thin and scratches way too easily
+580,Heat/Dishwasher,Negative,Cracked right down the middle when I poured boiling water for tea
+581,Packaging,Positive,Packaging was impressive and well-cushioned so nothing broke in transit
+582,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+583,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+584,Design & Color,Positive,Timeless round form and balanced proportions fit our kitchen decor nicely
+585,Heat/Dishwasher,Positive,Microwave safe and oven-ready stoneware that handles hot soup effortlessly
+586,Glaze Durability,Positive,The ceramic glaze is super smooth and scratch-resistant after daily use
+587,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+588,Price/Value,Positive,"Great value for money, feels much more expensive than what I paid"
+588,Packaging,Positive,Individually wrapped in bubble sleeves inside a sturdy shipping box
+589,Glaze Durability,Positive,Thick glossy glaze finish with zero crazing or chipping
+590,Glaze Durability,Positive,Rich celadon glaze looks heirloom-grade and shows no hairline cracks
+591,Design & Color,Positive,Love the vibrant cobalt blue pattern and clean modern silhouette
+591,Packaging,Positive,"Super secure protective packaging, zero breakage even after long shipping"
+592,Design & Color,Neutral,"Traditional styling is okay, fairly standard shape and tone"
+593,Price/Value,Positive,Reasonably priced handmade set that punches well above its price tag
+593,Packaging,Negative,zero foam dividers inside so the teapot lid cracked in transit
+594,Design & Color,Neutral,"Simple classic design and neutral color, looks just like the listing"
+595,Glaze Durability,Positive,"Very sturdy enamel coating, not a single chip after months of washing"
+595,Heat/Dishwasher,Negative,got burning hot in the microwave even
+596,Price/Value,Negative,Not worth the premium price tag given the mediocre craftsmanship
+596,Packaging,Negative,Fragile ceramic shipped in a flimsy mailer and arrived broken in pieces
+597,Design & Color,Negative,The color looked dull and muddy compared to the bright photos online
+598,Packaging,Negative,Zero foam dividers inside so the teapot lid cracked in transit
+598,Glaze Durability,Negative,Glaze started flaking off near the handle after a few washes
+599,Packaging,Negative,Arrived with a broken handle because the outer box had almost no padding
+600,Glaze Durability,Negative,The glaze chipped along the rim after only two weeks of gentle use
+600,Design & Color,Negative,The glaze chipped along the rim after only two weeks of gentle use

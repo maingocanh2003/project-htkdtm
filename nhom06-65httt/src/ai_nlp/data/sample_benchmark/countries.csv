@@ -1,0 +1,136 @@
+country_id,country_code,country_name,region_continent,currency_code,is_key_market
+1,USA,United States,North America,USD,True
+2,JPN,Japan,East Asia,JPY,True
+3,DEU,Germany,Europe,EUR,True
+4,FRA,France,Europe,EUR,True
+5,GBR,United Kingdom,Europe,GBP,True
+6,AUS,Australia,Oceania,AUD,True
+7,CAN,Canada,North America,CAD,True
+8,KOR,South Korea,East Asia,KRW,True
+9,CHN,China,East Asia,CNY,True
+10,IND,India,South Asia,INR,True
+11,NLD,Netherlands,Europe,EUR,False
+12,ITA,Italy,Europe,EUR,False
+13,ESP,Spain,Europe,EUR,False
+14,BEL,Belgium,Europe,EUR,False
+15,CHE,Switzerland,Europe,CHF,False
+16,SWE,Sweden,Europe,SEK,False
+17,NOR,Norway,Europe,NOK,False
+18,DNK,Denmark,Europe,DKK,False
+19,POL,Poland,Europe,PLN,False
+20,AUT,Austria,Europe,EUR,False
+21,SGP,Singapore,Southeast Asia,SGD,False
+22,THA,Thailand,Southeast Asia,THB,False
+23,MYS,Malaysia,Southeast Asia,MYR,False
+24,IDN,Indonesia,Southeast Asia,IDR,False
+25,PHL,Philippines,Southeast Asia,PHP,False
+26,ARE,United Arab Emirates,Middle East,AED,False
+27,SAU,Saudi Arabia,Middle East,SAR,False
+28,BRA,Brazil,South America,BRL,False
+29,MEX,Mexico,North America,MXN,False
+30,NZL,New Zealand,Oceania,NZD,False
+31,C31,Partner Market 031,Asia,USD,False
+32,C32,Partner Market 032,Africa,USD,False
+33,C33,Partner Market 033,South America,USD,False
+34,C34,Partner Market 034,Oceania,USD,False
+35,C35,Partner Market 035,North America,USD,False
+36,C36,Partner Market 036,Europe,USD,False
+37,C37,Partner Market 037,Asia,USD,False
+38,C38,Partner Market 038,Africa,USD,False
+39,C39,Partner Market 039,South America,USD,False
+40,C40,Partner Market 040,Oceania,USD,False
+41,C41,Partner Market 041,North America,USD,False
+42,C42,Partner Market 042,Europe,USD,False
+43,C43,Partner Market 043,Asia,USD,False
+44,C44,Partner Market 044,Africa,USD,False
+45,C45,Partner Market 045,South America,USD,False
+46,C46,Partner Market 046,Oceania,USD,False
+47,C47,Partner Market 047,North America,USD,False
+48,C48,Partner Market 048,Europe,USD,False
+49,C49,Partner Market 049,Asia,USD,False
+50,C50,Partner Market 050,Africa,USD,False
+51,C51,Partner Market 051,South America,USD,False
+52,C52,Partner Market 052,Oceania,USD,False
+53,C53,Partner Market 053,North America,USD,False
+54,C54,Partner Market 054,Europe,USD,False
+55,C55,Partner Market 055,Asia,USD,False
+56,C56,Partner Market 056,Africa,USD,False
+57,C57,Partner Market 057,South America,USD,False
+58,C58,Partner Market 058,Oceania,USD,False
+59,C59,Partner Market 059,North America,USD,False
+60,C60,Partner Market 060,Europe,USD,False
+61,C61,Partner Market 061,Asia,USD,False
+62,C62,Partner Market 062,Africa,USD,False
+63,C63,Partner Market 063,South America,USD,False
+64,C64,Partner Market 064,Oceania,USD,False
+65,C65,Partner Market 065,North America,USD,False
+66,C66,Partner Market 066,Europe,USD,False
+67,C67,Partner Market 067,Asia,USD,False
+68,C68,Partner Market 068,Africa,USD,False
+69,C69,Partner Market 069,South America,USD,False
+70,C70,Partner Market 070,Oceania,USD,False
+71,C71,Partner Market 071,North America,USD,False
+72,C72,Partner Market 072,Europe,USD,False
+73,C73,Partner Market 073,Asia,USD,False
+74,C74,Partner Market 074,Africa,USD,False
+75,C75,Partner Market 075,South America,USD,False
+76,C76,Partner Market 076,Oceania,USD,False
+77,C77,Partner Market 077,North America,USD,False
+78,C78,Partner Market 078,Europe,USD,False
+79,C79,Partner Market 079,Asia,USD,False
+80,C80,Partner Market 080,Africa,USD,False
+81,C81,Partner Market 081,South America,USD,False
+82,C82,Partner Market 082,Oceania,USD,False
+83,C83,Partner Market 083,North America,USD,False
+84,C84,Partner Market 084,Europe,USD,False
+85,C85,Partner Market 085,Asia,USD,False
+86,C86,Partner Market 086,Africa,USD,False
+87,C87,Partner Market 087,South America,USD,False
+88,C88,Partner Market 088,Oceania,USD,False
+89,C89,Partner Market 089,North America,USD,False
+90,C90,Partner Market 090,Europe,USD,False
+91,C91,Partner Market 091,Asia,USD,False
+92,C92,Partner Market 092,Africa,USD,False
+93,C93,Partner Market 093,South America,USD,False
+94,C94,Partner Market 094,Oceania,USD,False
+95,C95,Partner Market 095,North America,USD,False
+96,C96,Partner Market 096,Europe,USD,False
+97,C97,Partner Market 097,Asia,USD,False
+98,C98,Partner Market 098,Africa,USD,False
+99,C99,Partner Market 099,South America,USD,False
+100,C100,Partner Market 100,Oceania,USD,False
+101,C101,Partner Market 101,North America,USD,False
+102,C102,Partner Market 102,Europe,USD,False
+103,C103,Partner Market 103,Asia,USD,False
+104,C104,Partner Market 104,Africa,USD,False
+105,C105,Partner Market 105,South America,USD,False
+106,C106,Partner Market 106,Oceania,USD,False
+107,C107,Partner Market 107,North America,USD,False
+108,C108,Partner Market 108,Europe,USD,False
+109,C109,Partner Market 109,Asia,USD,False
+110,C110,Partner Market 110,Africa,USD,False
+111,C111,Partner Market 111,South America,USD,False
+112,C112,Partner Market 112,Oceania,USD,False
+113,C113,Partner Market 113,North America,USD,False
+114,C114,Partner Market 114,Europe,USD,False
+115,C115,Partner Market 115,Asia,USD,False
+116,C116,Partner Market 116,Africa,USD,False
+117,C117,Partner Market 117,South America,USD,False
+118,C118,Partner Market 118,Oceania,USD,False
+119,C119,Partner Market 119,North America,USD,False
+120,C120,Partner Market 120,Europe,USD,False
+121,C121,Partner Market 121,Asia,USD,False
+122,C122,Partner Market 122,Africa,USD,False
+123,C123,Partner Market 123,South America,USD,False
+124,C124,Partner Market 124,Oceania,USD,False
+125,C125,Partner Market 125,North America,USD,False
+126,C126,Partner Market 126,Europe,USD,False
+127,C127,Partner Market 127,Asia,USD,False
+128,C128,Partner Market 128,Africa,USD,False
+129,C129,Partner Market 129,South America,USD,False
+130,C130,Partner Market 130,Oceania,USD,False
+131,C131,Partner Market 131,North America,USD,False
+132,C132,Partner Market 132,Europe,USD,False
+133,C133,Partner Market 133,Asia,USD,False
+134,C134,Partner Market 134,Africa,USD,False
+135,C135,Partner Market 135,South America,USD,False

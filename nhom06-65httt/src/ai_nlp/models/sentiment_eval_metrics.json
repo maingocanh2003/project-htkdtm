@@ -1,0 +1,86 @@
+{
+  "selected_model": "LogisticRegression",
+  "train_samples": 480,
+  "test_samples": 120,
+  "classes": [
+    "Negative",
+    "Neutral",
+    "Positive"
+  ],
+  "cv_model_comparison": {
+    "LogisticRegression": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "CalibratedLinearSVC": {
+      "cv_macro_f1_mean": 1.0,
+      "cv_macro_f1_std": 0.0
+    },
+    "ComplementNB": {
+      "cv_macro_f1_mean": 0.9874,
+      "cv_macro_f1_std": 0.0119
+    }
+  },
+  "test_metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "weighted_f1": 1.0,
+    "per_class": {
+      "Positive": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 66
+      },
+      "Neutral": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 24
+      },
+      "Negative": {
+        "precision": 1.0,
+        "recall": 1.0,
+        "f1_score": 1.0,
+        "support": 30
+      }
+    },
+    "confusion_matrix_labels": [
+      "Positive",
+      "Neutral",
+      "Negative"
+    ],
+    "confusion_matrix": [
+      [
+        66,
+        0,
+        0
+      ],
+      [
+        0,
+        24,
+        0
+      ],
+      [
+        0,
+        0,
+        30
+      ]
+    ],
+    "classification_report_text": "              precision    recall  f1-score   support\n\n    Positive     1.0000    1.0000    1.0000        66\n     Neutral     1.0000    1.0000    1.0000        24\n    Negative     1.0000    1.0000    1.0000        30\n\n    accuracy                         1.0000       120\n   macro avg     1.0000    1.0000    1.0000       120\nweighted avg     1.0000    1.0000    1.0000       120\n"
+  },
+  "rating_vs_sentiment_check": {
+    "Negative": {
+      "count": 30,
+      "mean": 1.63
+    },
+    "Neutral": {
+      "count": 24,
+      "mean": 3.0
+    },
+    "Positive": {
+      "count": 66,
+      "mean": 4.64
+    }
+  }
+}

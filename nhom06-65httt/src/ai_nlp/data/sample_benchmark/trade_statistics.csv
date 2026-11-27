@@ -1,0 +1,1216 @@
+trade_id,reporter_country_id,partner_country_id,year,trade_flow,hs_code,cmd_desc,trade_value_usd,fob_value_usd,cif_value_usd,net_weight_kg,qty_unit,qty_amount,market_share_pct,yoy_growth_rate,data_source
+1,1,1,2021,Import,6911,Porcelain or china tableware and kitchenware,189000000.0,177660000.0,189000000.0,38216743.99,kg,38216743.99,5.35,,UN Comtrade
+2,1,1,2022,Import,6911,Porcelain or china tableware and kitchenware,219015334.63,205874414.55,219015334.63,61357096.22,kg,61357096.22,5.76,15.88,ITC Trade Map
+3,1,1,2023,Import,6911,Porcelain or china tableware and kitchenware,243973535.87,229335123.72,243973535.87,51146939.97,kg,51146939.97,5.94,11.4,UN Comtrade
+4,1,1,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",147000000.0,138180000.0,147000000.0,30530129.22,kg,30530129.22,4.16,,ITC Trade Map
+5,1,1,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",167530604.6,157478768.32,167530604.6,39786927.57,kg,39786927.57,4.41,13.97,UN Comtrade
+6,1,1,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",193931410.73,182295526.08,193931410.73,38264530.13,kg,38264530.13,4.72,15.76,ITC Trade Map
+7,1,1,2021,Import,6913,Statuettes and other ornamental ceramic articles,84000000.0,78960000.0,84000000.0,18425266.13,kg,18425266.13,2.38,,UN Comtrade
+8,1,1,2022,Import,6913,Statuettes and other ornamental ceramic articles,97653765.23,91794539.31,97653765.23,23261167.08,kg,23261167.08,2.57,16.25,ITC Trade Map
+9,1,1,2023,Import,6913,Statuettes and other ornamental ceramic articles,109647029.47,103068207.7,109647029.47,24929679.81,kg,24929679.81,2.67,12.28,UN Comtrade
+10,1,2,2021,Import,6911,Porcelain or china tableware and kitchenware,83250000.0,78255000.0,83250000.0,18349145.89,kg,18349145.89,2.36,,ITC Trade Map
+11,1,2,2022,Import,6911,Porcelain or china tableware and kitchenware,90434704.16,85008621.91,90434704.16,22395101.0,kg,22395101.0,2.38,8.63,UN Comtrade
+12,1,2,2023,Import,6911,Porcelain or china tableware and kitchenware,100785030.83,94737928.98,100785030.83,20126341.6,kg,20126341.6,2.46,11.45,ITC Trade Map
+13,1,2,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",64750000.0,60865000.0,64750000.0,13486519.94,kg,13486519.94,1.83,,UN Comtrade
+14,1,2,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",70121487.05,65914197.83,70121487.05,16537705.08,kg,16537705.08,1.84,8.3,ITC Trade Map
+15,1,2,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",76944930.51,72328234.68,76944930.51,20921904.82,kg,20921904.82,1.87,9.73,UN Comtrade
+16,1,2,2021,Import,6913,Statuettes and other ornamental ceramic articles,37000000.0,34780000.0,37000000.0,7992244.3,kg,7992244.3,1.05,,ITC Trade Map
+17,1,2,2022,Import,6913,Statuettes and other ornamental ceramic articles,41914819.22,39399930.07,41914819.22,8152227.25,kg,8152227.25,1.1,13.28,UN Comtrade
+18,1,2,2023,Import,6913,Statuettes and other ornamental ceramic articles,45257741.73,42542277.22,45257741.73,11128512.84,kg,11128512.84,1.1,7.98,ITC Trade Map
+19,1,3,2021,Import,6911,Porcelain or china tableware and kitchenware,74250000.0,69795000.0,74250000.0,20432825.25,kg,20432825.25,2.1,,UN Comtrade
+20,1,3,2022,Import,6911,Porcelain or china tableware and kitchenware,81169867.63,76299675.57,81169867.63,21313171.6,kg,21313171.6,2.13,9.32,ITC Trade Map
+21,1,3,2023,Import,6911,Porcelain or china tableware and kitchenware,91154723.68,85685440.26,91154723.68,21771549.75,kg,21771549.75,2.22,12.3,UN Comtrade
+22,1,3,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",57750000.0,54285000.0,57750000.0,11788551.35,kg,11788551.35,1.63,,ITC Trade Map
+23,1,3,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",62749769.58,58984783.4,62749769.58,15836863.38,kg,15836863.38,1.65,8.66,UN Comtrade
+24,1,3,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",68817032.62,64688010.66,68817032.62,14193246.6,kg,14193246.6,1.68,9.67,ITC Trade Map
+25,1,3,2021,Import,6913,Statuettes and other ornamental ceramic articles,33000000.0,31020000.0,33000000.0,8053767.77,kg,8053767.77,0.93,,UN Comtrade
+26,1,3,2022,Import,6913,Statuettes and other ornamental ceramic articles,36774334.47,34567874.41,36774334.47,7945208.77,kg,7945208.77,0.97,11.44,ITC Trade Map
+27,1,3,2023,Import,6913,Statuettes and other ornamental ceramic articles,40983962.82,38524925.05,40983962.82,10900469.14,kg,10900469.14,1.0,11.45,UN Comtrade
+28,1,4,2021,Import,6911,Porcelain or china tableware and kitchenware,53100000.0,49914000.0,53100000.0,11551686.13,kg,11551686.13,1.5,,ITC Trade Map
+29,1,4,2022,Import,6911,Porcelain or china tableware and kitchenware,55800500.52,52452470.49,55800500.52,11612252.76,kg,11612252.76,1.47,5.09,UN Comtrade
+30,1,4,2023,Import,6911,Porcelain or china tableware and kitchenware,59739599.97,56155223.97,59739599.97,13504337.72,kg,13504337.72,1.46,7.06,ITC Trade Map
+31,1,4,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",41300000.0,38822000.0,41300000.0,11310003.48,kg,11310003.48,1.17,,UN Comtrade
+32,1,4,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",45838821.52,43088492.23,45838821.52,9958195.41,kg,9958195.41,1.21,10.99,ITC Trade Map
+33,1,4,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",50393622.02,47370004.7,50393622.02,11407917.99,kg,11407917.99,1.23,9.94,UN Comtrade
+34,1,4,2021,Import,6913,Statuettes and other ornamental ceramic articles,23600000.0,22184000.0,23600000.0,4940341.25,kg,4940341.25,0.67,,ITC Trade Map
+35,1,4,2022,Import,6913,Statuettes and other ornamental ceramic articles,25564819.45,24030930.28,25564819.45,5814887.15,kg,5814887.15,0.67,8.33,UN Comtrade
+36,1,4,2023,Import,6913,Statuettes and other ornamental ceramic articles,27973652.58,26295233.43,27973652.58,7087122.31,kg,7087122.31,0.68,9.42,ITC Trade Map
+37,1,5,2021,Import,6911,Porcelain or china tableware and kitchenware,58500000.0,54990000.0,58500000.0,15450633.94,kg,15450633.94,1.66,,UN Comtrade
+38,1,5,2022,Import,6911,Porcelain or china tableware and kitchenware,62371173.94,58628903.5,62371173.94,12635653.92,kg,12635653.92,1.64,6.62,ITC Trade Map
+39,1,5,2023,Import,6911,Porcelain or china tableware and kitchenware,65323467.04,61404059.01,65323467.04,18637515.92,kg,18637515.92,1.59,4.73,UN Comtrade
+40,1,5,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",45500000.0,42770000.0,45500000.0,11647281.39,kg,11647281.39,1.29,,ITC Trade Map
+41,1,5,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",48814607.42,45885730.97,48814607.42,10631632.78,kg,10631632.78,1.28,7.28,UN Comtrade
+42,1,5,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",51814506.54,48705636.14,51814506.54,10769970.04,kg,10769970.04,1.26,6.15,ITC Trade Map
+43,1,5,2021,Import,6913,Statuettes and other ornamental ceramic articles,26000000.0,24440000.0,26000000.0,5657383.17,kg,5657383.17,0.74,,UN Comtrade
+44,1,5,2022,Import,6913,Statuettes and other ornamental ceramic articles,27659139.8,25999591.41,27659139.8,5685055.33,kg,5685055.33,0.73,6.38,ITC Trade Map
+45,1,5,2023,Import,6913,Statuettes and other ornamental ceramic articles,29229113.54,27475366.73,29229113.54,8494658.0,kg,8494658.0,0.71,5.68,UN Comtrade
+46,1,6,2021,Import,6911,Porcelain or china tableware and kitchenware,34200000.0,32148000.0,34200000.0,8082471.43,kg,8082471.43,0.97,,ITC Trade Map
+47,1,6,2022,Import,6911,Porcelain or china tableware and kitchenware,37982928.8,35703953.07,37982928.8,8829377.75,kg,8829377.75,1.0,11.06,UN Comtrade
+48,1,6,2023,Import,6911,Porcelain or china tableware and kitchenware,42906083.58,40331718.56,42906083.58,9220419.19,kg,9220419.19,1.05,12.96,ITC Trade Map
+49,1,6,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",26600000.0,25004000.0,26600000.0,6328690.34,kg,6328690.34,0.75,,UN Comtrade
+50,1,6,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",29739605.72,27955229.38,29739605.72,7542912.62,kg,7542912.62,0.78,11.8,ITC Trade Map
+51,1,6,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",33260942.65,31265286.09,33260942.65,8210018.73,kg,8210018.73,0.81,11.84,UN Comtrade
+52,1,6,2021,Import,6913,Statuettes and other ornamental ceramic articles,15200000.0,14288000.0,15200000.0,4272339.31,kg,4272339.31,0.43,,ITC Trade Map
+53,1,6,2022,Import,6913,Statuettes and other ornamental ceramic articles,16621899.32,15624585.36,16621899.32,3239242.34,kg,3239242.34,0.44,9.35,UN Comtrade
+54,1,6,2023,Import,6913,Statuettes and other ornamental ceramic articles,18749427.37,17624461.73,18749427.37,4023937.47,kg,4023937.47,0.46,12.8,ITC Trade Map
+55,1,7,2021,Import,6911,Porcelain or china tableware and kitchenware,37800000.0,35532000.0,37800000.0,7872127.29,kg,7872127.29,1.07,,UN Comtrade
+56,1,7,2022,Import,6911,Porcelain or china tableware and kitchenware,42137561.77,39609308.06,42137561.77,10011655.14,kg,10011655.14,1.11,11.48,ITC Trade Map
+57,1,7,2023,Import,6911,Porcelain or china tableware and kitchenware,46178185.19,43407494.08,46178185.19,12922383.37,kg,12922383.37,1.13,9.59,UN Comtrade
+58,1,7,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",29400000.0,27636000.0,29400000.0,5851113.85,kg,5851113.85,0.83,,ITC Trade Map
+59,1,7,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",32834101.18,30864055.11,32834101.18,8722604.98,kg,8722604.98,0.86,11.68,UN Comtrade
+60,1,7,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",36402789.5,34218622.13,36402789.5,8194036.97,kg,8194036.97,0.89,10.87,ITC Trade Map
+61,1,7,2021,Import,6913,Statuettes and other ornamental ceramic articles,16800000.0,15792000.0,16800000.0,4518326.24,kg,4518326.24,0.48,,UN Comtrade
+62,1,7,2022,Import,6913,Statuettes and other ornamental ceramic articles,17994124.56,16914477.09,17994124.56,3776045.96,kg,3776045.96,0.47,7.11,ITC Trade Map
+63,1,7,2023,Import,6913,Statuettes and other ornamental ceramic articles,19602981.86,18426802.95,19602981.86,4692214.68,kg,4692214.68,0.48,8.94,UN Comtrade
+64,1,8,2021,Import,6911,Porcelain or china tableware and kitchenware,42750000.0,40185000.0,42750000.0,9355051.0,kg,9355051.0,1.21,,ITC Trade Map
+65,1,8,2022,Import,6911,Porcelain or china tableware and kitchenware,47432409.64,44586465.07,47432409.64,11433757.58,kg,11433757.58,1.25,10.95,UN Comtrade
+66,1,8,2023,Import,6911,Porcelain or china tableware and kitchenware,53807322.35,50578883.01,53807322.35,12544887.08,kg,12544887.08,1.31,13.44,ITC Trade Map
+67,1,8,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",33250000.0,31255000.0,33250000.0,8325508.23,kg,8325508.23,0.94,,UN Comtrade
+68,1,8,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",37809819.25,35541230.1,37809819.25,10543362.45,kg,10543362.45,0.99,13.71,ITC Trade Map
+69,1,8,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",41826157.43,39316587.99,41826157.43,11282815.65,kg,11282815.65,1.02,10.62,UN Comtrade
+70,1,8,2021,Import,6913,Statuettes and other ornamental ceramic articles,19000000.0,17860000.0,19000000.0,3751073.83,kg,3751073.83,0.54,,ITC Trade Map
+71,1,8,2022,Import,6913,Statuettes and other ornamental ceramic articles,21321872.27,20042559.94,21321872.27,5298194.58,kg,5298194.58,0.56,12.22,UN Comtrade
+72,1,8,2023,Import,6913,Statuettes and other ornamental ceramic articles,24364567.82,22902693.75,24364567.82,7080568.22,kg,7080568.22,0.59,14.27,ITC Trade Map
+73,1,9,2021,Import,6911,Porcelain or china tableware and kitchenware,94500000.0,88830000.0,94500000.0,19650967.99,kg,19650967.99,2.67,,UN Comtrade
+74,1,9,2022,Import,6911,Porcelain or china tableware and kitchenware,99864059.21,93872215.66,99864059.21,23354632.75,kg,23354632.75,2.63,5.68,ITC Trade Map
+75,1,9,2023,Import,6911,Porcelain or china tableware and kitchenware,109678424.26,103097718.8,109678424.26,21555922.87,kg,21555922.87,2.67,9.83,UN Comtrade
+76,1,9,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",73500000.0,69090000.0,73500000.0,16594754.21,kg,16594754.21,2.08,,ITC Trade Map
+77,1,9,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",73305891.97,68907538.45,73305891.97,18890563.18,kg,18890563.18,1.93,-0.26,UN Comtrade
+78,1,9,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",75046260.2,70543484.59,75046260.2,17302887.01,kg,17302887.01,1.83,2.37,ITC Trade Map
+79,1,9,2021,Import,6913,Statuettes and other ornamental ceramic articles,42000000.0,39480000.0,42000000.0,10023769.15,kg,10023769.15,1.19,,UN Comtrade
+80,1,9,2022,Import,6913,Statuettes and other ornamental ceramic articles,43561735.66,40948031.52,43561735.66,8913205.39,kg,8913205.39,1.15,3.72,ITC Trade Map
+81,1,9,2023,Import,6913,Statuettes and other ornamental ceramic articles,45441031.25,42714569.37,45441031.25,12441252.21,kg,12441252.21,1.11,4.31,UN Comtrade
+82,1,10,2021,Import,6911,Porcelain or china tableware and kitchenware,30600000.0,28764000.0,30600000.0,6637697.72,kg,6637697.72,0.87,,ITC Trade Map
+83,1,10,2022,Import,6911,Porcelain or china tableware and kitchenware,35463085.08,33335299.97,35463085.08,7531571.61,kg,7531571.61,0.93,15.89,UN Comtrade
+84,1,10,2023,Import,6911,Porcelain or china tableware and kitchenware,41229577.42,38755802.78,41229577.42,11471991.65,kg,11471991.65,1.0,16.26,ITC Trade Map
+85,1,10,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",23800000.0,22372000.0,23800000.0,4713971.54,kg,4713971.54,0.67,,UN Comtrade
+86,1,10,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",27043966.77,25421328.76,27043966.77,7799623.48,kg,7799623.48,0.71,13.63,ITC Trade Map
+87,1,10,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",30978741.66,29120017.16,30978741.66,7615862.88,kg,7615862.88,0.75,14.55,UN Comtrade
+88,1,10,2021,Import,6913,Statuettes and other ornamental ceramic articles,13600000.0,12784000.0,13600000.0,2779127.87,kg,2779127.87,0.38,,ITC Trade Map
+89,1,10,2022,Import,6913,Statuettes and other ornamental ceramic articles,16004069.06,15043824.92,16004069.06,4030388.72,kg,4030388.72,0.42,17.68,UN Comtrade
+90,1,10,2023,Import,6913,Statuettes and other ornamental ceramic articles,18862899.29,17731125.33,18862899.29,4807485.16,kg,4807485.16,0.46,17.86,ITC Trade Map
+91,1,11,2021,Import,6911,Porcelain or china tableware and kitchenware,7744159.1,7279509.55,7744159.1,1522978.22,kg,1522978.22,0.22,,UN Comtrade
+92,1,11,2022,Import,6911,Porcelain or china tableware and kitchenware,7880106.35,7407299.97,7880106.35,2263852.51,kg,2263852.51,0.21,1.76,ITC Trade Map
+93,1,11,2023,Import,6911,Porcelain or china tableware and kitchenware,7754980.13,7289681.32,7754980.13,1495288.74,kg,1495288.74,0.19,-1.59,UN Comtrade
+94,1,11,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6023234.85,5661840.76,6023234.85,1203438.94,kg,1203438.94,0.17,,ITC Trade Map
+95,1,11,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6265460.4,5889532.78,6265460.4,1252233.93,kg,1252233.93,0.16,4.02,UN Comtrade
+96,1,11,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6304685.95,5926404.79,6304685.95,1454722.17,kg,1454722.17,0.15,0.63,ITC Trade Map
+97,1,11,2021,Import,6913,Statuettes and other ornamental ceramic articles,3441848.49,3235337.58,3441848.49,867254.39,kg,867254.39,0.1,,UN Comtrade
+98,1,11,2022,Import,6913,Statuettes and other ornamental ceramic articles,3486664.86,3277464.97,3486664.86,759458.12,kg,759458.12,0.09,1.3,ITC Trade Map
+99,1,11,2023,Import,6913,Statuettes and other ornamental ceramic articles,3593911.67,3378276.97,3593911.67,1006686.67,kg,1006686.67,0.09,3.08,UN Comtrade
+100,1,12,2021,Import,6911,Porcelain or china tableware and kitchenware,10924687.42,10269206.17,10924687.42,2147880.67,kg,2147880.67,0.31,,ITC Trade Map
+101,1,12,2022,Import,6911,Porcelain or china tableware and kitchenware,10733552.52,10089539.36,10733552.52,2964280.14,kg,2964280.14,0.28,-1.75,UN Comtrade
+102,1,12,2023,Import,6911,Porcelain or china tableware and kitchenware,11209486.95,10536917.74,11209486.95,3049443.96,kg,3049443.96,0.27,4.43,ITC Trade Map
+103,1,12,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8496979.1,7987160.36,8496979.1,2282487.98,kg,2282487.98,0.24,,UN Comtrade
+104,1,12,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8829180.26,8299429.44,8829180.26,1774990.86,kg,1774990.86,0.23,3.91,ITC Trade Map
+105,1,12,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9164469.57,8614601.39,9164469.57,2315088.62,kg,2315088.62,0.22,3.8,UN Comtrade
+106,1,12,2021,Import,6913,Statuettes and other ornamental ceramic articles,4855416.63,4564091.63,4855416.63,1011686.62,kg,1011686.62,0.14,,ITC Trade Map
+107,1,12,2022,Import,6913,Statuettes and other ornamental ceramic articles,4865008.0,4573107.52,4865008.0,1131046.29,kg,1131046.29,0.13,0.2,UN Comtrade
+108,1,12,2023,Import,6913,Statuettes and other ornamental ceramic articles,4897110.43,4603283.81,4897110.43,1429777.65,kg,1429777.65,0.12,0.66,ITC Trade Map
+109,1,13,2021,Import,6911,Porcelain or china tableware and kitchenware,3827029.01,3597407.27,3827029.01,828399.7,kg,828399.7,0.11,,UN Comtrade
+110,1,13,2022,Import,6911,Porcelain or china tableware and kitchenware,3612879.1,3396106.36,3612879.1,837984.0,kg,837984.0,0.1,-5.6,ITC Trade Map
+111,1,13,2023,Import,6911,Porcelain or china tableware and kitchenware,3497923.13,3288047.74,3497923.13,786755.59,kg,786755.59,0.09,-3.18,UN Comtrade
+112,1,13,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2976578.12,2797983.43,2976578.12,791728.15,kg,791728.15,0.08,,ITC Trade Map
+113,1,13,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2912176.14,2737445.57,2912176.14,621233.39,kg,621233.39,0.08,-2.16,UN Comtrade
+114,1,13,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2791374.32,2623891.86,2791374.32,767724.99,kg,767724.99,0.07,-4.15,ITC Trade Map
+115,1,13,2021,Import,6913,Statuettes and other ornamental ceramic articles,1700901.78,1598847.68,1700901.78,469504.81,kg,469504.81,0.05,,UN Comtrade
+116,1,13,2022,Import,6913,Statuettes and other ornamental ceramic articles,1692085.17,1590560.06,1692085.17,411135.29,kg,411135.29,0.04,-0.52,ITC Trade Map
+117,1,13,2023,Import,6913,Statuettes and other ornamental ceramic articles,1655693.08,1556351.5,1655693.08,386893.78,kg,386893.78,0.04,-2.15,UN Comtrade
+118,1,14,2021,Import,6911,Porcelain or china tableware and kitchenware,9772811.32,9186442.64,9772811.32,2495863.55,kg,2495863.55,0.28,,ITC Trade Map
+119,1,14,2022,Import,6911,Porcelain or china tableware and kitchenware,11020306.45,10359088.06,11020306.45,3199162.72,kg,3199162.72,0.29,12.76,UN Comtrade
+120,1,14,2023,Import,6911,Porcelain or china tableware and kitchenware,12633881.59,11875848.69,12633881.59,2782085.4,kg,2782085.4,0.31,14.64,ITC Trade Map
+121,1,14,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7601075.47,7145010.94,7601075.47,2116928.38,kg,2116928.38,0.22,,UN Comtrade
+122,1,14,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8690904.1,8169449.85,8690904.1,2091972.85,kg,2091972.85,0.23,14.34,ITC Trade Map
+123,1,14,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10358844.16,9737313.51,10358844.16,2315924.43,kg,2315924.43,0.25,19.19,UN Comtrade
+124,1,14,2021,Import,6913,Statuettes and other ornamental ceramic articles,4343471.7,4082863.4,4343471.7,855108.07,kg,855108.07,0.12,,ITC Trade Map
+125,1,14,2022,Import,6913,Statuettes and other ornamental ceramic articles,4933405.29,4637400.97,4933405.29,1163185.94,kg,1163185.94,0.13,13.58,UN Comtrade
+126,1,14,2023,Import,6913,Statuettes and other ornamental ceramic articles,5573535.73,5239123.59,5573535.73,1623940.34,kg,1623940.34,0.14,12.98,ITC Trade Map
+127,1,15,2021,Import,6911,Porcelain or china tableware and kitchenware,2173001.36,2042621.27,2173001.36,449499.31,kg,449499.31,0.06,,UN Comtrade
+128,1,15,2022,Import,6911,Porcelain or china tableware and kitchenware,2335206.47,2195094.08,2335206.47,536165.3,kg,536165.3,0.06,7.46,ITC Trade Map
+129,1,15,2023,Import,6911,Porcelain or china tableware and kitchenware,2560187.61,2406576.35,2560187.61,515966.08,kg,515966.08,0.06,9.63,UN Comtrade
+130,1,15,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1690112.17,1588705.44,1690112.17,376786.79,kg,376786.79,0.05,,ITC Trade Map
+131,1,15,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1870958.64,1758701.12,1870958.64,459296.5,kg,459296.5,0.05,10.7,UN Comtrade
+132,1,15,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2133021.3,2005040.02,2133021.3,466389.54,kg,466389.54,0.05,14.01,ITC Trade Map
+133,1,15,2021,Import,6913,Statuettes and other ornamental ceramic articles,965778.38,907831.68,965778.38,194655.18,kg,194655.18,0.03,,UN Comtrade
+134,1,15,2022,Import,6913,Statuettes and other ornamental ceramic articles,1051008.84,987948.31,1051008.84,273265.33,kg,273265.33,0.03,8.83,ITC Trade Map
+135,1,15,2023,Import,6913,Statuettes and other ornamental ceramic articles,1147536.63,1078684.43,1147536.63,241952.1,kg,241952.1,0.03,9.18,UN Comtrade
+136,1,16,2021,Import,6911,Porcelain or china tableware and kitchenware,11882406.28,11169461.9,11882406.28,3375869.71,kg,3375869.71,0.34,,ITC Trade Map
+137,1,16,2022,Import,6911,Porcelain or china tableware and kitchenware,11557278.17,10863841.48,11557278.17,3155043.76,kg,3155043.76,0.3,-2.74,UN Comtrade
+138,1,16,2023,Import,6911,Porcelain or china tableware and kitchenware,11725746.16,11022201.39,11725746.16,2962092.41,kg,2962092.41,0.29,1.46,ITC Trade Map
+139,1,16,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9241871.55,8687359.26,9241871.55,2525812.69,kg,2525812.69,0.26,,UN Comtrade
+140,1,16,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9200741.4,8648696.92,9200741.4,2488060.61,kg,2488060.61,0.24,-0.45,ITC Trade Map
+141,1,16,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8947534.36,8410682.3,8947534.36,2433707.16,kg,2433707.16,0.22,-2.75,UN Comtrade
+142,1,16,2021,Import,6913,Statuettes and other ornamental ceramic articles,5281069.46,4964205.29,5281069.46,1463758.87,kg,1463758.87,0.15,,ITC Trade Map
+143,1,16,2022,Import,6913,Statuettes and other ornamental ceramic articles,5150306.8,4841288.39,5150306.8,1471637.43,kg,1471637.43,0.14,-2.48,UN Comtrade
+144,1,16,2023,Import,6913,Statuettes and other ornamental ceramic articles,5071230.19,4766956.38,5071230.19,1450544.42,kg,1450544.42,0.12,-1.54,ITC Trade Map
+145,1,17,2021,Import,6911,Porcelain or china tableware and kitchenware,8788448.88,8261141.94,8788448.88,2139071.29,kg,2139071.29,0.25,,UN Comtrade
+146,1,17,2022,Import,6911,Porcelain or china tableware and kitchenware,9635399.5,9057275.53,9635399.5,2236552.98,kg,2236552.98,0.25,9.64,ITC Trade Map
+147,1,17,2023,Import,6911,Porcelain or china tableware and kitchenware,10496201.5,9866429.41,10496201.5,2128167.66,kg,2128167.66,0.26,8.93,UN Comtrade
+148,1,17,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6835460.24,6425332.62,6835460.24,1965198.07,kg,1965198.07,0.19,,ITC Trade Map
+149,1,17,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7432811.3,6986842.62,7432811.3,1931153.28,kg,1931153.28,0.2,8.74,UN Comtrade
+150,1,17,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8330716.15,7830873.18,8330716.15,2007753.51,kg,2007753.51,0.2,12.08,ITC Trade Map
+151,1,17,2021,Import,6913,Statuettes and other ornamental ceramic articles,3905977.28,3671618.64,3905977.28,1119621.91,kg,1119621.91,0.11,,UN Comtrade
+152,1,17,2022,Import,6913,Statuettes and other ornamental ceramic articles,4168019.65,3917938.47,4168019.65,850577.13,kg,850577.13,0.11,6.71,ITC Trade Map
+153,1,17,2023,Import,6913,Statuettes and other ornamental ceramic articles,4562275.73,4288539.19,4562275.73,900796.08,kg,900796.08,0.11,9.46,UN Comtrade
+154,1,18,2021,Import,6911,Porcelain or china tableware and kitchenware,2035327.87,1913208.2,2035327.87,405058.46,kg,405058.46,0.06,,ITC Trade Map
+155,1,18,2022,Import,6911,Porcelain or china tableware and kitchenware,2234933.75,2100837.72,2234933.75,461415.53,kg,461415.53,0.06,9.81,UN Comtrade
+156,1,18,2023,Import,6911,Porcelain or china tableware and kitchenware,2515537.69,2364605.43,2515537.69,552080.39,kg,552080.39,0.06,12.56,ITC Trade Map
+157,1,18,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1583032.79,1488050.82,1583032.79,329647.86,kg,329647.86,0.04,,UN Comtrade
+158,1,18,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1770162.26,1663952.53,1770162.26,405542.66,kg,405542.66,0.05,11.82,ITC Trade Map
+159,1,18,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1988477.24,1869168.61,1988477.24,402230.2,kg,402230.2,0.05,12.33,UN Comtrade
+160,1,18,2021,Import,6913,Statuettes and other ornamental ceramic articles,904590.16,850314.75,904590.16,213697.58,kg,213697.58,0.03,,ITC Trade Map
+161,1,18,2022,Import,6913,Statuettes and other ornamental ceramic articles,1009108.53,948562.02,1009108.53,221722.94,kg,221722.94,0.03,11.55,UN Comtrade
+162,1,18,2023,Import,6913,Statuettes and other ornamental ceramic articles,1136457.14,1068269.71,1136457.14,311223.13,kg,311223.13,0.03,12.62,ITC Trade Map
+163,1,19,2021,Import,6911,Porcelain or china tableware and kitchenware,7233865.59,6799833.65,7233865.59,1894363.52,kg,1894363.52,0.2,,UN Comtrade
+164,1,19,2022,Import,6911,Porcelain or china tableware and kitchenware,7295583.13,6857848.14,7295583.13,1797160.15,kg,1797160.15,0.19,0.85,ITC Trade Map
+165,1,19,2023,Import,6911,Porcelain or china tableware and kitchenware,7533699.84,7081677.85,7533699.84,1845122.37,kg,1845122.37,0.18,3.26,UN Comtrade
+166,1,19,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5626339.9,5288759.51,5626339.9,1214054.71,kg,1214054.71,0.16,,ITC Trade Map
+167,1,19,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5809307.67,5460749.21,5809307.67,1137308.35,kg,1137308.35,0.15,3.25,UN Comtrade
+168,1,19,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6104781.17,5738494.3,6104781.17,1431152.87,kg,1431152.87,0.15,5.09,ITC Trade Map
+169,1,19,2021,Import,6913,Statuettes and other ornamental ceramic articles,3215051.37,3022148.29,3215051.37,805565.26,kg,805565.26,0.09,,UN Comtrade
+170,1,19,2022,Import,6913,Statuettes and other ornamental ceramic articles,3369343.98,3167183.34,3369343.98,683796.3,kg,683796.3,0.09,4.8,ITC Trade Map
+171,1,19,2023,Import,6913,Statuettes and other ornamental ceramic articles,3531034.9,3319172.81,3531034.9,728363.01,kg,728363.01,0.09,4.8,UN Comtrade
+172,1,20,2021,Import,6911,Porcelain or china tableware and kitchenware,7986613.24,7507416.44,7986613.24,2038087.58,kg,2038087.58,0.23,,ITC Trade Map
+173,1,20,2022,Import,6911,Porcelain or china tableware and kitchenware,8785642.17,8258503.64,8785642.17,2333920.3,kg,2333920.3,0.23,10.0,UN Comtrade
+174,1,20,2023,Import,6911,Porcelain or china tableware and kitchenware,9628197.17,9050505.34,9628197.17,1945367.67,kg,1945367.67,0.23,9.59,ITC Trade Map
+175,1,20,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6211810.3,5839101.68,6211810.3,1707580.33,kg,1707580.33,0.18,,UN Comtrade
+176,1,20,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6855846.39,6444495.6,6855846.39,1919774.72,kg,1919774.72,0.18,10.37,ITC Trade Map
+177,1,20,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7655699.29,7196357.33,7655699.29,2155267.47,kg,2155267.47,0.19,11.67,UN Comtrade
+178,1,20,2021,Import,6913,Statuettes and other ornamental ceramic articles,3549605.88,3336629.53,3549605.88,698096.58,kg,698096.58,0.1,,ITC Trade Map
+179,1,20,2022,Import,6913,Statuettes and other ornamental ceramic articles,3829724.05,3599940.61,3829724.05,747119.72,kg,747119.72,0.1,7.89,UN Comtrade
+180,1,20,2023,Import,6913,Statuettes and other ornamental ceramic articles,4097378.68,3851535.96,4097378.68,916921.04,kg,916921.04,0.1,6.99,ITC Trade Map
+181,1,21,2021,Import,6911,Porcelain or china tableware and kitchenware,11416515.84,10731524.89,11416515.84,2237282.84,kg,2237282.84,0.32,,UN Comtrade
+182,1,21,2022,Import,6911,Porcelain or china tableware and kitchenware,12692054.17,11930530.92,12692054.17,2844389.42,kg,2844389.42,0.33,11.17,ITC Trade Map
+183,1,21,2023,Import,6911,Porcelain or china tableware and kitchenware,13931420.74,13095535.5,13931420.74,3089624.56,kg,3089624.56,0.34,9.76,UN Comtrade
+184,1,21,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8879512.32,8346741.58,8879512.32,2394481.03,kg,2394481.03,0.25,,ITC Trade Map
+185,1,21,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10070948.05,9466691.17,10070948.05,2273159.32,kg,2273159.32,0.26,13.42,UN Comtrade
+186,1,21,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10728037.43,10084355.18,10728037.43,2471478.22,kg,2471478.22,0.26,6.52,ITC Trade Map
+187,1,21,2021,Import,6913,Statuettes and other ornamental ceramic articles,5074007.04,4769566.62,5074007.04,1062605.46,kg,1062605.46,0.14,,UN Comtrade
+188,1,21,2022,Import,6913,Statuettes and other ornamental ceramic articles,5679587.88,5338812.6,5679587.88,1325187.23,kg,1325187.23,0.15,11.93,ITC Trade Map
+189,1,21,2023,Import,6913,Statuettes and other ornamental ceramic articles,6076063.17,5711499.38,6076063.17,1196964.85,kg,1196964.85,0.15,6.98,UN Comtrade
+190,1,22,2021,Import,6911,Porcelain or china tableware and kitchenware,2318343.5,2179242.89,2318343.5,651608.81,kg,651608.81,0.07,,ITC Trade Map
+191,1,22,2022,Import,6911,Porcelain or china tableware and kitchenware,2294271.7,2156615.4,2294271.7,552371.37,kg,552371.37,0.06,-1.04,UN Comtrade
+192,1,22,2023,Import,6911,Porcelain or china tableware and kitchenware,2227349.64,2093708.66,2227349.64,483343.09,kg,483343.09,0.05,-2.92,ITC Trade Map
+193,1,22,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1803156.06,1694966.69,1803156.06,450727.27,kg,450727.27,0.05,,UN Comtrade
+194,1,22,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1779547.76,1672774.9,1779547.76,372870.86,kg,372870.86,0.05,-1.31,ITC Trade Map
+195,1,22,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1757581.99,1652127.07,1757581.99,433377.44,kg,433377.44,0.04,-1.23,UN Comtrade
+196,1,22,2021,Import,6913,Statuettes and other ornamental ceramic articles,1030374.89,968552.4,1030374.89,259802.57,kg,259802.57,0.03,,ITC Trade Map
+197,1,22,2022,Import,6913,Statuettes and other ornamental ceramic articles,1008942.3,948405.76,1008942.3,275215.36,kg,275215.36,0.03,-2.08,UN Comtrade
+198,1,22,2023,Import,6913,Statuettes and other ornamental ceramic articles,1011208.54,950536.03,1011208.54,241440.7,kg,241440.7,0.02,0.22,ITC Trade Map
+199,1,23,2021,Import,6911,Porcelain or china tableware and kitchenware,5936064.57,5579900.69,5936064.57,1350521.32,kg,1350521.32,0.17,,UN Comtrade
+200,1,23,2022,Import,6911,Porcelain or china tableware and kitchenware,6423981.08,6038542.22,6423981.08,1337064.0,kg,1337064.0,0.17,8.22,ITC Trade Map
+201,1,23,2023,Import,6911,Porcelain or china tableware and kitchenware,7166130.69,6736162.85,7166130.69,1757504.29,kg,1757504.29,0.17,11.55,UN Comtrade
+202,1,23,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4616939.11,4339922.76,4616939.11,892000.68,kg,892000.68,0.13,,ITC Trade Map
+203,1,23,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5151470.61,4842382.37,5151470.61,1007691.52,kg,1007691.52,0.14,11.58,UN Comtrade
+204,1,23,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5716703.43,5373701.23,5716703.43,1159348.83,kg,1159348.83,0.14,10.97,ITC Trade Map
+205,1,23,2021,Import,6913,Statuettes and other ornamental ceramic articles,2638250.92,2479955.86,2638250.92,580252.0,kg,580252.0,0.07,,UN Comtrade
+206,1,23,2022,Import,6913,Statuettes and other ornamental ceramic articles,2792772.85,2625206.48,2792772.85,626341.73,kg,626341.73,0.07,5.86,ITC Trade Map
+207,1,23,2023,Import,6913,Statuettes and other ornamental ceramic articles,3042687.75,2860126.48,3042687.75,889117.18,kg,889117.18,0.07,8.95,UN Comtrade
+208,1,24,2021,Import,6911,Porcelain or china tableware and kitchenware,6910514.03,6495883.18,6910514.03,1757664.24,kg,1757664.24,0.2,,ITC Trade Map
+209,1,24,2022,Import,6911,Porcelain or china tableware and kitchenware,7496528.02,7046736.34,7496528.02,1786518.7,kg,1786518.7,0.2,8.48,UN Comtrade
+210,1,24,2023,Import,6911,Porcelain or china tableware and kitchenware,8438231.67,7931937.77,8438231.67,1669880.34,kg,1669880.34,0.21,12.56,ITC Trade Map
+211,1,24,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5374844.24,5052353.59,5374844.24,1118284.65,kg,1118284.65,0.15,,UN Comtrade
+212,1,24,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5850897.37,5499843.52,5850897.37,1126328.71,kg,1126328.71,0.15,8.86,ITC Trade Map
+213,1,24,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6540794.1,6148346.46,6540794.1,1672394.59,kg,1672394.59,0.16,11.79,UN Comtrade
+214,1,24,2021,Import,6913,Statuettes and other ornamental ceramic articles,3071339.57,2887059.19,3071339.57,625984.61,kg,625984.61,0.09,,ITC Trade Map
+215,1,24,2022,Import,6913,Statuettes and other ornamental ceramic articles,3473270.36,3264874.14,3473270.36,668143.67,kg,668143.67,0.09,13.09,UN Comtrade
+216,1,24,2023,Import,6913,Statuettes and other ornamental ceramic articles,3833026.17,3603044.6,3833026.17,838695.28,kg,838695.28,0.09,10.36,ITC Trade Map
+217,1,25,2021,Import,6911,Porcelain or china tableware and kitchenware,1916298.98,1801321.04,1916298.98,555095.15,kg,555095.15,0.05,,UN Comtrade
+218,1,25,2022,Import,6911,Porcelain or china tableware and kitchenware,2139246.72,2010891.92,2139246.72,584902.85,kg,584902.85,0.06,11.63,ITC Trade Map
+219,1,25,2023,Import,6911,Porcelain or china tableware and kitchenware,2426701.3,2281099.22,2426701.3,645954.59,kg,645954.59,0.06,13.44,UN Comtrade
+220,1,25,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1490454.76,1401027.47,1490454.76,295775.1,kg,295775.1,0.04,,ITC Trade Map
+221,1,25,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1700399.76,1598375.77,1700399.76,490722.71,kg,490722.71,0.04,14.09,UN Comtrade
+222,1,25,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1918196.31,1803104.54,1918196.31,549156.87,kg,549156.87,0.05,12.81,ITC Trade Map
+223,1,25,2021,Import,6913,Statuettes and other ornamental ceramic articles,851688.43,800587.13,851688.43,189657.52,kg,189657.52,0.02,,UN Comtrade
+224,1,25,2022,Import,6913,Statuettes and other ornamental ceramic articles,940695.75,884254.01,940695.75,245651.27,kg,245651.27,0.02,10.45,ITC Trade Map
+225,1,25,2023,Import,6913,Statuettes and other ornamental ceramic articles,1019492.21,958322.68,1019492.21,291032.58,kg,291032.58,0.02,8.38,UN Comtrade
+226,1,26,2021,Import,6911,Porcelain or china tableware and kitchenware,11668228.89,10968135.16,11668228.89,2436060.12,kg,2436060.12,0.33,,ITC Trade Map
+227,1,26,2022,Import,6911,Porcelain or china tableware and kitchenware,13512573.11,12701818.72,13512573.11,2752968.61,kg,2752968.61,0.36,15.81,UN Comtrade
+228,1,26,2023,Import,6911,Porcelain or china tableware and kitchenware,15335397.24,14415273.41,15335397.24,4230614.74,kg,4230614.74,0.37,13.49,ITC Trade Map
+229,1,26,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9075289.14,8530771.79,9075289.14,2106536.9,kg,2106536.9,0.26,,UN Comtrade
+230,1,26,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10557763.48,9924297.67,10557763.48,2328565.03,kg,2328565.03,0.28,16.34,ITC Trade Map
+231,1,26,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11819766.39,11110580.4,11819766.39,3212431.31,kg,3212431.31,0.29,11.95,UN Comtrade
+232,1,26,2021,Import,6913,Statuettes and other ornamental ceramic articles,5185879.51,4874726.74,5185879.51,1098163.98,kg,1098163.98,0.15,,ITC Trade Map
+233,1,26,2022,Import,6913,Statuettes and other ornamental ceramic articles,5800501.93,5452471.82,5800501.93,1492142.06,kg,1492142.06,0.15,11.85,UN Comtrade
+234,1,26,2023,Import,6913,Statuettes and other ornamental ceramic articles,6684224.83,6283171.34,6684224.83,1294296.62,kg,1294296.62,0.16,15.24,ITC Trade Map
+235,1,27,2021,Import,6911,Porcelain or china tableware and kitchenware,9068435.99,8524329.83,9068435.99,2011026.78,kg,2011026.78,0.26,,UN Comtrade
+236,1,27,2022,Import,6911,Porcelain or china tableware and kitchenware,8885697.95,8352556.08,8885697.95,1780179.32,kg,1780179.32,0.23,-2.02,ITC Trade Map
+237,1,27,2023,Import,6911,Porcelain or china tableware and kitchenware,8296904.45,7799090.18,8296904.45,2235380.19,kg,2235380.19,0.2,-6.63,UN Comtrade
+238,1,27,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7053227.99,6630034.31,7053227.99,1978410.8,kg,1978410.8,0.2,,ITC Trade Map
+239,1,27,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6768821.07,6362691.81,6768821.07,1310758.51,kg,1310758.51,0.18,-4.03,UN Comtrade
+240,1,27,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6479585.25,6090810.13,6479585.25,1346730.34,kg,1346730.34,0.16,-4.27,ITC Trade Map
+241,1,27,2021,Import,6913,Statuettes and other ornamental ceramic articles,4030416.0,3788591.04,4030416.0,886675.82,kg,886675.82,0.11,,UN Comtrade
+242,1,27,2022,Import,6913,Statuettes and other ornamental ceramic articles,3937427.45,3701181.8,3937427.45,1075437.12,kg,1075437.12,0.1,-2.31,ITC Trade Map
+243,1,27,2023,Import,6913,Statuettes and other ornamental ceramic articles,3924702.84,3689220.67,3924702.84,995506.84,kg,995506.84,0.1,-0.32,UN Comtrade
+244,1,28,2021,Import,6911,Porcelain or china tableware and kitchenware,8608286.29,8091789.11,8608286.29,1884220.38,kg,1884220.38,0.24,,ITC Trade Map
+245,1,28,2022,Import,6911,Porcelain or china tableware and kitchenware,9600385.07,9024361.97,9600385.07,2617913.06,kg,2617913.06,0.25,11.52,UN Comtrade
+246,1,28,2023,Import,6911,Porcelain or china tableware and kitchenware,10467632.77,9839574.81,10467632.77,2536217.23,kg,2536217.23,0.26,9.03,ITC Trade Map
+247,1,28,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6695333.78,6293613.75,6695333.78,1574074.98,kg,1574074.98,0.19,,UN Comtrade
+248,1,28,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7595836.35,7140086.17,7595836.35,2085982.95,kg,2085982.95,0.2,13.45,ITC Trade Map
+249,1,28,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8326261.41,7826685.72,8326261.41,2108731.99,kg,2108731.99,0.2,9.62,UN Comtrade
+250,1,28,2021,Import,6913,Statuettes and other ornamental ceramic articles,3825905.02,3596350.72,3825905.02,917433.54,kg,917433.54,0.11,,ITC Trade Map
+251,1,28,2022,Import,6913,Statuettes and other ornamental ceramic articles,4207037.22,3954614.99,4207037.22,926184.36,kg,926184.36,0.11,9.96,UN Comtrade
+252,1,28,2023,Import,6913,Statuettes and other ornamental ceramic articles,4624525.06,4347053.56,4624525.06,1118166.82,kg,1118166.82,0.11,9.92,ITC Trade Map
+253,1,29,2021,Import,6911,Porcelain or china tableware and kitchenware,3661951.53,3442234.44,3661951.53,922249.44,kg,922249.44,0.1,,UN Comtrade
+254,1,29,2022,Import,6911,Porcelain or china tableware and kitchenware,3891206.84,3657734.43,3891206.84,936935.79,kg,936935.79,0.1,6.26,ITC Trade Map
+255,1,29,2023,Import,6911,Porcelain or china tableware and kitchenware,4321273.95,4061997.52,4321273.95,1135364.61,kg,1135364.61,0.11,11.05,UN Comtrade
+256,1,29,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2848184.52,2677293.45,2848184.52,642869.47,kg,642869.47,0.08,,ITC Trade Map
+257,1,29,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3072428.8,2888083.07,3072428.8,658809.98,kg,658809.98,0.08,7.87,UN Comtrade
+258,1,29,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3275488.42,3078959.11,3275488.42,716050.87,kg,716050.87,0.08,6.61,ITC Trade Map
+259,1,29,2021,Import,6913,Statuettes and other ornamental ceramic articles,1627534.01,1529881.97,1627534.01,410042.32,kg,410042.32,0.05,,UN Comtrade
+260,1,29,2022,Import,6913,Statuettes and other ornamental ceramic articles,1733312.36,1629313.62,1733312.36,394970.54,kg,394970.54,0.05,6.5,ITC Trade Map
+261,1,29,2023,Import,6913,Statuettes and other ornamental ceramic articles,1818139.67,1709051.29,1818139.67,401637.06,kg,401637.06,0.04,4.89,UN Comtrade
+262,1,30,2021,Import,6911,Porcelain or china tableware and kitchenware,5625021.92,5287520.6,5625021.92,1190211.24,kg,1190211.24,0.16,,ITC Trade Map
+263,1,30,2022,Import,6911,Porcelain or china tableware and kitchenware,5958309.3,5600810.74,5958309.3,1178019.7,kg,1178019.7,0.16,5.93,UN Comtrade
+264,1,30,2023,Import,6911,Porcelain or china tableware and kitchenware,6293671.5,5916051.21,6293671.5,1451326.75,kg,1451326.75,0.15,5.63,ITC Trade Map
+265,1,30,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4375017.05,4112516.02,4375017.05,903972.71,kg,903972.71,0.12,,UN Comtrade
+266,1,30,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4663884.04,4384050.99,4663884.04,950399.45,kg,950399.45,0.12,6.6,ITC Trade Map
+267,1,30,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4993770.63,4694144.4,4993770.63,1015905.09,kg,1015905.09,0.12,7.07,UN Comtrade
+268,1,30,2021,Import,6913,Statuettes and other ornamental ceramic articles,2500009.74,2350009.16,2500009.74,714283.96,kg,714283.96,0.07,,ITC Trade Map
+269,1,30,2022,Import,6913,Statuettes and other ornamental ceramic articles,2629248.95,2471494.01,2629248.95,657076.66,kg,657076.66,0.07,5.17,UN Comtrade
+270,1,30,2023,Import,6913,Statuettes and other ornamental ceramic articles,2763990.06,2598150.65,2763990.06,697095.7,kg,697095.7,0.07,5.12,ITC Trade Map
+271,1,31,2021,Import,6911,Porcelain or china tableware and kitchenware,10868455.48,10216348.15,10868455.48,2223082.58,kg,2223082.58,0.31,,UN Comtrade
+272,1,31,2022,Import,6911,Porcelain or china tableware and kitchenware,10139057.39,9530713.94,10139057.39,2491125.54,kg,2491125.54,0.27,-6.71,ITC Trade Map
+273,1,31,2023,Import,6911,Porcelain or china tableware and kitchenware,9943307.07,9346708.64,9943307.07,2218739.0,kg,2218739.0,0.24,-1.93,UN Comtrade
+274,1,31,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8453243.15,7946048.56,8453243.15,2338114.28,kg,2338114.28,0.24,,ITC Trade Map
+275,1,31,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7637498.11,7179248.23,7637498.11,1490193.37,kg,1490193.37,0.2,-9.65,UN Comtrade
+276,1,31,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7723023.13,7259641.74,7723023.13,1612393.25,kg,1612393.25,0.19,1.12,ITC Trade Map
+277,1,31,2021,Import,6913,Statuettes and other ornamental ceramic articles,4830424.66,4540599.18,4830424.66,1219887.16,kg,1219887.16,0.14,,UN Comtrade
+278,1,31,2022,Import,6913,Statuettes and other ornamental ceramic articles,4695614.0,4413877.16,4695614.0,1005542.62,kg,1005542.62,0.12,-2.79,ITC Trade Map
+279,1,31,2023,Import,6913,Statuettes and other ornamental ceramic articles,4492966.67,4223388.67,4492966.67,986684.63,kg,986684.63,0.11,-4.32,UN Comtrade
+280,1,32,2021,Import,6911,Porcelain or china tableware and kitchenware,822236.93,772902.71,822236.93,189230.58,kg,189230.58,0.02,,ITC Trade Map
+281,1,32,2022,Import,6911,Porcelain or china tableware and kitchenware,832997.93,783018.06,832997.93,225217.82,kg,225217.82,0.02,1.31,UN Comtrade
+282,1,32,2023,Import,6911,Porcelain or china tableware and kitchenware,847723.06,796859.67,847723.06,163639.22,kg,163639.22,0.02,1.77,ITC Trade Map
+283,1,32,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",639517.61,601146.55,639517.61,145320.31,kg,145320.31,0.02,,UN Comtrade
+284,1,32,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",627985.22,590306.1,627985.22,121172.34,kg,121172.34,0.02,-1.8,ITC Trade Map
+285,1,32,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",625406.76,587882.35,625406.76,148664.19,kg,148664.19,0.02,-0.41,UN Comtrade
+286,1,32,2021,Import,6913,Statuettes and other ornamental ceramic articles,365438.63,343512.32,365438.63,88987.46,kg,88987.46,0.01,,ITC Trade Map
+287,1,32,2022,Import,6913,Statuettes and other ornamental ceramic articles,375971.26,353412.98,375971.26,78992.29,kg,78992.29,0.01,2.88,UN Comtrade
+288,1,32,2023,Import,6913,Statuettes and other ornamental ceramic articles,377808.08,355139.59,377808.08,89005.16,kg,89005.16,0.01,0.49,ITC Trade Map
+289,1,33,2021,Import,6911,Porcelain or china tableware and kitchenware,2742986.57,2578407.37,2742986.57,545023.43,kg,545023.43,0.08,,UN Comtrade
+290,1,33,2022,Import,6911,Porcelain or china tableware and kitchenware,2752375.1,2587232.6,2752375.1,720680.4,kg,720680.4,0.07,0.34,ITC Trade Map
+291,1,33,2023,Import,6911,Porcelain or china tableware and kitchenware,2771987.1,2605667.88,2771987.1,647304.28,kg,647304.28,0.07,0.71,UN Comtrade
+292,1,33,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2133434.0,2005427.96,2133434.0,478820.67,kg,478820.67,0.06,,ITC Trade Map
+293,1,33,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2019275.77,1898119.23,2019275.77,568584.63,kg,568584.63,0.05,-5.35,UN Comtrade
+294,1,33,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1939810.61,1823421.97,1939810.61,394393.97,kg,394393.97,0.05,-3.94,ITC Trade Map
+295,1,33,2021,Import,6913,Statuettes and other ornamental ceramic articles,1219105.14,1145958.83,1219105.14,268073.08,kg,268073.08,0.03,,UN Comtrade
+296,1,33,2022,Import,6913,Statuettes and other ornamental ceramic articles,1207879.05,1135406.31,1207879.05,262219.52,kg,262219.52,0.03,-0.92,ITC Trade Map
+297,1,33,2023,Import,6913,Statuettes and other ornamental ceramic articles,1197240.49,1125406.06,1197240.49,341620.19,kg,341620.19,0.03,-0.88,UN Comtrade
+298,1,34,2021,Import,6911,Porcelain or china tableware and kitchenware,5706700.08,5364298.08,5706700.08,1423393.5,kg,1423393.5,0.16,,ITC Trade Map
+299,1,34,2022,Import,6911,Porcelain or china tableware and kitchenware,6107373.04,5740930.66,6107373.04,1430757.01,kg,1430757.01,0.16,7.02,UN Comtrade
+300,1,34,2023,Import,6911,Porcelain or china tableware and kitchenware,6525352.93,6133831.76,6525352.93,1322627.69,kg,1322627.69,0.16,6.84,ITC Trade Map
+301,1,34,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4438544.51,4172231.84,4438544.51,1030153.44,kg,1030153.44,0.13,,UN Comtrade
+302,1,34,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4688738.82,4407414.49,4688738.82,1052036.11,kg,1052036.11,0.12,5.64,ITC Trade Map
+303,1,34,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4885032.68,4591930.72,4885032.68,1217282.7,kg,1217282.7,0.12,4.19,UN Comtrade
+304,1,34,2021,Import,6913,Statuettes and other ornamental ceramic articles,2536311.15,2384132.48,2536311.15,590132.05,kg,590132.05,0.07,,ITC Trade Map
+305,1,34,2022,Import,6913,Statuettes and other ornamental ceramic articles,2668794.83,2508667.14,2668794.83,743611.59,kg,743611.59,0.07,5.22,UN Comtrade
+306,1,34,2023,Import,6913,Statuettes and other ornamental ceramic articles,2831849.14,2661938.19,2831849.14,560628.12,kg,560628.12,0.07,6.11,ITC Trade Map
+307,1,35,2021,Import,6911,Porcelain or china tableware and kitchenware,9333172.5,8773182.15,9333172.5,2327509.18,kg,2327509.18,0.26,,UN Comtrade
+308,1,35,2022,Import,6911,Porcelain or china tableware and kitchenware,9412639.83,8847881.44,9412639.83,2732513.72,kg,2732513.72,0.25,0.85,ITC Trade Map
+309,1,35,2023,Import,6911,Porcelain or china tableware and kitchenware,9230674.0,8676833.56,9230674.0,2194240.95,kg,2194240.95,0.22,-1.93,UN Comtrade
+310,1,35,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7259134.17,6823586.12,7259134.17,1836099.22,kg,1836099.22,0.21,,ITC Trade Map
+311,1,35,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7003349.18,6583148.23,7003349.18,2051863.03,kg,2051863.03,0.18,-3.52,UN Comtrade
+312,1,35,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6996114.48,6576347.62,6996114.48,1499555.06,kg,1499555.06,0.17,-0.1,ITC Trade Map
+313,1,35,2021,Import,6913,Statuettes and other ornamental ceramic articles,4148076.67,3899192.07,4148076.67,913515.2,kg,913515.2,0.12,,UN Comtrade
+314,1,35,2022,Import,6913,Statuettes and other ornamental ceramic articles,4001358.37,3761276.87,4001358.37,885914.07,kg,885914.07,0.11,-3.54,ITC Trade Map
+315,1,35,2023,Import,6913,Statuettes and other ornamental ceramic articles,4076124.75,3831557.27,4076124.75,854429.85,kg,854429.85,0.1,1.87,UN Comtrade
+316,1,36,2021,Import,6911,Porcelain or china tableware and kitchenware,13073175.04,12288784.54,13073175.04,2546500.73,kg,2546500.73,0.37,,ITC Trade Map
+317,1,36,2022,Import,6911,Porcelain or china tableware and kitchenware,14263574.59,13407760.11,14263574.59,2875580.04,kg,2875580.04,0.38,9.11,UN Comtrade
+318,1,36,2023,Import,6911,Porcelain or china tableware and kitchenware,15849971.63,14898973.33,15849971.63,3359223.19,kg,3359223.19,0.39,11.12,ITC Trade Map
+319,1,36,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10168025.03,9557943.53,10168025.03,2425486.11,kg,2425486.11,0.29,,UN Comtrade
+320,1,36,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10983327.4,10324327.75,10983327.4,2399476.77,kg,2399476.77,0.29,8.02,ITC Trade Map
+321,1,36,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",12401874.13,11657761.69,12401874.13,2397775.98,kg,2397775.98,0.3,12.92,UN Comtrade
+322,1,36,2021,Import,6913,Statuettes and other ornamental ceramic articles,5810300.02,5461682.02,5810300.02,1482669.17,kg,1482669.17,0.16,,ITC Trade Map
+323,1,36,2022,Import,6913,Statuettes and other ornamental ceramic articles,6585151.21,6190042.14,6585151.21,1386356.27,kg,1386356.27,0.17,13.34,UN Comtrade
+324,1,36,2023,Import,6913,Statuettes and other ornamental ceramic articles,7167633.88,6737575.85,7167633.88,1978388.61,kg,1978388.61,0.17,8.85,ITC Trade Map
+325,1,37,2021,Import,6911,Porcelain or china tableware and kitchenware,1236997.03,1162777.21,1236997.03,288919.47,kg,288919.47,0.04,,UN Comtrade
+326,1,37,2022,Import,6911,Porcelain or china tableware and kitchenware,1390319.37,1306900.21,1390319.37,328141.39,kg,328141.39,0.04,12.39,ITC Trade Map
+327,1,37,2023,Import,6911,Porcelain or china tableware and kitchenware,1490694.81,1401253.12,1490694.81,359998.44,kg,359998.44,0.04,7.22,UN Comtrade
+328,1,37,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",962108.8,904382.27,962108.8,199250.97,kg,199250.97,0.03,,ITC Trade Map
+329,1,37,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1090246.43,1024831.65,1090246.43,247792.79,kg,247792.79,0.03,13.32,UN Comtrade
+330,1,37,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1193779.38,1122152.62,1193779.38,235716.87,kg,235716.87,0.03,9.5,ITC Trade Map
+331,1,37,2021,Import,6913,Statuettes and other ornamental ceramic articles,549776.46,516789.87,549776.46,112644.12,kg,112644.12,0.02,,UN Comtrade
+332,1,37,2022,Import,6913,Statuettes and other ornamental ceramic articles,613911.83,577077.12,613911.83,150806.27,kg,150806.27,0.02,11.67,ITC Trade Map
+333,1,37,2023,Import,6913,Statuettes and other ornamental ceramic articles,686633.3,645435.3,686633.3,190906.04,kg,190906.04,0.02,11.85,UN Comtrade
+334,1,38,2021,Import,6911,Porcelain or china tableware and kitchenware,9943569.75,9346955.57,9943569.75,2074733.55,kg,2074733.55,0.28,,ITC Trade Map
+335,1,38,2022,Import,6911,Porcelain or china tableware and kitchenware,10732960.71,10088983.07,10732960.71,2268656.46,kg,2268656.46,0.28,7.94,UN Comtrade
+336,1,38,2023,Import,6911,Porcelain or china tableware and kitchenware,11911391.07,11196707.61,11911391.07,3414831.18,kg,3414831.18,0.29,10.98,ITC Trade Map
+337,1,38,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7733887.59,7269854.33,7733887.59,2023432.03,kg,2023432.03,0.22,,UN Comtrade
+338,1,38,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8697086.32,8175261.14,8697086.32,1758896.85,kg,1758896.85,0.23,12.45,ITC Trade Map
+339,1,38,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9533408.67,8961404.15,9533408.67,2203577.27,kg,2203577.27,0.23,9.62,UN Comtrade
+340,1,38,2021,Import,6913,Statuettes and other ornamental ceramic articles,4419364.33,4154202.47,4419364.33,956755.16,kg,956755.16,0.13,,ITC Trade Map
+341,1,38,2022,Import,6913,Statuettes and other ornamental ceramic articles,4883140.31,4590151.89,4883140.31,1184526.71,kg,1184526.71,0.13,10.49,UN Comtrade
+342,1,38,2023,Import,6913,Statuettes and other ornamental ceramic articles,5309371.51,4990809.22,5309371.51,1151981.6,kg,1151981.6,0.13,8.73,ITC Trade Map
+343,1,39,2021,Import,6911,Porcelain or china tableware and kitchenware,3936861.04,3700649.37,3936861.04,977748.29,kg,977748.29,0.11,,UN Comtrade
+344,1,39,2022,Import,6911,Porcelain or china tableware and kitchenware,4617996.95,4340917.13,4617996.95,1172646.36,kg,1172646.36,0.12,17.3,ITC Trade Map
+345,1,39,2023,Import,6911,Porcelain or china tableware and kitchenware,5002637.55,4702479.3,5002637.55,1215857.85,kg,1215857.85,0.12,8.33,UN Comtrade
+346,1,39,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3062003.03,2878282.85,3062003.03,786200.41,kg,786200.41,0.09,,ITC Trade Map
+347,1,39,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3424023.46,3218582.05,3424023.46,916085.35,kg,916085.35,0.09,11.82,UN Comtrade
+348,1,39,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3881540.23,3648647.82,3881540.23,966646.92,kg,966646.92,0.09,13.36,ITC Trade Map
+349,1,39,2021,Import,6913,Statuettes and other ornamental ceramic articles,1749716.02,1644733.06,1749716.02,372934.59,kg,372934.59,0.05,,UN Comtrade
+350,1,39,2022,Import,6913,Statuettes and other ornamental ceramic articles,1987699.0,1868437.06,1987699.0,382416.15,kg,382416.15,0.05,13.6,ITC Trade Map
+351,1,39,2023,Import,6913,Statuettes and other ornamental ceramic articles,2237090.87,2102865.42,2237090.87,541105.7,kg,541105.7,0.05,12.55,UN Comtrade
+352,1,40,2021,Import,6911,Porcelain or china tableware and kitchenware,2552872.04,2399699.72,2552872.04,491348.52,kg,491348.52,0.07,,ITC Trade Map
+353,1,40,2022,Import,6911,Porcelain or china tableware and kitchenware,2664713.43,2504830.62,2664713.43,595948.36,kg,595948.36,0.07,4.38,UN Comtrade
+354,1,40,2023,Import,6911,Porcelain or china tableware and kitchenware,2857941.07,2686464.61,2857941.07,566204.99,kg,566204.99,0.07,7.25,ITC Trade Map
+355,1,40,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1985567.14,1866433.11,1985567.14,462356.58,kg,462356.58,0.06,,UN Comtrade
+356,1,40,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2116102.72,1989136.56,2116102.72,521505.41,kg,521505.41,0.06,6.57,ITC Trade Map
+357,1,40,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2215878.77,2082926.04,2215878.77,588771.65,kg,588771.65,0.05,4.72,UN Comtrade
+358,1,40,2021,Import,6913,Statuettes and other ornamental ceramic articles,1134609.8,1066533.21,1134609.8,330616.16,kg,330616.16,0.03,,ITC Trade Map
+359,1,40,2022,Import,6913,Statuettes and other ornamental ceramic articles,1193433.33,1121827.33,1193433.33,262745.05,kg,262745.05,0.03,5.18,UN Comtrade
+360,1,40,2023,Import,6913,Statuettes and other ornamental ceramic articles,1304990.75,1226691.31,1304990.75,313949.71,kg,313949.71,0.03,9.35,ITC Trade Map
+361,1,41,2021,Import,6911,Porcelain or china tableware and kitchenware,13840147.27,13009738.43,13840147.27,3164516.87,kg,3164516.87,0.39,,UN Comtrade
+362,1,41,2022,Import,6911,Porcelain or china tableware and kitchenware,15169163.66,14259013.84,15169163.66,3025003.21,kg,3025003.21,0.4,9.6,ITC Trade Map
+363,1,41,2023,Import,6911,Porcelain or china tableware and kitchenware,16212194.58,15239462.91,16212194.58,4067675.07,kg,4067675.07,0.39,6.88,UN Comtrade
+364,1,41,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10764558.99,10118685.45,10764558.99,2137387.24,kg,2137387.24,0.3,,ITC Trade Map
+365,1,41,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11759404.67,11053840.39,11759404.67,2482892.07,kg,2482892.07,0.31,9.24,UN Comtrade
+366,1,41,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",13153715.79,12364492.85,13153715.79,2874381.12,kg,2874381.12,0.32,11.86,ITC Trade Map
+367,1,41,2021,Import,6913,Statuettes and other ornamental ceramic articles,6151176.56,5782105.97,6151176.56,1561652.31,kg,1561652.31,0.17,,UN Comtrade
+368,1,41,2022,Import,6913,Statuettes and other ornamental ceramic articles,6621965.41,6224647.48,6621965.41,1663607.17,kg,1663607.17,0.17,7.65,ITC Trade Map
+369,1,41,2023,Import,6913,Statuettes and other ornamental ceramic articles,7349454.56,6908487.29,7349454.56,1477643.86,kg,1477643.86,0.18,10.99,UN Comtrade
+370,1,42,2021,Import,6911,Porcelain or china tableware and kitchenware,4562564.16,4288810.31,4562564.16,945500.6,kg,945500.6,0.13,,ITC Trade Map
+371,1,42,2022,Import,6911,Porcelain or china tableware and kitchenware,4851577.17,4560482.54,4851577.17,1158144.39,kg,1158144.39,0.13,6.33,UN Comtrade
+372,1,42,2023,Import,6911,Porcelain or china tableware and kitchenware,5235747.8,4921602.93,5235747.8,1008724.59,kg,1008724.59,0.13,7.92,ITC Trade Map
+373,1,42,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3548661.01,3335741.35,3548661.01,769061.37,kg,769061.37,0.1,,UN Comtrade
+374,1,42,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3754394.05,3529130.41,3754394.05,1005644.1,kg,1005644.1,0.1,5.8,ITC Trade Map
+375,1,42,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4064127.88,3820280.21,4064127.88,1134151.12,kg,1134151.12,0.1,8.25,UN Comtrade
+376,1,42,2021,Import,6913,Statuettes and other ornamental ceramic articles,2027806.29,1906137.92,2027806.29,443211.18,kg,443211.18,0.06,,ITC Trade Map
+377,1,42,2022,Import,6913,Statuettes and other ornamental ceramic articles,2145799.29,2017051.33,2145799.29,496377.55,kg,496377.55,0.06,5.82,UN Comtrade
+378,1,42,2023,Import,6913,Statuettes and other ornamental ceramic articles,2278340.5,2141640.07,2278340.5,657621.4,kg,657621.4,0.06,6.18,ITC Trade Map
+379,1,43,2021,Import,6911,Porcelain or china tableware and kitchenware,13847905.32,13017031.0,13847905.32,3986221.95,kg,3986221.95,0.39,,UN Comtrade
+380,1,43,2022,Import,6911,Porcelain or china tableware and kitchenware,12922358.27,12147016.77,12922358.27,3673258.77,kg,3673258.77,0.34,-6.68,ITC Trade Map
+381,1,43,2023,Import,6911,Porcelain or china tableware and kitchenware,12421841.57,11676531.08,12421841.57,2869476.08,kg,2869476.08,0.3,-3.87,UN Comtrade
+382,1,43,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10770593.03,10124357.44,10770593.03,2718044.37,kg,2718044.37,0.3,,ITC Trade Map
+383,1,43,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10497766.33,9867900.35,10497766.33,2915333.03,kg,2915333.03,0.28,-2.53,UN Comtrade
+384,1,43,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10271344.41,9655063.75,10271344.41,2927183.59,kg,2927183.59,0.25,-2.16,ITC Trade Map
+385,1,43,2021,Import,6913,Statuettes and other ornamental ceramic articles,6154624.59,5785347.11,6154624.59,1321659.06,kg,1321659.06,0.17,,UN Comtrade
+386,1,43,2022,Import,6913,Statuettes and other ornamental ceramic articles,5916803.81,5561795.58,5916803.81,1500306.96,kg,1500306.96,0.16,-3.86,ITC Trade Map
+387,1,43,2023,Import,6913,Statuettes and other ornamental ceramic articles,5769710.81,5423528.17,5769710.81,1390326.16,kg,1390326.16,0.14,-2.49,UN Comtrade
+388,1,44,2021,Import,6911,Porcelain or china tableware and kitchenware,697793.21,655925.62,697793.21,140883.62,kg,140883.62,0.02,,ITC Trade Map
+389,1,44,2022,Import,6911,Porcelain or china tableware and kitchenware,684571.2,643496.93,684571.2,158660.16,kg,158660.16,0.02,-1.89,UN Comtrade
+390,1,44,2023,Import,6911,Porcelain or china tableware and kitchenware,655117.9,615810.83,655117.9,163797.11,kg,163797.11,0.02,-4.3,ITC Trade Map
+391,1,44,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",542728.05,510164.37,542728.05,129951.52,kg,129951.52,0.02,,UN Comtrade
+392,1,44,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",528766.01,497040.05,528766.01,107600.34,kg,107600.34,0.01,-2.57,ITC Trade Map
+393,1,44,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",517857.45,486786.01,517857.45,130099.16,kg,130099.16,0.01,-2.06,UN Comtrade
+394,1,44,2021,Import,6913,Statuettes and other ornamental ceramic articles,310130.32,291522.5,310130.32,80837.43,kg,80837.43,0.01,,ITC Trade Map
+395,1,44,2022,Import,6913,Statuettes and other ornamental ceramic articles,295045.76,277343.02,295045.76,63726.64,kg,63726.64,0.01,-4.86,UN Comtrade
+396,1,44,2023,Import,6913,Statuettes and other ornamental ceramic articles,298148.74,280259.82,298148.74,74624.42,kg,74624.42,0.01,1.05,ITC Trade Map
+397,1,45,2021,Import,6911,Porcelain or china tableware and kitchenware,13444528.88,12637857.14,13444528.88,3178837.57,kg,3178837.57,0.38,,UN Comtrade
+398,1,45,2022,Import,6911,Porcelain or china tableware and kitchenware,13151228.94,12362155.21,13151228.94,3582643.36,kg,3582643.36,0.35,-2.18,ITC Trade Map
+399,1,45,2023,Import,6911,Porcelain or china tableware and kitchenware,12890873.29,12117420.9,12890873.29,3532936.98,kg,3532936.98,0.31,-1.98,UN Comtrade
+400,1,45,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10456855.79,9829444.45,10456855.79,2069074.09,kg,2069074.09,0.3,,ITC Trade Map
+401,1,45,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10168147.72,9558058.86,10168147.72,2719498.08,kg,2719498.08,0.27,-2.76,UN Comtrade
+402,1,45,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10019370.75,9418208.5,10019370.75,2783828.95,kg,2783828.95,0.24,-1.46,ITC Trade Map
+403,1,45,2021,Import,6913,Statuettes and other ornamental ceramic articles,5975346.17,5616825.4,5975346.17,1323071.44,kg,1323071.44,0.17,,UN Comtrade
+404,1,45,2022,Import,6913,Statuettes and other ornamental ceramic articles,5911189.31,5556517.95,5911189.31,1335988.29,kg,1335988.29,0.16,-1.07,ITC Trade Map
+405,1,45,2023,Import,6913,Statuettes and other ornamental ceramic articles,5608629.25,5272111.5,5608629.25,1137887.59,kg,1137887.59,0.14,-5.12,UN Comtrade
+406,1,46,2021,Import,6911,Porcelain or china tableware and kitchenware,740075.62,695671.08,740075.62,163936.13,kg,163936.13,0.02,,ITC Trade Map
+407,1,46,2022,Import,6911,Porcelain or china tableware and kitchenware,838110.58,787823.95,838110.58,174923.88,kg,174923.88,0.02,13.25,UN Comtrade
+408,1,46,2023,Import,6911,Porcelain or china tableware and kitchenware,925506.73,869976.33,925506.73,239913.14,kg,239913.14,0.02,10.43,ITC Trade Map
+409,1,46,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",575614.37,541077.51,575614.37,113896.69,kg,113896.69,0.02,,UN Comtrade
+410,1,46,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",634234.27,596180.21,634234.27,141375.63,kg,141375.63,0.02,10.18,ITC Trade Map
+411,1,46,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",734344.07,690283.42,734344.07,181285.28,kg,181285.28,0.02,15.78,UN Comtrade
+412,1,46,2021,Import,6913,Statuettes and other ornamental ceramic articles,328922.5,309187.15,328922.5,67628.22,kg,67628.22,0.01,,ITC Trade Map
+413,1,46,2022,Import,6913,Statuettes and other ornamental ceramic articles,374721.86,352238.55,374721.86,77444.52,kg,77444.52,0.01,13.92,UN Comtrade
+414,1,46,2023,Import,6913,Statuettes and other ornamental ceramic articles,423807.09,398378.66,423807.09,111838.97,kg,111838.97,0.01,13.1,ITC Trade Map
+415,1,47,2021,Import,6911,Porcelain or china tableware and kitchenware,6357508.14,5976057.65,6357508.14,1795604.4,kg,1795604.4,0.18,,UN Comtrade
+416,1,47,2022,Import,6911,Porcelain or china tableware and kitchenware,6530220.01,6138406.81,6530220.01,1622954.59,kg,1622954.59,0.17,2.72,ITC Trade Map
+417,1,47,2023,Import,6911,Porcelain or china tableware and kitchenware,6674036.3,6273594.12,6674036.3,1804828.71,kg,1804828.71,0.16,2.2,UN Comtrade
+418,1,47,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4944728.55,4648044.84,4944728.55,1050878.17,kg,1050878.17,0.14,,ITC Trade Map
+419,1,47,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5211680.12,4898979.31,5211680.12,1101964.49,kg,1101964.49,0.14,5.4,UN Comtrade
+420,1,47,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5459418.29,5131853.19,5459418.29,1091439.44,kg,1091439.44,0.13,4.75,ITC Trade Map
+421,1,47,2021,Import,6913,Statuettes and other ornamental ceramic articles,2825559.17,2656025.62,2825559.17,632272.45,kg,632272.45,0.08,,UN Comtrade
+422,1,47,2022,Import,6913,Statuettes and other ornamental ceramic articles,2883742.62,2710718.06,2883742.62,788189.16,kg,788189.16,0.08,2.06,ITC Trade Map
+423,1,47,2023,Import,6913,Statuettes and other ornamental ceramic articles,2879363.2,2706601.41,2879363.2,775837.01,kg,775837.01,0.07,-0.15,UN Comtrade
+424,1,48,2021,Import,6911,Porcelain or china tableware and kitchenware,7637592.33,7179336.79,7637592.33,2241594.75,kg,2241594.75,0.22,,ITC Trade Map
+425,1,48,2022,Import,6911,Porcelain or china tableware and kitchenware,8759115.93,8233568.98,8759115.93,1688487.27,kg,1688487.27,0.23,14.68,UN Comtrade
+426,1,48,2023,Import,6911,Porcelain or china tableware and kitchenware,10215944.51,9602987.84,10215944.51,2815521.34,kg,2815521.34,0.25,16.63,ITC Trade Map
+427,1,48,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5940349.59,5583928.61,5940349.59,1184482.37,kg,1184482.37,0.17,,UN Comtrade
+428,1,48,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6827370.89,6417728.64,6827370.89,1564059.45,kg,1564059.45,0.18,14.93,ITC Trade Map
+429,1,48,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7693003.74,7231423.51,7693003.74,1976753.27,kg,1976753.27,0.19,12.68,UN Comtrade
+430,1,48,2021,Import,6913,Statuettes and other ornamental ceramic articles,3394485.48,3190816.35,3394485.48,972371.31,kg,972371.31,0.1,,ITC Trade Map
+431,1,48,2022,Import,6913,Statuettes and other ornamental ceramic articles,3813469.67,3584661.49,3813469.67,970210.43,kg,970210.43,0.1,12.34,UN Comtrade
+432,1,48,2023,Import,6913,Statuettes and other ornamental ceramic articles,4409371.76,4144809.46,4409371.76,898910.26,kg,898910.26,0.11,15.63,ITC Trade Map
+433,1,49,2021,Import,6911,Porcelain or china tableware and kitchenware,924253.47,868798.26,924253.47,242185.43,kg,242185.43,0.03,,UN Comtrade
+434,1,49,2022,Import,6911,Porcelain or china tableware and kitchenware,1010858.19,950206.7,1010858.19,262111.5,kg,262111.5,0.03,9.37,ITC Trade Map
+435,1,49,2023,Import,6911,Porcelain or china tableware and kitchenware,1067754.05,1003688.81,1067754.05,242871.55,kg,242871.55,0.03,5.63,UN Comtrade
+436,1,49,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",718863.81,675731.98,718863.81,174774.22,kg,174774.22,0.02,,ITC Trade Map
+437,1,49,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",776927.31,730311.67,776927.31,165079.41,kg,165079.41,0.02,8.08,UN Comtrade
+438,1,49,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",850879.3,799826.54,850879.3,178562.59,kg,178562.59,0.02,9.52,ITC Trade Map
+439,1,49,2021,Import,6913,Statuettes and other ornamental ceramic articles,410779.32,386132.56,410779.32,79452.1,kg,79452.1,0.01,,UN Comtrade
+440,1,49,2022,Import,6913,Statuettes and other ornamental ceramic articles,438220.81,411927.56,438220.81,101293.47,kg,101293.47,0.01,6.68,ITC Trade Map
+441,1,49,2023,Import,6913,Statuettes and other ornamental ceramic articles,468521.13,440409.86,468521.13,96945.07,kg,96945.07,0.01,6.91,UN Comtrade
+442,1,50,2021,Import,6911,Porcelain or china tableware and kitchenware,7815157.67,7346248.21,7815157.67,2189531.0,kg,2189531.0,0.22,,ITC Trade Map
+443,1,50,2022,Import,6911,Porcelain or china tableware and kitchenware,8157006.17,7667585.8,8157006.17,1984183.97,kg,1984183.97,0.21,4.37,UN Comtrade
+444,1,50,2023,Import,6911,Porcelain or china tableware and kitchenware,8502820.49,7992651.26,8502820.49,2317556.2,kg,2317556.2,0.21,4.24,ITC Trade Map
+445,1,50,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6078455.97,5713748.61,6078455.97,1184701.92,kg,1184701.92,0.17,,UN Comtrade
+446,1,50,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6247971.03,5873092.77,6247971.03,1662058.84,kg,1662058.84,0.16,2.79,ITC Trade Map
+447,1,50,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6337136.33,5956908.15,6337136.33,1492621.59,kg,1492621.59,0.15,1.43,UN Comtrade
+448,1,50,2021,Import,6913,Statuettes and other ornamental ceramic articles,3473403.41,3264999.2,3473403.41,735845.21,kg,735845.21,0.1,,ITC Trade Map
+449,1,50,2022,Import,6913,Statuettes and other ornamental ceramic articles,3605722.26,3389378.93,3605722.26,883258.66,kg,883258.66,0.09,3.81,UN Comtrade
+450,1,50,2023,Import,6913,Statuettes and other ornamental ceramic articles,3732501.1,3508551.03,3732501.1,788264.1,kg,788264.1,0.09,3.52,ITC Trade Map
+451,1,51,2021,Import,6911,Porcelain or china tableware and kitchenware,10709841.28,10067250.8,10709841.28,2419821.41,kg,2419821.41,0.3,,UN Comtrade
+452,1,51,2022,Import,6911,Porcelain or china tableware and kitchenware,11633102.53,10935116.37,11633102.53,2314054.3,kg,2314054.3,0.31,8.62,ITC Trade Map
+453,1,51,2023,Import,6911,Porcelain or china tableware and kitchenware,12723177.59,11959786.93,12723177.59,2630617.03,kg,2630617.03,0.31,9.37,UN Comtrade
+454,1,51,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8329876.55,7830083.96,8329876.55,2326942.06,kg,2326942.06,0.24,,ITC Trade Map
+455,1,51,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9473669.65,8905249.47,9473669.65,1999305.33,kg,1999305.33,0.25,13.73,UN Comtrade
+456,1,51,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10440397.38,9813973.54,10440397.38,2022312.13,kg,2022312.13,0.25,10.2,ITC Trade Map
+457,1,51,2021,Import,6913,Statuettes and other ornamental ceramic articles,4759929.46,4474333.69,4759929.46,1166975.32,kg,1166975.32,0.13,,UN Comtrade
+458,1,51,2022,Import,6913,Statuettes and other ornamental ceramic articles,5444579.84,5117905.05,5444579.84,1089432.8,kg,1089432.8,0.14,14.38,ITC Trade Map
+459,1,51,2023,Import,6913,Statuettes and other ornamental ceramic articles,6051016.64,5687955.64,6051016.64,1522483.41,kg,1522483.41,0.15,11.14,UN Comtrade
+460,1,52,2021,Import,6911,Porcelain or china tableware and kitchenware,9029971.99,8488173.67,9029971.99,2183023.54,kg,2183023.54,0.26,,ITC Trade Map
+461,1,52,2022,Import,6911,Porcelain or china tableware and kitchenware,9840573.96,9250139.53,9840573.96,1935716.14,kg,1935716.14,0.26,8.98,UN Comtrade
+462,1,52,2023,Import,6911,Porcelain or china tableware and kitchenware,10436843.64,9810633.02,10436843.64,2780092.1,kg,2780092.1,0.25,6.06,ITC Trade Map
+463,1,52,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7023311.55,6601912.86,7023311.55,1721834.24,kg,1721834.24,0.2,,UN Comtrade
+464,1,52,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7556798.78,7103390.85,7556798.78,2078329.99,kg,2078329.99,0.2,7.6,ITC Trade Map
+465,1,52,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8139576.41,7651201.82,8139576.41,1757168.47,kg,1757168.47,0.2,7.71,UN Comtrade
+466,1,52,2021,Import,6913,Statuettes and other ornamental ceramic articles,4013320.89,3772521.63,4013320.89,1000563.67,kg,1000563.67,0.11,,ITC Trade Map
+467,1,52,2022,Import,6913,Statuettes and other ornamental ceramic articles,4349313.84,4088355.01,4349313.84,1133084.05,kg,1133084.05,0.11,8.37,UN Comtrade
+468,1,52,2023,Import,6913,Statuettes and other ornamental ceramic articles,4529993.03,4258193.45,4529993.03,952417.89,kg,952417.89,0.11,4.15,ITC Trade Map
+469,1,53,2021,Import,6911,Porcelain or china tableware and kitchenware,12767219.81,12001186.62,12767219.81,3392146.32,kg,3392146.32,0.36,,UN Comtrade
+470,1,53,2022,Import,6911,Porcelain or china tableware and kitchenware,12588453.64,11833146.42,12588453.64,2900817.91,kg,2900817.91,0.33,-1.4,ITC Trade Map
+471,1,53,2023,Import,6911,Porcelain or china tableware and kitchenware,12602855.53,11846684.19,12602855.53,3259085.22,kg,3259085.22,0.31,0.11,UN Comtrade
+472,1,53,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9930059.85,9334256.26,9930059.85,2852390.41,kg,2852390.41,0.28,,ITC Trade Map
+473,1,53,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9857408.35,9265963.85,9857408.35,1922722.12,kg,1922722.12,0.26,-0.73,UN Comtrade
+474,1,53,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9996413.43,9396628.62,9996413.43,2329128.34,kg,2329128.34,0.24,1.41,ITC Trade Map
+475,1,53,2021,Import,6913,Statuettes and other ornamental ceramic articles,5674319.92,5333860.72,5674319.92,1576530.29,kg,1576530.29,0.16,,UN Comtrade
+476,1,53,2022,Import,6913,Statuettes and other ornamental ceramic articles,5745788.84,5401041.51,5745788.84,1461812.17,kg,1461812.17,0.15,1.26,ITC Trade Map
+477,1,53,2023,Import,6913,Statuettes and other ornamental ceramic articles,5807689.0,5459227.66,5807689.0,1166652.54,kg,1166652.54,0.14,1.08,UN Comtrade
+478,1,54,2021,Import,6911,Porcelain or china tableware and kitchenware,13050034.44,12267032.37,13050034.44,2525034.41,kg,2525034.41,0.37,,ITC Trade Map
+479,1,54,2022,Import,6911,Porcelain or china tableware and kitchenware,14663391.98,13783588.46,14663391.98,4154783.01,kg,4154783.01,0.39,12.36,UN Comtrade
+480,1,54,2023,Import,6911,Porcelain or china tableware and kitchenware,16904638.2,15890359.9,16904638.2,4281780.14,kg,4281780.14,0.41,15.28,ITC Trade Map
+481,1,54,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10150026.79,9541025.18,10150026.79,2309334.7,kg,2309334.7,0.29,,UN Comtrade
+482,1,54,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11134924.88,10466829.39,11134924.88,2262076.79,kg,2262076.79,0.29,9.7,ITC Trade Map
+483,1,54,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",12587000.38,11831780.36,12587000.38,2876202.99,kg,2876202.99,0.31,13.04,UN Comtrade
+484,1,54,2021,Import,6913,Statuettes and other ornamental ceramic articles,5800015.31,5452014.39,5800015.31,1568605.97,kg,1568605.97,0.16,,ITC Trade Map
+485,1,54,2022,Import,6913,Statuettes and other ornamental ceramic articles,6657487.59,6258038.33,6657487.59,1804900.72,kg,1804900.72,0.18,14.78,UN Comtrade
+486,1,54,2023,Import,6913,Statuettes and other ornamental ceramic articles,7776310.52,7309731.89,7776310.52,1746853.44,kg,1746853.44,0.19,16.81,ITC Trade Map
+487,1,55,2021,Import,6911,Porcelain or china tableware and kitchenware,10764651.39,10118772.31,10764651.39,2646012.13,kg,2646012.13,0.3,,UN Comtrade
+488,1,55,2022,Import,6911,Porcelain or china tableware and kitchenware,11023434.45,10362028.39,11023434.45,2311948.86,kg,2311948.86,0.29,2.4,ITC Trade Map
+489,1,55,2023,Import,6911,Porcelain or china tableware and kitchenware,11170017.41,10499816.36,11170017.41,2961090.84,kg,2961090.84,0.27,1.33,UN Comtrade
+490,1,55,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8372506.64,7870156.24,8372506.64,1643353.23,kg,1643353.23,0.24,,ITC Trade Map
+491,1,55,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8853525.63,8322314.09,8853525.63,1766106.27,kg,1766106.27,0.23,5.75,UN Comtrade
+492,1,55,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8771240.21,8244965.79,8771240.21,2262861.65,kg,2262861.65,0.21,-0.93,ITC Trade Map
+493,1,55,2021,Import,6913,Statuettes and other ornamental ceramic articles,4784289.51,4497232.14,4784289.51,971693.45,kg,971693.45,0.14,,UN Comtrade
+494,1,55,2022,Import,6913,Statuettes and other ornamental ceramic articles,4790083.89,4502678.86,4790083.89,1155790.5,kg,1155790.5,0.13,0.12,ITC Trade Map
+495,1,55,2023,Import,6913,Statuettes and other ornamental ceramic articles,4921130.46,4625862.63,4921130.46,1281055.27,kg,1281055.27,0.12,2.74,UN Comtrade
+496,1,56,2021,Import,6911,Porcelain or china tableware and kitchenware,10423115.39,9797728.47,10423115.39,2095420.67,kg,2095420.67,0.29,,ITC Trade Map
+497,1,56,2022,Import,6911,Porcelain or china tableware and kitchenware,11491434.85,10801948.76,11491434.85,2638354.68,kg,2638354.68,0.3,10.25,UN Comtrade
+498,1,56,2023,Import,6911,Porcelain or china tableware and kitchenware,13203913.27,12411678.47,13203913.27,3437951.73,kg,3437951.73,0.32,14.9,ITC Trade Map
+499,1,56,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8106867.52,7620455.47,8106867.52,2196829.88,kg,2196829.88,0.23,,UN Comtrade
+500,1,56,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8953333.76,8416133.73,8953333.76,1791247.16,kg,1791247.16,0.24,10.44,ITC Trade Map
+501,1,56,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9941106.72,9344640.31,9941106.72,2294918.5,kg,2294918.5,0.24,11.03,UN Comtrade
+502,1,56,2021,Import,6913,Statuettes and other ornamental ceramic articles,4632495.73,4354545.98,4632495.73,1081576.88,kg,1081576.88,0.13,,ITC Trade Map
+503,1,56,2022,Import,6913,Statuettes and other ornamental ceramic articles,5180794.16,4869946.51,5180794.16,1186670.84,kg,1186670.84,0.14,11.84,UN Comtrade
+504,1,56,2023,Import,6913,Statuettes and other ornamental ceramic articles,5787507.62,5440257.16,5787507.62,1591216.69,kg,1591216.69,0.14,11.71,ITC Trade Map
+505,1,57,2021,Import,6911,Porcelain or china tableware and kitchenware,2399736.38,2255752.2,2399736.38,562307.91,kg,562307.91,0.07,,UN Comtrade
+506,1,57,2022,Import,6911,Porcelain or china tableware and kitchenware,2816991.33,2647971.85,2816991.33,762495.14,kg,762495.14,0.07,17.39,ITC Trade Map
+507,1,57,2023,Import,6911,Porcelain or china tableware and kitchenware,3247197.69,3052365.83,3247197.69,860437.58,kg,860437.58,0.08,15.27,UN Comtrade
+508,1,57,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1866461.63,1754473.93,1866461.63,484074.49,kg,484074.49,0.05,,ITC Trade Map
+509,1,57,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2164597.58,2034721.73,2164597.58,598928.65,kg,598928.65,0.06,15.97,UN Comtrade
+510,1,57,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2478809.79,2330081.2,2478809.79,623010.73,kg,623010.73,0.06,14.52,ITC Trade Map
+511,1,57,2021,Import,6913,Statuettes and other ornamental ceramic articles,1066549.5,1002556.53,1066549.5,237294.04,kg,237294.04,0.03,,UN Comtrade
+512,1,57,2022,Import,6913,Statuettes and other ornamental ceramic articles,1242459.32,1167911.76,1242459.32,301508.36,kg,301508.36,0.03,16.49,ITC Trade Map
+513,1,57,2023,Import,6913,Statuettes and other ornamental ceramic articles,1408717.13,1324194.1,1408717.13,376961.67,kg,376961.67,0.03,13.38,UN Comtrade
+514,1,58,2021,Import,6911,Porcelain or china tableware and kitchenware,14243588.51,13388973.2,14243588.51,3008209.14,kg,3008209.14,0.4,,ITC Trade Map
+515,1,58,2022,Import,6911,Porcelain or china tableware and kitchenware,15397450.6,14473603.56,15397450.6,4189578.62,kg,4189578.62,0.4,8.1,UN Comtrade
+516,1,58,2023,Import,6911,Porcelain or china tableware and kitchenware,17322579.71,16283224.93,17322579.71,4315006.57,kg,4315006.57,0.42,12.5,ITC Trade Map
+517,1,58,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11078346.62,10413645.82,11078346.62,3174136.69,kg,3174136.69,0.31,,UN Comtrade
+518,1,58,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",12661323.97,11901644.54,12661323.97,2621379.83,kg,2621379.83,0.33,14.29,ITC Trade Map
+519,1,58,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",14691401.43,13809917.34,14691401.43,3091944.06,kg,3091944.06,0.36,16.03,UN Comtrade
+520,1,58,2021,Import,6913,Statuettes and other ornamental ceramic articles,6330483.78,5950654.75,6330483.78,1311054.47,kg,1311054.47,0.18,,ITC Trade Map
+521,1,58,2022,Import,6913,Statuettes and other ornamental ceramic articles,7266230.46,6830256.64,7266230.46,1435216.91,kg,1435216.91,0.19,14.78,UN Comtrade
+522,1,58,2023,Import,6913,Statuettes and other ornamental ceramic articles,7959658.58,7482079.06,7959658.58,1749289.17,kg,1749289.17,0.19,9.54,ITC Trade Map
+523,1,59,2021,Import,6911,Porcelain or china tableware and kitchenware,706687.9,664286.63,706687.9,180941.59,kg,180941.59,0.02,,UN Comtrade
+524,1,59,2022,Import,6911,Porcelain or china tableware and kitchenware,801310.71,753232.07,801310.71,189665.1,kg,189665.1,0.02,13.39,ITC Trade Map
+525,1,59,2023,Import,6911,Porcelain or china tableware and kitchenware,921052.37,865789.23,921052.37,250681.88,kg,250681.88,0.02,14.94,UN Comtrade
+526,1,59,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",549646.15,516667.38,549646.15,121117.88,kg,121117.88,0.02,,ITC Trade Map
+527,1,59,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",633853.29,595822.09,633853.29,125283.93,kg,125283.93,0.02,15.32,UN Comtrade
+528,1,59,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",715459.22,672531.66,715459.22,151994.97,kg,151994.97,0.02,12.87,ITC Trade Map
+529,1,59,2021,Import,6913,Statuettes and other ornamental ceramic articles,314083.51,295238.5,314083.51,74251.79,kg,74251.79,0.01,,UN Comtrade
+530,1,59,2022,Import,6913,Statuettes and other ornamental ceramic articles,358210.13,336717.53,358210.13,79967.41,kg,79967.41,0.01,14.05,ITC Trade Map
+531,1,59,2023,Import,6913,Statuettes and other ornamental ceramic articles,414669.88,389789.69,414669.88,81146.96,kg,81146.96,0.01,15.76,UN Comtrade
+532,1,60,2021,Import,6911,Porcelain or china tableware and kitchenware,5378744.75,5056020.06,5378744.75,1164087.02,kg,1164087.02,0.15,,ITC Trade Map
+533,1,60,2022,Import,6911,Porcelain or china tableware and kitchenware,5384997.4,5061897.56,5384997.4,1550774.51,kg,1550774.51,0.14,0.12,UN Comtrade
+534,1,60,2023,Import,6911,Porcelain or china tableware and kitchenware,5199696.21,4887714.44,5199696.21,1038593.67,kg,1038593.67,0.13,-3.44,ITC Trade Map
+535,1,60,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4183468.14,3932460.05,4183468.14,880857.44,kg,880857.44,0.12,,UN Comtrade
+536,1,60,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4207569.07,3955114.92,4207569.07,965804.14,kg,965804.14,0.11,0.58,ITC Trade Map
+537,1,60,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4140327.66,3891908.0,4140327.66,1049655.2,kg,1049655.2,0.1,-1.6,UN Comtrade
+538,1,60,2021,Import,6913,Statuettes and other ornamental ceramic articles,2390553.22,2247120.03,2390553.22,468225.09,kg,468225.09,0.07,,ITC Trade Map
+539,1,60,2022,Import,6913,Statuettes and other ornamental ceramic articles,2461223.1,2313549.72,2461223.1,520418.05,kg,520418.05,0.06,2.96,UN Comtrade
+540,1,60,2023,Import,6913,Statuettes and other ornamental ceramic articles,2440253.64,2293838.42,2440253.64,553185.68,kg,553185.68,0.06,-0.85,ITC Trade Map
+541,1,61,2021,Import,6911,Porcelain or china tableware and kitchenware,10554015.29,9920774.38,10554015.29,2097065.02,kg,2097065.02,0.3,,UN Comtrade
+542,1,61,2022,Import,6911,Porcelain or china tableware and kitchenware,11326279.52,10646702.75,11326279.52,2481259.88,kg,2481259.88,0.3,7.32,ITC Trade Map
+543,1,61,2023,Import,6911,Porcelain or china tableware and kitchenware,11803248.97,11095054.03,11803248.97,2854693.29,kg,2854693.29,0.29,4.21,UN Comtrade
+544,1,61,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8208678.56,7716157.85,8208678.56,1958135.01,kg,1958135.01,0.23,,ITC Trade Map
+545,1,61,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8674581.44,8154106.56,8674581.44,2433192.63,kg,2433192.63,0.23,5.68,UN Comtrade
+546,1,61,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9282661.57,8725701.87,9282661.57,2026812.12,kg,2026812.12,0.23,7.01,ITC Trade Map
+547,1,61,2021,Import,6913,Statuettes and other ornamental ceramic articles,4690673.46,4409233.06,4690673.46,1021212.92,kg,1021212.92,0.13,,UN Comtrade
+548,1,61,2022,Import,6913,Statuettes and other ornamental ceramic articles,4992163.41,4692633.6,4992163.41,1251863.95,kg,1251863.95,0.13,6.43,ITC Trade Map
+549,1,61,2023,Import,6913,Statuettes and other ornamental ceramic articles,5419210.96,5094058.3,5419210.96,1128844.11,kg,1128844.11,0.13,8.55,UN Comtrade
+550,1,62,2021,Import,6911,Porcelain or china tableware and kitchenware,12487152.26,11737923.12,12487152.26,2713342.81,kg,2713342.81,0.35,,ITC Trade Map
+551,1,62,2022,Import,6911,Porcelain or china tableware and kitchenware,12585959.82,11830802.23,12585959.82,3231084.14,kg,3231084.14,0.33,0.79,UN Comtrade
+552,1,62,2023,Import,6911,Porcelain or china tableware and kitchenware,12587629.13,11832371.38,12587629.13,3219064.73,kg,3219064.73,0.31,0.01,ITC Trade Map
+553,1,62,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9712229.53,9129495.76,9712229.53,2104708.04,kg,2104708.04,0.27,,UN Comtrade
+554,1,62,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9840336.07,9249915.9,9840336.07,2613954.21,kg,2613954.21,0.26,1.32,ITC Trade Map
+555,1,62,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10029191.45,9427439.97,10029191.45,2151031.18,kg,2151031.18,0.24,1.92,UN Comtrade
+556,1,62,2021,Import,6913,Statuettes and other ornamental ceramic articles,5549845.45,5216854.72,5549845.45,1084958.53,kg,1084958.53,0.16,,ITC Trade Map
+557,1,62,2022,Import,6913,Statuettes and other ornamental ceramic articles,5345972.27,5025213.93,5345972.27,1385256.71,kg,1385256.71,0.14,-3.67,UN Comtrade
+558,1,62,2023,Import,6913,Statuettes and other ornamental ceramic articles,5382199.85,5059267.86,5382199.85,1353371.06,kg,1353371.06,0.13,0.68,ITC Trade Map
+559,1,63,2021,Import,6911,Porcelain or china tableware and kitchenware,14072362.16,13228020.43,14072362.16,3036914.32,kg,3036914.32,0.4,,UN Comtrade
+560,1,63,2022,Import,6911,Porcelain or china tableware and kitchenware,14714648.52,13831769.61,14714648.52,3571420.76,kg,3571420.76,0.39,4.56,ITC Trade Map
+561,1,63,2023,Import,6911,Porcelain or china tableware and kitchenware,15243060.57,14328476.93,15243060.57,3388544.53,kg,3388544.53,0.37,3.59,UN Comtrade
+562,1,63,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10945170.57,10288460.34,10945170.57,2606553.28,kg,2606553.28,0.31,,ITC Trade Map
+563,1,63,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11514889.01,10823995.67,11514889.01,2332284.41,kg,2332284.41,0.3,5.21,UN Comtrade
+564,1,63,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11708830.02,11006300.22,11708830.02,2673134.66,kg,2673134.66,0.29,1.68,ITC Trade Map
+565,1,63,2021,Import,6913,Statuettes and other ornamental ceramic articles,6254383.18,5879120.19,6254383.18,1460729.86,kg,1460729.86,0.18,,UN Comtrade
+566,1,63,2022,Import,6913,Statuettes and other ornamental ceramic articles,6491905.79,6102391.44,6491905.79,1622408.49,kg,1622408.49,0.17,3.8,ITC Trade Map
+567,1,63,2023,Import,6913,Statuettes and other ornamental ceramic articles,6613657.23,6216837.8,6613657.23,1311502.54,kg,1311502.54,0.16,1.88,UN Comtrade
+568,1,64,2021,Import,6911,Porcelain or china tableware and kitchenware,13355177.51,12553866.86,13355177.51,2587827.54,kg,2587827.54,0.38,,ITC Trade Map
+569,1,64,2022,Import,6911,Porcelain or china tableware and kitchenware,14629211.19,13751458.52,14629211.19,3062810.5,kg,3062810.5,0.38,9.54,UN Comtrade
+570,1,64,2023,Import,6911,Porcelain or china tableware and kitchenware,16420182.18,15434971.25,16420182.18,3849899.49,kg,3849899.49,0.4,12.24,ITC Trade Map
+571,1,64,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10387360.28,9764118.67,10387360.28,2460518.75,kg,2460518.75,0.29,,UN Comtrade
+572,1,64,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11942053.53,11225530.32,11942053.53,2618484.04,kg,2618484.04,0.31,14.97,ITC Trade Map
+573,1,64,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",13476067.46,12667503.42,13476067.46,3487545.33,kg,3487545.33,0.33,12.85,UN Comtrade
+574,1,64,2021,Import,6913,Statuettes and other ornamental ceramic articles,5935634.45,5579496.38,5935634.45,1332434.02,kg,1332434.02,0.17,,ITC Trade Map
+575,1,64,2022,Import,6913,Statuettes and other ornamental ceramic articles,6631039.41,6233177.04,6631039.41,1747796.77,kg,1747796.77,0.17,11.72,UN Comtrade
+576,1,64,2023,Import,6913,Statuettes and other ornamental ceramic articles,7367760.65,6925695.01,7367760.65,1488729.47,kg,1488729.47,0.18,11.11,ITC Trade Map
+577,1,65,2021,Import,6911,Porcelain or china tableware and kitchenware,2976675.91,2798075.35,2976675.91,743233.63,kg,743233.63,0.08,,UN Comtrade
+578,1,65,2022,Import,6911,Porcelain or china tableware and kitchenware,2888943.77,2715607.15,2888943.77,588318.12,kg,588318.12,0.08,-2.95,ITC Trade Map
+579,1,65,2023,Import,6911,Porcelain or china tableware and kitchenware,2773037.08,2606654.85,2773037.08,578462.68,kg,578462.68,0.07,-4.01,UN Comtrade
+580,1,65,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2315192.37,2176280.83,2315192.37,641635.46,kg,641635.46,0.07,,ITC Trade Map
+581,1,65,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2215269.79,2082353.6,2215269.79,426218.57,kg,426218.57,0.06,-4.32,UN Comtrade
+582,1,65,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2089373.3,1964010.9,2089373.3,568206.94,kg,568206.94,0.05,-5.68,ITC Trade Map
+583,1,65,2021,Import,6913,Statuettes and other ornamental ceramic articles,1322967.07,1243589.05,1322967.07,317941.4,kg,317941.4,0.04,,UN Comtrade
+584,1,65,2022,Import,6913,Statuettes and other ornamental ceramic articles,1346265.25,1265489.34,1346265.25,265053.47,kg,265053.47,0.04,1.76,ITC Trade Map
+585,1,65,2023,Import,6913,Statuettes and other ornamental ceramic articles,1332980.76,1253001.92,1332980.76,378112.69,kg,378112.69,0.03,-0.99,UN Comtrade
+586,1,66,2021,Import,6911,Porcelain or china tableware and kitchenware,2569015.93,2414874.97,2569015.93,660901.67,kg,660901.67,0.07,,ITC Trade Map
+587,1,66,2022,Import,6911,Porcelain or china tableware and kitchenware,2857896.96,2686423.14,2857896.96,622064.14,kg,622064.14,0.08,11.24,UN Comtrade
+588,1,66,2023,Import,6911,Porcelain or china tableware and kitchenware,3093039.07,2907456.73,3093039.07,631418.96,kg,631418.96,0.08,8.23,ITC Trade Map
+589,1,66,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1998123.5,1878236.09,1998123.5,537499.65,kg,537499.65,0.06,,UN Comtrade
+590,1,66,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2207339.44,2074899.08,2207339.44,502360.76,kg,502360.76,0.06,10.47,ITC Trade Map
+591,1,66,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2451052.51,2303989.36,2451052.51,528803.28,kg,528803.28,0.06,11.04,UN Comtrade
+592,1,66,2021,Import,6913,Statuettes and other ornamental ceramic articles,1141784.86,1073277.76,1141784.86,249579.4,kg,249579.4,0.03,,ITC Trade Map
+593,1,66,2022,Import,6913,Statuettes and other ornamental ceramic articles,1252673.99,1177513.55,1252673.99,240947.06,kg,240947.06,0.03,9.71,UN Comtrade
+594,1,66,2023,Import,6913,Statuettes and other ornamental ceramic articles,1389088.49,1305743.18,1389088.49,388952.43,kg,388952.43,0.03,10.89,ITC Trade Map
+595,1,67,2021,Import,6911,Porcelain or china tableware and kitchenware,10664649.28,10024770.32,10664649.28,2684289.66,kg,2684289.66,0.3,,UN Comtrade
+596,1,67,2022,Import,6911,Porcelain or china tableware and kitchenware,12458103.74,11710617.51,12458103.74,2991429.75,kg,2991429.75,0.33,16.82,ITC Trade Map
+597,1,67,2023,Import,6911,Porcelain or china tableware and kitchenware,14420667.64,13555427.58,14420667.64,3128075.92,kg,3128075.92,0.35,15.75,UN Comtrade
+598,1,67,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8294727.22,7797043.58,8294727.22,2055181.14,kg,2055181.14,0.23,,ITC Trade Map
+599,1,67,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9618405.08,9041300.77,9618405.08,1963815.06,kg,1963815.06,0.25,15.96,UN Comtrade
+600,1,67,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10865663.92,10213724.09,10865663.92,2618233.03,kg,2618233.03,0.26,12.97,ITC Trade Map
+601,1,67,2021,Import,6913,Statuettes and other ornamental ceramic articles,4739844.12,4455453.48,4739844.12,1191280.11,kg,1191280.11,0.13,,UN Comtrade
+602,1,67,2022,Import,6913,Statuettes and other ornamental ceramic articles,5570805.82,5236557.47,5570805.82,1150398.49,kg,1150398.49,0.15,17.53,ITC Trade Map
+603,1,67,2023,Import,6913,Statuettes and other ornamental ceramic articles,6253347.63,5878146.77,6253347.63,1248807.34,kg,1248807.34,0.15,12.25,UN Comtrade
+604,1,68,2021,Import,6911,Porcelain or china tableware and kitchenware,2650146.85,2491138.04,2650146.85,741720.7,kg,741720.7,0.08,,ITC Trade Map
+605,1,68,2022,Import,6911,Porcelain or china tableware and kitchenware,2967628.24,2789570.55,2967628.24,680506.33,kg,680506.33,0.08,11.98,UN Comtrade
+606,1,68,2023,Import,6911,Porcelain or china tableware and kitchenware,3285907.93,3088753.46,3285907.93,940159.74,kg,940159.74,0.08,10.73,ITC Trade Map
+607,1,68,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2061225.33,1937551.81,2061225.33,606076.3,kg,606076.3,0.06,,UN Comtrade
+608,1,68,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2292137.81,2154609.54,2292137.81,478094.16,kg,478094.16,0.06,11.2,ITC Trade Map
+609,1,68,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2574849.06,2420358.12,2574849.06,562923.75,kg,562923.75,0.06,12.33,UN Comtrade
+610,1,68,2021,Import,6913,Statuettes and other ornamental ceramic articles,1177843.05,1107172.46,1177843.05,241280.73,kg,241280.73,0.03,,ITC Trade Map
+611,1,68,2022,Import,6913,Statuettes and other ornamental ceramic articles,1325137.2,1245628.97,1325137.2,361629.07,kg,361629.07,0.03,12.51,UN Comtrade
+612,1,68,2023,Import,6913,Statuettes and other ornamental ceramic articles,1437871.99,1351599.67,1437871.99,294547.86,kg,294547.86,0.04,8.51,ITC Trade Map
+613,1,69,2021,Import,6911,Porcelain or china tableware and kitchenware,8071975.74,7587657.2,8071975.74,2262984.06,kg,2262984.06,0.23,,UN Comtrade
+614,1,69,2022,Import,6911,Porcelain or china tableware and kitchenware,8978855.93,8440124.58,8978855.93,1899066.9,kg,1899066.9,0.24,11.23,ITC Trade Map
+615,1,69,2023,Import,6911,Porcelain or china tableware and kitchenware,10028323.2,9426623.81,10028323.2,2109364.35,kg,2109364.35,0.24,11.69,UN Comtrade
+616,1,69,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6278203.35,5901511.15,6278203.35,1457497.86,kg,1457497.86,0.18,,ITC Trade Map
+617,1,69,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7004741.55,6584457.05,7004741.55,1653456.46,kg,1653456.46,0.18,11.57,UN Comtrade
+618,1,69,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7489860.26,7040468.65,7489860.26,1973851.67,kg,1973851.67,0.18,6.93,ITC Trade Map
+619,1,69,2021,Import,6913,Statuettes and other ornamental ceramic articles,3587544.77,3372292.09,3587544.77,950322.14,kg,950322.14,0.1,,UN Comtrade
+620,1,69,2022,Import,6913,Statuettes and other ornamental ceramic articles,4003479.46,3763270.69,4003479.46,1107757.79,kg,1107757.79,0.11,11.59,ITC Trade Map
+621,1,69,2023,Import,6913,Statuettes and other ornamental ceramic articles,4504353.66,4234092.44,4504353.66,1211719.26,kg,1211719.26,0.11,12.51,UN Comtrade
+622,1,70,2021,Import,6911,Porcelain or china tableware and kitchenware,3081630.87,2896733.02,3081630.87,748456.99,kg,748456.99,0.09,,ITC Trade Map
+623,1,70,2022,Import,6911,Porcelain or china tableware and kitchenware,3499634.37,3289656.31,3499634.37,959597.84,kg,959597.84,0.09,13.56,UN Comtrade
+624,1,70,2023,Import,6911,Porcelain or china tableware and kitchenware,3867658.68,3635599.16,3867658.68,919183.08,kg,919183.08,0.09,10.52,ITC Trade Map
+625,1,70,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2396824.01,2253014.57,2396824.01,583558.93,kg,583558.93,0.07,,UN Comtrade
+626,1,70,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2675855.66,2515304.32,2675855.66,518971.72,kg,518971.72,0.07,11.64,ITC Trade Map
+627,1,70,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2856136.1,2684767.93,2856136.1,762420.83,kg,762420.83,0.07,6.74,UN Comtrade
+628,1,70,2021,Import,6913,Statuettes and other ornamental ceramic articles,1369613.72,1287436.9,1369613.72,360667.99,kg,360667.99,0.04,,ITC Trade Map
+629,1,70,2022,Import,6913,Statuettes and other ornamental ceramic articles,1519073.14,1427928.75,1519073.14,387484.02,kg,387484.02,0.04,10.91,UN Comtrade
+630,1,70,2023,Import,6913,Statuettes and other ornamental ceramic articles,1650083.99,1551078.95,1650083.99,373359.57,kg,373359.57,0.04,8.62,ITC Trade Map
+631,1,71,2021,Import,6911,Porcelain or china tableware and kitchenware,8236222.85,7742049.48,8236222.85,1760268.23,kg,1760268.23,0.23,,UN Comtrade
+632,1,71,2022,Import,6911,Porcelain or china tableware and kitchenware,9135527.19,8587395.55,9135527.19,2618359.97,kg,2618359.97,0.24,10.92,ITC Trade Map
+633,1,71,2023,Import,6911,Porcelain or china tableware and kitchenware,9998284.87,9398387.78,9998284.87,2338700.36,kg,2338700.36,0.24,9.44,UN Comtrade
+634,1,71,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6405951.1,6021594.04,6405951.1,1655998.11,kg,1655998.11,0.18,,ITC Trade Map
+635,1,71,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7030319.15,6608500.0,7030319.15,1475643.81,kg,1475643.81,0.18,9.75,UN Comtrade
+636,1,71,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7630847.59,7172996.74,7630847.59,1730271.86,kg,1730271.86,0.19,8.54,ITC Trade Map
+637,1,71,2021,Import,6913,Statuettes and other ornamental ceramic articles,3660543.49,3440910.88,3660543.49,894197.11,kg,894197.11,0.1,,UN Comtrade
+638,1,71,2022,Import,6913,Statuettes and other ornamental ceramic articles,4117189.36,3870158.0,4117189.36,948780.67,kg,948780.67,0.11,12.47,ITC Trade Map
+639,1,71,2023,Import,6913,Statuettes and other ornamental ceramic articles,4491911.79,4222397.09,4491911.79,1017335.02,kg,1017335.02,0.11,9.1,UN Comtrade
+640,1,72,2021,Import,6911,Porcelain or china tableware and kitchenware,9962053.95,9364330.71,9962053.95,2928360.97,kg,2928360.97,0.28,,ITC Trade Map
+641,1,72,2022,Import,6911,Porcelain or china tableware and kitchenware,9414412.95,8849548.17,9414412.95,1879079.07,kg,1879079.07,0.25,-5.5,UN Comtrade
+642,1,72,2023,Import,6911,Porcelain or china tableware and kitchenware,9224828.56,8671338.85,9224828.56,2486792.65,kg,2486792.65,0.22,-2.01,ITC Trade Map
+643,1,72,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7748264.18,7283368.33,7748264.18,1548886.1,kg,1548886.1,0.22,,UN Comtrade
+644,1,72,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7772986.01,7306606.85,7772986.01,1825945.41,kg,1825945.41,0.2,0.32,ITC Trade Map
+645,1,72,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7519757.42,7068571.98,7519757.42,2144167.2,kg,2144167.2,0.18,-3.26,UN Comtrade
+646,1,72,2021,Import,6913,Statuettes and other ornamental ceramic articles,4427579.53,4161924.76,4427579.53,1169053.18,kg,1169053.18,0.13,,ITC Trade Map
+647,1,72,2022,Import,6913,Statuettes and other ornamental ceramic articles,4479668.86,4210888.73,4479668.86,1193981.14,kg,1193981.14,0.12,1.18,UN Comtrade
+648,1,72,2023,Import,6913,Statuettes and other ornamental ceramic articles,4273713.35,4017290.55,4273713.35,1129009.25,kg,1129009.25,0.1,-4.6,ITC Trade Map
+649,1,73,2021,Import,6911,Porcelain or china tableware and kitchenware,2035929.42,1913773.66,2035929.42,489297.75,kg,489297.75,0.06,,UN Comtrade
+650,1,73,2022,Import,6911,Porcelain or china tableware and kitchenware,2051670.65,1928570.41,2051670.65,563267.33,kg,563267.33,0.05,0.77,ITC Trade Map
+651,1,73,2023,Import,6911,Porcelain or china tableware and kitchenware,2023595.4,1902179.67,2023595.4,508861.06,kg,508861.06,0.05,-1.37,UN Comtrade
+652,1,73,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1583500.66,1488490.62,1583500.66,391049.07,kg,391049.07,0.04,,ITC Trade Map
+653,1,73,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1554581.17,1461306.3,1554581.17,384486.56,kg,384486.56,0.04,-1.83,UN Comtrade
+654,1,73,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1562785.32,1469018.2,1562785.32,347372.61,kg,347372.61,0.04,0.53,ITC Trade Map
+655,1,73,2021,Import,6913,Statuettes and other ornamental ceramic articles,904857.52,850566.07,904857.52,240034.2,kg,240034.2,0.03,,UN Comtrade
+656,1,73,2022,Import,6913,Statuettes and other ornamental ceramic articles,900883.43,846830.42,900883.43,177569.96,kg,177569.96,0.02,-0.44,ITC Trade Map
+657,1,73,2023,Import,6913,Statuettes and other ornamental ceramic articles,852499.69,801349.71,852499.69,237245.34,kg,237245.34,0.02,-5.37,UN Comtrade
+658,1,74,2021,Import,6911,Porcelain or china tableware and kitchenware,2257855.36,2122384.04,2257855.36,623795.51,kg,623795.51,0.06,,ITC Trade Map
+659,1,74,2022,Import,6911,Porcelain or china tableware and kitchenware,2493162.89,2343573.12,2493162.89,524028.16,kg,524028.16,0.07,10.42,UN Comtrade
+660,1,74,2023,Import,6911,Porcelain or china tableware and kitchenware,2751278.63,2586201.92,2751278.63,632927.6,kg,632927.6,0.07,10.35,ITC Trade Map
+661,1,74,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1756109.73,1650743.14,1756109.73,338102.29,kg,338102.29,0.05,,UN Comtrade
+662,1,74,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1860949.86,1749292.87,1860949.86,451437.37,kg,451437.37,0.05,5.97,ITC Trade Map
+663,1,74,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2032701.47,1910739.38,2032701.47,397978.82,kg,397978.82,0.05,9.23,UN Comtrade
+664,1,74,2021,Import,6913,Statuettes and other ornamental ceramic articles,1003491.27,943281.8,1003491.27,226095.58,kg,226095.58,0.03,,ITC Trade Map
+665,1,74,2022,Import,6913,Statuettes and other ornamental ceramic articles,1092844.06,1027273.41,1092844.06,294836.21,kg,294836.21,0.03,8.9,UN Comtrade
+666,1,74,2023,Import,6913,Statuettes and other ornamental ceramic articles,1153237.67,1084043.41,1153237.67,268347.63,kg,268347.63,0.03,5.53,ITC Trade Map
+667,1,75,2021,Import,6911,Porcelain or china tableware and kitchenware,7450649.25,7003610.29,7450649.25,1823762.26,kg,1823762.26,0.21,,UN Comtrade
+668,1,75,2022,Import,6911,Porcelain or china tableware and kitchenware,8575759.09,8061213.55,8575759.09,1926031.09,kg,1926031.09,0.23,15.1,ITC Trade Map
+669,1,75,2023,Import,6911,Porcelain or china tableware and kitchenware,9819242.49,9230087.94,9819242.49,2468415.21,kg,2468415.21,0.24,14.5,UN Comtrade
+670,1,75,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5794949.41,5447252.45,5794949.41,1546237.29,kg,1546237.29,0.16,,ITC Trade Map
+671,1,75,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6811996.07,6403276.31,6811996.07,1373646.55,kg,1373646.55,0.18,17.55,UN Comtrade
+672,1,75,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7659696.33,7200114.55,7659696.33,1893334.85,kg,1893334.85,0.19,12.44,ITC Trade Map
+673,1,75,2021,Import,6913,Statuettes and other ornamental ceramic articles,3311399.67,3112715.69,3311399.67,800705.04,kg,800705.04,0.09,,UN Comtrade
+674,1,75,2022,Import,6913,Statuettes and other ornamental ceramic articles,3858991.11,3627451.64,3858991.11,850060.11,kg,850060.11,0.1,16.54,ITC Trade Map
+675,1,75,2023,Import,6913,Statuettes and other ornamental ceramic articles,4384682.6,4121601.64,4384682.6,863295.87,kg,863295.87,0.11,13.62,UN Comtrade
+676,1,76,2021,Import,6911,Porcelain or china tableware and kitchenware,6048227.42,5685333.77,6048227.42,1435991.08,kg,1435991.08,0.17,,ITC Trade Map
+677,1,76,2022,Import,6911,Porcelain or china tableware and kitchenware,6368152.77,5986063.6,6368152.77,1505020.81,kg,1505020.81,0.17,5.29,UN Comtrade
+678,1,76,2023,Import,6911,Porcelain or china tableware and kitchenware,6550277.36,6157260.72,6550277.36,1489404.08,kg,1489404.08,0.16,2.86,ITC Trade Map
+679,1,76,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4704176.88,4421926.27,4704176.88,1182759.94,kg,1182759.94,0.13,,UN Comtrade
+680,1,76,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4883169.69,4590179.51,4883169.69,1196425.13,kg,1196425.13,0.13,3.8,ITC Trade Map
+681,1,76,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5163233.28,4853439.28,5163233.28,1395878.64,kg,1395878.64,0.13,5.74,UN Comtrade
+682,1,76,2021,Import,6913,Statuettes and other ornamental ceramic articles,2688101.08,2526815.01,2688101.08,571741.17,kg,571741.17,0.08,,ITC Trade Map
+683,1,76,2022,Import,6913,Statuettes and other ornamental ceramic articles,2753981.42,2588742.54,2753981.42,727379.2,kg,727379.2,0.07,2.45,UN Comtrade
+684,1,76,2023,Import,6913,Statuettes and other ornamental ceramic articles,2791481.6,2623992.7,2791481.6,586449.27,kg,586449.27,0.07,1.36,ITC Trade Map
+685,1,77,2021,Import,6911,Porcelain or china tableware and kitchenware,4208121.92,3955634.61,4208121.92,830084.75,kg,830084.75,0.12,,UN Comtrade
+686,1,77,2022,Import,6911,Porcelain or china tableware and kitchenware,4755577.79,4470243.12,4755577.79,1032899.33,kg,1032899.33,0.13,13.01,ITC Trade Map
+687,1,77,2023,Import,6911,Porcelain or china tableware and kitchenware,5458591.95,5131076.44,5458591.95,1069906.04,kg,1069906.04,0.13,14.78,UN Comtrade
+688,1,77,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3272983.72,3076604.69,3272983.72,797030.47,kg,797030.47,0.09,,ITC Trade Map
+689,1,77,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3680637.52,3459799.27,3680637.52,828569.41,kg,828569.41,0.1,12.46,UN Comtrade
+690,1,77,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4113322.9,3866523.53,4113322.9,1185608.99,kg,1185608.99,0.1,11.76,ITC Trade Map
+691,1,77,2021,Import,6913,Statuettes and other ornamental ceramic articles,1870276.41,1758059.83,1870276.41,404405.61,kg,404405.61,0.05,,UN Comtrade
+692,1,77,2022,Import,6913,Statuettes and other ornamental ceramic articles,2102871.54,1976699.25,2102871.54,609924.28,kg,609924.28,0.06,12.44,ITC Trade Map
+693,1,77,2023,Import,6913,Statuettes and other ornamental ceramic articles,2399297.46,2255339.62,2399297.46,486292.01,kg,486292.01,0.06,14.1,UN Comtrade
+694,1,78,2021,Import,6911,Porcelain or china tableware and kitchenware,7488329.95,7039030.15,7488329.95,2196086.76,kg,2196086.76,0.21,,ITC Trade Map
+695,1,78,2022,Import,6911,Porcelain or china tableware and kitchenware,7888976.86,7415638.25,7888976.86,1974569.8,kg,1974569.8,0.21,5.35,UN Comtrade
+696,1,78,2023,Import,6911,Porcelain or china tableware and kitchenware,8267878.42,7771805.72,8267878.42,2030666.84,kg,2030666.84,0.2,4.8,ITC Trade Map
+697,1,78,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5824256.63,5474801.23,5824256.63,1318558.23,kg,1318558.23,0.16,,UN Comtrade
+698,1,78,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6126465.91,5758877.96,6126465.91,1660712.39,kg,1660712.39,0.16,5.19,ITC Trade Map
+699,1,78,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6375215.48,5992702.55,6375215.48,1484727.32,kg,1484727.32,0.16,4.06,UN Comtrade
+700,1,78,2021,Import,6913,Statuettes and other ornamental ceramic articles,3328146.64,3128457.84,3328146.64,762343.54,kg,762343.54,0.09,,ITC Trade Map
+701,1,78,2022,Import,6913,Statuettes and other ornamental ceramic articles,3545819.33,3333070.17,3545819.33,690594.63,kg,690594.63,0.09,6.54,UN Comtrade
+702,1,78,2023,Import,6913,Statuettes and other ornamental ceramic articles,3670864.69,3450612.81,3670864.69,982119.46,kg,982119.46,0.09,3.53,ITC Trade Map
+703,1,79,2021,Import,6911,Porcelain or china tableware and kitchenware,8831392.73,8301509.17,8831392.73,2167726.23,kg,2167726.23,0.25,,UN Comtrade
+704,1,79,2022,Import,6911,Porcelain or china tableware and kitchenware,9501913.11,8931798.33,9501913.11,1955233.48,kg,1955233.48,0.25,7.59,ITC Trade Map
+705,1,79,2023,Import,6911,Porcelain or china tableware and kitchenware,10850473.2,10199444.81,10850473.2,2457133.64,kg,2457133.64,0.26,14.19,UN Comtrade
+706,1,79,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6868861.01,6456729.35,6868861.01,1329150.05,kg,1329150.05,0.19,,ITC Trade Map
+707,1,79,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7603277.15,7147080.52,7603277.15,1825532.99,kg,1825532.99,0.2,10.69,UN Comtrade
+708,1,79,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8145300.52,7656582.49,8145300.52,1961912.38,kg,1961912.38,0.2,7.13,ITC Trade Map
+709,1,79,2021,Import,6913,Statuettes and other ornamental ceramic articles,3925063.44,3689559.63,3925063.44,1086336.8,kg,1086336.8,0.11,,UN Comtrade
+710,1,79,2022,Import,6913,Statuettes and other ornamental ceramic articles,4486109.71,4216943.13,4486109.71,914060.71,kg,914060.71,0.12,14.29,ITC Trade Map
+711,1,79,2023,Import,6913,Statuettes and other ornamental ceramic articles,5091407.45,4785923.0,5091407.45,1289997.9,kg,1289997.9,0.12,13.49,UN Comtrade
+712,1,80,2021,Import,6911,Porcelain or china tableware and kitchenware,12675237.67,11914723.41,12675237.67,2922700.9,kg,2922700.9,0.36,,ITC Trade Map
+713,1,80,2022,Import,6911,Porcelain or china tableware and kitchenware,11849487.23,11138518.0,11849487.23,2552543.04,kg,2552543.04,0.31,-6.51,UN Comtrade
+714,1,80,2023,Import,6911,Porcelain or china tableware and kitchenware,11249241.86,10574287.35,11249241.86,2443896.0,kg,2443896.0,0.27,-5.07,ITC Trade Map
+715,1,80,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9858518.19,9267007.1,9858518.19,2417416.67,kg,2417416.67,0.28,,UN Comtrade
+716,1,80,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9200922.3,8648866.96,9200922.3,2649904.7,kg,2649904.7,0.24,-6.67,ITC Trade Map
+717,1,80,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9052821.43,8509652.14,9052821.43,2085878.75,kg,2085878.75,0.22,-1.61,UN Comtrade
+718,1,80,2021,Import,6913,Statuettes and other ornamental ceramic articles,5633438.96,5295432.63,5633438.96,1488049.43,kg,1488049.43,0.16,,ITC Trade Map
+719,1,80,2022,Import,6913,Statuettes and other ornamental ceramic articles,5419808.71,5094620.19,5419808.71,1449435.93,kg,1449435.93,0.14,-3.79,UN Comtrade
+720,1,80,2023,Import,6913,Statuettes and other ornamental ceramic articles,5024133.37,4722685.37,5024133.37,1405643.63,kg,1405643.63,0.12,-7.3,ITC Trade Map
+721,1,81,2021,Import,6911,Porcelain or china tableware and kitchenware,13676964.2,12856346.34,13676964.2,2816424.01,kg,2816424.01,0.39,,UN Comtrade
+722,1,81,2022,Import,6911,Porcelain or china tableware and kitchenware,14690957.47,13809500.02,14690957.47,4143756.54,kg,4143756.54,0.39,7.41,ITC Trade Map
+723,1,81,2023,Import,6911,Porcelain or china tableware and kitchenware,15427071.87,14501447.56,15427071.87,3104953.0,kg,3104953.0,0.38,5.01,UN Comtrade
+724,1,81,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10637638.82,9999380.49,10637638.82,2342255.45,kg,2342255.45,0.3,,ITC Trade Map
+725,1,81,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10860935.8,10209279.65,10860935.8,2600837.76,kg,2600837.76,0.29,2.1,UN Comtrade
+726,1,81,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11357592.19,10676136.66,11357592.19,2603590.02,kg,2603590.02,0.28,4.57,ITC Trade Map
+727,1,81,2021,Import,6913,Statuettes and other ornamental ceramic articles,6078650.75,5713931.71,6078650.75,1171589.94,kg,1171589.94,0.17,,UN Comtrade
+728,1,81,2022,Import,6913,Statuettes and other ornamental ceramic articles,6584064.79,6189020.9,6584064.79,1895939.62,kg,1895939.62,0.17,8.31,ITC Trade Map
+729,1,81,2023,Import,6913,Statuettes and other ornamental ceramic articles,6730910.27,6327055.65,6730910.27,1706976.55,kg,1706976.55,0.16,2.23,UN Comtrade
+730,1,82,2021,Import,6911,Porcelain or china tableware and kitchenware,13068526.13,12284414.56,13068526.13,2570230.61,kg,2570230.61,0.37,,ITC Trade Map
+731,1,82,2022,Import,6911,Porcelain or china tableware and kitchenware,12320145.96,11580937.2,12320145.96,3411357.9,kg,3411357.9,0.32,-5.73,UN Comtrade
+732,1,82,2023,Import,6911,Porcelain or china tableware and kitchenware,12110815.65,11384166.71,12110815.65,2470347.86,kg,2470347.86,0.3,-1.7,ITC Trade Map
+733,1,82,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10164409.21,9554544.66,10164409.21,2761794.69,kg,2761794.69,0.29,,UN Comtrade
+734,1,82,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9768480.67,9182371.83,9768480.67,1934988.38,kg,1934988.38,0.26,-3.9,ITC Trade Map
+735,1,82,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9381306.96,8818428.54,9381306.96,2279771.93,kg,2279771.93,0.23,-3.96,UN Comtrade
+736,1,82,2021,Import,6913,Statuettes and other ornamental ceramic articles,5808233.84,5459739.81,5808233.84,1382574.12,kg,1382574.12,0.16,,ITC Trade Map
+737,1,82,2022,Import,6913,Statuettes and other ornamental ceramic articles,5732134.53,5388206.46,5732134.53,1114387.34,kg,1114387.34,0.15,-1.31,UN Comtrade
+738,1,82,2023,Import,6913,Statuettes and other ornamental ceramic articles,5650805.88,5311757.52,5650805.88,1510565.62,kg,1510565.62,0.14,-1.42,ITC Trade Map
+739,1,83,2021,Import,6911,Porcelain or china tableware and kitchenware,4600999.22,4324939.26,4600999.22,1288898.23,kg,1288898.23,0.13,,UN Comtrade
+740,1,83,2022,Import,6911,Porcelain or china tableware and kitchenware,5374627.82,5052150.15,5374627.82,1149869.7,kg,1149869.7,0.14,16.81,ITC Trade Map
+741,1,83,2023,Import,6911,Porcelain or china tableware and kitchenware,5981615.77,5622718.83,5981615.77,1159988.7,kg,1159988.7,0.15,11.29,UN Comtrade
+742,1,83,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3578554.95,3363841.65,3578554.95,727958.4,kg,727958.4,0.1,,ITC Trade Map
+743,1,83,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3976223.59,3737650.18,3976223.59,1095836.22,kg,1095836.22,0.1,11.11,UN Comtrade
+744,1,83,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4574731.11,4300247.25,4574731.11,1043930.94,kg,1043930.94,0.11,15.05,ITC Trade Map
+745,1,83,2021,Import,6913,Statuettes and other ornamental ceramic articles,2044888.54,1922195.23,2044888.54,467051.65,kg,467051.65,0.06,,UN Comtrade
+746,1,83,2022,Import,6913,Statuettes and other ornamental ceramic articles,2349690.5,2208709.07,2349690.5,456317.31,kg,456317.31,0.06,14.91,ITC Trade Map
+747,1,83,2023,Import,6913,Statuettes and other ornamental ceramic articles,2743854.8,2579223.52,2743854.8,642695.95,kg,642695.95,0.07,16.78,UN Comtrade
+748,1,84,2021,Import,6911,Porcelain or china tableware and kitchenware,6939142.95,6522794.37,6939142.95,1712997.16,kg,1712997.16,0.2,,ITC Trade Map
+749,1,84,2022,Import,6911,Porcelain or china tableware and kitchenware,7184015.16,6752974.25,7184015.16,2017100.25,kg,2017100.25,0.19,3.53,UN Comtrade
+750,1,84,2023,Import,6911,Porcelain or china tableware and kitchenware,7267877.9,6831805.23,7267877.9,1512954.28,kg,1512954.28,0.18,1.17,ITC Trade Map
+751,1,84,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5397111.18,5073284.51,5397111.18,1284130.27,kg,1284130.27,0.15,,UN Comtrade
+752,1,84,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5504873.34,5174580.94,5504873.34,1222762.33,kg,1222762.33,0.14,2.0,ITC Trade Map
+753,1,84,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5629028.71,5291286.99,5629028.71,1528156.51,kg,1528156.51,0.14,2.26,UN Comtrade
+754,1,84,2021,Import,6913,Statuettes and other ornamental ceramic articles,3084063.53,2899019.72,3084063.53,817950.79,kg,817950.79,0.09,,ITC Trade Map
+755,1,84,2022,Import,6913,Statuettes and other ornamental ceramic articles,3301956.41,3103839.02,3301956.41,870386.33,kg,870386.33,0.09,7.07,UN Comtrade
+756,1,84,2023,Import,6913,Statuettes and other ornamental ceramic articles,3400205.73,3196193.38,3400205.73,668658.11,kg,668658.11,0.08,2.98,ITC Trade Map
+757,1,85,2021,Import,6911,Porcelain or china tableware and kitchenware,14086970.22,13241752.0,14086970.22,4038218.88,kg,4038218.88,0.4,,UN Comtrade
+758,1,85,2022,Import,6911,Porcelain or china tableware and kitchenware,14098621.44,13252704.16,14098621.44,4012139.02,kg,4012139.02,0.37,0.08,ITC Trade Map
+759,1,85,2023,Import,6911,Porcelain or china tableware and kitchenware,14004096.6,13163850.8,14004096.6,3165894.09,kg,3165894.09,0.34,-0.67,UN Comtrade
+760,1,85,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10956532.39,10299140.45,10956532.39,2172877.08,kg,2172877.08,0.31,,ITC Trade Map
+761,1,85,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11153130.33,10483942.51,11153130.33,2463810.34,kg,2463810.34,0.29,1.79,UN Comtrade
+762,1,85,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11322350.97,10643009.91,11322350.97,2338821.07,kg,2338821.07,0.28,1.52,ITC Trade Map
+763,1,85,2021,Import,6913,Statuettes and other ornamental ceramic articles,6260875.65,5885223.11,6260875.65,1387599.26,kg,1387599.26,0.18,,UN Comtrade
+764,1,85,2022,Import,6913,Statuettes and other ornamental ceramic articles,6095274.71,5729558.22,6095274.71,1193299.34,kg,1193299.34,0.16,-2.65,ITC Trade Map
+765,1,85,2023,Import,6913,Statuettes and other ornamental ceramic articles,6291948.69,5914431.77,6291948.69,1765892.22,kg,1765892.22,0.15,3.23,UN Comtrade
+766,1,86,2021,Import,6911,Porcelain or china tableware and kitchenware,3775874.95,3549322.45,3775874.95,740041.35,kg,740041.35,0.11,,ITC Trade Map
+767,1,86,2022,Import,6911,Porcelain or china tableware and kitchenware,3941070.76,3704606.52,3941070.76,823218.77,kg,823218.77,0.1,4.38,UN Comtrade
+768,1,86,2023,Import,6911,Porcelain or china tableware and kitchenware,4094779.31,3849092.55,4094779.31,1098074.03,kg,1098074.03,0.1,3.9,ITC Trade Map
+769,1,86,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2936791.63,2760584.13,2936791.63,738384.28,kg,738384.28,0.08,,UN Comtrade
+770,1,86,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3074281.0,2889824.14,3074281.0,666707.93,kg,666707.93,0.08,4.68,ITC Trade Map
+771,1,86,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3257749.29,3062284.33,3257749.29,854701.88,kg,854701.88,0.08,5.97,UN Comtrade
+772,1,86,2021,Import,6913,Statuettes and other ornamental ceramic articles,1678166.64,1577476.64,1678166.64,357099.87,kg,357099.87,0.05,,ITC Trade Map
+773,1,86,2022,Import,6913,Statuettes and other ornamental ceramic articles,1775667.92,1669127.84,1775667.92,349128.2,kg,349128.2,0.05,5.81,UN Comtrade
+774,1,86,2023,Import,6913,Statuettes and other ornamental ceramic articles,1819367.31,1710205.27,1819367.31,506341.54,kg,506341.54,0.04,2.46,ITC Trade Map
+775,1,87,2021,Import,6911,Porcelain or china tableware and kitchenware,7505214.71,7054901.83,7505214.71,1739433.22,kg,1739433.22,0.21,,UN Comtrade
+776,1,87,2022,Import,6911,Porcelain or china tableware and kitchenware,7879835.03,7407044.93,7879835.03,1518077.6,kg,1518077.6,0.21,4.99,ITC Trade Map
+777,1,87,2023,Import,6911,Porcelain or china tableware and kitchenware,8145921.88,7657166.57,8145921.88,1912051.86,kg,1912051.86,0.2,3.38,UN Comtrade
+778,1,87,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5837389.22,5487145.87,5837389.22,1403495.58,kg,1403495.58,0.17,,ITC Trade Map
+779,1,87,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6222226.45,5848892.86,6222226.45,1392831.44,kg,1392831.44,0.16,6.59,UN Comtrade
+780,1,87,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6766599.91,6360603.92,6766599.91,1487918.2,kg,1487918.2,0.16,8.75,ITC Trade Map
+781,1,87,2021,Import,6913,Statuettes and other ornamental ceramic articles,3335650.98,3135511.93,3335650.98,955363.24,kg,955363.24,0.09,,UN Comtrade
+782,1,87,2022,Import,6913,Statuettes and other ornamental ceramic articles,3686661.6,3465461.91,3686661.6,868633.35,kg,868633.35,0.1,10.52,ITC Trade Map
+783,1,87,2023,Import,6913,Statuettes and other ornamental ceramic articles,3880517.74,3647686.68,3880517.74,911773.62,kg,911773.62,0.09,5.26,UN Comtrade
+784,1,88,2021,Import,6911,Porcelain or china tableware and kitchenware,1503040.48,1412858.06,1503040.48,329128.34,kg,329128.34,0.04,,ITC Trade Map
+785,1,88,2022,Import,6911,Porcelain or china tableware and kitchenware,1665843.35,1565892.75,1665843.35,399415.22,kg,399415.22,0.04,10.83,UN Comtrade
+786,1,88,2023,Import,6911,Porcelain or china tableware and kitchenware,1855643.51,1744304.9,1855643.51,375544.18,kg,375544.18,0.05,11.39,ITC Trade Map
+787,1,88,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1169031.49,1098889.6,1169031.49,257727.66,kg,257727.66,0.03,,UN Comtrade
+788,1,88,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1346638.87,1265840.53,1346638.87,293222.26,kg,293222.26,0.04,15.19,ITC Trade Map
+789,1,88,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1529081.21,1437336.34,1529081.21,298121.34,kg,298121.34,0.04,13.55,UN Comtrade
+790,1,88,2021,Import,6913,Statuettes and other ornamental ceramic articles,668017.99,627936.91,668017.99,164227.32,kg,164227.32,0.02,,ITC Trade Map
+791,1,88,2022,Import,6913,Statuettes and other ornamental ceramic articles,751797.26,706689.43,751797.26,154632.85,kg,154632.85,0.02,12.54,UN Comtrade
+792,1,88,2023,Import,6913,Statuettes and other ornamental ceramic articles,839776.87,789390.26,839776.87,177699.28,kg,177699.28,0.02,11.7,ITC Trade Map
+793,1,89,2021,Import,6911,Porcelain or china tableware and kitchenware,6984512.4,6565441.66,6984512.4,1473101.01,kg,1473101.01,0.2,,UN Comtrade
+794,1,89,2022,Import,6911,Porcelain or china tableware and kitchenware,7006400.35,6586016.33,7006400.35,1864668.66,kg,1864668.66,0.18,0.31,ITC Trade Map
+795,1,89,2023,Import,6911,Porcelain or china tableware and kitchenware,7011135.01,6590466.91,7011135.01,1477557.11,kg,1477557.11,0.17,0.07,UN Comtrade
+796,1,89,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5432398.53,5106454.62,5432398.53,1084216.25,kg,1084216.25,0.15,,ITC Trade Map
+797,1,89,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5419839.35,5094648.99,5419839.35,1505802.19,kg,1505802.19,0.14,-0.23,UN Comtrade
+798,1,89,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5267007.03,4950986.61,5267007.03,1432045.16,kg,1432045.16,0.13,-2.82,ITC Trade Map
+799,1,89,2021,Import,6913,Statuettes and other ornamental ceramic articles,3104227.73,2917974.07,3104227.73,826515.59,kg,826515.59,0.09,,UN Comtrade
+800,1,89,2022,Import,6913,Statuettes and other ornamental ceramic articles,3135095.07,2946989.36,3135095.07,720230.62,kg,720230.62,0.08,0.99,ITC Trade Map
+801,1,89,2023,Import,6913,Statuettes and other ornamental ceramic articles,3145239.5,2956525.13,3145239.5,659519.99,kg,659519.99,0.08,0.32,UN Comtrade
+802,1,90,2021,Import,6911,Porcelain or china tableware and kitchenware,10394462.43,9770794.68,10394462.43,2570450.7,kg,2570450.7,0.29,,ITC Trade Map
+803,1,90,2022,Import,6911,Porcelain or china tableware and kitchenware,10039223.85,9436870.42,10039223.85,2738941.18,kg,2738941.18,0.26,-3.42,UN Comtrade
+804,1,90,2023,Import,6911,Porcelain or china tableware and kitchenware,10007691.93,9407230.41,10007691.93,2530390.02,kg,2530390.02,0.24,-0.31,ITC Trade Map
+805,1,90,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8084581.89,7599506.97,8084581.89,2227711.61,kg,2227711.61,0.23,,UN Comtrade
+806,1,90,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7929628.79,7453851.06,7929628.79,1698338.53,kg,1698338.53,0.21,-1.92,ITC Trade Map
+807,1,90,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7820295.17,7351077.46,7820295.17,1833158.84,kg,1833158.84,0.19,-1.38,UN Comtrade
+808,1,90,2021,Import,6913,Statuettes and other ornamental ceramic articles,4619761.08,4342575.41,4619761.08,960852.78,kg,960852.78,0.13,,ITC Trade Map
+809,1,90,2022,Import,6913,Statuettes and other ornamental ceramic articles,4482473.78,4213525.35,4482473.78,920968.28,kg,920968.28,0.12,-2.97,UN Comtrade
+810,1,90,2023,Import,6913,Statuettes and other ornamental ceramic articles,4346451.89,4085664.78,4346451.89,891213.75,kg,891213.75,0.11,-3.03,ITC Trade Map
+811,1,91,2021,Import,6911,Porcelain or china tableware and kitchenware,3979335.9,3740575.75,3979335.9,1070450.6,kg,1070450.6,0.11,,UN Comtrade
+812,1,91,2022,Import,6911,Porcelain or china tableware and kitchenware,4076110.69,3831544.05,4076110.69,992791.17,kg,992791.17,0.11,2.43,ITC Trade Map
+813,1,91,2023,Import,6911,Porcelain or china tableware and kitchenware,4020716.99,3779473.97,4020716.99,845895.93,kg,845895.93,0.1,-1.36,UN Comtrade
+814,1,91,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3095039.04,2909336.69,3095039.04,780604.85,kg,780604.85,0.09,,ITC Trade Map
+815,1,91,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3191607.15,3000110.72,3191607.15,877875.69,kg,877875.69,0.08,3.12,UN Comtrade
+816,1,91,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3317728.53,3118664.82,3317728.53,840924.13,kg,840924.13,0.08,3.95,ITC Trade Map
+817,1,91,2021,Import,6913,Statuettes and other ornamental ceramic articles,1768593.73,1662478.11,1768593.73,435111.47,kg,435111.47,0.05,,UN Comtrade
+818,1,91,2022,Import,6913,Statuettes and other ornamental ceramic articles,1759587.13,1654011.9,1759587.13,368601.83,kg,368601.83,0.05,-0.51,ITC Trade Map
+819,1,91,2023,Import,6913,Statuettes and other ornamental ceramic articles,1784672.64,1677592.28,1784672.64,415399.78,kg,415399.78,0.04,1.43,UN Comtrade
+820,1,92,2021,Import,6911,Porcelain or china tableware and kitchenware,9500153.36,8930144.16,9500153.36,1827693.01,kg,1827693.01,0.27,,ITC Trade Map
+821,1,92,2022,Import,6911,Porcelain or china tableware and kitchenware,10162971.58,9553193.28,10162971.58,2031942.86,kg,2031942.86,0.27,6.98,UN Comtrade
+822,1,92,2023,Import,6911,Porcelain or china tableware and kitchenware,11392640.83,10709082.38,11392640.83,2361358.64,kg,2361358.64,0.28,12.1,ITC Trade Map
+823,1,92,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7389008.17,6945667.68,7389008.17,1746944.04,kg,1746944.04,0.21,,UN Comtrade
+824,1,92,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8487998.48,7978718.57,8487998.48,2475753.91,kg,2475753.91,0.22,14.87,ITC Trade Map
+825,1,92,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9184598.83,8633522.9,9184598.83,2141048.83,kg,2141048.83,0.22,8.21,UN Comtrade
+826,1,92,2021,Import,6913,Statuettes and other ornamental ceramic articles,4222290.38,3968952.96,4222290.38,1021541.89,kg,1021541.89,0.12,,ITC Trade Map
+827,1,92,2022,Import,6913,Statuettes and other ornamental ceramic articles,4775201.69,4488689.59,4775201.69,1086781.55,kg,1086781.55,0.13,13.1,UN Comtrade
+828,1,92,2023,Import,6913,Statuettes and other ornamental ceramic articles,5259723.12,4944139.73,5259723.12,1462829.1,kg,1462829.1,0.13,10.15,ITC Trade Map
+829,1,93,2021,Import,6911,Porcelain or china tableware and kitchenware,3765563.47,3539629.66,3765563.47,764409.7,kg,764409.7,0.11,,UN Comtrade
+830,1,93,2022,Import,6911,Porcelain or china tableware and kitchenware,4112242.52,3865507.97,4112242.52,827206.33,kg,827206.33,0.11,9.21,ITC Trade Map
+831,1,93,2023,Import,6911,Porcelain or china tableware and kitchenware,4545890.63,4273137.19,4545890.63,1146265.69,kg,1146265.69,0.11,10.55,UN Comtrade
+832,1,93,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2928771.59,2753045.29,2928771.59,710351.21,kg,710351.21,0.08,,ITC Trade Map
+833,1,93,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3246753.54,3051948.33,3246753.54,722892.13,kg,722892.13,0.09,10.86,UN Comtrade
+834,1,93,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3590707.37,3375264.92,3590707.37,893132.23,kg,893132.23,0.09,10.59,ITC Trade Map
+835,1,93,2021,Import,6913,Statuettes and other ornamental ceramic articles,1673583.76,1573168.74,1673583.76,380135.04,kg,380135.04,0.05,,UN Comtrade
+836,1,93,2022,Import,6913,Statuettes and other ornamental ceramic articles,1877250.17,1764615.16,1877250.17,506592.71,kg,506592.71,0.05,12.17,ITC Trade Map
+837,1,93,2023,Import,6913,Statuettes and other ornamental ceramic articles,2026172.02,1904601.7,2026172.02,578195.67,kg,578195.67,0.05,7.93,UN Comtrade
+838,1,94,2021,Import,6911,Porcelain or china tableware and kitchenware,13704053.6,12881810.39,13704053.6,2795936.75,kg,2795936.75,0.39,,ITC Trade Map
+839,1,94,2022,Import,6911,Porcelain or china tableware and kitchenware,14032672.74,13190712.38,14032672.74,3746583.84,kg,3746583.84,0.37,2.4,UN Comtrade
+840,1,94,2023,Import,6911,Porcelain or china tableware and kitchenware,14762060.07,13876336.47,14762060.07,3036474.53,kg,3036474.53,0.36,5.2,ITC Trade Map
+841,1,94,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10658708.36,10019185.86,10658708.36,2749583.49,kg,2749583.49,0.3,,UN Comtrade
+842,1,94,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10964680.75,10306799.91,10964680.75,3002295.0,kg,3002295.0,0.29,2.87,ITC Trade Map
+843,1,94,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",11186338.61,10515158.3,11186338.61,2298852.62,kg,2298852.62,0.27,2.02,UN Comtrade
+844,1,94,2021,Import,6913,Statuettes and other ornamental ceramic articles,6090690.49,5725249.06,6090690.49,1592978.11,kg,1592978.11,0.17,,ITC Trade Map
+845,1,94,2022,Import,6913,Statuettes and other ornamental ceramic articles,6235958.71,5861801.19,6235958.71,1214134.74,kg,1214134.74,0.16,2.39,UN Comtrade
+846,1,94,2023,Import,6913,Statuettes and other ornamental ceramic articles,6484077.01,6095032.39,6484077.01,1553473.19,kg,1553473.19,0.16,3.98,ITC Trade Map
+847,1,95,2021,Import,6911,Porcelain or china tableware and kitchenware,6611276.52,6214599.93,6611276.52,1378376.18,kg,1378376.18,0.19,,UN Comtrade
+848,1,95,2022,Import,6911,Porcelain or china tableware and kitchenware,6709829.34,6307239.58,6709829.34,1644174.14,kg,1644174.14,0.18,1.49,ITC Trade Map
+849,1,95,2023,Import,6911,Porcelain or china tableware and kitchenware,6568953.9,6174816.67,6568953.9,1736194.88,kg,1736194.88,0.16,-2.1,UN Comtrade
+850,1,95,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5142103.96,4833577.72,5142103.96,1508943.84,kg,1508943.84,0.15,,ITC Trade Map
+851,1,95,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5289436.66,4972070.46,5289436.66,1019288.9,kg,1019288.9,0.14,2.87,UN Comtrade
+852,1,95,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5368731.31,5046607.43,5368731.31,1422407.86,kg,1422407.86,0.13,1.5,ITC Trade Map
+853,1,95,2021,Import,6913,Statuettes and other ornamental ceramic articles,2938345.12,2762044.41,2938345.12,677968.09,kg,677968.09,0.08,,UN Comtrade
+854,1,95,2022,Import,6913,Statuettes and other ornamental ceramic articles,2994410.66,2814746.02,2994410.66,841061.48,kg,841061.48,0.08,1.91,ITC Trade Map
+855,1,95,2023,Import,6913,Statuettes and other ornamental ceramic articles,3011446.7,2830759.9,3011446.7,634692.09,kg,634692.09,0.07,0.57,UN Comtrade
+856,1,96,2021,Import,6911,Porcelain or china tableware and kitchenware,5774430.54,5427964.7,5774430.54,1539071.43,kg,1539071.43,0.16,,ITC Trade Map
+857,1,96,2022,Import,6911,Porcelain or china tableware and kitchenware,5698025.37,5356143.84,5698025.37,1336638.8,kg,1336638.8,0.15,-1.32,UN Comtrade
+858,1,96,2023,Import,6911,Porcelain or china tableware and kitchenware,5513862.48,5183030.74,5513862.48,1210227.55,kg,1210227.55,0.13,-3.23,ITC Trade Map
+859,1,96,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4491223.75,4221750.32,4491223.75,967368.34,kg,967368.34,0.13,,UN Comtrade
+860,1,96,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4506666.1,4236266.14,4506666.1,1088220.2,kg,1088220.2,0.12,0.34,ITC Trade Map
+861,1,96,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4517013.02,4245992.23,4517013.02,892333.29,kg,892333.29,0.11,0.23,UN Comtrade
+862,1,96,2021,Import,6913,Statuettes and other ornamental ceramic articles,2566413.57,2412428.76,2566413.57,667888.82,kg,667888.82,0.07,,ITC Trade Map
+863,1,96,2022,Import,6913,Statuettes and other ornamental ceramic articles,2501039.43,2350977.07,2501039.43,525623.72,kg,525623.72,0.07,-2.55,UN Comtrade
+864,1,96,2023,Import,6913,Statuettes and other ornamental ceramic articles,2547390.49,2394547.06,2547390.49,600400.81,kg,600400.81,0.06,1.85,ITC Trade Map
+865,1,97,2021,Import,6911,Porcelain or china tableware and kitchenware,3427719.92,3222056.72,3427719.92,809399.87,kg,809399.87,0.1,,UN Comtrade
+866,1,97,2022,Import,6911,Porcelain or china tableware and kitchenware,3446170.94,3239400.68,3446170.94,713063.51,kg,713063.51,0.09,0.54,ITC Trade Map
+867,1,97,2023,Import,6911,Porcelain or china tableware and kitchenware,3414699.15,3209817.2,3414699.15,704803.24,kg,704803.24,0.08,-0.91,UN Comtrade
+868,1,97,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2666004.38,2506044.12,2666004.38,687317.26,kg,687317.26,0.08,,ITC Trade Map
+869,1,97,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2639807.74,2481419.28,2639807.74,684151.92,kg,684151.92,0.07,-0.98,UN Comtrade
+870,1,97,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2631342.61,2473462.05,2631342.61,516067.21,kg,516067.21,0.06,-0.32,ITC Trade Map
+871,1,97,2021,Import,6913,Statuettes and other ornamental ceramic articles,1523431.08,1432025.21,1523431.08,369434.3,kg,369434.3,0.04,,UN Comtrade
+872,1,97,2022,Import,6913,Statuettes and other ornamental ceramic articles,1604944.07,1508647.43,1604944.07,325942.63,kg,325942.63,0.04,5.35,ITC Trade Map
+873,1,97,2023,Import,6913,Statuettes and other ornamental ceramic articles,1607674.97,1511214.47,1607674.97,464215.24,kg,464215.24,0.04,0.17,UN Comtrade
+874,1,98,2021,Import,6911,Porcelain or china tableware and kitchenware,2897648.05,2723789.17,2897648.05,602518.15,kg,602518.15,0.08,,ITC Trade Map
+875,1,98,2022,Import,6911,Porcelain or china tableware and kitchenware,3201807.49,3009699.04,3201807.49,633856.6,kg,633856.6,0.08,10.5,UN Comtrade
+876,1,98,2023,Import,6911,Porcelain or china tableware and kitchenware,3535111.2,3323004.53,3535111.2,717485.28,kg,717485.28,0.09,10.41,ITC Trade Map
+877,1,98,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2253726.26,2118502.69,2253726.26,591561.8,kg,591561.8,0.06,,UN Comtrade
+878,1,98,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2454215.06,2306962.16,2454215.06,494665.55,kg,494665.55,0.06,8.9,ITC Trade Map
+879,1,98,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2594252.7,2438597.54,2594252.7,574706.3,kg,574706.3,0.06,5.71,UN Comtrade
+880,1,98,2021,Import,6913,Statuettes and other ornamental ceramic articles,1287843.58,1210572.96,1287843.58,270104.8,kg,270104.8,0.04,,ITC Trade Map
+881,1,98,2022,Import,6913,Statuettes and other ornamental ceramic articles,1392309.34,1308770.78,1392309.34,289731.92,kg,289731.92,0.04,8.11,UN Comtrade
+882,1,98,2023,Import,6913,Statuettes and other ornamental ceramic articles,1535923.08,1443767.69,1535923.08,326023.91,kg,326023.91,0.04,10.31,ITC Trade Map
+883,1,99,2021,Import,6911,Porcelain or china tableware and kitchenware,6730782.22,6326935.29,6730782.22,1547511.26,kg,1547511.26,0.19,,UN Comtrade
+884,1,99,2022,Import,6911,Porcelain or china tableware and kitchenware,7384654.44,6941575.17,7384654.44,1514207.43,kg,1514207.43,0.19,9.71,ITC Trade Map
+885,1,99,2023,Import,6911,Porcelain or china tableware and kitchenware,7962774.59,7485008.11,7962774.59,2204460.74,kg,2204460.74,0.19,7.83,UN Comtrade
+886,1,99,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5235052.84,4920949.67,5235052.84,1367208.16,kg,1367208.16,0.15,,ITC Trade Map
+887,1,99,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5903244.54,5549049.87,5903244.54,1369821.71,kg,1369821.71,0.16,12.76,UN Comtrade
+888,1,99,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6788492.78,6381183.22,6788492.78,1651226.0,kg,1651226.0,0.17,15.0,ITC Trade Map
+889,1,99,2021,Import,6913,Statuettes and other ornamental ceramic articles,2991458.77,2811971.24,2991458.77,621097.91,kg,621097.91,0.08,,UN Comtrade
+890,1,99,2022,Import,6913,Statuettes and other ornamental ceramic articles,3339774.63,3139388.15,3339774.63,868804.19,kg,868804.19,0.09,11.64,ITC Trade Map
+891,1,99,2023,Import,6913,Statuettes and other ornamental ceramic articles,3798308.27,3570409.78,3798308.27,822082.49,kg,822082.49,0.09,13.73,UN Comtrade
+892,1,100,2021,Import,6911,Porcelain or china tableware and kitchenware,7854417.1,7383152.08,7854417.1,1625696.02,kg,1625696.02,0.22,,ITC Trade Map
+893,1,100,2022,Import,6911,Porcelain or china tableware and kitchenware,7545144.95,7092436.26,7545144.95,1605587.28,kg,1605587.28,0.2,-3.94,UN Comtrade
+894,1,100,2023,Import,6911,Porcelain or china tableware and kitchenware,7533021.24,7081039.96,7533021.24,1456632.02,kg,1456632.02,0.18,-0.16,ITC Trade Map
+895,1,100,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6108991.08,5742451.62,6108991.08,1514491.51,kg,1514491.51,0.17,,UN Comtrade
+896,1,100,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6070916.81,5706661.8,6070916.81,1427416.92,kg,1427416.92,0.16,-0.62,ITC Trade Map
+897,1,100,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6190201.44,5818789.36,6190201.44,1734506.74,kg,1734506.74,0.15,1.96,UN Comtrade
+898,1,100,2021,Import,6913,Statuettes and other ornamental ceramic articles,3490852.05,3281400.92,3490852.05,842737.91,kg,842737.91,0.1,,ITC Trade Map
+899,1,100,2022,Import,6913,Statuettes and other ornamental ceramic articles,3476402.47,3267818.32,3476402.47,888811.72,kg,888811.72,0.09,-0.41,UN Comtrade
+900,1,100,2023,Import,6913,Statuettes and other ornamental ceramic articles,3413295.81,3208498.06,3413295.81,834748.77,kg,834748.77,0.08,-1.82,ITC Trade Map
+901,1,101,2021,Import,6911,Porcelain or china tableware and kitchenware,14125205.46,13277693.13,14125205.46,3582916.28,kg,3582916.28,0.4,,UN Comtrade
+902,1,101,2022,Import,6911,Porcelain or china tableware and kitchenware,15867158.01,14915128.53,15867158.01,3960510.33,kg,3960510.33,0.42,12.33,ITC Trade Map
+903,1,101,2023,Import,6911,Porcelain or china tableware and kitchenware,18209805.95,17117217.59,18209805.95,3971374.48,kg,3971374.48,0.44,14.76,UN Comtrade
+904,1,101,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10986270.91,10327094.66,10986270.91,2245178.99,kg,2245178.99,0.31,,ITC Trade Map
+905,1,101,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",12329437.67,11589671.41,12329437.67,3247764.66,kg,3247764.66,0.32,12.23,UN Comtrade
+906,1,101,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",13653156.51,12833967.12,13653156.51,3092908.76,kg,3092908.76,0.33,10.74,ITC Trade Map
+907,1,101,2021,Import,6913,Statuettes and other ornamental ceramic articles,6277869.09,5901196.95,6277869.09,1462660.46,kg,1462660.46,0.18,,UN Comtrade
+908,1,101,2022,Import,6913,Statuettes and other ornamental ceramic articles,7000330.04,6580310.24,7000330.04,1738393.3,kg,1738393.3,0.18,11.51,ITC Trade Map
+909,1,101,2023,Import,6913,Statuettes and other ornamental ceramic articles,7820099.11,7350893.16,7820099.11,2263017.43,kg,2263017.43,0.19,11.71,UN Comtrade
+910,1,102,2021,Import,6911,Porcelain or china tableware and kitchenware,6116087.33,5749122.09,6116087.33,1751664.86,kg,1751664.86,0.17,,ITC Trade Map
+911,1,102,2022,Import,6911,Porcelain or china tableware and kitchenware,6777405.23,6370760.92,6777405.23,1366441.02,kg,1366441.02,0.18,10.81,UN Comtrade
+912,1,102,2023,Import,6911,Porcelain or china tableware and kitchenware,7651288.1,7192210.81,7651288.1,2019521.09,kg,2019521.09,0.19,12.89,ITC Trade Map
+913,1,102,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4756956.81,4471539.4,4756956.81,1091965.06,kg,1091965.06,0.13,,UN Comtrade
+914,1,102,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5376611.38,5054014.7,5376611.38,1399335.81,kg,1399335.81,0.14,13.03,ITC Trade Map
+915,1,102,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5940208.66,5583796.14,5940208.66,1722334.86,kg,1722334.86,0.14,10.48,UN Comtrade
+916,1,102,2021,Import,6913,Statuettes and other ornamental ceramic articles,2718261.04,2555165.37,2718261.04,530358.5,kg,530358.5,0.08,,ITC Trade Map
+917,1,102,2022,Import,6913,Statuettes and other ornamental ceramic articles,3070847.08,2886596.25,3070847.08,675801.33,kg,675801.33,0.08,12.97,UN Comtrade
+918,1,102,2023,Import,6913,Statuettes and other ornamental ceramic articles,3356653.11,3155253.92,3356653.11,770421.77,kg,770421.77,0.08,9.31,ITC Trade Map
+919,1,103,2021,Import,6911,Porcelain or china tableware and kitchenware,7209936.69,6777340.49,7209936.69,1583630.21,kg,1583630.21,0.2,,UN Comtrade
+920,1,103,2022,Import,6911,Porcelain or china tableware and kitchenware,7685140.45,7224032.02,7685140.45,1537487.6,kg,1537487.6,0.2,6.59,ITC Trade Map
+921,1,103,2023,Import,6911,Porcelain or china tableware and kitchenware,7944836.11,7468145.95,7944836.11,1971807.68,kg,1971807.68,0.19,3.38,UN Comtrade
+922,1,103,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5607728.54,5271264.83,5607728.54,1262576.31,kg,1262576.31,0.16,,ITC Trade Map
+923,1,103,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5849689.45,5498708.08,5849689.45,1135812.79,kg,1135812.79,0.15,4.31,UN Comtrade
+924,1,103,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6130141.46,5762332.98,6130141.46,1211630.37,kg,1211630.37,0.15,4.79,ITC Trade Map
+925,1,103,2021,Import,6913,Statuettes and other ornamental ceramic articles,3204416.31,3012151.33,3204416.31,801526.18,kg,801526.18,0.09,,UN Comtrade
+926,1,103,2022,Import,6913,Statuettes and other ornamental ceramic articles,3388788.65,3185461.33,3388788.65,896222.81,kg,896222.81,0.09,5.75,ITC Trade Map
+927,1,103,2023,Import,6913,Statuettes and other ornamental ceramic articles,3613659.96,3396840.36,3613659.96,999297.83,kg,999297.83,0.09,6.64,UN Comtrade
+928,1,104,2021,Import,6911,Porcelain or china tableware and kitchenware,1653654.73,1554435.45,1653654.73,468019.4,kg,468019.4,0.05,,ITC Trade Map
+929,1,104,2022,Import,6911,Porcelain or china tableware and kitchenware,1901733.47,1787629.46,1901733.47,388977.46,kg,388977.46,0.05,15.0,UN Comtrade
+930,1,104,2023,Import,6911,Porcelain or china tableware and kitchenware,2163185.57,2033394.44,2163185.57,451232.31,kg,451232.31,0.05,13.75,ITC Trade Map
+931,1,104,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1286175.9,1209005.35,1286175.9,283570.88,kg,283570.88,0.04,,UN Comtrade
+932,1,104,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1474277.8,1385821.13,1474277.8,324071.12,kg,324071.12,0.04,14.62,ITC Trade Map
+933,1,104,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1686247.81,1585072.94,1686247.81,360082.43,kg,360082.43,0.04,14.38,UN Comtrade
+934,1,104,2021,Import,6913,Statuettes and other ornamental ceramic articles,734957.66,690860.2,734957.66,174769.09,kg,174769.09,0.02,,ITC Trade Map
+935,1,104,2022,Import,6913,Statuettes and other ornamental ceramic articles,857224.38,805790.92,857224.38,202090.99,kg,202090.99,0.02,16.64,UN Comtrade
+936,1,104,2023,Import,6913,Statuettes and other ornamental ceramic articles,980900.66,922046.62,980900.66,202924.15,kg,202924.15,0.02,14.43,ITC Trade Map
+937,1,105,2021,Import,6911,Porcelain or china tableware and kitchenware,4253159.4,3997969.83,4253159.4,1106603.98,kg,1106603.98,0.12,,UN Comtrade
+938,1,105,2022,Import,6911,Porcelain or china tableware and kitchenware,4250193.49,3995181.88,4250193.49,1064048.06,kg,1064048.06,0.11,-0.07,ITC Trade Map
+939,1,105,2023,Import,6911,Porcelain or china tableware and kitchenware,4261225.09,4005551.59,4261225.09,862327.82,kg,862327.82,0.1,0.26,UN Comtrade
+940,1,105,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3308012.87,3109532.09,3308012.87,934482.64,kg,934482.64,0.09,,ITC Trade Map
+941,1,105,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3292952.72,3095375.56,3292952.72,832858.14,kg,832858.14,0.09,-0.46,UN Comtrade
+942,1,105,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3316095.96,3117130.2,3316095.96,714672.37,kg,714672.37,0.08,0.7,ITC Trade Map
+943,1,105,2021,Import,6913,Statuettes and other ornamental ceramic articles,1890293.07,1776875.48,1890293.07,375234.31,kg,375234.31,0.05,,UN Comtrade
+944,1,105,2022,Import,6913,Statuettes and other ornamental ceramic articles,1845008.4,1734307.9,1845008.4,417054.65,kg,417054.65,0.05,-2.4,ITC Trade Map
+945,1,105,2023,Import,6913,Statuettes and other ornamental ceramic articles,1865589.15,1753653.8,1865589.15,424217.93,kg,424217.93,0.05,1.12,UN Comtrade
+946,1,106,2021,Import,6911,Porcelain or china tableware and kitchenware,9210056.37,8657452.99,9210056.37,2036549.19,kg,2036549.19,0.26,,ITC Trade Map
+947,1,106,2022,Import,6911,Porcelain or china tableware and kitchenware,9922657.83,9327298.36,9922657.83,2134651.88,kg,2134651.88,0.26,7.74,UN Comtrade
+948,1,106,2023,Import,6911,Porcelain or china tableware and kitchenware,10522101.52,9890775.43,10522101.52,2273250.72,kg,2273250.72,0.26,6.04,ITC Trade Map
+949,1,106,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7163377.18,6733574.55,7163377.18,2027374.54,kg,2027374.54,0.2,,UN Comtrade
+950,1,106,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7556832.68,7103422.72,7556832.68,1826970.93,kg,1826970.93,0.2,5.49,ITC Trade Map
+951,1,106,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7946987.08,7470167.85,7946987.08,2091168.06,kg,2091168.06,0.19,5.16,UN Comtrade
+952,1,106,2021,Import,6913,Statuettes and other ornamental ceramic articles,4093358.39,3847756.88,4093358.39,976065.63,kg,976065.63,0.12,,ITC Trade Map
+953,1,106,2022,Import,6913,Statuettes and other ornamental ceramic articles,4634316.59,4356257.59,4634316.59,1211044.08,kg,1211044.08,0.12,13.22,UN Comtrade
+954,1,106,2023,Import,6913,Statuettes and other ornamental ceramic articles,4957532.11,4660080.19,4957532.11,1131227.26,kg,1131227.26,0.12,6.97,ITC Trade Map
+955,1,107,2021,Import,6911,Porcelain or china tableware and kitchenware,11111787.63,10445080.37,11111787.63,2585008.58,kg,2585008.58,0.31,,UN Comtrade
+956,1,107,2022,Import,6911,Porcelain or china tableware and kitchenware,11913788.13,11198960.84,11913788.13,2349698.73,kg,2349698.73,0.31,7.22,ITC Trade Map
+957,1,107,2023,Import,6911,Porcelain or china tableware and kitchenware,12186013.25,11454852.46,12186013.25,2800362.92,kg,2800362.92,0.3,2.28,UN Comtrade
+958,1,107,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8642501.49,8123951.4,8642501.49,1927583.2,kg,1927583.2,0.24,,ITC Trade Map
+959,1,107,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9325542.08,8766009.56,9325542.08,2642297.68,kg,2642297.68,0.25,7.9,UN Comtrade
+960,1,107,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9807620.55,9219163.31,9807620.55,2298554.29,kg,2298554.29,0.24,5.17,ITC Trade Map
+961,1,107,2021,Import,6913,Statuettes and other ornamental ceramic articles,4938572.28,4642257.94,4938572.28,976188.99,kg,976188.99,0.14,,UN Comtrade
+962,1,107,2022,Import,6913,Statuettes and other ornamental ceramic articles,5252373.41,4937231.0,5252373.41,1237898.17,kg,1237898.17,0.14,6.35,ITC Trade Map
+963,1,107,2023,Import,6913,Statuettes and other ornamental ceramic articles,5630381.64,5292558.74,5630381.64,1337053.27,kg,1337053.27,0.14,7.2,UN Comtrade
+964,1,108,2021,Import,6911,Porcelain or china tableware and kitchenware,3157638.81,2968180.48,3157638.81,884161.39,kg,884161.39,0.09,,ITC Trade Map
+965,1,108,2022,Import,6911,Porcelain or china tableware and kitchenware,3160973.19,2971314.8,3160973.19,756665.84,kg,756665.84,0.08,0.11,UN Comtrade
+966,1,108,2023,Import,6911,Porcelain or china tableware and kitchenware,3145796.63,2957048.84,3145796.63,666448.51,kg,666448.51,0.08,-0.48,ITC Trade Map
+967,1,108,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2455941.29,2308584.82,2455941.29,710247.19,kg,710247.19,0.07,,UN Comtrade
+968,1,108,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2442846.1,2296275.34,2442846.1,664230.28,kg,664230.28,0.06,-0.53,ITC Trade Map
+969,1,108,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2418282.39,2273185.45,2418282.39,653367.87,kg,653367.87,0.06,-1.01,UN Comtrade
+970,1,108,2021,Import,6913,Statuettes and other ornamental ceramic articles,1403395.02,1319191.32,1403395.02,309940.45,kg,309940.45,0.04,,ITC Trade Map
+971,1,108,2022,Import,6913,Statuettes and other ornamental ceramic articles,1417517.61,1332466.55,1417517.61,311213.31,kg,311213.31,0.04,1.01,UN Comtrade
+972,1,108,2023,Import,6913,Statuettes and other ornamental ceramic articles,1407624.87,1323167.38,1407624.87,295263.13,kg,295263.13,0.03,-0.7,ITC Trade Map
+973,1,109,2021,Import,6911,Porcelain or china tableware and kitchenware,3841071.0,3610606.74,3841071.0,893193.94,kg,893193.94,0.11,,UN Comtrade
+974,1,109,2022,Import,6911,Porcelain or china tableware and kitchenware,4351527.52,4090435.87,4351527.52,882749.74,kg,882749.74,0.11,13.29,ITC Trade Map
+975,1,109,2023,Import,6911,Porcelain or china tableware and kitchenware,4756411.67,4471026.97,4756411.67,1250666.28,kg,1250666.28,0.12,9.3,UN Comtrade
+976,1,109,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2987499.66,2808249.68,2987499.66,762816.57,kg,762816.57,0.08,,ITC Trade Map
+977,1,109,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3381724.49,3178821.02,3381724.49,873115.79,kg,873115.79,0.09,13.2,UN Comtrade
+978,1,109,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3797196.09,3569364.33,3797196.09,731871.02,kg,731871.02,0.09,12.29,ITC Trade Map
+979,1,109,2021,Import,6913,Statuettes and other ornamental ceramic articles,1707142.66,1604714.1,1707142.66,329405.21,kg,329405.21,0.05,,UN Comtrade
+980,1,109,2022,Import,6913,Statuettes and other ornamental ceramic articles,1949181.52,1832230.63,1949181.52,428368.1,kg,428368.1,0.05,14.18,ITC Trade Map
+981,1,109,2023,Import,6913,Statuettes and other ornamental ceramic articles,2124503.89,1997033.66,2124503.89,418268.69,kg,418268.69,0.05,8.99,UN Comtrade
+982,1,110,2021,Import,6911,Porcelain or china tableware and kitchenware,3472987.11,3264607.88,3472987.11,708902.12,kg,708902.12,0.1,,ITC Trade Map
+983,1,110,2022,Import,6911,Porcelain or china tableware and kitchenware,3729636.75,3505858.54,3729636.75,889776.38,kg,889776.38,0.1,7.39,UN Comtrade
+984,1,110,2023,Import,6911,Porcelain or china tableware and kitchenware,4071268.69,3826992.57,4071268.69,787009.96,kg,787009.96,0.1,9.16,ITC Trade Map
+985,1,110,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2701212.2,2539139.46,2701212.2,536914.4,kg,536914.4,0.08,,UN Comtrade
+986,1,110,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2904798.16,2730510.27,2904798.16,747804.57,kg,747804.57,0.08,7.54,ITC Trade Map
+987,1,110,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3015402.34,2834478.2,3015402.34,687645.91,kg,687645.91,0.07,3.81,UN Comtrade
+988,1,110,2021,Import,6913,Statuettes and other ornamental ceramic articles,1543549.83,1450936.84,1543549.83,350058.98,kg,350058.98,0.04,,ITC Trade Map
+989,1,110,2022,Import,6913,Statuettes and other ornamental ceramic articles,1639531.13,1541159.26,1639531.13,360653.05,kg,360653.05,0.04,6.22,UN Comtrade
+990,1,110,2023,Import,6913,Statuettes and other ornamental ceramic articles,1730113.27,1626306.48,1730113.27,364348.4,kg,364348.4,0.04,5.52,ITC Trade Map
+991,1,111,2021,Import,6911,Porcelain or china tableware and kitchenware,5252972.74,4937794.38,5252972.74,1447496.0,kg,1447496.0,0.15,,UN Comtrade
+992,1,111,2022,Import,6911,Porcelain or china tableware and kitchenware,5465233.34,5137319.34,5465233.34,1108355.81,kg,1108355.81,0.14,4.04,ITC Trade Map
+993,1,111,2023,Import,6911,Porcelain or china tableware and kitchenware,5446775.58,5119969.04,5446775.58,1429539.1,kg,1429539.1,0.13,-0.34,UN Comtrade
+994,1,111,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4085645.47,3840506.74,4085645.47,857101.93,kg,857101.93,0.12,,ITC Trade Map
+995,1,111,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4087535.13,3842283.02,4087535.13,1188900.24,kg,1188900.24,0.11,0.05,UN Comtrade
+996,1,111,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4234916.09,3980821.12,4234916.09,1138846.12,kg,1138846.12,0.1,3.61,ITC Trade Map
+997,1,111,2021,Import,6913,Statuettes and other ornamental ceramic articles,2334654.55,2194575.28,2334654.55,509686.34,kg,509686.34,0.07,,UN Comtrade
+998,1,111,2022,Import,6913,Statuettes and other ornamental ceramic articles,2373974.5,2231536.03,2373974.5,675018.25,kg,675018.25,0.06,1.68,ITC Trade Map
+999,1,111,2023,Import,6913,Statuettes and other ornamental ceramic articles,2450727.93,2303684.25,2450727.93,551083.38,kg,551083.38,0.06,3.23,UN Comtrade
+1000,1,112,2021,Import,6911,Porcelain or china tableware and kitchenware,973154.43,914765.16,973154.43,264464.63,kg,264464.63,0.03,,ITC Trade Map
+1001,1,112,2022,Import,6911,Porcelain or china tableware and kitchenware,1063980.16,1000141.35,1063980.16,253302.17,kg,253302.17,0.03,9.33,UN Comtrade
+1002,1,112,2023,Import,6911,Porcelain or china tableware and kitchenware,1169929.48,1099733.71,1169929.48,331496.64,kg,331496.64,0.03,9.96,ITC Trade Map
+1003,1,112,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",756897.89,711484.02,756897.89,156223.96,kg,156223.96,0.02,,UN Comtrade
+1004,1,112,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",853075.55,801891.02,853075.55,249449.69,kg,249449.69,0.02,12.71,ITC Trade Map
+1005,1,112,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",952962.04,895784.32,952962.04,189567.7,kg,189567.7,0.02,11.71,UN Comtrade
+1006,1,112,2021,Import,6913,Statuettes and other ornamental ceramic articles,432513.08,406562.3,432513.08,98542.8,kg,98542.8,0.01,,ITC Trade Map
+1007,1,112,2022,Import,6913,Statuettes and other ornamental ceramic articles,487001.9,457781.78,487001.9,129348.99,kg,129348.99,0.01,12.6,UN Comtrade
+1008,1,112,2023,Import,6913,Statuettes and other ornamental ceramic articles,540588.85,508153.52,540588.85,114904.73,kg,114904.73,0.01,11.0,ITC Trade Map
+1009,1,113,2021,Import,6911,Porcelain or china tableware and kitchenware,8902132.95,8368004.97,8902132.95,2075420.9,kg,2075420.9,0.25,,UN Comtrade
+1010,1,113,2022,Import,6911,Porcelain or china tableware and kitchenware,10288148.47,9670859.56,10288148.47,2415614.46,kg,2415614.46,0.27,15.57,ITC Trade Map
+1011,1,113,2023,Import,6911,Porcelain or china tableware and kitchenware,12033067.54,11311083.49,12033067.54,3163309.7,kg,3163309.7,0.29,16.96,UN Comtrade
+1012,1,113,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6923881.18,6508448.31,6923881.18,1988059.23,kg,1988059.23,0.2,,ITC Trade Map
+1013,1,113,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8097758.21,7611892.71,8097758.21,1730091.76,kg,1730091.76,0.21,16.95,UN Comtrade
+1014,1,113,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9256767.19,8701361.15,9256767.19,2208977.47,kg,2208977.47,0.23,14.31,ITC Trade Map
+1015,1,113,2021,Import,6913,Statuettes and other ornamental ceramic articles,3956503.53,3719113.32,3956503.53,867803.31,kg,867803.31,0.11,,UN Comtrade
+1016,1,113,2022,Import,6913,Statuettes and other ornamental ceramic articles,4430599.47,4164763.5,4430599.47,923432.63,kg,923432.63,0.12,11.98,ITC Trade Map
+1017,1,113,2023,Import,6913,Statuettes and other ornamental ceramic articles,4917407.75,4622363.29,4917407.75,1050487.87,kg,1050487.87,0.12,10.99,UN Comtrade
+1018,1,114,2021,Import,6911,Porcelain or china tableware and kitchenware,2085898.38,1960744.48,2085898.38,464966.03,kg,464966.03,0.06,,ITC Trade Map
+1019,1,114,2022,Import,6911,Porcelain or china tableware and kitchenware,2100778.77,1974732.04,2100778.77,604263.6,kg,604263.6,0.06,0.71,UN Comtrade
+1020,1,114,2023,Import,6911,Porcelain or china tableware and kitchenware,2181915.86,2051000.91,2181915.86,517187.52,kg,517187.52,0.05,3.86,ITC Trade Map
+1021,1,114,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1622365.41,1525023.48,1622365.41,391395.95,kg,391395.95,0.05,,UN Comtrade
+1022,1,114,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1689295.86,1587938.11,1689295.86,345887.36,kg,345887.36,0.04,4.13,ITC Trade Map
+1023,1,114,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1755453.44,1650126.24,1755453.44,466574.75,kg,466574.75,0.04,3.92,UN Comtrade
+1024,1,114,2021,Import,6913,Statuettes and other ornamental ceramic articles,927065.95,871441.99,927065.95,182736.78,kg,182736.78,0.03,,ITC Trade Map
+1025,1,114,2022,Import,6913,Statuettes and other ornamental ceramic articles,971244.11,912969.46,971244.11,191758.55,kg,191758.55,0.03,4.77,UN Comtrade
+1026,1,114,2023,Import,6913,Statuettes and other ornamental ceramic articles,997502.69,937652.53,997502.69,291523.11,kg,291523.11,0.02,2.7,ITC Trade Map
+1027,1,115,2021,Import,6911,Porcelain or china tableware and kitchenware,11147439.85,10478593.46,11147439.85,2215915.93,kg,2215915.93,0.32,,UN Comtrade
+1028,1,115,2022,Import,6911,Porcelain or china tableware and kitchenware,12582445.65,11827498.91,12582445.65,2865780.61,kg,2865780.61,0.33,12.87,ITC Trade Map
+1029,1,115,2023,Import,6911,Porcelain or china tableware and kitchenware,14537449.11,13665202.17,14537449.11,2948999.61,kg,2948999.61,0.35,15.54,UN Comtrade
+1030,1,115,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8670230.99,8150017.13,8670230.99,1924626.2,kg,1924626.2,0.25,,ITC Trade Map
+1031,1,115,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9393203.82,8829611.59,9393203.82,2262846.54,kg,2262846.54,0.25,8.34,UN Comtrade
+1032,1,115,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10941628.94,10285131.2,10941628.94,2976144.92,kg,2976144.92,0.27,16.48,ITC Trade Map
+1033,1,115,2021,Import,6913,Statuettes and other ornamental ceramic articles,4954417.71,4657152.65,4954417.71,1047094.5,kg,1047094.5,0.14,,UN Comtrade
+1034,1,115,2022,Import,6913,Statuettes and other ornamental ceramic articles,5561153.33,5227484.13,5561153.33,1179808.85,kg,1179808.85,0.15,12.25,ITC Trade Map
+1035,1,115,2023,Import,6913,Statuettes and other ornamental ceramic articles,6150125.11,5781117.61,6150125.11,1446937.23,kg,1446937.23,0.15,10.59,UN Comtrade
+1036,1,116,2021,Import,6911,Porcelain or china tableware and kitchenware,7672421.77,7212076.47,7672421.77,1491231.06,kg,1491231.06,0.22,,ITC Trade Map
+1037,1,116,2022,Import,6911,Porcelain or china tableware and kitchenware,7664566.94,7204692.92,7664566.94,1885883.03,kg,1885883.03,0.2,-0.1,UN Comtrade
+1038,1,116,2023,Import,6911,Porcelain or china tableware and kitchenware,7924926.67,7449431.07,7924926.67,2088120.87,kg,2088120.87,0.19,3.4,ITC Trade Map
+1039,1,116,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5967439.16,5609392.81,5967439.16,1409056.54,kg,1409056.54,0.17,,UN Comtrade
+1040,1,116,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5979714.17,5620931.32,5979714.17,1266495.92,kg,1266495.92,0.16,0.21,ITC Trade Map
+1041,1,116,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5933782.37,5577755.43,5933782.37,1199419.94,kg,1199419.94,0.14,-0.77,UN Comtrade
+1042,1,116,2021,Import,6913,Statuettes and other ornamental ceramic articles,3409965.23,3205367.32,3409965.23,835619.94,kg,835619.94,0.1,,ITC Trade Map
+1043,1,116,2022,Import,6913,Statuettes and other ornamental ceramic articles,3396605.07,3192808.77,3396605.07,885672.12,kg,885672.12,0.09,-0.39,UN Comtrade
+1044,1,116,2023,Import,6913,Statuettes and other ornamental ceramic articles,3407774.25,3203307.79,3407774.25,672409.16,kg,672409.16,0.08,0.33,ITC Trade Map
+1045,1,117,2021,Import,6911,Porcelain or china tableware and kitchenware,4214595.28,3961719.56,4214595.28,814074.33,kg,814074.33,0.12,,UN Comtrade
+1046,1,117,2022,Import,6911,Porcelain or china tableware and kitchenware,4568884.79,4294751.7,4568884.79,1283710.44,kg,1283710.44,0.12,8.41,ITC Trade Map
+1047,1,117,2023,Import,6911,Porcelain or china tableware and kitchenware,4918920.0,4623784.8,4918920.0,1226197.11,kg,1226197.11,0.12,7.66,UN Comtrade
+1048,1,117,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3278018.55,3081337.43,3278018.55,929080.36,kg,929080.36,0.09,,ITC Trade Map
+1049,1,117,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3709652.67,3487073.51,3709652.67,779865.17,kg,779865.17,0.1,13.17,UN Comtrade
+1050,1,117,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4067869.61,3823797.44,4067869.61,1016183.83,kg,1016183.83,0.1,9.66,ITC Trade Map
+1051,1,117,2021,Import,6913,Statuettes and other ornamental ceramic articles,1873153.46,1760764.25,1873153.46,380547.53,kg,380547.53,0.05,,UN Comtrade
+1052,1,117,2022,Import,6913,Statuettes and other ornamental ceramic articles,2052905.2,1929730.89,2052905.2,417518.74,kg,417518.74,0.05,9.6,ITC Trade Map
+1053,1,117,2023,Import,6913,Statuettes and other ornamental ceramic articles,2278349.73,2141648.75,2278349.73,445394.23,kg,445394.23,0.06,10.98,UN Comtrade
+1054,1,118,2021,Import,6911,Porcelain or china tableware and kitchenware,9607155.74,9030726.4,9607155.74,1924060.42,kg,1924060.42,0.27,,ITC Trade Map
+1055,1,118,2022,Import,6911,Porcelain or china tableware and kitchenware,9311360.86,8752679.21,9311360.86,2547602.7,kg,2547602.7,0.24,-3.08,UN Comtrade
+1056,1,118,2023,Import,6911,Porcelain or china tableware and kitchenware,9099976.05,8553977.48,9099976.05,1962233.14,kg,1962233.14,0.22,-2.27,ITC Trade Map
+1057,1,118,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7472232.25,7023898.31,7472232.25,2143946.14,kg,2143946.14,0.21,,UN Comtrade
+1058,1,118,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7373513.24,6931102.44,7373513.24,2019245.69,kg,2019245.69,0.19,-1.32,ITC Trade Map
+1059,1,118,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7177463.45,6746815.64,7177463.45,1731246.02,kg,1731246.02,0.17,-2.66,UN Comtrade
+1060,1,118,2021,Import,6913,Statuettes and other ornamental ceramic articles,4269847.0,4013656.18,4269847.0,983976.83,kg,983976.83,0.12,,ITC Trade Map
+1061,1,118,2022,Import,6913,Statuettes and other ornamental ceramic articles,4166887.49,3916874.24,4166887.49,1205111.33,kg,1205111.33,0.11,-2.41,UN Comtrade
+1062,1,118,2023,Import,6913,Statuettes and other ornamental ceramic articles,4233359.84,3979358.25,4233359.84,1039449.93,kg,1039449.93,0.1,1.6,ITC Trade Map
+1063,1,119,2021,Import,6911,Porcelain or china tableware and kitchenware,9614572.86,9037698.49,9614572.86,2807339.11,kg,2807339.11,0.27,,UN Comtrade
+1064,1,119,2022,Import,6911,Porcelain or china tableware and kitchenware,9731374.35,9147491.89,9731374.35,2305037.78,kg,2305037.78,0.26,1.21,ITC Trade Map
+1065,1,119,2023,Import,6911,Porcelain or china tableware and kitchenware,9576248.71,9001673.79,9576248.71,1971011.8,kg,1971011.8,0.23,-1.59,UN Comtrade
+1066,1,119,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7478001.11,7029321.04,7478001.11,1832795.0,kg,1832795.0,0.21,,ITC Trade Map
+1067,1,119,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7295578.78,6857844.05,7295578.78,1632731.23,kg,1632731.23,0.19,-2.44,UN Comtrade
+1068,1,119,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7112089.22,6685363.87,7112089.22,1643562.43,kg,1643562.43,0.17,-2.52,ITC Trade Map
+1069,1,119,2021,Import,6913,Statuettes and other ornamental ceramic articles,4273143.49,4016754.88,4273143.49,1062786.94,kg,1062786.94,0.12,,UN Comtrade
+1070,1,119,2022,Import,6913,Statuettes and other ornamental ceramic articles,4121537.01,3874244.79,4121537.01,1151100.98,kg,1151100.98,0.11,-3.55,ITC Trade Map
+1071,1,119,2023,Import,6913,Statuettes and other ornamental ceramic articles,4073979.52,3829540.75,4073979.52,799395.13,kg,799395.13,0.1,-1.15,UN Comtrade
+1072,1,120,2021,Import,6911,Porcelain or china tableware and kitchenware,980639.56,921801.19,980639.56,205373.01,kg,205373.01,0.03,,ITC Trade Map
+1073,1,120,2022,Import,6911,Porcelain or china tableware and kitchenware,1061151.09,997482.03,1061151.09,220265.5,kg,220265.5,0.03,8.21,UN Comtrade
+1074,1,120,2023,Import,6911,Porcelain or china tableware and kitchenware,1138010.29,1069729.68,1138010.29,224349.32,kg,224349.32,0.03,7.24,ITC Trade Map
+1075,1,120,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",762719.66,716956.48,762719.66,147647.68,kg,147647.68,0.02,,UN Comtrade
+1076,1,120,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",812465.61,763717.68,812465.61,193403.3,kg,193403.3,0.02,6.52,ITC Trade Map
+1077,1,120,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",879852.34,827061.2,879852.34,240125.34,kg,240125.34,0.02,8.29,UN Comtrade
+1078,1,120,2021,Import,6913,Statuettes and other ornamental ceramic articles,435839.81,409689.42,435839.81,108815.38,kg,108815.38,0.01,,ITC Trade Map
+1079,1,120,2022,Import,6913,Statuettes and other ornamental ceramic articles,477991.79,449312.28,477991.79,139388.11,kg,139388.11,0.01,9.67,UN Comtrade
+1080,1,120,2023,Import,6913,Statuettes and other ornamental ceramic articles,502867.53,472695.48,502867.53,102275.82,kg,102275.82,0.01,5.2,ITC Trade Map
+1081,1,121,2021,Import,6911,Porcelain or china tableware and kitchenware,5120544.83,4813312.14,5120544.83,992260.9,kg,992260.9,0.14,,UN Comtrade
+1082,1,121,2022,Import,6911,Porcelain or china tableware and kitchenware,5449988.72,5122989.39,5449988.72,1499037.64,kg,1499037.64,0.14,6.43,ITC Trade Map
+1083,1,121,2023,Import,6911,Porcelain or china tableware and kitchenware,5746182.91,5401411.94,5746182.91,1334052.16,kg,1334052.16,0.14,5.43,UN Comtrade
+1084,1,121,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3982645.98,3743687.22,3982645.98,1117696.27,kg,1117696.27,0.11,,ITC Trade Map
+1085,1,121,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4232751.07,3978786.0,4232751.07,834172.77,kg,834172.77,0.11,6.28,UN Comtrade
+1086,1,121,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4450548.62,4183515.7,4450548.62,864512.67,kg,864512.67,0.11,5.15,ITC Trade Map
+1087,1,121,2021,Import,6913,Statuettes and other ornamental ceramic articles,2275797.7,2139249.84,2275797.7,588684.46,kg,588684.46,0.06,,UN Comtrade
+1088,1,121,2022,Import,6913,Statuettes and other ornamental ceramic articles,2389054.46,2245711.19,2389054.46,482914.78,kg,482914.78,0.06,4.98,ITC Trade Map
+1089,1,121,2023,Import,6913,Statuettes and other ornamental ceramic articles,2440957.79,2294500.32,2440957.79,625393.15,kg,625393.15,0.06,2.17,UN Comtrade
+1090,1,122,2021,Import,6911,Porcelain or china tableware and kitchenware,12416399.36,11671415.4,12416399.36,2850869.95,kg,2850869.95,0.35,,ITC Trade Map
+1091,1,122,2022,Import,6911,Porcelain or china tableware and kitchenware,13164412.07,12374547.35,13164412.07,3523976.24,kg,3523976.24,0.35,6.02,UN Comtrade
+1092,1,122,2023,Import,6911,Porcelain or china tableware and kitchenware,13786676.5,12959475.91,13786676.5,3989286.63,kg,3989286.63,0.34,4.73,ITC Trade Map
+1093,1,122,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9657199.5,9077767.53,9657199.5,2352369.13,kg,2352369.13,0.27,,UN Comtrade
+1094,1,122,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10128622.75,9520905.38,10128622.75,2190416.31,kg,2190416.31,0.27,4.88,ITC Trade Map
+1095,1,122,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",10675670.64,10035130.4,10675670.64,2313423.7,kg,2313423.7,0.26,5.4,UN Comtrade
+1096,1,122,2021,Import,6913,Statuettes and other ornamental ceramic articles,5518399.72,5187295.73,5518399.72,1424376.72,kg,1424376.72,0.16,,ITC Trade Map
+1097,1,122,2022,Import,6913,Statuettes and other ornamental ceramic articles,5808291.15,5459793.68,5808291.15,1441997.13,kg,1441997.13,0.15,5.25,UN Comtrade
+1098,1,122,2023,Import,6913,Statuettes and other ornamental ceramic articles,6228857.3,5855125.86,6228857.3,1469168.29,kg,1469168.29,0.15,7.24,ITC Trade Map
+1099,1,123,2021,Import,6911,Porcelain or china tableware and kitchenware,5633827.39,5295797.74,5633827.39,1271884.69,kg,1271884.69,0.16,,UN Comtrade
+1100,1,123,2022,Import,6911,Porcelain or china tableware and kitchenware,6377249.08,5994614.14,6377249.08,1270326.77,kg,1270326.77,0.17,13.2,ITC Trade Map
+1101,1,123,2023,Import,6911,Porcelain or china tableware and kitchenware,7012035.2,6591313.09,7012035.2,2020664.57,kg,2020664.57,0.17,9.95,UN Comtrade
+1102,1,123,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4381865.75,4118953.8,4381865.75,1021347.17,kg,1021347.17,0.12,,ITC Trade Map
+1103,1,123,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5018013.22,4716932.43,5018013.22,1310446.39,kg,1310446.39,0.13,14.52,UN Comtrade
+1104,1,123,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5666979.52,5326960.75,5666979.52,1167847.5,kg,1167847.5,0.14,12.93,ITC Trade Map
+1105,1,123,2021,Import,6913,Statuettes and other ornamental ceramic articles,2503923.28,2353687.89,2503923.28,492274.89,kg,492274.89,0.07,,UN Comtrade
+1106,1,123,2022,Import,6913,Statuettes and other ornamental ceramic articles,2718745.0,2555620.3,2718745.0,581096.47,kg,581096.47,0.07,8.58,ITC Trade Map
+1107,1,123,2023,Import,6913,Statuettes and other ornamental ceramic articles,2991001.25,2811541.17,2991001.25,576628.09,kg,576628.09,0.07,10.01,UN Comtrade
+1108,1,124,2021,Import,6911,Porcelain or china tableware and kitchenware,5362612.65,5040855.89,5362612.65,1237192.61,kg,1237192.61,0.15,,ITC Trade Map
+1109,1,124,2022,Import,6911,Porcelain or china tableware and kitchenware,5280898.75,4964044.83,5280898.75,1419503.91,kg,1419503.91,0.14,-1.52,UN Comtrade
+1110,1,124,2023,Import,6911,Porcelain or china tableware and kitchenware,5334942.19,5014845.66,5334942.19,1557454.31,kg,1557454.31,0.13,1.02,ITC Trade Map
+1111,1,124,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4170920.95,3920665.69,4170920.95,822698.8,kg,822698.8,0.12,,UN Comtrade
+1112,1,124,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4116793.48,3869785.88,4116793.48,1185982.82,kg,1185982.82,0.11,-1.3,ITC Trade Map
+1113,1,124,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",3963667.13,3725847.11,3963667.13,1034238.96,kg,1034238.96,0.1,-3.72,UN Comtrade
+1114,1,124,2021,Import,6913,Statuettes and other ornamental ceramic articles,2383383.4,2240380.4,2383383.4,612217.92,kg,612217.92,0.07,,ITC Trade Map
+1115,1,124,2022,Import,6913,Statuettes and other ornamental ceramic articles,2364489.55,2222620.18,2364489.55,630985.68,kg,630985.68,0.06,-0.79,UN Comtrade
+1116,1,124,2023,Import,6913,Statuettes and other ornamental ceramic articles,2341443.46,2200956.85,2341443.46,572018.26,kg,572018.26,0.06,-0.97,ITC Trade Map
+1117,1,125,2021,Import,6911,Porcelain or china tableware and kitchenware,5327881.24,5008208.37,5327881.24,1495958.68,kg,1495958.68,0.15,,UN Comtrade
+1118,1,125,2022,Import,6911,Porcelain or china tableware and kitchenware,5487966.56,5158688.56,5487966.56,1458089.75,kg,1458089.75,0.14,3.0,ITC Trade Map
+1119,1,125,2023,Import,6911,Porcelain or china tableware and kitchenware,5627769.75,5290103.57,5627769.75,1085717.34,kg,1085717.34,0.14,2.55,UN Comtrade
+1120,1,125,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4143907.63,3895273.17,4143907.63,817121.67,kg,817121.67,0.12,,ITC Trade Map
+1121,1,125,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4228442.61,3974736.05,4228442.61,970431.04,kg,970431.04,0.11,2.04,UN Comtrade
+1122,1,125,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",4269537.36,4013365.11,4269537.36,890769.1,kg,890769.1,0.1,0.97,ITC Trade Map
+1123,1,125,2021,Import,6913,Statuettes and other ornamental ceramic articles,2367947.22,2225870.38,2367947.22,495743.0,kg,495743.0,0.07,,UN Comtrade
+1124,1,125,2022,Import,6913,Statuettes and other ornamental ceramic articles,2450573.46,2303539.06,2450573.46,488950.19,kg,488950.19,0.06,3.49,ITC Trade Map
+1125,1,125,2023,Import,6913,Statuettes and other ornamental ceramic articles,2545363.65,2392641.83,2545363.65,532460.97,kg,532460.97,0.06,3.87,UN Comtrade
+1126,1,126,2021,Import,6911,Porcelain or china tableware and kitchenware,11742822.55,11038253.2,11742822.55,2314934.97,kg,2314934.97,0.33,,ITC Trade Map
+1127,1,126,2022,Import,6911,Porcelain or china tableware and kitchenware,11536670.81,10844470.56,11536670.81,2223000.41,kg,2223000.41,0.3,-1.76,UN Comtrade
+1128,1,126,2023,Import,6911,Porcelain or china tableware and kitchenware,11810557.18,11101923.75,11810557.18,3310237.99,kg,3310237.99,0.29,2.37,ITC Trade Map
+1129,1,126,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9133306.43,8585308.04,9133306.43,1993643.54,kg,1993643.54,0.26,,UN Comtrade
+1130,1,126,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9444248.15,8877593.26,9444248.15,1973168.44,kg,1973168.44,0.25,3.4,ITC Trade Map
+1131,1,126,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9523259.67,8951864.09,9523259.67,2123671.03,kg,2123671.03,0.23,0.84,UN Comtrade
+1132,1,126,2021,Import,6913,Statuettes and other ornamental ceramic articles,5219032.25,4905890.31,5219032.25,1055982.2,kg,1055982.2,0.15,,ITC Trade Map
+1133,1,126,2022,Import,6913,Statuettes and other ornamental ceramic articles,5232832.73,4918862.77,5232832.73,1342901.05,kg,1342901.05,0.14,0.26,UN Comtrade
+1134,1,126,2023,Import,6913,Statuettes and other ornamental ceramic articles,5371065.47,5048801.54,5371065.47,1544997.1,kg,1544997.1,0.13,2.64,ITC Trade Map
+1135,1,127,2021,Import,6911,Porcelain or china tableware and kitchenware,6826765.8,6417159.85,6826765.8,1662258.04,kg,1662258.04,0.19,,UN Comtrade
+1136,1,127,2022,Import,6911,Porcelain or china tableware and kitchenware,6862308.48,6450569.97,6862308.48,1377160.26,kg,1377160.26,0.18,0.52,ITC Trade Map
+1137,1,127,2023,Import,6911,Porcelain or china tableware and kitchenware,6948370.34,6531468.12,6948370.34,1387249.81,kg,1387249.81,0.17,1.25,UN Comtrade
+1138,1,127,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5309706.73,4991124.33,5309706.73,1274304.82,kg,1274304.82,0.15,,ITC Trade Map
+1139,1,127,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5423830.76,5098400.91,5423830.76,1260031.0,kg,1260031.0,0.14,2.15,UN Comtrade
+1140,1,127,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5392416.13,5068871.16,5392416.13,1395816.47,kg,1395816.47,0.13,-0.58,ITC Trade Map
+1141,1,127,2021,Import,6913,Statuettes and other ornamental ceramic articles,3034118.13,2852071.05,3034118.13,704818.36,kg,704818.36,0.09,,UN Comtrade
+1142,1,127,2022,Import,6913,Statuettes and other ornamental ceramic articles,3077367.03,2892725.0,3077367.03,762956.97,kg,762956.97,0.08,1.43,ITC Trade Map
+1143,1,127,2023,Import,6913,Statuettes and other ornamental ceramic articles,3077105.76,2892479.41,3077105.76,742520.67,kg,742520.67,0.07,-0.01,UN Comtrade
+1144,1,128,2021,Import,6911,Porcelain or china tableware and kitchenware,11983197.16,11264205.33,11983197.16,2328829.12,kg,2328829.12,0.34,,ITC Trade Map
+1145,1,128,2022,Import,6911,Porcelain or china tableware and kitchenware,11997772.9,11277906.53,11997772.9,2333440.08,kg,2333440.08,0.32,0.12,UN Comtrade
+1146,1,128,2023,Import,6911,Porcelain or china tableware and kitchenware,11911401.17,11196717.1,11911401.17,3258231.66,kg,3258231.66,0.29,-0.72,ITC Trade Map
+1147,1,128,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9320264.45,8761048.59,9320264.45,2143758.41,kg,2143758.41,0.26,,UN Comtrade
+1148,1,128,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9559825.22,8986235.71,9559825.22,1961871.43,kg,1961871.43,0.25,2.57,ITC Trade Map
+1149,1,128,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",9884471.46,9291403.17,9884471.46,2551352.3,kg,2551352.3,0.24,3.4,UN Comtrade
+1150,1,128,2021,Import,6913,Statuettes and other ornamental ceramic articles,5325865.4,5006313.48,5325865.4,1049787.78,kg,1049787.78,0.15,,ITC Trade Map
+1151,1,128,2022,Import,6913,Statuettes and other ornamental ceramic articles,5660632.46,5320994.51,5660632.46,1282150.3,kg,1282150.3,0.15,6.29,UN Comtrade
+1152,1,128,2023,Import,6913,Statuettes and other ornamental ceramic articles,5628862.18,5291130.45,5628862.18,1605527.32,kg,1605527.32,0.14,-0.56,ITC Trade Map
+1153,1,129,2021,Import,6911,Porcelain or china tableware and kitchenware,8880574.06,8347739.61,8880574.06,2521780.51,kg,2521780.51,0.25,,UN Comtrade
+1154,1,129,2022,Import,6911,Porcelain or china tableware and kitchenware,9924649.65,9329170.67,9924649.65,2567558.9,kg,2567558.9,0.26,11.76,ITC Trade Map
+1155,1,129,2023,Import,6911,Porcelain or china tableware and kitchenware,11211391.19,10538707.72,11211391.19,3102538.03,kg,3102538.03,0.27,12.97,UN Comtrade
+1156,1,129,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6907113.15,6492686.37,6907113.15,1357879.02,kg,1357879.02,0.2,,ITC Trade Map
+1157,1,129,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7732562.75,7268608.98,7732562.75,2070434.32,kg,2070434.32,0.2,11.95,UN Comtrade
+1158,1,129,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8673398.17,8152994.28,8673398.17,1945692.76,kg,1945692.76,0.21,12.17,ITC Trade Map
+1159,1,129,2021,Import,6913,Statuettes and other ornamental ceramic articles,3946921.8,3710106.49,3946921.8,841110.61,kg,841110.61,0.11,,UN Comtrade
+1160,1,129,2022,Import,6913,Statuettes and other ornamental ceramic articles,4342182.39,4081651.45,4342182.39,1179516.38,kg,1179516.38,0.11,10.01,ITC Trade Map
+1161,1,129,2023,Import,6913,Statuettes and other ornamental ceramic articles,4759649.18,4474070.23,4759649.18,915391.51,kg,915391.51,0.12,9.61,UN Comtrade
+1162,1,130,2021,Import,6911,Porcelain or china tableware and kitchenware,6924707.87,6509225.39,6924707.87,1622366.16,kg,1622366.16,0.2,,ITC Trade Map
+1163,1,130,2022,Import,6911,Porcelain or china tableware and kitchenware,7879492.82,7406723.25,7879492.82,2214605.44,kg,2214605.44,0.21,13.79,UN Comtrade
+1164,1,130,2023,Import,6911,Porcelain or china tableware and kitchenware,9313828.55,8754998.84,9313828.55,1835838.39,kg,1835838.39,0.23,18.2,ITC Trade Map
+1165,1,130,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5385883.9,5062730.86,5385883.9,1054920.6,kg,1054920.6,0.15,,UN Comtrade
+1166,1,130,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5996952.98,5637135.8,5996952.98,1484652.72,kg,1484652.72,0.16,11.35,ITC Trade Map
+1167,1,130,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",6622011.6,6224690.9,6622011.6,1596015.02,kg,1596015.02,0.16,10.42,UN Comtrade
+1168,1,130,2021,Import,6913,Statuettes and other ornamental ceramic articles,3077647.94,2892989.06,3077647.94,822442.81,kg,822442.81,0.09,,ITC Trade Map
+1169,1,130,2022,Import,6913,Statuettes and other ornamental ceramic articles,3485380.53,3276257.69,3485380.53,903895.85,kg,903895.85,0.09,13.25,UN Comtrade
+1170,1,130,2023,Import,6913,Statuettes and other ornamental ceramic articles,3957306.64,3719868.25,3957306.64,1123953.78,kg,1123953.78,0.1,13.54,ITC Trade Map
+1171,1,131,2021,Import,6911,Porcelain or china tableware and kitchenware,1206862.03,1134450.3,1206862.03,300945.95,kg,300945.95,0.03,,UN Comtrade
+1172,1,131,2022,Import,6911,Porcelain or china tableware and kitchenware,1314148.94,1235300.0,1314148.94,368187.52,kg,368187.52,0.03,8.89,ITC Trade Map
+1173,1,131,2023,Import,6911,Porcelain or china tableware and kitchenware,1398466.41,1314558.42,1398466.41,294579.81,kg,294579.81,0.03,6.42,UN Comtrade
+1174,1,131,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",938670.46,882350.24,938670.46,188591.01,kg,188591.01,0.03,,ITC Trade Map
+1175,1,131,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1015428.07,954502.38,1015428.07,255370.74,kg,255370.74,0.03,8.18,UN Comtrade
+1176,1,131,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",1141775.05,1073268.55,1141775.05,261460.59,kg,261460.59,0.03,12.44,ITC Trade Map
+1177,1,131,2021,Import,6913,Statuettes and other ornamental ceramic articles,536383.12,504200.13,536383.12,136332.89,kg,136332.89,0.02,,UN Comtrade
+1178,1,131,2022,Import,6913,Statuettes and other ornamental ceramic articles,571563.05,537269.27,571563.05,140641.17,kg,140641.17,0.02,6.56,ITC Trade Map
+1179,1,131,2023,Import,6913,Statuettes and other ornamental ceramic articles,620114.42,582907.55,620114.42,151444.73,kg,151444.73,0.02,8.49,UN Comtrade
+1180,1,132,2021,Import,6911,Porcelain or china tableware and kitchenware,3378269.72,3175573.54,3378269.72,745999.58,kg,745999.58,0.1,,ITC Trade Map
+1181,1,132,2022,Import,6911,Porcelain or china tableware and kitchenware,3396706.05,3192903.69,3396706.05,844596.66,kg,844596.66,0.09,0.55,UN Comtrade
+1182,1,132,2023,Import,6911,Porcelain or china tableware and kitchenware,3393206.11,3189613.74,3393206.11,708490.05,kg,708490.05,0.08,-0.1,ITC Trade Map
+1183,1,132,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2627543.12,2469890.53,2627543.12,643696.07,kg,643696.07,0.07,,UN Comtrade
+1184,1,132,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2684971.08,2523872.81,2684971.08,522452.81,kg,522452.81,0.07,2.19,ITC Trade Map
+1185,1,132,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",2695370.93,2533648.67,2695370.93,535046.82,kg,535046.82,0.07,0.39,UN Comtrade
+1186,1,132,2021,Import,6913,Statuettes and other ornamental ceramic articles,1501453.21,1411366.02,1501453.21,310949.32,kg,310949.32,0.04,,ITC Trade Map
+1187,1,132,2022,Import,6913,Statuettes and other ornamental ceramic articles,1534450.96,1442383.9,1534450.96,367764.13,kg,367764.13,0.04,2.2,UN Comtrade
+1188,1,132,2023,Import,6913,Statuettes and other ornamental ceramic articles,1573684.08,1479263.04,1573684.08,304030.01,kg,304030.01,0.04,2.56,ITC Trade Map
+1189,1,133,2021,Import,6911,Porcelain or china tableware and kitchenware,6966214.6,6548241.72,6966214.6,1579061.68,kg,1579061.68,0.2,,UN Comtrade
+1190,1,133,2022,Import,6911,Porcelain or china tableware and kitchenware,6812311.41,6403572.73,6812311.41,1433345.46,kg,1433345.46,0.18,-2.21,ITC Trade Map
+1191,1,133,2023,Import,6911,Porcelain or china tableware and kitchenware,6646552.65,6247759.49,6646552.65,1413505.58,kg,1413505.58,0.16,-2.43,UN Comtrade
+1192,1,133,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5418166.91,5093076.89,5418166.91,1091304.97,kg,1091304.97,0.15,,ITC Trade Map
+1193,1,133,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5307001.43,4988581.34,5307001.43,1178707.42,kg,1178707.42,0.14,-2.05,UN Comtrade
+1194,1,133,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",5197407.11,4885562.68,5197407.11,1057153.0,kg,1057153.0,0.13,-2.07,ITC Trade Map
+1195,1,133,2021,Import,6913,Statuettes and other ornamental ceramic articles,3096095.38,2910329.65,3096095.38,623672.49,kg,623672.49,0.09,,UN Comtrade
+1196,1,133,2022,Import,6913,Statuettes and other ornamental ceramic articles,3041341.56,2858861.07,3041341.56,691034.55,kg,691034.55,0.08,-1.77,ITC Trade Map
+1197,1,133,2023,Import,6913,Statuettes and other ornamental ceramic articles,3008540.31,2828027.89,3008540.31,607955.09,kg,607955.09,0.07,-1.08,UN Comtrade
+1198,1,134,2021,Import,6911,Porcelain or china tableware and kitchenware,9574258.23,8999802.74,9574258.23,2560929.21,kg,2560929.21,0.27,,ITC Trade Map
+1199,1,134,2022,Import,6911,Porcelain or china tableware and kitchenware,9709294.74,9126737.05,9709294.74,2080503.78,kg,2080503.78,0.26,1.41,UN Comtrade
+1200,1,134,2023,Import,6911,Porcelain or china tableware and kitchenware,9916808.34,9321799.84,9916808.34,2779024.59,kg,2779024.59,0.24,2.14,ITC Trade Map
+1201,1,134,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7446645.29,6999846.57,7446645.29,1489790.37,kg,1489790.37,0.21,,UN Comtrade
+1202,1,134,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7729903.93,7266109.7,7729903.93,2056027.36,kg,2056027.36,0.2,3.8,ITC Trade Map
+1203,1,134,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",7990732.58,7511288.63,7990732.58,1551681.02,kg,1551681.02,0.19,3.37,UN Comtrade
+1204,1,134,2021,Import,6913,Statuettes and other ornamental ceramic articles,4255225.88,3999912.33,4255225.88,910260.91,kg,910260.91,0.12,,ITC Trade Map
+1205,1,134,2022,Import,6913,Statuettes and other ornamental ceramic articles,4306155.92,4047786.56,4306155.92,1089137.23,kg,1089137.23,0.11,1.2,UN Comtrade
+1206,1,134,2023,Import,6913,Statuettes and other ornamental ceramic articles,4520121.09,4248913.83,4520121.09,1302199.8,kg,1302199.8,0.11,4.97,ITC Trade Map
+1207,1,135,2021,Import,6911,Porcelain or china tableware and kitchenware,10673413.62,10033008.81,10673413.62,3131187.35,kg,3131187.35,0.3,,UN Comtrade
+1208,1,135,2022,Import,6911,Porcelain or china tableware and kitchenware,10582868.22,9947896.13,10582868.22,2071833.33,kg,2071833.33,0.28,-0.85,ITC Trade Map
+1209,1,135,2023,Import,6911,Porcelain or china tableware and kitchenware,10228478.6,9614769.89,10228478.6,2407294.26,kg,2407294.26,0.25,-3.35,UN Comtrade
+1210,1,135,2021,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8301543.93,7803451.29,8301543.93,1941935.47,kg,1941935.47,0.23,,ITC Trade Map
+1211,1,135,2022,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8209222.59,7716669.24,8209222.59,2060362.39,kg,2060362.39,0.22,-1.11,UN Comtrade
+1212,1,135,2023,Import,6912,"Ceramic tableware, kitchenware other than porcelain",8002704.84,7522542.55,8002704.84,1916323.61,kg,1916323.61,0.19,-2.52,ITC Trade Map
+1213,1,135,2021,Import,6913,Statuettes and other ornamental ceramic articles,4743739.39,4459115.02,4743739.39,1059650.43,kg,1059650.43,0.13,,UN Comtrade
+1214,1,135,2022,Import,6913,Statuettes and other ornamental ceramic articles,4645172.93,4366462.55,4645172.93,894848.35,kg,894848.35,0.12,-2.08,ITC Trade Map
+1215,1,135,2023,Import,6913,Statuettes and other ornamental ceramic articles,4424563.02,4159089.24,4424563.02,1081157.83,kg,1081157.83,0.11,-4.75,UN Comtrade
