@@ -12,6 +12,7 @@ Design rules:
 
 from __future__ import annotations
 
+import codecs
 import csv
 import io
 from typing import Dict, List, Optional, Tuple
@@ -28,8 +29,8 @@ from .parsed_record import (
 # Google Trends uses date columns for time series and location columns for
 # regional exports.
 _PERIOD_COLUMN_CANDIDATES = (
-    "Week", "Day", "Month", "Region", "Subregion", "City", "Metro",
-    "week", "day", "month", "region", "subregion", "city", "metro",
+    "Week", "Day", "Month", "Time", "Region", "Subregion", "City", "Metro",
+    "week", "day", "month", "time", "region", "subregion", "city", "metro",
 )
 
 
@@ -52,6 +53,7 @@ class GoogleTrendsParser:
         collected_at_iso: str = "",
         source_url: Optional[str] = None,
         related_section: Optional[str] = None,
+        source_keyword: Optional[str] = None,
     ) -> ParsedTrendsPayload:
         if related_section is not None:
             if (
@@ -60,6 +62,10 @@ class GoogleTrendsParser:
             ):
                 raise ValueError("related_section must be 'top', 'rising', or None")
             related_section = related_section.strip().lower()
+        if source_keyword is not None and (
+            not isinstance(source_keyword, str) or not source_keyword.strip()
+        ):
+            raise ValueError("source_keyword must be a non-empty string or None")
 
         provenance = RecordProvenance(
             source_id=source_id,
@@ -68,13 +74,25 @@ class GoogleTrendsParser:
             source_url=source_url,
         )
 
-        try:
-            text = payload.decode("utf-8-sig")
-        except UnicodeDecodeError as exc:
+        if payload.startswith((codecs.BOM_UTF32_LE, codecs.BOM_UTF32_BE)):
             raise ParseError(
                 source_id, raw_collection_id, "",
                 ParseErrorKind.INVALID_STRUCTURE,
-                f"payload is not valid UTF-8: {exc}",
+                "UTF-32 BOM is unsupported; expected UTF-8 or BOM-marked UTF-16",
+            )
+
+        is_utf16 = payload.startswith((codecs.BOM_UTF16_LE, codecs.BOM_UTF16_BE))
+        encoding = "utf-16" if is_utf16 else "utf-8-sig"
+        encoding_label = "BOM-marked UTF-16" if is_utf16 else "UTF-8"
+        try:
+            text = payload.decode(encoding)
+        except UnicodeDecodeError as exc:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                "",
+                ParseErrorKind.INVALID_STRUCTURE,
+                f"payload is not valid {encoding_label}: {exc}",
             ) from exc
 
         if not text.strip():
@@ -84,12 +102,34 @@ class GoogleTrendsParser:
                 "CSV payload is empty",
             )
 
+        if "\x00" in text:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                "",
+                ParseErrorKind.INVALID_STRUCTURE,
+                "CSV text contains NUL characters",
+            )
+
+        try:
+            for _ in csv.reader(io.StringIO(text, newline=""), strict=True):
+                pass
+        except csv.Error as exc:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                "",
+                ParseErrorKind.INVALID_STRUCTURE,
+                f"CSV syntax error: {exc}",
+            ) from exc
+
         lines = text.splitlines()
         header_index, period_col, keyword_cols, data_type_hint = (
             _locate_header(lines, source_id, raw_collection_id)
         )
 
         normalized_hint = (data_type_hint or "").strip().lower()
+        period_kind = _period_kind(period_col, normalized_hint)
         if related_section is not None and normalized_hint not in {
             "related queries",
             "related topics",
@@ -100,10 +140,11 @@ class GoogleTrendsParser:
         if normalized_hint in {"related queries", "related topics"}:
             if period_col.strip().lower() in {"query", "topic"}:
                 reader = csv.DictReader(
-                    io.StringIO("\n".join(lines[header_index:]))
+                    io.StringIO("\n".join(lines[header_index:])),
+                    strict=True,
                 )
                 try:
-                    raw_rows = list(reader)
+                    raw_rows = _validated_dict_rows(reader)
                 except csv.Error as exc:
                     raise ParseError(
                         source_id,
@@ -121,6 +162,9 @@ class GoogleTrendsParser:
                         period_col,
                         keyword_cols,
                         related_section=related_section,
+                        period_kind="related_term",
+                        source_keyword=source_keyword,
+                        data_type_hint=data_type_hint,
                     )
                     for i, row in enumerate(raw_rows)
                 )
@@ -130,6 +174,8 @@ class GoogleTrendsParser:
                     rows=rows,
                     row_count=len(rows),
                     data_type_hint=data_type_hint,
+                    dimension_column=period_col,
+                    source_keyword=source_keyword,
                 )
 
             return _parse_related_rows(
@@ -139,13 +185,17 @@ class GoogleTrendsParser:
                 source_id,
                 raw_collection_id,
                 related_section=related_section,
+                source_keyword=source_keyword,
             )
 
         data_lines = lines[header_index:]
-        reader = csv.DictReader(io.StringIO("\n".join(data_lines)))
+        reader = csv.DictReader(
+            io.StringIO("\n".join(data_lines)),
+            strict=True,
+        )
 
         try:
-            raw_rows: List[Dict[str, str]] = list(reader)
+            raw_rows = _validated_dict_rows(reader)
         except csv.Error as exc:
             raise ParseError(
                 source_id, raw_collection_id, "",
@@ -154,7 +204,15 @@ class GoogleTrendsParser:
             ) from exc
 
         rows = tuple(
-            self._parse_row(row, i, provenance, period_col, keyword_cols)
+            self._parse_row(
+                row,
+                i,
+                provenance,
+                period_col,
+                keyword_cols,
+                period_kind=period_kind,
+                data_type_hint=data_type_hint,
+            )
             for i, row in enumerate(raw_rows)
         )
         return ParsedTrendsPayload(
@@ -163,6 +221,7 @@ class GoogleTrendsParser:
             rows=rows,
             row_count=len(rows),
             data_type_hint=data_type_hint,
+            dimension_column=period_col,
         )
 
     def _parse_row(
@@ -173,13 +232,17 @@ class GoogleTrendsParser:
         period_col: str,
         keyword_cols: List[str],
         related_section: Optional[str] = None,
+        period_kind: str = "date",
+        source_keyword: Optional[str] = None,
+        data_type_hint: Optional[str] = None,
     ) -> ParsedTrendsRow:
         sid = provenance.source_id
         cid = provenance.raw_collection_id
         prefix = f"row[{index}]"
 
         # period — required non-empty string
-        period = raw.get(period_col, "").strip()
+        period_value = raw.get(period_col, "")
+        period = period_value.strip() if isinstance(period_value, str) else ""
         if not period:
             raise ParseError(
                 sid, cid, f"{prefix}.{period_col}",
@@ -200,6 +263,9 @@ class GoogleTrendsParser:
             period_label=period,
             keyword_values=tuple(keyword_values),
             related_section=related_section,
+            period_kind=period_kind,
+            source_keyword=source_keyword,
+            data_type_hint=data_type_hint,
         )
 
 
@@ -213,74 +279,97 @@ def _locate_header(
     source_id: str,
     raw_collection_id: str,
 ) -> Tuple[int, str, List[str], Optional[str]]:
-    """Find the data-header line; return (line_index, period_col, keyword_cols, hint).
-
-    ``hint`` is the content of the first non-empty line before the header,
-    except flat related-query/topic exports, whose first row is their table
-    header and identifies the related-data type directly.
-    """
-    data_type_hint: Optional[str] = None
+    """Find a chart/table header after optional Google Trends metadata lines."""
+    first_non_empty: Optional[Tuple[int, List[str]]] = None
+    first_hint: Optional[str] = None
+    chart_hint: Optional[str] = None
+    related_title: Optional[Tuple[int, str]] = None
 
     for i, line in enumerate(lines):
         stripped = line.strip()
         if not stripped:
             continue
         try:
-            cols = next(csv.reader(io.StringIO(stripped)))
+            cols = next(csv.reader(io.StringIO(stripped), strict=True))
         except (csv.Error, StopIteration):
-            break
+            continue
+        if first_non_empty is None and cols:
+            first_non_empty = (i, cols)
+            first_hint = stripped
+
+        normalized_line = stripped.casefold()
+        if "interest over time" in normalized_line:
+            chart_hint = stripped
+        elif "interest by region" in normalized_line:
+            chart_hint = stripped
+        elif normalized_line == "related queries":
+            related_title = (i, stripped)
+            chart_hint = stripped
+        elif normalized_line == "related topics":
+            related_title = (i, stripped)
+            chart_hint = stripped
+
         if (
             len(cols) >= 2
-            and cols[0].strip().lower() in {"query", "topic"}
-            and cols[1].strip().lower()
+            and cols[0].strip().casefold() in {"query", "topic"}
+            and cols[1].strip().casefold()
             in {"search interest", "search volume", "value"}
         ):
-            kind = "queries" if cols[0].strip().lower() == "query" else "topics"
+            if related_title is not None and any(
+                line.strip().split(",", 1)[0].casefold() in {"top", "rising"}
+                for line in lines[related_title[0] + 1:i]
+                if line.strip()
+            ):
+                return (
+                    related_title[0],
+                    related_title[1],
+                    [],
+                    related_title[1],
+                )
+            kind = "queries" if cols[0].strip().casefold() == "query" else "topics"
             return (
                 i,
                 cols[0],
                 [column for column in cols[1:] if column.strip()],
-                f"Related {kind}",
+                chart_hint or f"Related {kind}",
             )
-        break
 
-    for i, line in enumerate(lines):
-        stripped = line.strip()
-        if not stripped:
-            continue
-
-        # Check if this line contains a period column candidate
-        try:
-            reader = csv.reader(io.StringIO(stripped))
-            cols = next(reader)
-        except (csv.Error, StopIteration):
-            continue
-
-        period_col: Optional[str] = None
-        for cand in _PERIOD_COLUMN_CANDIDATES:
-            matching_column = next(
-                (column for column in cols if column.strip().lower() == cand.lower()),
-                None,
-            )
-            if matching_column is not None:
-                period_col = matching_column
-                break
-
+        period_col = next(
+            (
+                column
+                for column in cols
+                if column.strip().casefold()
+                in {candidate.casefold() for candidate in _PERIOD_COLUMN_CANDIDATES}
+            ),
+            None,
+        )
         if period_col is not None:
-            keyword_cols = [c for c in cols if c != period_col and c.strip()]
-            return i, period_col, keyword_cols, data_type_hint
+            keyword_cols = [column for column in cols if column != period_col and column.strip()]
+            inferred_hint = (
+                "Interest by region"
+                if period_col.strip().casefold()
+                in {"region", "subregion", "city", "metro"}
+                else "Interest over time"
+            )
+            return i, period_col, keyword_cols, chart_hint or inferred_hint
 
-        # Not a data header — record as hint if it's the first text line
-        if data_type_hint is None:
-            data_type_hint = stripped
+    if related_title is not None:
+        return related_title[0], related_title[1], [], chart_hint or related_title[1]
 
     # Fallback: use the first non-empty line as header; first column = period
+    if first_non_empty is not None:
+        i, cols = first_non_empty
+        if cols:
+            period_col = cols[0]
+            keyword_cols = [column for column in cols[1:] if column.strip()]
+            return i, period_col, keyword_cols, first_hint
+
     for i, line in enumerate(lines):
         stripped = line.strip()
         if not stripped:
             continue
         try:
-            reader = csv.reader(io.StringIO(stripped))
+            reader = csv.reader(io.StringIO(stripped), strict=True)
             cols = next(reader)
         except (csv.Error, StopIteration):
             continue
@@ -296,6 +385,32 @@ def _locate_header(
     )
 
 
+def _period_kind(period_col: str, data_type_hint: str) -> str:
+    normalized = period_col.strip().lower()
+    if normalized in {"region", "subregion", "city", "metro"}:
+        return "region"
+    if normalized in {"query", "topic", "related query", "related topic"}:
+        return "related_term"
+    if data_type_hint.strip().lower() in {"related queries", "related topics"}:
+        return "related_term"
+    return "date"
+
+
+def _validated_dict_rows(reader: csv.DictReader) -> List[Dict[str, str]]:
+    headers = reader.fieldnames
+    if not headers or any(not header or not header.strip() for header in headers):
+        raise csv.Error("CSV header contains an empty column")
+    if len(set(headers)) != len(headers):
+        raise csv.Error("CSV header contains duplicate columns")
+
+    rows: List[Dict[str, str]] = []
+    for row in reader:
+        if None in row or any(value is None for value in row.values()):
+            raise csv.Error("CSV row has a different number of columns than its header")
+        rows.append(row)
+    return rows
+
+
 def _parse_related_rows(
     lines: List[str],
     provenance: RecordProvenance,
@@ -303,17 +418,20 @@ def _parse_related_rows(
     source_id: str,
     raw_collection_id: str,
     related_section: Optional[str] = None,
+    source_keyword: Optional[str] = None,
 ) -> ParsedTrendsPayload:
     """Parse Google Trends Top/Rising tables without interpreting their values."""
     section = related_section.title() if related_section is not None else None
     keyword = "Value"
+    value_columns = (keyword,)
+    csv_source_keyword: Optional[str] = None
     rows: List[ParsedTrendsRow] = []
 
     for line_number, line in enumerate(lines, start=1):
         if not line.strip():
             continue
         try:
-            fields = next(csv.reader([line]))
+            fields = next(csv.reader([line], strict=True))
         except csv.Error as exc:
             raise ParseError(
                 source_id,
@@ -332,17 +450,50 @@ def _parse_related_rows(
             section = fields[0]
             if len(fields) > 1 and fields[1]:
                 keyword = fields[1]
+                value_columns = (keyword,)
+                if csv_source_keyword is not None and (
+                    csv_source_keyword.casefold() != keyword.casefold()
+                ):
+                    raise ParseError(
+                        source_id,
+                        raw_collection_id,
+                        f"line[{line_number}]",
+                        ParseErrorKind.INVALID_STRUCTURE,
+                        "related section headers identify different source keywords",
+                    )
+                csv_source_keyword = keyword
             continue
 
         if first in {"query", "topic", "related query", "related topic"}:
-            if len(fields) > 1 and fields[1].lower() in {"value", "search volume"}:
-                keyword = fields[1]
+            if len(fields) > 1 and fields[1].lower() in {
+                "value",
+                "search volume",
+                "search interest",
+            }:
+                value_columns = tuple(fields[1:])
+                keyword = value_columns[0]
                 continue
 
-        if section is None or len(fields) < 2:
+        if section is None:
             continue
+        if len(fields) < 2:
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                f"line[{line_number}]",
+                ParseErrorKind.INVALID_STRUCTURE,
+                "related query/topic row must contain a label and value",
+            )
 
-        label, value = fields[0], fields[1]
+        label = fields[0]
+        if len(fields) - 1 != len(value_columns):
+            raise ParseError(
+                source_id,
+                raw_collection_id,
+                f"line[{line_number}]",
+                ParseErrorKind.INVALID_STRUCTURE,
+                "related query/topic row does not match its value-column header",
+            )
         if not label:
             raise ParseError(
                 source_id,
@@ -353,15 +504,32 @@ def _parse_related_rows(
             )
 
         row_label = "query" if "quer" in data_type_hint.lower() else "topic"
-        raw_row = {"section": section, row_label: label, "value": value}
+        raw_row = {"section": section, row_label: label}
+        raw_row.update(zip(value_columns, fields[1:]))
         rows.append(
             ParsedTrendsRow(
                 provenance=provenance,
                 raw_row=raw_row,
                 period_label=label,
-                keyword_values=((keyword, value),),
+                keyword_values=tuple(zip(value_columns, fields[1:])),
                 related_section=section.lower() if section is not None else None,
+                period_kind="related_term",
+                source_keyword=source_keyword or csv_source_keyword,
+                data_type_hint=data_type_hint,
             )
+        )
+
+    if (
+        source_keyword is not None
+        and csv_source_keyword is not None
+        and source_keyword.casefold() != csv_source_keyword.casefold()
+    ):
+        raise ParseError(
+            source_id,
+            raw_collection_id,
+            "source_keyword",
+            ParseErrorKind.WRONG_FORMAT,
+            "related CSV keyword does not match collection metadata",
         )
 
     return ParsedTrendsPayload(
@@ -370,4 +538,6 @@ def _parse_related_rows(
         rows=tuple(rows),
         row_count=len(rows),
         data_type_hint=data_type_hint,
+        dimension_column="query" if "quer" in data_type_hint.lower() else "topic",
+        source_keyword=source_keyword or csv_source_keyword,
     )

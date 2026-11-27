@@ -1,5 +1,6 @@
 """D10 parser tests for D8 — Google Trends CSV exports."""
 
+import codecs
 import unittest
 from pathlib import Path
 
@@ -70,6 +71,32 @@ class GoogleTrendsParserTests(unittest.TestCase):
         self.assertEqual(result.data_type_hint, "Interest over time")
         self.assertIn("ceramic bowls", result.keywords)
 
+    def test_decodes_utf8_without_bom(self):
+        payload = "Week,ceramic\n2025-01-05,55\n".encode("utf-8")
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.row_count, 1)
+        self.assertEqual(result.rows[0].period_label, "2025-01-05")
+
+    def test_decodes_utf8_bom(self):
+        payload = codecs.BOM_UTF8 + "Week,ceramic\n2025-01-05,55\n".encode("utf-8")
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.row_count, 1)
+        self.assertEqual(result.keywords, ("ceramic",))
+
+    def test_decodes_utf16_little_endian_with_bom(self):
+        text = "Week,ceramic\n2025-01-05,55\n"
+        payload = codecs.BOM_UTF16_LE + text.encode("utf-16-le")
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.row_count, 1)
+        self.assertEqual(result.rows[0].period_label, "2025-01-05")
+
+    def test_decodes_utf16_big_endian_with_bom(self):
+        text = "Week,ceramic\n2025-01-05,55\n"
+        payload = codecs.BOM_UTF16_BE + text.encode("utf-16-be")
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.row_count, 1)
+        self.assertEqual(result.rows[0].period_label, "2025-01-05")
+
     def test_month_column_recognised_as_period(self):
         csv_bytes = b"Month,keyword_a\n2025-01,55\n2025-02,60\n"
         result = self.parser.parse(csv_bytes, CID)
@@ -106,10 +133,36 @@ class GoogleTrendsParserTests(unittest.TestCase):
 
     # --- invalid structure ---
 
-    def test_non_utf8_raises_invalid_structure(self):
+    def test_non_utf8_without_bom_raises_invalid_structure(self):
         with self.assertRaises(ParseError) as ctx:
-            self.parser.parse(b"\xff\xfe", CID)
+            self.parser.parse(b"\xffnot utf-8", CID)
         self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
+
+    def test_malformed_bom_marked_utf16_raises_invalid_structure(self):
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(codecs.BOM_UTF16_LE + b"\x00", CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
+        self.assertIn("BOM-marked UTF-16", ctx.exception.detail)
+
+    def test_unmarked_utf16_is_not_guessed(self):
+        payload = "Week,kw\n2025-01-05,55\n".encode("utf-16-le")
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
+
+    def test_malformed_csv_quoting_raises_invalid_structure(self):
+        payload = b'Week,kw\n2025-01-05,"55\n'
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
+        self.assertIn("CSV syntax error", ctx.exception.detail)
+
+    def test_csv_row_with_wrong_number_of_columns_raises_invalid_structure(self):
+        payload = b"Week,kw\n2025-01-05,55,extra\n"
+        with self.assertRaises(ParseError) as ctx:
+            self.parser.parse(payload, CID)
+        self.assertEqual(ctx.exception.kind, ParseErrorKind.INVALID_STRUCTURE)
+        self.assertIn("different number of columns", ctx.exception.detail)
 
     # --- no mutations: values stay as strings ---
 

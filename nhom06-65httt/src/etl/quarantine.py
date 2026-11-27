@@ -297,6 +297,10 @@ def rehydrate_record(record_type: str, snapshot: Dict[str, Any]) -> Any:
                 raw_row=dict(snapshot["raw_row"]),
                 period_label=str(snapshot["period_label"]),
                 keyword_values=kv,
+                related_section=snapshot.get("related_section"),
+                period_kind=str(snapshot.get("period_kind", "date")),
+                source_keyword=snapshot.get("source_keyword"),
+                data_type_hint=snapshot.get("data_type_hint"),
             )
 
         if record_type == "NormalizedTrendsRow":
@@ -309,6 +313,10 @@ def rehydrate_record(record_type: str, snapshot: Dict[str, Any]) -> Any:
                 raw_row=dict(snapshot["raw_row"]),
                 period_label=_rehydrate_field(snapshot["period_label"]),
                 keyword_scores=ks,
+                period_kind=str(snapshot.get("period_kind", "date")),
+                related_section=snapshot.get("related_section"),
+                source_keyword=snapshot.get("source_keyword"),
+                data_type_hint=snapshot.get("data_type_hint"),
             )
 
         if record_type == "ParsedDomesticProductRecord":

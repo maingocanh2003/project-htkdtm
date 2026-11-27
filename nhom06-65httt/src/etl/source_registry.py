@@ -135,7 +135,7 @@ def create_project_source_registry() -> SourceRegistry:
             source_name="UN Comtrade",
             source_type=SourceType.API,
             base_url="https://comtradeapi.un.org",
-            status=SourceStatus.PLANNED,
+            status=SourceStatus.ACTIVE,
             description="International trade statistics API source.",
             source_group=SourceGroup.UN_COMTRADE,
         ),
@@ -153,7 +153,7 @@ def create_project_source_registry() -> SourceRegistry:
             source_name="Google Trends",
             source_type=SourceType.MANUAL,
             base_url="https://trends.google.com",
-            status=SourceStatus.PLANNED,
+            status=SourceStatus.ACTIVE,
             description="Search trend data; collection method remains to be agreed.",
             source_group=SourceGroup.GOOGLE_TRENDS,
         ),
@@ -186,7 +186,7 @@ def create_project_source_registry() -> SourceRegistry:
             source_name="Minh Long 1",
             source_type=SourceType.FILE_DATASET,
             base_url=None,
-            status=SourceStatus.PLANNED,
+            status=SourceStatus.ACTIVE,
             description=(
                 "Domestic ceramic supplier (Binh Duong); catalog collected as "
                 "file export — website does not expose a public JSON API."
@@ -198,7 +198,7 @@ def create_project_source_registry() -> SourceRegistry:
             source_name="Bat Trang suppliers",
             source_type=SourceType.FILE_DATASET,
             base_url=None,
-            status=SourceStatus.PLANNED,
+            status=SourceStatus.ACTIVE,
             description=(
                 "Bat Trang ceramic village suppliers; catalog collected as "
                 "file export — no single authoritative public API."
@@ -210,7 +210,7 @@ def create_project_source_registry() -> SourceRegistry:
             source_name="The Gioi Gom",
             source_type=SourceType.API,
             base_url="https://thegioigom.com",
-            status=SourceStatus.PLANNED,
+            status=SourceStatus.ACTIVE,
             description=(
                 "Vietnamese ceramic retailer with public product catalog pages; "
                 "access and retention requirements must be confirmed before collection."

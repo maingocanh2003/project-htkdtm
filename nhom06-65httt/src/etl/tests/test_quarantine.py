@@ -35,6 +35,8 @@ from etl.quarantine import (
     QuarantineStatus,
     QuarantineStorageError,
     QuarantineStore,
+    _json_safe,
+    rehydrate_record,
 )
 from etl.raw_storage import CollectionStatus, RawStorage
 from etl.source_registry import (
@@ -212,6 +214,23 @@ class QuarantineAndRecoveryTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.store.quarantine_from_validation(val_bad, {"year": "1990"})
 
+    def test_trends_context_survives_quarantine_record_round_trip(self):
+        parsed = ParsedTrendsRow(
+            provenance=self.provenance,
+            raw_row={"query": "ceramic mug", "value": "Breakout"},
+            period_label="ceramic mug",
+            keyword_values=(("search interest", "Breakout"),),
+            related_section="rising",
+            period_kind="related_term",
+            source_keyword="ceramic",
+            data_type_hint="Related queries",
+        )
+        restored = rehydrate_record("ParsedTrendsRow", _json_safe(parsed))
+        self.assertEqual(restored.period_kind, "related_term")
+        self.assertEqual(restored.related_section, "rising")
+        self.assertEqual(restored.source_keyword, "ceramic")
+        self.assertEqual(restored.data_type_hint, "Related queries")
+
     def test_recovery_from_parsed_and_normalized_trade_records(self):
         # 1. Quarantine a ParsedTradeRecord that initially fails (period="1995")
         parsed_trade = ParsedTradeRecord(
@@ -385,6 +404,7 @@ class QuarantineAndRecoveryTests(unittest.TestCase):
             self.store.get(missing_id)
         self.assertTrue(corrupt_path.exists())
         self.assertTrue(missing_path.exists())
+        self.assertTrue(missing_path.exists())
 
         # query() skips corrupted files without crashing; query_with_errors() reports them
         entries = self.store.query()
@@ -394,6 +414,10 @@ class QuarantineAndRecoveryTests(unittest.TestCase):
         qres = self.store.query_with_errors()
         self.assertEqual(len(qres.entries), 1)
         self.assertEqual(len(qres.errors), 2)
+        self.assertEqual(
+            {path.name for path, _ in qres.errors},
+            {f"{corrupt_id}.json", f"{missing_id}.json"},
+        )
 
         # Unknown record_type during recovery raises QuarantineRecoveryError
         bad_type_id = "22" * 16
