@@ -1,0 +1,42 @@
+{
+  "supplier": {
+    "supplier_name": "Gốm Sứ Thế Giới Gốm",
+    "tax_code": "0314567890",
+    "address": "123 Đường Lê Lợi, Quận 1",
+    "province": "TP. Hồ Chí Minh",
+    "website": "https://thegioigom.com",
+    "phone": "028-3822-1234",
+    "business_type": "sản xuất và phân phối",
+    "declared_capacity_note": null
+  },
+  "products": [
+    {
+      "source_product_id": "TGG-001",
+      "name": "Bát ăn cơm hoa đào men trắng",
+      "description": "Bát sứ trắng vẽ hoa đào, dung tích 300ml, an toàn vệ sinh thực phẩm.",
+      "product_url": "https://thegioigom.com/san-pham/bat-hoa-dao-tgg-001",
+      "category": "Bát đĩa",
+      "material": "Sứ cao cấp",
+      "origin_region": "Bình Dương",
+      "price_vnd": 45000,
+      "currency": "VND",
+      "moq": 12,
+      "lead_time_days": null,
+      "wholesale_available": true
+    },
+    {
+      "source_product_id": "TGG-002",
+      "name": "Bình hoa gốm Bát Tràng men lam",
+      "description": "Bình hoa thủ công, cao 25cm, men lam truyền thống Bát Tràng.",
+      "product_url": "https://thegioigom.com/san-pham/binh-hoa-bat-trang-tgg-002",
+      "category": "Bình hoa",
+      "material": "Gốm Bát Tràng",
+      "origin_region": "Bát Tràng, Hà Nội",
+      "price_vnd": 185000,
+      "currency": "VND",
+      "moq": null,
+      "lead_time_days": null,
+      "wholesale_available": false
+    }
+  ]
+}

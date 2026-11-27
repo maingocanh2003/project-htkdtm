@@ -1,0 +1,24 @@
+{
+  "elapsedTime": "fixture",
+  "count": 1,
+  "data": [
+    {
+      "typeCode": "C",
+      "freqCode": "A",
+      "refPeriodId": 20220101,
+      "refYear": 2022,
+      "period": "2022",
+      "reporterCode": 842,
+      "flowCode": "M",
+      "partnerCode": 0,
+      "classificationCode": "H6",
+      "cmdCode": "6911",
+      "cmdDesc": "synthetic fixture record",
+      "netWgt": 12.5,
+      "cifvalue": 20.0,
+      "fobvalue": 18.0,
+      "primaryValue": 20.0
+    }
+  ],
+  "error": ""
+}

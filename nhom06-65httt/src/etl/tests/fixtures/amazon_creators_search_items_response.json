@@ -1,0 +1,40 @@
+{
+  "itemsResult": {
+    "items": [
+      {
+        "asin": "FIXTURE-ASIN-001",
+        "detailPageURL": "https://example.invalid/fixture/amazon-item-1",
+        "itemInfo": {
+          "title": {
+            "displayValue": "Synthetic Porcelain Dinner Set"
+          },
+          "classifications": {
+            "productGroup": {
+              "displayValue": "Synthetic tableware"
+            }
+          }
+        },
+        "offersV2": {
+          "listings": [
+            {
+              "price": {
+                "money": {
+                  "amount": 39.95,
+                  "currency": "USD"
+                }
+              }
+            },
+            {
+              "price": {
+                "money": {
+                  "amount": 35,
+                  "currency": "USD"
+                }
+              }
+            }
+          ]
+        }
+      }
+    ]
+  }
+}

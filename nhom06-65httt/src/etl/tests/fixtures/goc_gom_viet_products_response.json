@@ -1,0 +1,19 @@
+{
+  "supplier": null,
+  "products": [
+    {
+      "source_product_id": "GGV-BT-0045",
+      "name": "Ấm trà gốm Bát Tràng khắc rồng",
+      "description": null,
+      "product_url": "https://gocgomviet.com/products/am-tra-khac-rong-ggv-bt-0045",
+      "category": "Ấm trà",
+      "material": "Gốm",
+      "origin_region": "Bát Tràng",
+      "price_vnd": 320000,
+      "currency": "VND",
+      "moq": 6,
+      "lead_time_days": 14,
+      "wholesale_available": true
+    }
+  ]
+}
