@@ -331,11 +331,38 @@ class DomesticSupplierHttpCollectorTests(unittest.TestCase):
     # -- guard tests --
 
     def test_planned_source_cannot_collect(self):
-        planned_registry = create_project_source_registry()
+        planned_registry = SourceRegistry()
+        for source in create_project_source_registry().list_sources():
+            if source.source_id == "thegioigom":
+                source = replace(source, status=SourceStatus.PLANNED)
+            planned_registry.register(source)
         storage = RawStorage(Path(self.temp_dir.name), planned_registry)
         with self.assertRaisesRegex(ValueError, "ACTIVE"):
             DomesticSupplierHttpCollector(
                 "thegioigom", self.http_client, storage, planned_registry
+            )
+        self.http_client.get.assert_not_called()
+
+    def test_active_api_source_can_initialize_collector(self):
+        collector = self._make_collector("thegioigom")
+
+        self.assertIsInstance(collector, DomesticSupplierHttpCollector)
+        self.http_client.get.assert_not_called()
+
+    def test_active_source_without_api_base_url_cannot_collect(self):
+        incomplete_registry = SourceRegistry()
+        for source in create_project_source_registry().list_sources():
+            if source.source_id == "thegioigom":
+                source = replace(source, base_url=None)
+            incomplete_registry.register(source)
+        storage = RawStorage(Path(self.temp_dir.name), incomplete_registry)
+
+        with self.assertRaisesRegex(ValueError, "API source with a base_url"):
+            DomesticSupplierHttpCollector(
+                "thegioigom",
+                self.http_client,
+                storage,
+                incomplete_registry,
             )
         self.http_client.get.assert_not_called()
 

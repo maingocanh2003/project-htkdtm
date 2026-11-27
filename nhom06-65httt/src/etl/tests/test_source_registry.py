@@ -76,7 +76,8 @@ class SourceRegistryTests(unittest.TestCase):
         self.assertNotIn("password", field_names)
 
     def test_project_catalog_declares_groups_and_all_source_types(self):
-        sources = create_project_source_registry().list_sources()
+        registry = create_project_source_registry()
+        sources = registry.list_sources()
 
         self.assertEqual(len(sources), 9)  # updated for D9: +thegioigom, +goc_gom_viet
         self.assertEqual(
@@ -87,7 +88,80 @@ class SourceRegistryTests(unittest.TestCase):
             {source.source_type for source in sources},
             set(SourceType),
         )
-        self.assertTrue(all(source.status is SourceStatus.PLANNED for source in sources))
+        expected = {
+            "un_comtrade": (
+                SourceGroup.UN_COMTRADE,
+                SourceType.API,
+                SourceStatus.ACTIVE,
+                "https://comtradeapi.un.org",
+            ),
+            "itc_trade_map": (
+                SourceGroup.ITC_TRADE_MAP,
+                SourceType.FILE_DATASET,
+                SourceStatus.PLANNED,
+                "https://www.trademap.org",
+            ),
+            "google_trends": (
+                SourceGroup.GOOGLE_TRENDS,
+                SourceType.MANUAL,
+                SourceStatus.ACTIVE,
+                "https://trends.google.com",
+            ),
+            "etsy": (
+                SourceGroup.MARKETPLACE_PRODUCTS,
+                SourceType.API,
+                SourceStatus.PLANNED,
+                "https://openapi.etsy.com",
+            ),
+            "amazon": (
+                SourceGroup.MARKETPLACE_PRODUCTS,
+                SourceType.API,
+                SourceStatus.PLANNED,
+                "https://creatorsapi.amazon",
+            ),
+            "minh_long_1": (
+                SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+                SourceType.FILE_DATASET,
+                SourceStatus.ACTIVE,
+                None,
+            ),
+            "bat_trang": (
+                SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+                SourceType.FILE_DATASET,
+                SourceStatus.ACTIVE,
+                None,
+            ),
+            "thegioigom": (
+                SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+                SourceType.API,
+                SourceStatus.ACTIVE,
+                "https://thegioigom.com",
+            ),
+            "goc_gom_viet": (
+                SourceGroup.DOMESTIC_SUPPLIER_CATALOGS,
+                SourceType.API,
+                SourceStatus.PLANNED,
+                "https://gocgomviet.com",
+            ),
+        }
+        self.assertEqual(
+            {
+                source.source_id: (
+                    source.source_group,
+                    source.source_type,
+                    source.status,
+                    source.base_url,
+                )
+                for source in sources
+            },
+            expected,
+        )
+        self.assertTrue(
+            all(
+                source.source_name.strip() and source.description.strip()
+                for source in sources
+            )
+        )
 
     def test_metadata_requires_known_source_and_api_endpoint(self):
         registry = create_project_source_registry()

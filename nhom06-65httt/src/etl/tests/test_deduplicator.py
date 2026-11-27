@@ -18,6 +18,7 @@ from etl.normalizer import (
     NormalizedField,
     NormalizedProductRecord,
     NormalizedTradeRecord,
+    normalize_product_record,
 )
 from etl.parsed_record import (
     ParsedCommercialInfo,
@@ -52,7 +53,9 @@ class DeduplicationIndexTests(unittest.TestCase):
             source_url="https://example.invalid/comtrade",
         )
 
-    def test_exact_duplicate_by_source_id_and_product_id(self):
+    def test_conflicting_product_values_with_same_source_id_are_potential_duplicates(
+        self,
+    ):
         idx = DeduplicationIndex()
         rec1 = ParsedProductRecord(
             provenance=self.prov_etsy,
@@ -81,12 +84,77 @@ class DeduplicationIndexTests(unittest.TestCase):
         self.assertTrue(r1.key_confirmed)
 
         r2 = idx.check_and_register(rec2, record_id="ETSY_1001_B")
-        self.assertEqual(r2.status, DuplicateStatus.EXACT_DUPLICATE)
+        self.assertEqual(r2.status, DuplicateStatus.POTENTIAL_DUPLICATE)
         self.assertTrue(r2.is_duplicate)
-        self.assertTrue(r2.key_confirmed)
-        self.assertFalse(r2.needs_confirmation)
+        self.assertFalse(r2.key_confirmed)
+        self.assertTrue(r2.needs_confirmation)
         self.assertEqual(r2.matched_record_id, "ETSY_1001_A")
         self.assertEqual(r2.matched_collection_id, "aa" * 16)
+
+    def test_exact_duplicate_by_source_id_and_product_id_when_values_match(self):
+        idx = DeduplicationIndex()
+        rec = ParsedProductRecord(
+            provenance=self.prov_etsy,
+            raw_record={"listing_id": 1001, "title": "Ceramic Bowl"},
+            source_product_id="1001",
+            product_url=None,
+            name="Ceramic Bowl",
+            category="DINNERWARE",
+            category_id=None,
+            prices=(ParsedPriceInfo("24.99", "USD", "minimum_listing_price"),),
+        )
+        idx.check_and_register(rec, record_id="ETSY_1001_A")
+
+        exact = ParsedProductRecord(
+            provenance=self.prov_etsy_2,
+            raw_record={"listing_id": 1001, "title": "Ceramic Bowl"},
+            source_product_id="1001",
+            product_url=None,
+            name="Ceramic Bowl",
+            category="DINNERWARE",
+            category_id=None,
+            prices=(ParsedPriceInfo("24.99", "USD", "minimum_listing_price"),),
+        )
+        result = idx.check_and_register(exact, record_id="ETSY_1001_B")
+        self.assertEqual(result.status, DuplicateStatus.EXACT_DUPLICATE)
+        self.assertTrue(result.is_duplicate)
+        self.assertTrue(result.key_confirmed)
+        self.assertFalse(result.needs_confirmation)
+        self.assertEqual(result.matched_record_id, "ETSY_1001_A")
+        self.assertEqual(result.matched_collection_id, "aa" * 16)
+
+    def test_normalized_product_values_are_checked_when_raw_payload_matches(self):
+        first = ParsedProductRecord(
+            provenance=self.prov_etsy,
+            raw_record={"listing_id": 1001},
+            source_product_id="1001",
+            product_url=None,
+            name="Ceramic Bowl",
+            category="DINNERWARE",
+            category_id=None,
+            prices=(ParsedPriceInfo("24.99", "USD", "minimum_listing_price"),),
+        )
+        changed = ParsedProductRecord(
+            provenance=self.prov_etsy_2,
+            raw_record={"listing_id": 1001},
+            source_product_id="1001",
+            product_url=None,
+            name="Ceramic Bowl",
+            category="DINNERWARE",
+            category_id=None,
+            prices=(ParsedPriceInfo("25.99", "USD", "minimum_listing_price"),),
+        )
+        index = DeduplicationIndex()
+
+        index.check_and_register(normalize_product_record(first), record_id="P_1")
+        result = index.check_and_register(
+            normalize_product_record(changed),
+            record_id="P_2",
+        )
+
+        self.assertEqual(result.status, DuplicateStatus.POTENTIAL_DUPLICATE)
+        self.assertFalse(result.key_confirmed)
+        self.assertTrue(result.needs_confirmation)
 
     def test_exact_duplicate_by_confirmed_business_key(self):
         idx = DeduplicationIndex()
@@ -159,7 +227,7 @@ class DeduplicationIndexTests(unittest.TestCase):
         self.assertEqual(res2.status, DuplicateStatus.POTENTIAL_DUPLICATE)
         self.assertTrue(res2.needs_confirmation)
 
-    def test_unconfirmed_schema_entities_yield_pending_then_potential_duplicate(self):
+    def test_unconfirmed_entities_need_candidate_context_for_potential_duplicate(self):
         idx = DeduplicationIndex()
         trade1 = NormalizedTradeRecord(
             provenance=self.prov_trade,
@@ -191,7 +259,11 @@ class DeduplicationIndexTests(unittest.TestCase):
 
         trend = ParsedTrendsRow(self.prov_trade, {}, "2025-01-05", (("mug", "80"),))
         self.assertEqual(idx.check_and_register(trend).status, DuplicateStatus.PENDING_KEY_CONFIRMATION)
-        self.assertEqual(idx.check_and_register(trend).status, DuplicateStatus.POTENTIAL_DUPLICATE)
+        trend_repeat = idx.check_and_register(trend)
+        self.assertEqual(trend_repeat.status, DuplicateStatus.PENDING_KEY_CONFIRMATION)
+        self.assertFalse(trend_repeat.is_duplicate)
+        self.assertFalse(trend_repeat.key_confirmed)
+        self.assertTrue(trend_repeat.needs_confirmation)
 
         sup = ParsedSupplierInfo("Gốm Việt", "0314567890", None, None, None, None, None, None)
         self.assertEqual(idx.check_and_register(sup).status, DuplicateStatus.PENDING_KEY_CONFIRMATION)

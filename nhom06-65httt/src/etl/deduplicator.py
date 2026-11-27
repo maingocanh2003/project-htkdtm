@@ -134,6 +134,18 @@ def _raw_record_fingerprint(raw_record: Dict[str, Any]) -> str:
     return _hash_candidate((serialized,))
 
 
+def _product_content_fingerprint(
+    raw_record: Dict[str, Any],
+    product_fields: Dict[str, Any],
+) -> str:
+    return _raw_record_fingerprint(
+        {
+            "raw_record": raw_record,
+            "product_fields": product_fields,
+        }
+    )
+
+
 class DeduplicationIndex:
     """Non-destructive deduplication index supporting in-memory or locked JSON storage."""
 
@@ -403,21 +415,48 @@ class DeduplicationIndex:
         # --- Market Products (external_sku UNIQUE) ---
         if isinstance(record, (NormalizedProductRecord, ParsedProductRecord)):
             src = record.provenance.source_id
-            pid = (
-                record.source_product_id.value
-                if isinstance(record, NormalizedProductRecord)
-                else _clean_str(record.source_product_id)
-            )
-            name = (
-                _norm_name(record.product_name.value)
-                if isinstance(record, NormalizedProductRecord)
-                else _norm_name(record.name)
-            )
+            if isinstance(record, NormalizedProductRecord):
+                pid = record.source_product_id.value
+                name = _norm_name(record.product_name.value)
+                product_fields = {
+                    "product_url": record.product_url.value,
+                    "name": record.product_name.value,
+                    "category": record.category.value,
+                    "price_amount": (
+                        str(record.price.amount)
+                        if record.price.amount is not None
+                        else None
+                    ),
+                    "price_currency": record.price.currency_code,
+                    "converted_amount": (
+                        str(record.price.converted_amount)
+                        if record.price.converted_amount is not None
+                        else None
+                    ),
+                    "target_currency": record.price.target_currency,
+                }
+            else:
+                pid = _clean_str(record.source_product_id)
+                name = _norm_name(record.name)
+                product_fields = {
+                    "product_url": record.product_url,
+                    "name": record.name,
+                    "category": record.category,
+                    "category_id": record.category_id,
+                    "prices": [
+                        {
+                            "amount": price.amount_str,
+                            "currency": price.currency_code,
+                            "basis": price.basis,
+                        }
+                        for price in record.prices
+                    ],
+                }
             confirmed = f"{src}:{pid}" if pid else None
             return (
                 "market_products",
                 confirmed,
-                _raw_record_fingerprint(record.raw_record),
+                _product_content_fingerprint(record.raw_record, product_fields),
                 name,
                 "source_id+source_product_id",
             )
@@ -425,21 +464,44 @@ class DeduplicationIndex:
         # --- Domestic Supplier Products (product_code UNIQUE) ---
         if isinstance(record, (NormalizedDomesticProductRecord, ParsedDomesticProductRecord)):
             src = record.provenance.source_id
-            pid = (
-                record.source_product_id.value
-                if isinstance(record, NormalizedDomesticProductRecord)
-                else _clean_str(record.source_product_id)
-            )
-            name = (
-                _norm_name(record.product_name.value)
-                if isinstance(record, NormalizedDomesticProductRecord)
-                else _norm_name(record.name)
-            )
+            if isinstance(record, NormalizedDomesticProductRecord):
+                pid = record.source_product_id.value
+                name = _norm_name(record.product_name.value)
+                product_fields = {
+                    "name": record.product_name.value,
+                    "category": record.category.value,
+                    "material": record.material.value,
+                    "origin_region": record.origin_region.value,
+                    "price_vnd": (
+                        str(record.price_vnd.value)
+                        if record.price_vnd.value is not None
+                        else None
+                    ),
+                    "moq": record.moq.value,
+                    "lead_time_days": record.lead_time_days.value,
+                    "wholesale_available": record.wholesale_available.value,
+                }
+            else:
+                pid = _clean_str(record.source_product_id)
+                name = _norm_name(record.name)
+                product_fields = {
+                    "product_url": record.product_url,
+                    "name": record.name,
+                    "description": record.description,
+                    "category": record.category,
+                    "material": record.material,
+                    "origin_region": record.origin_region,
+                    "price_vnd": record.commercial.price_vnd_str,
+                    "currency": record.commercial.currency,
+                    "moq": record.commercial.moq,
+                    "lead_time_days": record.commercial.lead_time_days,
+                    "wholesale_available": record.commercial.wholesale_available,
+                }
             confirmed = f"{src}:{pid}" if pid else None
             return (
                 "supplier_products",
                 confirmed,
-                _raw_record_fingerprint(record.raw_record),
+                _product_content_fingerprint(record.raw_record, product_fields),
                 name,
                 "source_id+source_product_id",
             )
