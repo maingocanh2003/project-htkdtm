@@ -3,6 +3,7 @@
 from dataclasses import dataclass
 from datetime import date, datetime, timezone
 from enum import Enum
+import hashlib
 from typing import Optional, Tuple
 
 from .raw_storage import CollectionStatus, RawStorage
@@ -12,6 +13,15 @@ from .source_registry import (
     SourceRegistry,
     SourceType,
 )
+
+_GEO_NAMES = {
+    "VN": "Vietnam",
+    "US": "United States",
+    "JP": "Japan",
+    "DE": "Germany",
+    "FR": "France",
+    "IN": "India",
+}
 
 
 class TrendsDataType(str, Enum):
@@ -41,6 +51,7 @@ class GoogleTrendsRequest:
     related_section: Optional[str] = None
     exported_keywords: Optional[Tuple[str, ...]] = None
     keyword_header_matches_request: Optional[bool] = None
+    group_id: Optional[str] = None
 
     def __post_init__(self) -> None:
         if not all(isinstance(keyword, str) for keyword in self.keywords):
@@ -61,6 +72,8 @@ class GoogleTrendsRequest:
             raise ValueError("category must not be empty when provided")
         if self.original_filename is not None and not self.original_filename.strip():
             raise ValueError("original_filename must not be empty when provided")
+        if self.group_id is not None and not self.group_id.strip():
+            raise ValueError("group_id must not be empty when provided")
         if self.related_section is not None and (
             self.related_section not in {"top", "rising"}
         ):
@@ -126,17 +139,27 @@ class GoogleTrendsExportAdapter:
         if source.source_type is not SourceType.MANUAL:
             raise ValueError("google_trends must be registered as a manual source")
         self._raw_storage = raw_storage
+        self._source_name = source.source_name
+        self._source_type = source.source_type.value
 
     def ingest(self, payload: bytes, request: GoogleTrendsRequest) -> str:
         """Persist CSV bytes and request provenance exactly as supplied."""
         if not isinstance(request, GoogleTrendsRequest):
             raise TypeError("request must be a GoogleTrendsRequest")
+        if not isinstance(payload, bytes):
+            raise TypeError("payload must be bytes")
         request_parameters = {
             "collection_method": "google_trends_ui_csv_export",
+            "source": self._source_name,
+            "source_type": self._source_type,
+            "group_id": request.group_id,
             "keywords": list(
                 request.exported_keywords
                 if request.exported_keywords is not None
                 else request.keywords
+            ),
+            "keyword": (
+                request.keywords[0] if len(request.keywords) == 1 else None
             ),
             "requested_keywords": list(request.keywords),
             "keyword_header_matches_request": (
@@ -144,12 +167,22 @@ class GoogleTrendsExportAdapter:
             ),
             "period_start": request.period_start.isoformat(),
             "period_end": request.period_end.isoformat(),
+            "time_range": {
+                "start": request.period_start.isoformat(),
+                "end": request.period_end.isoformat(),
+                "label": "Past 5 years" if request.group_id == "g1" else None,
+            },
             "geo": request.geo,
+            "geo_name": _GEO_NAMES.get(request.geo, request.geo),
             "data_type": request.data_type.value,
             "search_type": request.search_type,
+            "search_type_label": "Web Search"
+            if request.search_type.casefold() == "web"
+            else request.search_type,
             "interval": request.interval,
             "category": request.category,
             "original_filename": request.original_filename,
+            "filename": request.original_filename,
             "related_section": request.related_section,
             "export_date": (
                 request.export_date.isoformat()
@@ -162,6 +195,7 @@ class GoogleTrendsExportAdapter:
                 else None
             ),
             "value_semantics": _value_semantics(request.data_type),
+            "sha256": hashlib.sha256(payload).hexdigest(),
             "attribution_required": True,
             "attribution_text": "Data source: Google Trends (https://trends.google.com).",
         }
@@ -171,8 +205,6 @@ class GoogleTrendsExportAdapter:
             data_format="csv",
         )
 
-        if not isinstance(payload, bytes):
-            raise TypeError("payload must be bytes")
         status = CollectionStatus.SUCCESS if payload else CollectionStatus.FAILED
         collection_id = self._raw_storage.save(
             payload,

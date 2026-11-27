@@ -26,6 +26,8 @@ from etl.google_trends_collector import (
     TrendsDataType,
 )
 from etl.google_trends_csv_importer import (
+    G1_GEOS,
+    G1_KEYWORDS,
     GoogleTrendsCsvImporter,
     _parse_filename,
     _build_request,
@@ -33,6 +35,7 @@ from etl.google_trends_csv_importer import (
     _infer_period,
     _sha256_hex,
 )
+from etl.normalizer import NormalizationStatus, normalize_trends_row
 from etl.raw_storage import CollectionStatus, RawStorage
 from etl.source_registry import create_project_source_registry
 from etl.trends_parser import GoogleTrendsParser
@@ -130,6 +133,11 @@ class InterestOverTimeParserTests(unittest.TestCase):
         kv0 = dict(result.rows[0].keyword_values)
         self.assertEqual(kv0["ceramic vase"], "0")
 
+    def test_header_only_compare_infers_interest_over_time(self):
+        payload = b"Time,ceramic,ceramics,pottery,porcelain,stoneware\n2021-11-28,1,2,3,4,5\n"
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(result.data_type_hint, "Interest over time")
+
 
 # ---------------------------------------------------------------------------
 # Bộ 2 – Parser: Interest by Region
@@ -208,6 +216,7 @@ class RelatedQueriesParserTests(unittest.TestCase):
         self.assertEqual(kv["ceramic tableware"], "Breakout")
         self.assertEqual(breakout_rows[0].raw_row["section"], "Rising")
         self.assertEqual(breakout_rows[0].related_section, "rising")
+        self.assertEqual(breakout_rows[0].source_keyword, "ceramic tableware")
 
     def test_rising_numeric_value_kept_as_string(self):
         """Rising value như 350 phải là str, không phải int."""
@@ -240,6 +249,20 @@ class RelatedQueriesParserTests(unittest.TestCase):
         self.assertEqual(result.rows[0].raw_row["section"], "Top")
         self.assertEqual(result.rows[0].related_section, "top")
         self.assertEqual(result.rows[1].related_section, "rising")
+
+    def test_sectioned_related_table_preserves_all_percentage_columns(self):
+        payload = (
+            b"Related queries\n"
+            b"Top,ceramic\n"
+            b"query,search interest,increase percent\n"
+            b"ceramic bowl,100,0%\n"
+        )
+        result = self.parser.parse(payload, CID)
+        self.assertEqual(
+            result.rows[0].keyword_values,
+            (("search interest", "100"), ("increase percent", "0%")),
+        )
+        self.assertEqual(result.rows[0].raw_row["increase percent"], "0%")
 
     def test_related_queries_data_type_hint(self):
         result = self.parser.parse(RQ_FIXTURE.read_bytes(), CID)
@@ -460,91 +483,69 @@ class AdapterRawStorageTests(unittest.TestCase):
 
 
 # ---------------------------------------------------------------------------
-# Bộ 7 – Importer: filename parsing và chống duplicate
+# G1 importer: strict filenames, five-keyword compare exports, provenance.
 # ---------------------------------------------------------------------------
 
 
+def _compare_payload(dimension="Week", values=("100", "0", "50", "25", "10")):
+    title = "Interest by region" if dimension == "Region" else "Interest over time"
+    first = (
+        "Vietnam"
+        if dimension == "Region"
+        else "2021-11-28"
+    )
+    second = "Japan" if dimension == "Region" else "2021-12-05"
+    headers = ",".join(G1_KEYWORDS)
+    return (
+        f"{title}\n{dimension},{headers}\n"
+        f"{first},{','.join(values)}\n{second},{','.join(values)}\n"
+    ).encode("utf-8")
+
+
+def _related_payload(kind, section, keyword):
+    label = f"{keyword} {'ceramic bowls' if kind == 'queries' else 'ceramic art'}"
+    value = "Breakout" if section == "rising" else "0"
+    return (
+        f"Related {kind}\n{section.title()},{keyword}\n"
+        f"{label},{value}\n"
+    ).encode("utf-8")
+
+
 class FilenameParsingTests(unittest.TestCase):
-    def test_valid_iot_filename(self):
-        result = _parse_filename("g1_VN_interest_over_time_20261120.csv")
-        self.assertIsNotNone(result)
-        group, geo, dt, date_str = result
-        self.assertEqual(group, "g1")
-        self.assertEqual(geo, "VN")
-        self.assertEqual(dt, "interest_over_time")
-        self.assertEqual(date_str, "20261120")
+    def test_exact_g1_conventions_are_accepted_for_six_markets(self):
+        for geo in G1_GEOS:
+            examples = (
+                (f"g1_{geo}_compare5_interest_over_time_20261127.csv", "interest_over_time"),
+                (f"g1_{geo}_compare5_interest_by_region_20261127.csv", "interest_by_region"),
+                (f"g1_{geo}_ceramic_related_queries_top_20261127.csv", "related_queries_top"),
+                (f"g1_{geo}_stoneware_related_topics_rising_20261127.csv", "related_topics_rising"),
+            )
+            for filename, expected_type in examples:
+                with self.subTest(filename=filename):
+                    result = _parse_filename(filename)
+                    self.assertEqual(result, ("g1", geo, expected_type, "20261127"))
 
-    def test_valid_related_queries_filename(self):
-        result = _parse_filename("g3_US_related_queries_20261120.csv")
-        self.assertIsNotNone(result)
-        self.assertEqual(result[1], "US")
-        self.assertEqual(result[2], "related_queries")
-
-    def test_related_top_and_rising_filenames_preserve_section(self):
-        cases = (
-            ("g1_VN_related_queries_top_20261120.csv", "related_queries_top"),
-            ("g1_VN_related_queries_rising_20261120.csv", "related_queries_rising"),
-            ("g1_VN_related_topics_top_20261120.csv", "related_topics_top"),
-            ("g1_VN_related_topics_rising_20261120.csv", "related_topics_rising"),
-        )
-        for filename, expected_type in cases:
+    def test_non_g1_country_keyword_or_invalid_date_is_rejected(self):
+        for filename in (
+            "g2_VN_compare5_interest_over_time_20261127.csv",
+            "g1_BR_compare5_interest_over_time_20261127.csv",
+            "g1_VN_ceramicware_related_topics_top_20261127.csv",
+            "g1_VN_compare5_interest_over_time_20260230.csv",
+            "g1_VN_interest_over_time_20261127.csv",
+        ):
             with self.subTest(filename=filename):
-                result = _parse_filename(filename)
-                self.assertIsNotNone(result)
-                self.assertEqual(result[2], expected_type)
-                self.assertEqual(result[3], "20261120")
+                self.assertIsNone(_parse_filename(filename))
 
-    def test_valid_ibr_filename(self):
-        result = _parse_filename("g4_VN_interest_by_region_20261120.csv")
-        self.assertIsNotNone(result)
-        self.assertEqual(result[0], "g4")
-
-    def test_invalid_filename_no_match(self):
-        self.assertIsNone(_parse_filename("random_file.csv"))
-        self.assertIsNone(_parse_filename("g1_VN_bad_type_20261120.csv"))
-        self.assertIsNone(_parse_filename("g1_VN_related_queries_unknown_20261120.csv"))
-        self.assertIsNone(_parse_filename("trends_export.csv"))
-
-    def test_build_request_iot(self):
-        req = _build_request("g1", "VN", "interest_over_time", "20261120")
-        self.assertIsNotNone(req)
-        self.assertEqual(req.geo, "VN")
-        self.assertEqual(req.data_type, TrendsDataType.INTEREST_OVER_TIME)
-        self.assertIsNone(req.interval)
-        self.assertIn("ceramic tableware", req.keywords)
-
-    def test_build_request_accepts_inferred_interval(self):
-        req = _build_request(
-            "g1", "VN", "interest_over_time", "20261120", interval="weekly"
-        )
-        self.assertIsNotNone(req)
-        self.assertEqual(req.interval, "weekly")
-
-    def test_build_request_related_queries_no_interval(self):
-        req = _build_request("g3", "US", "related_queries", "20261120")
-        self.assertIsNotNone(req)
-        self.assertIsNone(req.interval)
-
-    def test_build_request_preserves_related_section(self):
-        cases = (
-            ("related_queries_top", TrendsDataType.RELATED_QUERIES, "top"),
-            ("related_queries_rising", TrendsDataType.RELATED_QUERIES, "rising"),
-            ("related_topics_top", TrendsDataType.RELATED_TOPICS, "top"),
-            ("related_topics_rising", TrendsDataType.RELATED_TOPICS, "rising"),
-        )
-        for filename_type, data_type, section in cases:
-            with self.subTest(filename_type=filename_type):
-                req = _build_request("g1", "VN", filename_type, "20261120")
-                self.assertIsNotNone(req)
-                self.assertEqual(req.data_type, data_type)
-                self.assertEqual(req.related_section, section)
-
-    def test_build_request_unknown_group_returns_none(self):
-        req = _build_request("g99", "US", "interest_over_time", "20261120")
-        self.assertIsNone(req)
-
-    def test_invalid_export_date_is_rejected(self):
-        self.assertIsNone(_parse_filename("g1_VN_interest_over_time_20260230.csv"))
+    def test_build_request_uses_exact_five_keyword_configuration(self):
+        for geo in G1_GEOS:
+            request = _build_request("g1", geo, "interest_over_time", "20261127")
+            self.assertEqual(request.keywords, G1_KEYWORDS)
+            self.assertEqual(request.geo, geo)
+            self.assertEqual(request.search_type, "web")
+            self.assertEqual(request.category, "All categories")
+            self.assertEqual(request.group_id, "g1")
+            self.assertIsNone(request.interval)
+        self.assertIsNone(_build_request("g1", "BR", "interest_over_time", "20261127"))
 
     def test_five_year_range_handles_leap_day(self):
         start, end = _infer_period("20240229")
@@ -552,209 +553,247 @@ class FilenameParsingTests(unittest.TestCase):
         self.assertEqual(end, date(2024, 2, 29))
 
 
-class ImporterDuplicateTests(unittest.TestCase):
-    """Chống thu thập trùng lặp theo SHA-256."""
-
+class G1ImporterTests(unittest.TestCase):
     def setUp(self):
-        self._tmp = tempfile.TemporaryDirectory()
-        self.root = Path(self._tmp.name)
+        self.temp_dir = tempfile.TemporaryDirectory()
+        self.addCleanup(self.temp_dir.cleanup)
+        self.root = Path(self.temp_dir.name)
         self.incoming = self.root / "incoming"
         self.incoming.mkdir()
         self.raw = self.root / "raw"
-        self.raw.mkdir()
 
-    def tearDown(self):
-        self._tmp.cleanup()
+    def _place(self, filename, payload):
+        path = self.incoming / filename
+        path.write_bytes(payload)
+        return path
 
-    def _make_importer(self):
-        return GoogleTrendsCsvImporter(self.incoming, self.raw)
+    def _importer(self, dry_run=False):
+        return GoogleTrendsCsvImporter(self.incoming, self.raw, dry_run=dry_run)
 
-    def _place_csv(self, filename: str, content: bytes) -> Path:
-        p = self.incoming / filename
-        p.write_bytes(content)
-        return p
+    def _request_for(self, result):
+        storage = RawStorage(self.raw, create_project_source_registry())
+        manifest = storage.read_manifest("google_trends", result["collection_id"])
+        return storage, manifest, manifest["metadata"]["request_parameters"]
 
-    def test_import_valid_csv_once(self):
-        payload = IOT_FIXTURE.read_bytes()
-        filename = "g1_VN_interest_over_time_20261120.csv"
-        self._place_csv(filename, payload)
-        results = self._make_importer().run()
-        imported = [r for r in results if r["status"] == "imported"]
-        self.assertEqual(len(imported), 1)
-        registry = create_project_source_registry()
-        stored = RawStorage(self.raw, registry)
-        manifest = stored.read_manifest(
-            "google_trends", imported[0]["collection_id"]
-        )
-        request = manifest["metadata"]["request_parameters"]
-        self.assertEqual(request["original_filename"], filename)
-        self.assertEqual(request["export_date"], "2026-11-20")
-        self.assertIsNone(request["export_timestamp"])
+    def test_compare_files_preserve_all_five_independent_keyword_values_and_metadata(self):
+        filename = "g1_VN_compare5_interest_over_time_20261127.csv"
+        payload = _compare_payload()
+        self._place(filename, payload)
+
+        result = self._importer().run()[0]
+
+        self.assertEqual(result["status"], "imported")
+        storage, manifest, request = self._request_for(result)
+        self.assertEqual(storage.read_payload("google_trends", result["collection_id"]), payload)
+        self.assertEqual(request["group_id"], "g1")
+        self.assertEqual(request["keywords"], list(G1_KEYWORDS))
         self.assertEqual(request["geo"], "VN")
-
-    def test_corrupt_sha256_index_fails_explicitly(self):
-        (self.incoming / ".imported_sha256_index.json").write_text(
-            "{not valid json", encoding="utf-8"
-        )
-        with self.assertRaises(json.JSONDecodeError):
-            self._make_importer()
-
-    def test_duplicate_csv_skipped_on_second_run(self):
-        payload = IOT_FIXTURE.read_bytes()
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", payload)
-        # Import lần 1
-        self._make_importer().run()
-        # Import lần 2 cùng file → phải skip vì SHA-256 đã có trong index
-        results = self._make_importer().run()
-        skipped = [r for r in results if r["status"] == "skipped_duplicate"]
-        self.assertEqual(len(skipped), 1)
-
-    def test_import_records_monthly_cadence_and_keyword_header_mismatch(self):
-        payload = (
-            b"Time,ceramic\n"
-            b"2021-11-01,16\n"
-            b"2021-12-01,15\n"
-            b"2022-01-01,14\n"
-        )
-        filename = "g1_VN_interest_over_time_20261127.csv"
-        self._place_csv(filename, payload)
-
-        results = self._make_importer().run()
-        imported = next(result for result in results if result["status"] == "imported")
-        manifest = RawStorage(
-            self.raw, create_project_source_registry()
-        ).read_manifest("google_trends", imported["collection_id"])
-        request = manifest["metadata"]["request_parameters"]
-
-        self.assertEqual(request["interval"], "monthly")
-        self.assertEqual(request["keywords"], ["ceramic"])
-        self.assertEqual(len(request["requested_keywords"]), 5)
-        self.assertFalse(request["keyword_header_matches_request"])
-
-    def test_import_records_weekly_cadence(self):
-        payload = (
-            b"Week,ceramic tableware\n"
-            b"2026-10-25,10\n"
-            b"2026-11-01,11\n"
-            b"2026-11-08,12\n"
-        )
-        self._place_csv("g1_VN_interest_over_time_20261127.csv", payload)
-
-        results = self._make_importer().run()
-        imported = next(result for result in results if result["status"] == "imported")
-        manifest = RawStorage(
-            self.raw, create_project_source_registry()
-        ).read_manifest("google_trends", imported["collection_id"])
+        self.assertEqual(request["period_start"], "2021-11-27")
+        self.assertEqual(request["period_end"], "2026-11-27")
+        self.assertEqual(request["data_type"], "interest_over_time")
+        self.assertEqual(request["interval"], "weekly")
+        self.assertEqual(request["category"], "All categories")
+        self.assertEqual(request["search_type_label"], "Web Search")
+        self.assertEqual(request["original_filename"], filename)
+        self.assertEqual(request["filename"], filename)
+        self.assertEqual(request["source"], "Google Trends")
+        self.assertEqual(request["source_type"], "manual")
         self.assertEqual(
-            manifest["metadata"]["request_parameters"]["interval"], "weekly"
+            request["time_range"],
+            {"start": "2021-11-27", "end": "2026-11-27", "label": "Past 5 years"},
         )
+        self.assertEqual(request["sha256"], _sha256_hex(payload))
+        self.assertEqual(manifest["metadata"]["checksum"]["value"], _sha256_hex(payload))
+        parsed = GoogleTrendsParser().parse(payload, result["collection_id"])
+        self.assertEqual(dict(parsed.rows[0].keyword_values), dict(zip(G1_KEYWORDS, ("100", "0", "50", "25", "10"))))
 
-    def test_top_and_rising_imports_keep_distinct_manifest_metadata(self):
-        query_payload = (
+    def test_importer_stores_non_vietnam_market_metadata(self):
+        filename = "g1_US_compare5_interest_over_time_20261127.csv"
+        self._place(filename, _compare_payload())
+
+        result = self._importer().run()[0]
+
+        self.assertEqual(result["status"], "imported")
+        _, _, request = self._request_for(result)
+        self.assertEqual(request["geo"], "US")
+        self.assertEqual(request["geo_name"], "United States")
+        self.assertEqual(request["keywords"], list(G1_KEYWORDS))
+
+    def test_region_compare_has_region_dimension_not_a_date(self):
+        payload = _compare_payload("Region")
+        filename = "g1_VN_compare5_interest_by_region_20261127.csv"
+        self._place(filename, payload)
+        result = self._importer().run()[0]
+        self.assertEqual(result["status"], "imported")
+
+        parsed = GoogleTrendsParser().parse(payload, result["collection_id"])
+        row = parsed.rows[0]
+        self.assertEqual(row.period_label, "Vietnam")
+        self.assertEqual(row.period_kind, "region")
+        normalized = normalize_trends_row(row)
+        self.assertEqual(normalized.period_label.value, "Vietnam")
+        self.assertEqual(normalized.period_label.status, NormalizationStatus.CONFIRMED)
+
+    def test_monthly_cadence_and_google_geo_suffixes_are_supported(self):
+        columns = ", ".join(f"{word}: (Vietnam)" for word in G1_KEYWORDS)
+        payload = (
+            f"Interest over time\nMonth,{columns}\n"
+            "2021-11-01,0,1,2,3,4\n"
+            "2021-12-01,5,6,7,8,9\n"
+            "2022-01-01,10,11,12,13,14\n"
+        ).encode()
+        self._place("g1_VN_compare5_interest_over_time_20261127.csv", payload)
+        result = self._importer().run()[0]
+        _, _, request = self._request_for(result)
+        self.assertEqual(request["interval"], "monthly")
+        self.assertEqual(request["keywords"], list(G1_KEYWORDS))
+
+    def test_google_metadata_preamble_and_related_percentage_columns_are_supported(self):
+        iot = (
+            "Category: All categories\n"
+            "All categories\n"
+            "Interest over time\n"
+            f"Week,{','.join(G1_KEYWORDS)}\n"
+            "2021-11-28,1,2,3,4,5\n"
+        ).encode()
+        self._place("g1_VN_compare5_interest_over_time_20261127.csv", iot)
+        iot_result = self._importer(dry_run=True).run()[0]
+        self.assertEqual(iot_result["status"], "would_import")
+
+        related = (
+            b"Category: All categories\n"
+            b"Related queries\n"
             b"query,search interest,increase percent\n"
-            b"ceramic bowl set,100,0\n"
+            b"ceramic bowl,Breakout,250%\n"
         )
-        topic_payload = (
-            b"topic,search interest,increase percent\n"
-            b"home decor,100,0\n"
+        parsed = GoogleTrendsParser().parse(
+            related, CID, related_section="rising"
         )
-        files = (
-            ("g1_VN_related_queries_top_20261120.csv", query_payload, "queries", "top"),
-            ("g1_VN_related_queries_rising_20261120.csv", query_payload, "queries", "rising"),
-            ("g1_VN_related_topics_top_20261120.csv", topic_payload, "topics", "top"),
-            ("g1_VN_related_topics_rising_20261120.csv", topic_payload, "topics", "rising"),
+        self.assertEqual(
+            parsed.rows[0].keyword_values,
+            (("search interest", "Breakout"), ("increase percent", "250%")),
         )
-        for filename, payload, _kind, _section in files:
-            self._place_csv(filename, payload)
+        self.assertEqual(parsed.data_type_hint, "Related queries")
 
-        results = self._make_importer().run()
-        imported = [result for result in results if result["status"] == "imported"]
-        self.assertEqual(len(imported), 4)
-        self.assertEqual(len({result["collection_id"] for result in imported}), 4)
+    def test_all_related_kinds_and_sections_keep_keyword_breakout_and_zero(self):
+        files = []
+        for keyword in G1_KEYWORDS:
+            for kind in ("queries", "topics"):
+                for section in ("top", "rising"):
+                    filename = (
+                        f"g1_VN_{keyword}_related_{kind}_{section}_20261127.csv"
+                    )
+                    payload = _related_payload(kind, section, keyword)
+                    files.append((filename, payload, keyword, kind, section))
+                    self._place(filename, payload)
 
-        registry = create_project_source_registry()
-        storage = RawStorage(self.raw, registry)
-        expected = {
-            filename: (f"related_{kind}", section)
-            for filename, _payload, kind, section in files
-        }
-        for result in imported:
-            manifest = storage.read_manifest(
-                "google_trends", result["collection_id"]
-            )
+        results = self._importer().run()
+        self.assertEqual(len(results), 20)
+        self.assertTrue(all(result["status"] == "imported" for result in results))
+        storage = RawStorage(self.raw, create_project_source_registry())
+        for result in results:
+            manifest = storage.read_manifest("google_trends", result["collection_id"])
             request = manifest["metadata"]["request_parameters"]
-            expected_type, expected_section = expected[result["file"]]
-            self.assertEqual(request["data_type"], expected_type)
-            self.assertEqual(request["related_section"], expected_section)
-            self.assertEqual(request["original_filename"], result["file"])
-            parsed_payload = GoogleTrendsParser().parse(
+            _, _, keyword, kind, section = next(
+                item for item in files if item[0] == result["file"]
+            )
+            self.assertEqual(request["keywords"], [keyword])
+            self.assertEqual(request["keyword"], keyword)
+            self.assertEqual(request["data_type"], f"related_{kind}")
+            self.assertEqual(request["related_section"], section)
+            parsed = GoogleTrendsParser().parse(
                 storage.read_payload("google_trends", result["collection_id"]),
                 result["collection_id"],
-                related_section=request["related_section"],
+                related_section=section,
             )
-            self.assertEqual(
-                parsed_payload.rows[0].related_section, expected_section
-            )
-            self.assertNotIn("section", parsed_payload.rows[0].raw_row)
+            self.assertEqual(parsed.rows[0].related_section, section)
+            self.assertEqual(parsed.rows[0].source_keyword, keyword)
+            normalized = normalize_trends_row(parsed.rows[0])
+            self.assertEqual(normalized.related_section, section)
+            self.assertEqual(normalized.source_keyword, keyword)
+            self.assertEqual(normalized.data_type_hint, f"Related {kind}")
+            self.assertEqual(parsed.rows[0].keyword_values[0][1], "Breakout" if section == "rising" else "0")
 
-        second_run = self._make_importer().run()
-        self.assertEqual(
-            sum(result["status"] == "skipped_duplicate" for result in second_run),
-            4,
+    def test_exact_expected_filename_set_has_132_files(self):
+        export_date = "20261127"
+        names = set()
+        for geo in G1_GEOS:
+            names.update(
+                f"g1_{geo}_compare5_interest_{chart}_{export_date}.csv"
+                for chart in ("over_time", "by_region")
+            )
+            names.update(
+                f"g1_{geo}_{keyword}_related_{kind}_{section}_{export_date}.csv"
+                for keyword in G1_KEYWORDS
+                for kind in ("queries", "topics")
+                for section in ("top", "rising")
+            )
+        self.assertEqual(len(names), 132)
+
+    def test_missing_keyword_column_wrong_header_and_mismatched_title_are_rejected(self):
+        valid_header = ",".join(G1_KEYWORDS)
+        cases = (
+            (
+                "g1_VN_compare5_interest_over_time_20261127.csv",
+                f"Interest over time\nWeek,{','.join(G1_KEYWORDS[:-1])}\n2021-11-28,1,2,3,4\n".encode(),
+            ),
+            (
+                "g1_VN_compare5_interest_over_time_20261127.csv",
+                f"Interest over time\nDate,{valid_header}\n2021-11-28,1,2,3,4,5\n".encode(),
+            ),
+            (
+                "g1_VN_compare5_interest_by_region_20261127.csv",
+                f"Interest over time\nRegion,{valid_header}\nVietnam,1,2,3,4,5\n".encode(),
+            ),
         )
+        for filename, payload in cases:
+            with self.subTest(filename=filename, payload=payload):
+                self._place(filename, payload)
+                result = self._importer(dry_run=True).run()[0]
+                self.assertEqual(result["status"], "rejected")
+                for existing in self.incoming.glob("*.csv"):
+                    existing.unlink()
 
-    def test_same_payload_with_different_country_is_not_duplicate(self):
-        payload = IOT_FIXTURE.read_bytes()
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", payload)
-        self._place_csv("g1_US_interest_over_time_20261120.csv", payload)
-        results = self._make_importer().run()
-        imported = [r for r in results if r["status"] == "imported"]
-        self.assertEqual(len(imported), 2)
+    def test_related_metadata_section_must_match_csv_content(self):
+        payload = (
+            b"Related queries\nTop,ceramic\nceramic bowl,100\n"
+        )
+        filename = "g1_VN_ceramic_related_queries_rising_20261127.csv"
+        self._place(filename, payload)
+        result = self._importer(dry_run=True).run()[0]
+        self.assertEqual(result["status"], "rejected")
 
-    def test_bad_filename_skipped(self):
-        self._place_csv("random_export.csv", b"Week,kw\n2025-01-05,55\n")
-        results = self._make_importer().run()
-        skipped = [r for r in results if r["status"] == "skipped_bad_name"]
-        self.assertEqual(len(skipped), 1)
+    def test_related_keyword_in_csv_must_match_filename(self):
+        payload = b"Related topics\nTop,porcelain\nCeramic,100\n"
+        filename = "g1_VN_stoneware_related_topics_top_20261127.csv"
+        self._place(filename, payload)
+        result = self._importer(dry_run=True).run()[0]
+        self.assertEqual(result["status"], "rejected")
 
-    def test_empty_csv_skipped(self):
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", b"")
-        results = self._make_importer().run()
-        skipped = [r for r in results if r["status"] == "skipped_empty"]
-        self.assertEqual(len(skipped), 1)
+    def test_duplicate_sha256_is_skipped_even_when_filename_date_differs(self):
+        payload = _compare_payload()
+        self._place("g1_VN_compare5_interest_over_time_20261127.csv", payload)
+        self._place("g1_VN_compare5_interest_over_time_20261128.csv", payload)
+        results = self._importer().run()
+        self.assertEqual([result["status"] for result in results], ["imported", "skipped_duplicate"])
+        index = json.loads((self.incoming / ".imported_sha256_index.json").read_text())
+        self.assertEqual(index, { _sha256_hex(payload): results[0]["collection_id"] })
 
-    def test_multiple_files_different_geos_all_imported(self):
-        payload = IOT_FIXTURE.read_bytes()
-        # Payload khác nhau (nội dung giả) để tránh SHA-256 trùng
-        payload_vn = payload + b"# VN"
-        payload_us = payload + b"# US"
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", payload_vn)
-        self._place_csv("g1_US_interest_over_time_20261120.csv", payload_us)
-        results = self._make_importer().run()
-        imported = [r for r in results if r["status"] == "imported"]
-        self.assertEqual(len(imported), 2)
+    def test_dry_run_has_no_raw_or_index_side_effects(self):
+        self._place(
+            "g1_VN_compare5_interest_over_time_20261127.csv",
+            _compare_payload(),
+        )
+        result = self._importer(dry_run=True).run()[0]
+        self.assertEqual(result["status"], "would_import")
+        self.assertFalse(self.raw.exists())
+        self.assertFalse((self.incoming / ".imported_sha256_index.json").exists())
 
-    def test_dry_run_does_not_write_to_raw_storage(self):
-        payload = IOT_FIXTURE.read_bytes()
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", payload)
-        importer = GoogleTrendsCsvImporter(self.incoming, self.raw, dry_run=True)
-        results = importer.run()
-        dry = [r for r in results if r["status"] == "dry_run"]
-        self.assertEqual(len(dry), 1)
-        # Raw dir không có gì được tạo
-        raw_files = list(self.raw.rglob("*.bin"))
-        self.assertEqual(len(raw_files), 0)
-
-    def test_sha256_index_persisted_across_importer_instances(self):
-        """Index SHA-256 phải được lưu để lần chạy sau vẫn nhận ra file đã import."""
-        payload = IOT_FIXTURE.read_bytes()
-        self._place_csv("g1_VN_interest_over_time_20261120.csv", payload)
-        # Instance 1 import
-        self._make_importer().run()
-        # Instance 2 mới (tạo lại từ đầu) → phải nhận ra duplicate
-        results = self._make_importer().run()
-        skipped = [r for r in results if r["status"] == "skipped_duplicate"]
-        self.assertEqual(len(skipped), 1)
+    def test_invalid_filename_and_empty_csv_are_rejected(self):
+        self._place("not-a-g1-file.csv", b"Week,ceramic\n2021-11-28,1\n")
+        self._place("g1_VN_compare5_interest_over_time_20261127.csv", b"")
+        results = self._importer(dry_run=True).run()
+        self.assertEqual([result["status"] for result in results], ["rejected", "rejected"])
 
 
 # ---------------------------------------------------------------------------
