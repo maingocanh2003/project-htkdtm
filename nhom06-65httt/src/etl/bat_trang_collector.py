@@ -3,23 +3,27 @@
 Integrates with the existing ETL foundation:
 - ``source_registry.py`` (uses ``bat_trang`` source ID)
 - ``http_client.py`` (uses shared ``HttpClient`` for HTTP GET)
-- ``raw_storage.py`` (stores D9 JSON payload + manifest + SHA-256)
+- ``raw_storage.py`` (stores lossless API responses + manifest + SHA-256)
 - ``domestic_parser.py`` (parses into ``ParsedDomesticPayload``)
 - ``normalizer.py``, ``quality_validator.py``, ``deduplicator.py``, ``quarantine.py``
 
 Design rules:
-- Never invents missing fields (price=0 / unpriced -> None, missing MOQ/material -> None).
+- Does not infer prices from ``price_html``; zero remains a valid numeric price.
+- Maps ``price_vnd`` only when amount, VND currency, and minor-unit precision are present.
+- Missing MOQ/material remain ``None``.
 - Continues safely when an individual page fails, marking status as PARTIAL.
 - Deduplicates collected products by ``source_product_id`` across pages.
 """
 
 from __future__ import annotations
 
+import base64
 import json
+import math
 import re
 from dataclasses import dataclass
 from datetime import datetime, timezone
-from decimal import Decimal
+from decimal import Decimal, InvalidOperation, Overflow
 from html import unescape
 from typing import Any, Dict, List, Optional, Tuple
 
@@ -41,7 +45,8 @@ from .source_registry import (
 _BAT_TRANG_SOURCE_ID = "bat_trang"
 _DEFAULT_BASE_URL = "https://gombattrang.vn"
 _STORE_API_PATH = "/wp-json/wc/store/products"
-_COLLECTOR_VERSION = "d9/v1-wc-store"
+_RAW_RESPONSE_FORMAT = "woocommerce_store_api_raw_v1"
+_COLLECTOR_VERSION = "d9/v3-wc-store-raw"
 _HTML_TAG_RE = re.compile(r"<[^>]+>")
 _WHITESPACE_RE = re.compile(r"\s+")
 
@@ -102,24 +107,46 @@ def _map_wc_product_to_d9(item: Dict[str, Any]) -> Optional[Dict[str, Any]]:
     sku = raw_sku.strip() if isinstance(raw_sku, str) and raw_sku.strip() else None
     source_product_id = sku if sku is not None else f"GBT-{wc_id}"
 
-    # Price: WooCommerce Store API uses "0" when price is not listed ("Liên hệ")
     prices = item.get("prices") if isinstance(item.get("prices"), dict) else {}
     price_html = item.get("price_html")
     raw_price = prices.get("price")
-    minor_unit = int(prices.get("currency_minor_unit") or 0)
     price_vnd: Optional[float] = None
     currency: Optional[str] = None
 
-    if raw_price is not None and str(raw_price).strip() != "":
+    raw_currency = prices.get("currency_code")
+    if isinstance(raw_currency, str) and raw_currency.strip():
+        currency = raw_currency.strip().upper()
+
+    raw_minor_unit = prices.get("currency_minor_unit")
+    minor_unit: Optional[int] = None
+    if type(raw_minor_unit) is int and raw_minor_unit >= 0:
+        minor_unit = raw_minor_unit
+    elif (
+        isinstance(raw_minor_unit, str)
+        and re.fullmatch(r"[0-9]+", raw_minor_unit.strip())
+    ):
         try:
-            int_price = int(raw_price)
-            # Only treat as a real price when > 0 (or price_html is non-empty and > 0)
-            if int_price > 0:
-                dec_price = Decimal(int_price) / (Decimal(10) ** minor_unit)
-                price_vnd = float(dec_price)
-                curr_code = prices.get("currency_code")
-                currency = str(curr_code).strip().upper() if curr_code else "VND"
-        except (TypeError, ValueError):
+            minor_unit = int(raw_minor_unit.strip())
+        except ValueError:
+            minor_unit = None
+
+    raw_price_text = (
+        str(raw_price).strip()
+        if isinstance(raw_price, (str, int)) and not isinstance(raw_price, bool)
+        else ""
+    )
+    if (
+        re.fullmatch(r"[0-9]+", raw_price_text)
+        and currency == "VND"
+        and minor_unit is not None
+    ):
+        try:
+            dec_price = Decimal(raw_price_text).scaleb(-minor_unit)
+            if dec_price.is_finite():
+                converted_price = float(dec_price)
+                if math.isfinite(converted_price):
+                    price_vnd = converted_price
+        except (InvalidOperation, Overflow, OverflowError, ValueError):
             price_vnd = None
 
     cats = item.get("categories")
@@ -160,11 +187,72 @@ def _map_wc_product_to_d9(item: Dict[str, Any]) -> Optional[Dict[str, Any]]:
         "origin_region": None,
         "price_vnd": price_vnd,
         "currency": currency,
+        "store_api_prices": dict(prices),
         "moq": None,
         "lead_time_days": None,
         "wholesale_available": None,
         "price_html": price_html if isinstance(price_html, str) else None,
     }
+
+
+def wc_store_raw_payload_to_d9(payload: bytes) -> bytes:
+    """Convert a lossless raw Store API envelope to the existing D9 parser shape.
+
+    Legacy D9 collections are returned unchanged so existing immutable raw data
+    remains replayable.
+    """
+    body = json.loads(payload.decode("utf-8"))
+
+    if not isinstance(body, dict) or body.get("format") != _RAW_RESPONSE_FORMAT:
+        return payload
+
+    base_url = body.get("base_url")
+    if not isinstance(base_url, str) or not base_url:
+        base_url = _DEFAULT_BASE_URL
+
+    responses = body.get("responses")
+    if not isinstance(responses, list):
+        raise ValueError("WooCommerce raw envelope must contain a responses array")
+
+    products: List[Dict[str, Any]] = []
+    for index, response in enumerate(responses):
+        if not isinstance(response, dict):
+            raise ValueError(f"WooCommerce raw response {index} must be an object")
+        if response.get("status_code") != 200 or response.get("items_valid") is not True:
+            continue
+
+        encoded_body = response.get("body_base64")
+        if not isinstance(encoded_body, str):
+            raise ValueError(f"WooCommerce raw response {index} has no encoded body")
+        response_body = base64.b64decode(encoded_body, validate=True)
+        items = json.loads(response_body.decode("utf-8"))
+        if not isinstance(items, list):
+            raise ValueError(f"WooCommerce raw response {index} is not a JSON array")
+
+        for item in items:
+            mapped = _map_wc_product_to_d9(item)
+            if mapped is not None:
+                products.append(mapped)
+
+    d9_envelope = {
+        "supplier": {
+            "supplier_name": "Gốm Bát Tràng (gombattrang.vn)",
+            "tax_code": None,
+            "address": None,
+            "province": None,
+            "website": base_url,
+            "phone": None,
+            "business_type": None,
+            "declared_capacity_note": None,
+        },
+        "products": products,
+    }
+    return json.dumps(
+        d9_envelope,
+        ensure_ascii=False,
+        allow_nan=False,
+        sort_keys=True,
+    ).encode("utf-8")
 
 
 class BatTrangWooCommerceCollector:
@@ -200,12 +288,12 @@ class BatTrangWooCommerceCollector:
             raise ValueError("max_pages must be >= 1")
 
         endpoint_url = f"{self._base_url}{_STORE_API_PATH}"
-        collected_products: List[Dict[str, Any]] = []
-        seen_ids: set[str] = set()
+        raw_responses: List[Dict[str, Any]] = []
         pages_requested = 0
         pages_succeeded = 0
         failed_pages: List[Tuple[int, str]] = []
         duplicate_count = 0
+        raw_product_count = 0
 
         for page in range(1, max_pages + 1):
             pages_requested += 1
@@ -214,32 +302,39 @@ class BatTrangWooCommerceCollector:
                     endpoint_url,
                     params={"per_page": per_page, "page": page},
                 )
-                if response.status_code != 200:
-                    failed_pages.append((page, f"HTTP {response.status_code}"))
-                    continue
-                items = json.loads(response.body.decode("utf-8"))
-                if not isinstance(items, list):
-                    failed_pages.append((page, "Expected JSON array from WooCommerce Store API"))
-                    continue
             except Exception as exc:
                 failed_pages.append((page, str(exc)))
                 continue
 
+            raw_response: Dict[str, Any] = {
+                "page": page,
+                "request_parameters": {"per_page": per_page, "page": page},
+                "status_code": response.status_code,
+                "url": response.url,
+                "body_base64": base64.b64encode(response.body).decode("ascii"),
+                "items_valid": False,
+            }
+            raw_responses.append(raw_response)
+
+            if response.status_code != 200:
+                failed_pages.append((page, f"HTTP {response.status_code}"))
+                continue
+            try:
+                items = json.loads(response.body.decode("utf-8"))
+            except (UnicodeDecodeError, json.JSONDecodeError) as exc:
+                failed_pages.append((page, str(exc)))
+                continue
+            if not isinstance(items, list):
+                failed_pages.append(
+                    (page, "Expected JSON array from WooCommerce Store API")
+                )
+                continue
+
+            raw_response["items_valid"] = True
             pages_succeeded += 1
+            raw_product_count += len(items)
             if not items:
                 break
-
-            for raw_item in items:
-                mapped = _map_wc_product_to_d9(raw_item)
-                if mapped is None:
-                    continue
-                pid = mapped["source_product_id"]
-                if pid in seen_ids:
-                    duplicate_count += 1
-                    continue
-                seen_ids.add(pid)
-                collected_products.append(mapped)
-
             if len(items) < per_page:
                 break
 
@@ -249,20 +344,16 @@ class BatTrangWooCommerceCollector:
         elif failed_pages and pages_succeeded == 0:
             status = CollectionStatus.FAILED
 
-        d9_envelope = {
-            "supplier": {
-                "supplier_name": "Gốm Bát Tràng (gombattrang.vn)",
-                "tax_code": None,
-                "address": None,
-                "province": None,
-                "website": self._base_url,
-                "phone": None,
-                "business_type": None,
-                "declared_capacity_note": None,
+        payload_bytes = json.dumps(
+            {
+                "format": _RAW_RESPONSE_FORMAT,
+                "base_url": self._base_url,
+                "responses": raw_responses,
             },
-            "products": collected_products,
-        }
-        payload_bytes = json.dumps(d9_envelope, ensure_ascii=False).encode("utf-8")
+            ensure_ascii=False,
+            allow_nan=False,
+            sort_keys=True,
+        ).encode("utf-8")
         collected_at = datetime.now(timezone.utc)
 
         metadata = CollectionMetadata(
@@ -285,8 +376,27 @@ class BatTrangWooCommerceCollector:
             status=status,
         )
 
+        mapped_payload = json.loads(wc_store_raw_payload_to_d9(payload_bytes))
+        collected_products: List[Dict[str, Any]] = []
+        seen_ids: set[str] = set()
+        for mapped in mapped_payload["products"]:
+            product_id = mapped["source_product_id"]
+            if product_id in seen_ids:
+                duplicate_count += 1
+                continue
+            seen_ids.add(product_id)
+            collected_products.append(mapped)
+
+        d9_payload = json.dumps(
+            {
+                "supplier": mapped_payload["supplier"],
+                "products": collected_products,
+            },
+            ensure_ascii=False,
+            allow_nan=False,
+        ).encode("utf-8")
         parsed_payload = DomesticSupplierCatalogParser().parse(
-            payload_bytes,
+            d9_payload,
             raw_collection_id=collection_id,
             source_id=self._source_id,
             collected_at_iso=collected_at.isoformat(),
@@ -325,7 +435,7 @@ class BatTrangWooCommerceCollector:
             pages_requested=pages_requested,
             pages_succeeded=pages_succeeded,
             failed_pages=tuple(failed_pages),
-            raw_product_count=len(collected_products),
+            raw_product_count=raw_product_count,
             parsed_count=parsed_payload.record_count,
             unique_count=unique_count,
             duplicate_count=duplicate_count,
