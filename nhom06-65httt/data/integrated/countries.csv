@@ -1,0 +1,228 @@
+country_id,country_code,country_name,region_continent,currency_code,is_key_market
+1,USA,United States,North America,USD,True
+2,JPN,Japan,East Asia,JPY,True
+3,DEU,Germany,Europe,EUR,True
+4,FRA,France,Europe,EUR,True
+5,GBR,United Kingdom,Europe,GBP,True
+6,AUS,Australia,Oceania,AUD,True
+7,CAN,Canada,North America,CAD,True
+8,KOR,South Korea,East Asia,KRW,True
+9,CHN,China,East Asia,CNY,True
+10,IND,India,South Asia,INR,True
+11,VNM,Viet Nam,Southeast Asia,VND,True
+12,NLD,Netherlands,Europe,EUR,False
+13,ITA,Italy,Europe,EUR,False
+14,ESP,Spain,Europe,EUR,False
+15,BEL,Belgium,Europe,EUR,False
+16,CHE,Switzerland,Europe,CHF,False
+17,SWE,Sweden,Europe,SEK,False
+18,NOR,Norway,Europe,NOK,False
+19,DNK,Denmark,Europe,DKK,False
+20,POL,Poland,Europe,PLN,False
+21,AUT,Austria,Europe,EUR,False
+22,SGP,Singapore,Southeast Asia,SGD,False
+23,THA,Thailand,Southeast Asia,THB,False
+24,MYS,Malaysia,Southeast Asia,MYR,False
+25,IDN,Indonesia,Southeast Asia,IDR,False
+26,PHL,Philippines,Southeast Asia,PHP,False
+27,ARE,United Arab Emirates,Middle East,AED,False
+28,SAU,Saudi Arabia,Middle East,SAR,False
+29,BRA,Brazil,South America,BRL,False
+30,MEX,Mexico,North America,MXN,False
+31,NZL,New Zealand,Oceania,NZD,False
+32,WLD,World,Global,USD,False
+33,M008,UN Partner M49-8,International,USD,False
+34,M024,UN Partner M49-24,International,USD,False
+35,M028,UN Partner M49-28,International,USD,False
+36,M031,UN Partner M49-31,International,USD,False
+37,M032,UN Partner M49-32,International,USD,False
+38,M048,UN Partner M49-48,International,USD,False
+39,M050,UN Partner M49-50,International,USD,False
+40,M051,UN Partner M49-51,International,USD,False
+41,M052,UN Partner M49-52,International,USD,False
+42,M060,UN Partner M49-60,International,USD,False
+43,M068,UN Partner M49-68,International,USD,False
+44,M070,UN Partner M49-70,International,USD,False
+45,M072,UN Partner M49-72,International,USD,False
+46,M092,UN Partner M49-92,International,USD,False
+47,M096,UN Partner M49-96,International,USD,False
+48,M100,UN Partner M49-100,International,USD,False
+49,M112,UN Partner M49-112,International,USD,False
+50,M116,UN Partner M49-116,International,USD,False
+51,M120,UN Partner M49-120,International,USD,False
+52,M144,UN Partner M49-144,International,USD,False
+53,M152,UN Partner M49-152,International,USD,False
+54,M170,UN Partner M49-170,International,USD,False
+55,M188,UN Partner M49-188,International,USD,False
+56,M191,UN Partner M49-191,International,USD,False
+57,M192,UN Partner M49-192,International,USD,False
+58,M196,UN Partner M49-196,International,USD,False
+59,M203,UN Partner M49-203,International,USD,False
+60,M214,UN Partner M49-214,International,USD,False
+61,M218,UN Partner M49-218,International,USD,False
+62,M233,UN Partner M49-233,International,USD,False
+63,M238,UN Partner M49-238,International,USD,False
+64,M246,UN Partner M49-246,International,USD,False
+65,M262,UN Partner M49-262,International,USD,False
+66,M268,UN Partner M49-268,International,USD,False
+67,M270,UN Partner M49-270,International,USD,False
+68,M288,UN Partner M49-288,International,USD,False
+69,M292,UN Partner M49-292,International,USD,False
+70,M300,UN Partner M49-300,International,USD,False
+71,M308,UN Partner M49-308,International,USD,False
+72,M320,UN Partner M49-320,International,USD,False
+73,M344,UN Partner M49-344,International,USD,False
+74,M348,UN Partner M49-348,International,USD,False
+75,M352,UN Partner M49-352,International,USD,False
+76,M368,UN Partner M49-368,International,USD,False
+77,M372,UN Partner M49-372,International,USD,False
+78,M376,UN Partner M49-376,International,USD,False
+79,M384,UN Partner M49-384,International,USD,False
+80,M388,UN Partner M49-388,International,USD,False
+81,M398,UN Partner M49-398,International,USD,False
+82,M400,UN Partner M49-400,International,USD,False
+83,M404,UN Partner M49-404,International,USD,False
+84,M414,UN Partner M49-414,International,USD,False
+85,M422,UN Partner M49-422,International,USD,False
+86,M428,UN Partner M49-428,International,USD,False
+87,M434,UN Partner M49-434,International,USD,False
+88,M440,UN Partner M49-440,International,USD,False
+89,M442,UN Partner M49-442,International,USD,False
+90,M446,UN Partner M49-446,International,USD,False
+91,M462,UN Partner M49-462,International,USD,False
+92,M470,UN Partner M49-470,International,USD,False
+93,M480,UN Partner M49-480,International,USD,False
+94,M490,UN Partner M49-490,International,USD,False
+95,M496,UN Partner M49-496,International,USD,False
+96,M498,UN Partner M49-498,International,USD,False
+97,M499,UN Partner M49-499,International,USD,False
+98,M504,UN Partner M49-504,International,USD,False
+99,M512,UN Partner M49-512,International,USD,False
+100,M533,UN Partner M49-533,International,USD,False
+101,M535,UN Partner M49-535,International,USD,False
+102,M566,UN Partner M49-566,International,USD,False
+103,M579,UN Partner M49-579,International,USD,False
+104,M586,UN Partner M49-586,International,USD,False
+105,M604,UN Partner M49-604,International,USD,False
+106,M620,UN Partner M49-620,International,USD,False
+107,M634,UN Partner M49-634,International,USD,False
+108,M642,UN Partner M49-642,International,USD,False
+109,M643,UN Partner M49-643,International,USD,False
+110,M654,UN Partner M49-654,International,USD,False
+111,M660,UN Partner M49-660,International,USD,False
+112,M662,UN Partner M49-662,International,USD,False
+113,M670,UN Partner M49-670,International,USD,False
+114,M674,UN Partner M49-674,International,USD,False
+115,M688,UN Partner M49-688,International,USD,False
+116,M690,UN Partner M49-690,International,USD,False
+117,M694,UN Partner M49-694,International,USD,False
+118,M703,UN Partner M49-703,International,USD,False
+119,M705,UN Partner M49-705,International,USD,False
+120,M710,UN Partner M49-710,International,USD,False
+121,M729,UN Partner M49-729,International,USD,False
+122,M780,UN Partner M49-780,International,USD,False
+123,M788,UN Partner M49-788,International,USD,False
+124,M792,UN Partner M49-792,International,USD,False
+125,M800,UN Partner M49-800,International,USD,False
+126,M804,UN Partner M49-804,International,USD,False
+127,M807,UN Partner M49-807,International,USD,False
+128,M818,UN Partner M49-818,International,USD,False
+129,M834,UN Partner M49-834,International,USD,False
+130,M858,UN Partner M49-858,International,USD,False
+131,M860,UN Partner M49-860,International,USD,False
+132,M899,UN Partner M49-899,International,USD,False
+133,M231,UN Partner M49-231,International,USD,False
+134,M364,UN Partner M49-364,International,USD,False
+135,M524,UN Partner M49-524,International,USD,False
+136,M760,UN Partner M49-760,International,USD,False
+137,M104,UN Partner M49-104,International,USD,False
+138,M180,UN Partner M49-180,International,USD,False
+139,M316,UN Partner M49-316,International,USD,False
+140,M600,UN Partner M49-600,International,USD,False
+141,M418,UN Partner M49-418,International,USD,False
+142,M004,UN Partner M49-4,International,USD,False
+143,M012,UN Partner M49-12,International,USD,False
+144,M016,UN Partner M49-16,International,USD,False
+145,M136,UN Partner M49-136,International,USD,False
+146,M148,UN Partner M49-148,International,USD,False
+147,M204,UN Partner M49-204,International,USD,False
+148,M222,UN Partner M49-222,International,USD,False
+149,M324,UN Partner M49-324,International,USD,False
+150,M332,UN Partner M49-332,International,USD,False
+151,M340,UN Partner M49-340,International,USD,False
+152,M417,UN Partner M49-417,International,USD,False
+153,M558,UN Partner M49-558,International,USD,False
+154,M591,UN Partner M49-591,International,USD,False
+155,M686,UN Partner M49-686,International,USD,False
+156,M887,UN Partner M49-887,International,USD,False
+157,M232,UN Partner M49-232,International,USD,False
+158,M659,UN Partner M49-659,International,USD,False
+159,M796,UN Partner M49-796,International,USD,False
+160,M044,UN Partner M49-44,International,USD,False
+161,M862,UN Partner M49-862,International,USD,False
+162,M882,UN Partner M49-882,International,USD,False
+163,M258,UN Partner M49-258,International,USD,False
+164,M275,UN Partner M49-275,International,USD,False
+165,M450,UN Partner M49-450,International,USD,False
+166,M466,UN Partner M49-466,International,USD,False
+167,M508,UN Partner M49-508,International,USD,False
+168,M534,UN Partner M49-534,International,USD,False
+169,M540,UN Partner M49-540,International,USD,False
+170,M598,UN Partner M49-598,International,USD,False
+171,M612,UN Partner M49-612,International,USD,False
+172,M652,UN Partner M49-652,International,USD,False
+173,M716,UN Partner M49-716,International,USD,False
+174,M768,UN Partner M49-768,International,USD,False
+175,M854,UN Partner M49-854,International,USD,False
+176,M020,UN Partner M49-20,International,USD,False
+177,M140,UN Partner M49-140,International,USD,False
+178,M174,UN Partner M49-174,International,USD,False
+179,M178,UN Partner M49-178,International,USD,False
+180,M266,UN Partner M49-266,International,USD,False
+181,M328,UN Partner M49-328,International,USD,False
+182,M430,UN Partner M49-430,International,USD,False
+183,M478,UN Partner M49-478,International,USD,False
+184,M531,UN Partner M49-531,International,USD,False
+185,M548,UN Partner M49-548,International,USD,False
+186,M562,UN Partner M49-562,International,USD,False
+187,M646,UN Partner M49-646,International,USD,False
+188,M666,UN Partner M49-666,International,USD,False
+189,M795,UN Partner M49-795,International,USD,False
+190,M876,UN Partner M49-876,International,USD,False
+191,M894,UN Partner M49-894,International,USD,False
+192,M090,UN Partner M49-90,International,USD,False
+193,M162,UN Partner M49-162,International,USD,False
+194,M184,UN Partner M49-184,International,USD,False
+195,M242,UN Partner M49-242,International,USD,False
+196,M574,UN Partner M49-574,International,USD,False
+197,M520,UN Partner M49-520,International,USD,False
+198,M740,UN Partner M49-740,International,USD,False
+199,M516,UN Partner M49-516,International,USD,False
+200,M010,UN Partner M49-10,International,USD,False
+201,M454,UN Partner M49-454,International,USD,False
+202,M626,UN Partner M49-626,International,USD,False
+203,M581,UN Partner M49-581,International,USD,False
+204,M706,UN Partner M49-706,International,USD,False
+205,M226,UN Partner M49-226,International,USD,False
+206,M234,UN Partner M49-234,International,USD,False
+207,M260,UN Partner M49-260,International,USD,False
+208,M304,UN Partner M49-304,International,USD,False
+209,M624,UN Partner M49-624,International,USD,False
+210,M678,UN Partner M49-678,International,USD,False
+211,M762,UN Partner M49-762,International,USD,False
+212,M837,UN Partner M49-837,International,USD,False
+213,M084,UN Partner M49-84,International,USD,False
+214,M074,UN Partner M49-74,International,USD,False
+215,M748,UN Partner M49-748,International,USD,False
+216,M212,UN Partner M49-212,International,USD,False
+217,M585,UN Partner M49-585,International,USD,False
+218,M336,UN Partner M49-336,International,USD,False
+219,M108,UN Partner M49-108,International,USD,False
+220,M776,UN Partner M49-776,International,USD,False
+221,M166,UN Partner M49-166,International,USD,False
+222,M132,UN Partner M49-132,International,USD,False
+223,M500,UN Partner M49-500,International,USD,False
+224,M584,UN Partner M49-584,International,USD,False
+225,M577,UN Partner M49-577,International,USD,False
+226,M064,UN Partner M49-64,International,USD,False
+227,M798,UN Partner M49-798,International,USD,False
