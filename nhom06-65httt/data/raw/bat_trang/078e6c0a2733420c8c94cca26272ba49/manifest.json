@@ -1,0 +1,24 @@
+{
+  "collection_id": "078e6c0a2733420c8c94cca26272ba49",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "c979bfe746e1b11ffed3ef5b897d1cfde7f727252f929c310e039480ccaee382"
+    },
+    "collected_at": "2026-11-27T13:22:47.414815+00:00",
+    "data_format": "json",
+    "endpoint": null,
+    "request_parameters": {
+      "failed_pages": [],
+      "ingestion_method": "public_wc_store_api",
+      "pages_requested": 4,
+      "pages_succeeded": 4,
+      "per_page": 100,
+      "source_url": "https://gombattrang.vn/wp-json/wc/store/products"
+    },
+    "source_id": "bat_trang",
+    "status": "success",
+    "version": "d9/v3-wc-store-raw"
+  },
+  "payload_file": "payload.bin"
+}
