@@ -1,0 +1,106 @@
+{
+  "collected_at_iso": "2026-11-28T15:27:43.844470+00:00",
+  "entity_type": "market_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "34d6840eb0654868b5dde7133452b7ed",
+  "quarantined_at_iso": "2026-11-28T15:35:26.694910+00:00",
+  "raw_collection_id": "ebdfd3fa7bd944e888833975907d8ea7",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Dinnerware Set",
+      "status": "confirmed",
+      "value": "DINNERWARE"
+    },
+    "price": {
+      "amount": "27.95",
+      "conversion_note": "Không yêu cầu quy đổi (cùng loại tiền tệ)",
+      "conversion_status": "confirmed",
+      "converted_amount": "27.95",
+      "currency_code": "USD",
+      "currency_status": "confirmed",
+      "raw_amount": "27.95",
+      "raw_currency": "USD",
+      "target_currency": "USD"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Fabuplates 80Pc Decorative Paper Plates and Napkins Serves 16; Elegant Heavy Disposable Party Plates and Napkins; Birthday, Bridal and Baby Shower Plates; Dinnerware Bulk Set",
+      "status": "confirmed",
+      "value": "Fabuplates 80Pc Decorative Paper Plates and Napkins Serves 16; Elegant Heavy Disposable Party Plates and Napkins; Birthday, Bridal and Baby Shower Plates; Dinnerware Bulk Set"
+    },
+    "product_url": {
+      "note": null,
+      "raw": "https://www.amazon.com/dp/B0C34LCJ9J",
+      "status": "confirmed",
+      "value": "https://www.amazon.com/dp/B0C34LCJ9J"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-28T15:27:43.844470+00:00",
+      "raw_collection_id": "ebdfd3fa7bd944e888833975907d8ea7",
+      "source_id": "amazon",
+      "source_url": "/catalog/v1/searchItems"
+    },
+    "raw_record": {
+      "asin": "B0C34LCJ9J",
+      "browseNodeInfo": {
+        "browseNodes": [
+          {
+            "displayName": "Dinnerware Set",
+            "id": "1003"
+          }
+        ]
+      },
+      "customerReviews": {
+        "count": 5.0,
+        "starRating": 5.0
+      },
+      "description": "Elevate your gatherings to a new level of elegance with our decorative, bright and beautiful \"Blossoming Medley\" 80-Piece Multicolor Floral Paper Plate and Napkin Set sure to impress your guests. These vibrant and disposable party supplies featuring a pattern of colorful flowers is fit for people of all ages and for occasions, are designed with both durability and beauty in mind, catering to adults, particularly women and girls, and everyone in between. Whether you're hosting a holiday meal like",
+      "detailPageURL": "https://www.amazon.com/dp/B0C34LCJ9J",
+      "itemInfo": {
+        "byLineInfo": {
+          "brand": {
+            "displayValue": "Fabuplates"
+          }
+        },
+        "classifications": {
+          "productGroup": {
+            "displayValue": "Dinnerware Set"
+          }
+        },
+        "title": {
+          "displayValue": "Fabuplates 80Pc Decorative Paper Plates and Napkins Serves 16; Elegant Heavy Disposable Party Plates and Napkins; Birthday, Bridal and Baby Shower Plates; Dinnerware Bulk Set"
+        }
+      },
+      "offersV2": {
+        "listings": [
+          {
+            "price": {
+              "money": {
+                "amount": 27.95,
+                "currency": "USD"
+              }
+            }
+          }
+        ]
+      }
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "B0C34LCJ9J",
+      "status": "confirmed",
+      "value": "B0C34LCJ9J"
+    }
+  },
+  "record_type": "NormalizedProductRecord",
+  "source_id": "amazon",
+  "source_url": "/catalog/v1/searchItems",
+  "status": "quarantined"
+}
