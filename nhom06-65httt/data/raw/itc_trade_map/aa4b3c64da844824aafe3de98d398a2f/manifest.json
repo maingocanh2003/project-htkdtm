@@ -1,0 +1,19 @@
+{
+  "collection_id": "aa4b3c64da844824aafe3de98d398a2f",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "7579f34c8b05d4535c1300a34b872676a44fb3ea5f961a97b113569ea6711b5a"
+    },
+    "collected_at": "2026-11-28T15:31:31.720043+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "ingestion_method": "local_file"
+    },
+    "source_id": "itc_trade_map",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}
