@@ -1,0 +1,76 @@
+{
+  "collected_at_iso": "2026-11-28T15:29:10.539332+00:00",
+  "entity_type": "market_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "185846014a33479c8a47b4da4ddd93f9",
+  "quarantined_at_iso": "2026-11-28T15:35:27.130937+00:00",
+  "raw_collection_id": "5a1ad5898703422883537cc00cdc394e",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Decorative Vase",
+      "status": "confirmed",
+      "value": "VASE_DECOR"
+    },
+    "price": {
+      "amount": "29.99",
+      "conversion_note": "Không yêu cầu quy đổi (cùng loại tiền tệ)",
+      "conversion_status": "confirmed",
+      "converted_amount": "29.99",
+      "currency_code": "USD",
+      "currency_status": "confirmed",
+      "raw_amount": "29.99",
+      "raw_currency": "USD",
+      "target_currency": "USD"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Ceramic Vases for Home Decor Set of 3, Small Vases for Décor, Decorative Vase for Modern Home Decor, White Ceramic Vase for Pampas Grass Dried Flower, Boho Vases Decor for Shelf Table Centerpieces",
+      "status": "confirmed",
+      "value": "Ceramic Vases for Home Decor Set of 3, Small Vases for Décor, Decorative Vase for Modern Home Decor, White Ceramic Vase for Pampas Grass Dried Flower, Boho Vases Decor for Shelf Table Centerpieces"
+    },
+    "product_url": {
+      "note": null,
+      "raw": "https://www.etsy.com/listing/4189462200",
+      "status": "confirmed",
+      "value": "https://www.etsy.com/listing/4189462200"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-28T15:29:10.539332+00:00",
+      "raw_collection_id": "5a1ad5898703422883537cc00cdc394e",
+      "source_id": "etsy",
+      "source_url": "/v3/application/listings/active"
+    },
+    "raw_record": {
+      "category": "Decorative Vase",
+      "description": "PERFECT SIZE FOR MODERN HOME DECOR\nYou will receive 3 pieces of white ceramic vases in different size. Big one is 8.3\"H x 3.1\"W, middle one is 4.9\"H x 2.8\"W ,small one is 4.0H\" x 2.9W\". You can use it for pampas grass or dried flowers, or just as decorative vases on shelves or coffee tables.\nWIDELY USAGE\nThis ceramic vase set of 3 is the perfect home décor accent centerpiece, you can place on your",
+      "listing_id": 4189462200,
+      "price": {
+        "amount": 2999,
+        "currency_code": "USD",
+        "divisor": 100
+      },
+      "shop_name": "WOODWORD",
+      "taxonomy_id": 1004,
+      "title": "Ceramic Vases for Home Decor Set of 3, Small Vases for Décor, Decorative Vase for Modern Home Decor, White Ceramic Vase for Pampas Grass Dried Flower, Boho Vases Decor for Shelf Table Centerpieces",
+      "url": "https://www.etsy.com/listing/4189462200"
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "4189462200",
+      "status": "confirmed",
+      "value": "4189462200"
+    }
+  },
+  "record_type": "NormalizedProductRecord",
+  "source_id": "etsy",
+  "source_url": "/v3/application/listings/active",
+  "status": "quarantined"
+}
