@@ -1,0 +1,22 @@
+{
+  "collection_id": "38f831dbcd574dc785be1aad8151427d",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "72fcbd81b9c3691aba69610cc5279d233a6b9e72052b20cc5939814c6d1e7a1b"
+    },
+    "collected_at": "2026-11-27T13:37:45.380030+00:00",
+    "data_format": "json",
+    "endpoint": "/public/v1/preview/C/A/HS",
+    "request_parameters": {
+      "cmdCode": "6911",
+      "flowCode": "X",
+      "period": "2021",
+      "reporterCode": "124"
+    },
+    "source_id": "un_comtrade",
+    "status": "success",
+    "version": "public/v1"
+  },
+  "payload_file": "payload.bin"
+}
