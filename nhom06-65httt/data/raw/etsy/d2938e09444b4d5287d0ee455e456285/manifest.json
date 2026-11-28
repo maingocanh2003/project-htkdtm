@@ -1,0 +1,21 @@
+{
+  "collection_id": "d2938e09444b4d5287d0ee455e456285",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "3304c5003e655fe855a87e76047f629cbc7f12650cd5c471683ec87d28d96e66"
+    },
+    "collected_at": "2026-11-28T15:29:45.532457+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/12174673/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "mug",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

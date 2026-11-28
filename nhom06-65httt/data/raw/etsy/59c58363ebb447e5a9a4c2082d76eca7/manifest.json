@@ -1,0 +1,21 @@
+{
+  "collection_id": "59c58363ebb447e5a9a4c2082d76eca7",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "a267c26f3a0132555867134bff6cce4841a223b97203fef12adfdf4c1ef34cbb"
+    },
+    "collected_at": "2026-11-28T15:28:13.582727+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/active",
+    "request_parameters": {
+      "category": "Ceramic Tea Set",
+      "keywords": "handmade ceramic tea set",
+      "record_type": "listings"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

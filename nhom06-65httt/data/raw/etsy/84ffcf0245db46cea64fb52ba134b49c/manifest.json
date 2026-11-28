@@ -1,0 +1,21 @@
+{
+  "collection_id": "84ffcf0245db46cea64fb52ba134b49c",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "3a0537c990063b348f9d21eec3bc9b3f99e1cfccf6d249b21e343af562985350"
+    },
+    "collected_at": "2026-11-28T15:29:36.973207+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/927397170/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "stoneware",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

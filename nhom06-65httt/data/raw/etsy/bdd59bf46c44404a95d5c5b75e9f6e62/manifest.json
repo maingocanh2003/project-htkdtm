@@ -1,0 +1,21 @@
+{
+  "collection_id": "bdd59bf46c44404a95d5c5b75e9f6e62",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "00e174f0dcda25cb93b0e2be7c344b0a4e879151441e3be59d0d943fe71f4215"
+    },
+    "collected_at": "2026-11-28T15:29:31.172364+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/active",
+    "request_parameters": {
+      "category": "Decorative Vase",
+      "keywords": "artisan pottery",
+      "record_type": "listings"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

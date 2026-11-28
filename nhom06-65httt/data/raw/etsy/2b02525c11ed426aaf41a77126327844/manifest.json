@@ -1,0 +1,21 @@
+{
+  "collection_id": "2b02525c11ed426aaf41a77126327844",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "2fcbf204d0ab0bc41adbf7f5bf08a6ba62140d6245e086fc5df93173cbe34989"
+    },
+    "collected_at": "2026-11-28T15:30:01.265360+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/2521917779/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "plate",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

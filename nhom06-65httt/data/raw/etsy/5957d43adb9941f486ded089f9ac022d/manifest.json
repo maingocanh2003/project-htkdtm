@@ -1,0 +1,21 @@
+{
+  "collection_id": "5957d43adb9941f486ded089f9ac022d",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "3e71a5aabea1f6517be8f61cecfda2e6ee16fc81a063b59dc87eefad3589edc5"
+    },
+    "collected_at": "2026-11-28T15:29:47.522219+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/490467630/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "vase",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

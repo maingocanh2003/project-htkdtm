@@ -1,0 +1,21 @@
+{
+  "collection_id": "079847dfc76a4fa996841adbdb979d9f",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "4a7472486f436df303528456cba13b6373af623a6720f51fe9397c04e988ca63"
+    },
+    "collected_at": "2026-11-28T15:29:37.594511+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/1841680616/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "teapot",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

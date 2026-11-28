@@ -1,0 +1,21 @@
+{
+  "collection_id": "5a1ad5898703422883537cc00cdc394e",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "816d576ba3608aec65221610dc8be5aae103cf8ae2b60c6d2020fc15080c6235"
+    },
+    "collected_at": "2026-11-28T15:29:10.539332+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/active",
+    "request_parameters": {
+      "category": "Decorative Vase",
+      "keywords": "handmade ceramic vase",
+      "record_type": "listings"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

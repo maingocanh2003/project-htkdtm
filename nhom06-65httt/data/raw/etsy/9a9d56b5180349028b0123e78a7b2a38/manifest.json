@@ -1,0 +1,21 @@
+{
+  "collection_id": "9a9d56b5180349028b0123e78a7b2a38",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "1615497949375c5705433b19f67883b1dbb689e2f29bf211b858e7ff3b9ab959"
+    },
+    "collected_at": "2026-11-28T15:28:56.625445+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/active",
+    "request_parameters": {
+      "category": "Dinnerware Set",
+      "keywords": "handmade stoneware bowl",
+      "record_type": "listings"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

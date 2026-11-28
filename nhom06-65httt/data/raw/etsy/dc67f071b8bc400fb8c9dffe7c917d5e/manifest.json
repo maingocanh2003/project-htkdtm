@@ -1,0 +1,21 @@
+{
+  "collection_id": "dc67f071b8bc400fb8c9dffe7c917d5e",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "5a59563dd64c48abc329bfd354563826a80e0a76d7995a90e9a818d1886f991e"
+    },
+    "collected_at": "2026-11-28T15:29:36.358488+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/3264773390/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "pottery",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

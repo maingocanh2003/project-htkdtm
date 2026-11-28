@@ -1,0 +1,21 @@
+{
+  "collection_id": "2fad4c7f3dbb473990a3dc5952e26aca",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "c1f36346e3dd3223e9e5b24e2572ee1e4a2700a6fcbc36d203b12acbbc82f9fe"
+    },
+    "collected_at": "2026-11-28T15:29:39.440535+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/3230189726/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "dinnerware",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

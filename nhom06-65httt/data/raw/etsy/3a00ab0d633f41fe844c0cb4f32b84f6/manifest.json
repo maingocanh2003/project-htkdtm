@@ -1,0 +1,21 @@
+{
+  "collection_id": "3a00ab0d633f41fe844c0cb4f32b84f6",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "4ccd5a53718a5f2921a089488b723a0df3aeefbc5eefd483c3fcad70d4f8afc4"
+    },
+    "collected_at": "2026-11-28T15:29:53.671153+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/4229438663/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "dish",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

@@ -1,0 +1,21 @@
+{
+  "collection_id": "0121c737d262455b87959be1655140db",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "f233f3776c111fe119f4b9445aa3cd0a9d1c0e21e3f59863a039a421447d566a"
+    },
+    "collected_at": "2026-11-28T15:30:09.307103+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/2126210748/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "bowl",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

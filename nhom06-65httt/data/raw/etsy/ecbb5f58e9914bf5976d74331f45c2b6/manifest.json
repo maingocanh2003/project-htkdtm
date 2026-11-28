@@ -1,0 +1,21 @@
+{
+  "collection_id": "ecbb5f58e9914bf5976d74331f45c2b6",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "8fa0f344370193fcd06385cfbad6184d4377b8e9239c63873469dc1a63312df9"
+    },
+    "collected_at": "2026-11-28T15:29:35.746546+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/2235348351/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "porcelain",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}

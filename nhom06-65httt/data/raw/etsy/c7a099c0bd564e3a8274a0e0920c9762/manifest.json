@@ -1,0 +1,21 @@
+{
+  "collection_id": "c7a099c0bd564e3a8274a0e0920c9762",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "96ff35bd752fc63fe007461e0abf4bcd1b277e58e6bbeb4cc4dcd517e8bf21f1"
+    },
+    "collected_at": "2026-11-28T15:29:32.080607+00:00",
+    "data_format": "json",
+    "endpoint": "/v3/application/listings/442876975/reviews",
+    "request_parameters": {
+      "dataset_origin": "SetFit/amazon_reviews_multi_en",
+      "keyword": "ceramic",
+      "record_type": "reviews"
+    },
+    "source_id": "etsy",
+    "status": "success",
+    "version": "3.0.0"
+  },
+  "payload_file": "payload.bin"
+}
