@@ -18,15 +18,19 @@ try:
     from .bat_trang_collector import wc_store_raw_payload_to_d9
     from .deduplicator import DeduplicationIndex
     from .domestic_parser import DomesticSupplierCatalogParser
+    from .marketplace_parser import AmazonCreatorsParser, EtsyListingParser
     from .normalizer import (
         normalize_domestic_product,
+        normalize_product_record,
+        normalize_review_record,
         normalize_trade_record,
         normalize_trends_row,
     )
     from .quality_validator import DataQualityValidator
     from .raw_storage import RawStorage
+    from .review_parser import EtsyReviewParser
     from .source_registry import create_project_source_registry
-    from .trade_parser import UNComtradeParser
+    from .trade_parser import ITCTradeMapParser, UNComtradeParser
     from .trends_parser import GoogleTrendsParser
 except ImportError:
     _SRC = Path(__file__).resolve().parent.parent
@@ -34,15 +38,19 @@ except ImportError:
     from etl.bat_trang_collector import wc_store_raw_payload_to_d9
     from etl.deduplicator import DeduplicationIndex
     from etl.domestic_parser import DomesticSupplierCatalogParser
+    from etl.marketplace_parser import AmazonCreatorsParser, EtsyListingParser
     from etl.normalizer import (
         normalize_domestic_product,
+        normalize_product_record,
+        normalize_review_record,
         normalize_trade_record,
         normalize_trends_row,
     )
     from etl.quality_validator import DataQualityValidator
     from etl.raw_storage import RawStorage
+    from etl.review_parser import EtsyReviewParser
     from etl.source_registry import create_project_source_registry
-    from etl.trade_parser import UNComtradeParser
+    from etl.trade_parser import ITCTradeMapParser, UNComtradeParser
     from etl.trends_parser import GoogleTrendsParser
 
 
@@ -80,6 +88,12 @@ class EtlPipelineAudit:
             return self._audit_google(collection_dirs, result)
         if source_id == "un_comtrade":
             return self._audit_un_comtrade(collection_dirs, result)
+        if source_id == "itc_trade_map":
+            return self._audit_itc_trade_map(collection_dirs, result)
+        if source_id == "amazon":
+            return self._audit_amazon(collection_dirs, result)
+        if source_id == "etsy":
+            return self._audit_etsy(collection_dirs, result)
         if source_id in {
             "minh_long_1",
             "thegioigom",
@@ -95,7 +109,10 @@ class EtlPipelineAudit:
             if source_ids is not None
             else (
                 "un_comtrade",
+                "itc_trade_map",
                 "google_trends",
+                "amazon",
+                "etsy",
                 "minh_long_1",
                 "thegioigom",
                 "bat_trang",
@@ -181,6 +198,133 @@ class EtlPipelineAudit:
                     result.valid_records += 1
                 else:
                     result.invalid_records += 1
+        return result
+
+    def _audit_itc_trade_map(
+        self,
+        collection_dirs: list[Path],
+        result: PipelineAuditResult,
+    ) -> PipelineAuditResult:
+        parser = ITCTradeMapParser()
+        for collection_dir in collection_dirs:
+            collection_id = collection_dir.name
+            try:
+                manifest = self.storage.read_manifest("itc_trade_map", collection_id)
+                payload = self.storage.read_payload("itc_trade_map", collection_id)
+                parsed = parser.parse(
+                    payload,
+                    collection_id,
+                    collected_at_iso=manifest["metadata"]["collected_at"],
+                )
+            except Exception:
+                result.parser_errors += 1
+                continue
+
+            result.parsed_records += parsed.record_count
+            for index, parsed_row in enumerate(parsed.records, 1):
+                normalized = normalize_trade_record(parsed_row)
+                validation = DataQualityValidator.validate_trade_record(
+                    normalized,
+                    record_id=f"{collection_id}:{index}",
+                )
+                if validation.is_valid:
+                    result.valid_records += 1
+                else:
+                    result.invalid_records += 1
+        return result
+
+    def _audit_amazon(
+        self,
+        collection_dirs: list[Path],
+        result: PipelineAuditResult,
+    ) -> PipelineAuditResult:
+        parser = AmazonCreatorsParser()
+        for collection_dir in collection_dirs:
+            collection_id = collection_dir.name
+            try:
+                manifest = self.storage.read_manifest("amazon", collection_id)
+                payload = self.storage.read_payload("amazon", collection_id)
+                parsed = parser.parse(
+                    payload,
+                    collection_id,
+                    collected_at_iso=manifest["metadata"]["collected_at"],
+                    source_url=manifest["metadata"].get("endpoint"),
+                )
+            except Exception:
+                result.parser_errors += 1
+                continue
+
+            result.parsed_records += parsed.record_count
+            for index, parsed_row in enumerate(parsed.records, 1):
+                normalized = normalize_product_record(parsed_row)
+                validation = DataQualityValidator.validate_product_record(
+                    normalized,
+                    record_id=f"{collection_id}:{index}",
+                )
+                if validation.is_valid:
+                    result.valid_records += 1
+                else:
+                    result.invalid_records += 1
+        return result
+
+    def _audit_etsy(
+        self,
+        collection_dirs: list[Path],
+        result: PipelineAuditResult,
+    ) -> PipelineAuditResult:
+        listing_parser = EtsyListingParser()
+        review_parser = EtsyReviewParser()
+        for collection_dir in collection_dirs:
+            collection_id = collection_dir.name
+            try:
+                manifest = self.storage.read_manifest("etsy", collection_id)
+                payload = self.storage.read_payload("etsy", collection_id)
+                metadata = manifest["metadata"]
+                endpoint = metadata.get("endpoint")
+                request = metadata.get("request_parameters", {})
+                is_reviews = (
+                    (isinstance(endpoint, str) and endpoint.endswith("/reviews"))
+                    or request.get("record_type") == "reviews"
+                )
+                if is_reviews:
+                    parsed_rev = review_parser.parse(
+                        payload,
+                        collection_id,
+                        collected_at_iso=metadata["collected_at"],
+                        source_url=endpoint,
+                    )
+                    result.parsed_records += parsed_rev.record_count
+                    for index, parsed_row in enumerate(parsed_rev.records, 1):
+                        normalized = normalize_review_record(parsed_row)
+                        validation = DataQualityValidator.validate_review_record(
+                            normalized,
+                            record_id=f"{collection_id}:{index}",
+                        )
+                        if validation.is_valid:
+                            result.valid_records += 1
+                        else:
+                            result.invalid_records += 1
+                else:
+                    parsed_prod = listing_parser.parse(
+                        payload,
+                        collection_id,
+                        collected_at_iso=metadata["collected_at"],
+                        source_url=endpoint,
+                    )
+                    result.parsed_records += parsed_prod.record_count
+                    for index, parsed_row in enumerate(parsed_prod.records, 1):
+                        normalized = normalize_product_record(parsed_row)
+                        validation = DataQualityValidator.validate_product_record(
+                            normalized,
+                            record_id=f"{collection_id}:{index}",
+                        )
+                        if validation.is_valid:
+                            result.valid_records += 1
+                        else:
+                            result.invalid_records += 1
+            except Exception:
+                result.parser_errors += 1
+                continue
         return result
 
     def _audit_domestic(
