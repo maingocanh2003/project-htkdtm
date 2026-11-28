@@ -321,6 +321,38 @@ class ITCTradeMapParser:
                 reporter_name = v if v else None
                 break
 
+        partner_name: Optional[str] = None
+        for cand in ("Partner country", "Partners", "Partner code"):
+            if cand in row:
+                v = row[cand].strip()
+                partner_name = v if v else None
+                break
+
+        flow_code: Optional[str] = None
+        for cand in ("Trade Flow", "Flow", "Flow code"):
+            if cand in row:
+                v = row[cand].strip()
+                flow_code = v if v else None
+                break
+
+        product_description: Optional[str] = None
+        for cand in ("Product description", "Commodity description", "Product label"):
+            if cand in row:
+                v = row[cand].strip()
+                product_description = v if v else None
+                break
+
+        net_weight_kg: Optional[float] = None
+        for cand in ("Net weight (kg)", "Net Weight (kg)"):
+            if cand in row:
+                raw_w = row[cand].strip()
+                if raw_w:
+                    try:
+                        net_weight_kg = float(raw_w.replace(",", ""))
+                    except ValueError:
+                        net_weight_kg = None
+                break
+
         return ParsedTradeRecord(
             provenance=provenance,
             raw_record=dict(row),
@@ -328,12 +360,12 @@ class ITCTradeMapParser:
             partner_code=None,
             hs_code=hs_code,
             period=period,
-            flow_code=None,                # column name varies too much
-            net_weight_kg=None,
+            flow_code=flow_code,
+            net_weight_kg=net_weight_kg,
             trade_value_usd=trade_value,
             reporter_name=reporter_name,
-            partner_name=None,
-            product_description=None,
+            partner_name=partner_name,
+            product_description=product_description,
         )
 
 
