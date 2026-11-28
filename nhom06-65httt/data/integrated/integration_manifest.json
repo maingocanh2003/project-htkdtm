@@ -1,0 +1,193 @@
+{
+  "generated_at": "2026-11-28T16:19:36.533054+00:00",
+  "schema_reference": "src/database/01_init_oltp_erd_schema.sql",
+  "total_tables": 11,
+  "total_rows": 35398,
+  "tables": {
+    "countries.csv": {
+      "row_count": 227,
+      "columns": [
+        "country_id",
+        "country_code",
+        "country_name",
+        "region_continent",
+        "currency_code",
+        "is_key_market"
+      ],
+      "size_bytes": 11274,
+      "sha256": "10cf68d3b904ee109e39e05bc63f86ba6f81e59b08d18f750b91ccefc5a332ea"
+    },
+    "market_regions.csv": {
+      "row_count": 235,
+      "columns": [
+        "region_id",
+        "country_id",
+        "region_code",
+        "region_name"
+      ],
+      "size_bytes": 7773,
+      "sha256": "fa6df0b0fc650b8b471394dd59e7d5fcc94de5c6a3b90fb32c0154b7d85a8ce8"
+    },
+    "product_categories.csv": {
+      "row_count": 4,
+      "columns": [
+        "category_id",
+        "category_code",
+        "category_name_vi",
+        "category_name_en",
+        "hs_code_mapping"
+      ],
+      "size_bytes": 278,
+      "sha256": "b27f8d22c91dac5cca20061aa49c5f1439825c0e9f5136cefbc52b16f598d07c"
+    },
+    "trade_statistics.csv": {
+      "row_count": 15665,
+      "columns": [
+        "trade_id",
+        "reporter_country_id",
+        "partner_country_id",
+        "year",
+        "trade_flow",
+        "hs_code",
+        "cmd_desc",
+        "trade_value_usd",
+        "fob_value_usd",
+        "cif_value_usd",
+        "net_weight_kg",
+        "qty_unit",
+        "qty_amount",
+        "market_share_pct",
+        "yoy_growth_rate",
+        "data_source"
+      ],
+      "size_bytes": 1584023,
+      "sha256": "c88292410851435290a2421b8ba107c6b261e6b758643d49a6a1df84c873a214"
+    },
+    "search_trends.csv": {
+      "row_count": 9005,
+      "columns": [
+        "trend_id",
+        "country_id",
+        "region_id",
+        "category_id",
+        "search_term",
+        "week_start_date",
+        "week_number",
+        "interest_score"
+      ],
+      "size_bytes": 321489,
+      "sha256": "ed28e5d63d587da3b2c0b28b1805b67ce73dcced7883174bcfc94d34028e5672"
+    },
+    "trending_keywords.csv": {
+      "row_count": 1247,
+      "columns": [
+        "keyword_id",
+        "country_id",
+        "category_id",
+        "keyword_text",
+        "related_attribute_type",
+        "growth_pct",
+        "trend_classification",
+        "recorded_period"
+      ],
+      "size_bytes": 73789,
+      "sha256": "11ac790922661e13b3946ba61113bbfd47b794a50a9511c8d988ecd90f199710"
+    },
+    "market_products.csv": {
+      "row_count": 1693,
+      "columns": [
+        "market_product_id",
+        "external_sku",
+        "platform_source",
+        "target_country_id",
+        "category_id",
+        "product_name",
+        "price_usd",
+        "price_segment",
+        "color",
+        "shape",
+        "material",
+        "style",
+        "is_dishwasher_safe",
+        "is_microwave_safe",
+        "avg_rating",
+        "review_count",
+        "image_url",
+        "product_url"
+      ],
+      "size_bytes": 493564,
+      "sha256": "a98b0ca8bdee8827975a27658a8569ddfa663f38253e93b794a2f0bb2484212d"
+    },
+    "customers.csv": {
+      "row_count": 1186,
+      "columns": [
+        "customer_id",
+        "external_reviewer_id",
+        "reviewer_name",
+        "country_id",
+        "platform_source",
+        "verified_purchase"
+      ],
+      "size_bytes": 55992,
+      "sha256": "13694e4a6f93e0c04858876f7a90f6f46d68f646b4806ac2fad8d01b0e8574b6"
+    },
+    "product_reviews.csv": {
+      "row_count": 1186,
+      "columns": [
+        "review_id",
+        "market_product_id",
+        "customer_id",
+        "rating_stars",
+        "review_title",
+        "review_text",
+        "review_date",
+        "sentiment_label",
+        "sentiment_score"
+      ],
+      "size_bytes": 506204,
+      "sha256": "a2c880bfffd3d55a061bc84440727a1c3eeb51a7ae847051772aa888da0c9db9"
+    },
+    "suppliers.csv": {
+      "row_count": 3,
+      "columns": [
+        "supplier_id",
+        "supplier_code",
+        "supplier_name",
+        "address",
+        "hotline",
+        "website_url",
+        "specialization",
+        "min_monthly_capacity",
+        "max_monthly_capacity",
+        "avg_lead_time_days",
+        "total_catalog_items",
+        "reliability_rating"
+      ],
+      "size_bytes": 857,
+      "sha256": "20ddf062ae9b55b6cd779b10bd8f3b0064ec808ba323c5fb7759a5d21a7fcef2"
+    },
+    "supplier_products.csv": {
+      "row_count": 4947,
+      "columns": [
+        "supplier_product_id",
+        "supplier_id",
+        "category_id",
+        "product_code",
+        "product_name",
+        "price_vnd",
+        "price_usd_equiv",
+        "color",
+        "shape",
+        "material",
+        "style",
+        "is_dishwasher_safe",
+        "is_heat_resistant",
+        "min_order_qty",
+        "image_url",
+        "product_url"
+      ],
+      "size_bytes": 1207415,
+      "sha256": "e9ac676a9ecd741df3094676f0b1280bd6e8ba87a86fe9a006875cdc51d10ce1"
+    }
+  }
+}
