@@ -1,0 +1,4 @@
+supplier_id,supplier_code,supplier_name,address,hotline,website_url,specialization,min_monthly_capacity,max_monthly_capacity,avg_lead_time_days,total_catalog_items,reliability_rating
+1,MINH_LONG_1,Công ty TNHH Minh Long I,"333 Hưng Định 24, Thuận An, Bình Dương",02743668899,https://minhlong.com,"Sứ gia dụng cao cấp, Bộ bàn ăn, Ấm chén, Bình hoa, Tượng sứ",50000,250000,21,2483,4.9
+2,BAT_TRANG,Gốm Bát Tràng (gombattrang.vn),"Làng nghề Bát Tràng, Gia Lâm, Hà Nội",0941966886,https://gombattrang.vn,"Gốm sứ thủ công mỹ nghệ, Bình hút tài lộc, Gốm gia dụng, Đồ thờ",5000,35000,14,300,4.75
+3,THE_GIOI_GOM,Thế Giới Gốm,"TP. Hồ Chí Minh, Việt Nam",0909000000,https://thegioigom.com,"Vật tư, men gốm, đất sét và thiết bị sản xuất gốm sứ",3000,20000,10,2164,4.65
