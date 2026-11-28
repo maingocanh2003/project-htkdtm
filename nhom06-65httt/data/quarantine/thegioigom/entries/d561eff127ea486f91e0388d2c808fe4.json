@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:25:10.501903+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "d561eff127ea486f91e0388d2c808fe4",
+  "quarantined_at_iso": "2026-11-28T15:35:29.062966+00:00",
+  "raw_collection_id": "71411cb926934cddb59e89e258448de4",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Lò Nung Gốm' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Lò Nung Gốm",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Gốm sứ",
+      "status": "confirmed",
+      "value": "Gốm sứ"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Việt Nam",
+      "status": "confirmed",
+      "value": "Việt Nam"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "710214000",
+      "status": "confirmed",
+      "value": "710214000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Lò nung điện Nidec Shimpo DFA-500 kèm bộ đốt – Dung tích 0.5m³, dùng cho nung oxy hóa và nung khử",
+      "status": "confirmed",
+      "value": "Lò nung điện Nidec Shimpo DFA-500 kèm bộ đốt – Dung tích 0.5m³, dùng cho nung oxy hóa và nung khử"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:25:10.501903+00:00",
+      "raw_collection_id": "71411cb926934cddb59e89e258448de4",
+      "source_id": "thegioigom",
+      "source_url": "/wp-json/wc/store/products"
+    },
+    "raw_record": {
+      "category": "Lò Nung Gốm",
+      "currency": "VND",
+      "description": "Lò nung điện Nidec DFA-500 kèm bộ đốt là một trong những dòng lò nung cao cấp được thiết kế chuyên biệt phục vụ cho ngành gốm mỹ nghệ và gốm công nghiệp. Với khả năng vận hành ổn định, kiểm soát nhiệt độ chính xác và dung tích buồng nung lên đến 0.5m³, sản phẩm này là lựa chọn lý tưởng cho các xưởng sản xuất gốm vừa và lớn, các trung tâm đào tạo nghề gốm, cũng như các nghệ nhân mong muốn đảm bảo chất lượng nung đồng đều và ổn định trong từng mẻ gốm. Điểm nổi bật của lò là thiết kế kết hợp giữa nung điện và bộ đốt phụ trợ, cho phép chuyển đổi linh hoạt giữa các chế độ nung oxy hóa và nung khử – hai kỹ thuật nhiệt quan trọng trong chế tác gốm, ảnh hưởng trực tiếp đến chất lượng bề mặt, màu men và cấu trúc xương gốm. Người dùng có thể chủ động điều chỉnh các thông số phù hợp với từng loại sản phẩm cụ thể, từ gốm men truyền thống, gốm raku, gốm đất nung cho đến sứ cao cấp. Khung vỏ lò được chế tạo từ thép không gỉ sơn tĩnh điện, kết cấu chắc chắn, bền bỉ với thời gian và khả năng chống ăn mòn cao trong môi trường nhiệt độ khắc nghiệt. Bên trong, lớp cách nhiệt sử dụng vật liệu gốm chịu lửa chuyên dụng, đảm bảo khả năng giữ nhiệt lâu dài, tăng hiệu suất nung và giảm hao phí điện năng đáng kể trong quá trình vận hành. Hệ thống điều khiển kỹ thuật số hiện đại, tích hợp lập trình nhiều bước nung, giúp người vận hành cài đặt chính xác chu trình nhiệt độ theo thời gian – từ tăng nhiệt, giữ nhiệt đến hạ nhiệt. Nhờ đó, lò có thể phục vụ linh hoạt cho cả quy trình nung chậm (gốm mộc, gốm điêu khắc dày) lẫn quy trình nung nhanh (gốm men mỏng, gốm sản xuất hàng loạt).Việc lắp đặt và vận hành cần tuân thủ hướng dẫn của hãng và cấu hình thiết bị thực tế. Tóm lại, Lò nung điện Nidec DFA-500 kèm bộ đốt là giải pháp toàn diện cho những ai theo đuổi sự chuyên nghiệp, ổn định và linh hoạt trong chế tác gốm. Đây là sự đầu tư xứng đáng cho các đơn vị mong muốn nâng cao chất lượng sản phẩm, tối ưu hóa chi phí sản xuất và mở rộng quy mô kinh doanh trong ngành gốm sứ. BẢNG THÔNG SỐ KỸ THUẬT Thông số Chi tiết Tên sản phẩm Lò nung điện Nidec DFA-500 kèm bộ đốt Model DFA-500 Mã sản phẩm TMBGO-010-TB-0040 Thương hiệu Nidec Dung tích buồng nung 0.5 m³ Nguồn điện 3 pha – 220V / 50Hz Công suất tiêu thụ [Cần bổ sung – tùy model cụ thể] Nhiệt độ tối đa 1300°C (tùy chọn theo yêu cầu sử dụng) Chế độ nung Nung oxy hóa và nung khử Bộ điều khiển nhiệt độ Kỹ thuật số, lập trình đa bước nung Chất liệu vỏ ngoài Thép không gỉ sơn tĩnh điện chống gỉ sét Cách nhiệt Vật liệu gốm chịu nhiệt, giữ nhiệt tốt Tính năng an toàn Cảnh báo quá nhiệt, tự ngắt khi lỗi Ứng dụng Nung men, nung mộc, nung gốm nghệ thuật và công nghiệp",
+      "lead_time_days": null,
+      "material": "Gốm sứ",
+      "moq": null,
+      "name": "Lò nung điện Nidec Shimpo DFA-500 kèm bộ đốt – Dung tích 0.5m³, dùng cho nung oxy hóa và nung khử",
+      "origin_region": "Việt Nam",
+      "price_vnd": 710214000,
+      "product_url": "https://thegioigom.com/san-pham/lo-nung-dien-nidec-dfa-500-kem-bo-dot-dung-tich-0-5m%c2%b3-dung-cho-nung-oxy-hoa-va-nung-khu/",
+      "source_product_id": "TMBGO-010-TB-0040",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "TMBGO-010-TB-0040",
+      "status": "confirmed",
+      "value": "TMBGO-010-TB-0040"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "thegioigom",
+  "source_url": "/wp-json/wc/store/products",
+  "status": "quarantined"
+}

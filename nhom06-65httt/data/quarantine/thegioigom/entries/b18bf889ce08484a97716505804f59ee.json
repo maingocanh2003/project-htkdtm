@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:25:10.501903+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "b18bf889ce08484a97716505804f59ee",
+  "quarantined_at_iso": "2026-11-28T15:35:29.142269+00:00",
+  "raw_collection_id": "71411cb926934cddb59e89e258448de4",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Phôi Gốm' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Phôi Gốm",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Gốm sứ",
+      "status": "confirmed",
+      "value": "Gốm sứ"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Việt Nam",
+      "status": "confirmed",
+      "value": "Việt Nam"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "0",
+      "status": "confirmed",
+      "value": "0"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Mẫu ly gốm chưa nung",
+      "status": "confirmed",
+      "value": "Mẫu ly gốm chưa nung"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:25:10.501903+00:00",
+      "raw_collection_id": "71411cb926934cddb59e89e258448de4",
+      "source_id": "thegioigom",
+      "source_url": "/wp-json/wc/store/products"
+    },
+    "raw_record": {
+      "category": "Phôi Gốm",
+      "currency": "VND",
+      "description": null,
+      "lead_time_days": null,
+      "material": "Gốm sứ",
+      "moq": null,
+      "name": "Mẫu ly gốm chưa nung",
+      "origin_region": "Việt Nam",
+      "price_vnd": 0,
+      "product_url": "https://thegioigom.com/san-pham/mau-ly-gom-chua-nung/",
+      "source_product_id": "TGG-8924",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "TGG-8924",
+      "status": "confirmed",
+      "value": "TGG-8924"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "thegioigom",
+  "source_url": "/wp-json/wc/store/products",
+  "status": "quarantined"
+}
