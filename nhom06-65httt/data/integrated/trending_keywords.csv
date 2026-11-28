@@ -1,0 +1,1248 @@
+keyword_id,country_id,category_id,keyword_text,related_attribute_type,growth_pct,trend_classification,recorded_period
+1,2,4,pottery barn,general,100.0,Top,Past 5 Years
+2,2,4,japan pottery,general,65.0,Top,Past 5 Years
+3,2,4,pottery 意味,general,49.0,Top,Past 5 Years
+4,2,4,japanese pottery,general,48.0,Top,Past 5 Years
+5,2,4,new light pottery,general,38.0,Top,Past 5 Years
+6,2,4,pottery class,general,36.0,Top,Past 5 Years
+7,2,4,pottery studio,general,30.0,Top,Past 5 Years
+8,2,4,pottery shop,general,29.0,Top,Past 5 Years
+9,2,4,pottery near me,general,22.0,Top,Past 5 Years
+10,2,4,pottery barn kids,general,20.0,Top,Past 5 Years
+11,2,4,shoes like pottery,general,20.0,Top,Past 5 Years
+12,2,4,pottery workshop,general,18.0,Top,Past 5 Years
+13,2,4,clay,general,16.0,Top,Past 5 Years
+14,2,4,okinawa pottery,general,16.0,Top,Past 5 Years
+15,2,4,pottery wheel,general,14.0,Top,Past 5 Years
+16,2,4,ancient pottery,general,13.0,Top,Past 5 Years
+17,2,4,pottery meaning,general,12.0,Top,Past 5 Years
+18,2,4,pottery making,general,11.0,Top,Past 5 Years
+19,2,4,london pottery,general,11.0,Top,Past 5 Years
+20,2,4,pottery 読み方,general,10.0,Top,Past 5 Years
+21,2,4,mashiko pottery,general,10.0,Top,Past 5 Years
+22,2,4,3d pottery,general,7.0,Top,Past 5 Years
+23,2,4,pottery store near me,general,3.0,Top,Past 5 Years
+24,2,4,pottery shop near me,general,3.0,Top,Past 5 Years
+25,2,4,arita pottery festival,general,2.0,Top,Past 5 Years
+26,3,1,pixel 8 pro porcelain,general,5000.0,Breakout,Past 5 Years
+27,3,1,google pixel 8 pro porcelain,general,5000.0,Breakout,Past 5 Years
+28,3,1,porcelain kindred,general,5000.0,Breakout,Past 5 Years
+29,3,1,porcelain ezreal,general,5000.0,Breakout,Past 5 Years
+30,3,1,porcelain irelia,general,5000.0,Breakout,Past 5 Years
+31,3,1,porcelain lissandra,general,5000.0,Breakout,Past 5 Years
+32,3,1,prestige porcelain kindred,general,5000.0,Breakout,Past 5 Years
+33,3,1,prestige porcelain lux,general,5000.0,Breakout,Past 5 Years
+34,3,1,porcelain amumu,general,5000.0,Breakout,Past 5 Years
+35,3,1,porcelain miss fortune,general,5000.0,Breakout,Past 5 Years
+36,3,1,porcelain sweater,general,2650.0,Rising,Past 5 Years
+37,3,1,google pixel 9 porcelain,general,2300.0,Rising,Past 5 Years
+38,3,1,porcelain lux,general,2150.0,Rising,Past 5 Years
+39,3,1,magic finish porcelain,general,950.0,Rising,Past 5 Years
+40,3,1,what is porcelain,general,600.0,Rising,Past 5 Years
+41,3,1,porcelain meaning,general,200.0,Rising,Past 5 Years
+42,3,1,porcelain tiles,general,190.0,Rising,Past 5 Years
+43,3,1,porcelain tea set,general,150.0,Rising,Past 5 Years
+44,3,1,porcelain art,general,100.0,Rising,Past 5 Years
+45,3,1,porcelain black,general,80.0,Rising,Past 5 Years
+46,3,1,porcelain skin,general,70.0,Rising,Past 5 Years
+47,3,1,porcelain plates,general,50.0,Rising,Past 5 Years
+48,3,1,premium porcelain,general,50.0,Rising,Past 5 Years
+49,3,1,porcelain clay,general,40.0,Rising,Past 5 Years
+50,3,3,ceramic pro,general,100.0,Top,Past 5 Years
+51,3,3,ceramic coating,general,69.0,Top,Past 5 Years
+52,3,3,sonax ceramic,general,51.0,Top,Past 5 Years
+53,3,3,ceramic spray,general,47.0,Top,Past 5 Years
+54,3,3,ceramic versiegelung,general,39.0,Top,Past 5 Years
+55,3,3,ate ceramic,general,36.0,Top,Past 5 Years
+56,3,3,ceramic plus,general,33.0,Top,Past 5 Years
+57,3,3,ceramic mug,general,30.0,Top,Past 5 Years
+58,3,3,ceramic bremsbeläge,general,30.0,Top,Past 5 Years
+59,3,3,ceramic pan,general,30.0,Top,Past 5 Years
+60,3,3,ceramic speed,general,24.0,Top,Past 5 Years
+61,3,3,ceramic tiles,general,22.0,Top,Past 5 Years
+62,3,3,ceramic vase,general,21.0,Top,Past 5 Years
+63,3,3,sonax ceramic versiegelung,general,19.0,Top,Past 5 Years
+64,3,3,sonax ceramic spray,general,19.0,Top,Past 5 Years
+65,3,3,sonax xtreme ceramic,general,17.0,Top,Past 5 Years
+66,3,3,ceramic heater,general,17.0,Top,Past 5 Years
+67,3,3,princess ceramic,general,16.0,Top,Past 5 Years
+68,3,3,ate ceramic bremsbeläge,general,15.0,Top,Past 5 Years
+69,3,3,ceramic painting,general,15.0,Top,Past 5 Years
+70,3,3,ceramic shield,general,15.0,Top,Past 5 Years
+71,3,3,ceramic hob,general,15.0,Top,Past 5 Years
+72,3,3,sonax ceramic spray versiegelung,general,14.0,Top,Past 5 Years
+73,3,3,ceramic capacitor,general,13.0,Top,Past 5 Years
+74,3,3,ceramic plates,general,13.0,Top,Past 5 Years
+75,3,3,dyson ceramic pink,general,5000.0,Breakout,Past 5 Years
+76,3,3,dyson airwrap ceramic pink,general,5000.0,Breakout,Past 5 Years
+77,3,3,ceramic keycaps,general,5000.0,Breakout,Past 5 Years
+78,3,3,dyson ceramic pop,general,5000.0,Breakout,Past 5 Years
+79,3,3,oura ring 4 ceramic,general,5000.0,Breakout,Past 5 Years
+80,3,3,tirtir ceramic milk ampoule,general,5000.0,Breakout,Past 5 Years
+81,3,3,sonax ceramic nass versiegelung,general,5000.0,Breakout,Past 5 Years
+82,3,3,babyliss smooth ceramic 230,general,5000.0,Breakout,Past 5 Years
+83,3,3,cerakote ceramic headlight restoration kit,general,5000.0,Breakout,Past 5 Years
+84,3,3,adbl ceramic sealant,general,5000.0,Rising,Past 5 Years
+85,3,3,ceramic connection,general,1600.0,Rising,Past 5 Years
+86,3,3,ceramic stars,general,1250.0,Rising,Past 5 Years
+87,3,3,airjekt 1 ceramic,general,650.0,Rising,Past 5 Years
+88,3,3,rado captain cook ceramic,general,650.0,Rising,Past 5 Years
+89,3,3,sonax xtreme ceramic sprayversiegelung,general,300.0,Rising,Past 5 Years
+90,3,3,ceramic painting,general,300.0,Rising,Past 5 Years
+91,3,3,ceramic pan,general,250.0,Rising,Past 5 Years
+92,3,3,ceramic spray,general,250.0,Rising,Past 5 Years
+93,3,3,warframe ceramic dagger,general,250.0,Rising,Past 5 Years
+94,3,3,ceramic mug,general,200.0,Rising,Past 5 Years
+95,3,3,black bay ceramic,general,200.0,Rising,Past 5 Years
+96,3,3,sonax ceramic spray versiegelung,general,190.0,Rising,Past 5 Years
+97,3,3,sonax xtreme ceramic,general,170.0,Rising,Past 5 Years
+98,3,3,ceramic vase,general,160.0,Rising,Past 5 Years
+99,3,3,sonax ceramic versiegelung,general,130.0,Rising,Past 5 Years
+100,11,4,pottery is passing down from artisans to trainees so that they can maintain the art,general,5000.0,Breakout,Past 5 Years
+101,11,4,scientists working on the site found many ancient tools tombs and pottery and made some important,general,5000.0,Breakout,Past 5 Years
+102,11,4,pottery production in ancient akrotiri reading answers,general,500.0,Rising,Past 5 Years
+103,11,4,the price of clay supplies and equipment is a small percentage of the total cost to pottery,general,400.0,Rising,Past 5 Years
+104,11,4,pottery production in ancient akrotiri,general,250.0,Rising,Past 5 Years
+105,11,4,pottery near me,general,200.0,Rising,Past 5 Years
+106,11,4,do pottery,general,100.0,Rising,Past 5 Years
+107,11,4,pottery workshop,general,90.0,Rising,Past 5 Years
+108,11,4,bat trang pottery village,general,90.0,Rising,Past 5 Years
+109,11,4,pottery studio,general,90.0,Rising,Past 5 Years
+110,11,4,pottery meaning,general,90.0,Rising,Past 5 Years
+111,11,4,make pottery,general,90.0,Rising,Past 5 Years
+112,11,4,ceramic pottery,general,70.0,Rising,Past 5 Years
+113,11,4,pottery class,general,70.0,Rising,Past 5 Years
+114,11,4,pottery village,general,60.0,Rising,Past 5 Years
+115,11,4,pottery making,general,40.0,Rising,Past 5 Years
+116,11,4,clay,general,40.0,Rising,Past 5 Years
+117,3,4,rak ceramics,general,100.0,Top,Past 5 Years
+118,3,4,online ceramics,general,100.0,Top,Past 5 Years
+119,3,4,alma ceramics,general,94.0,Top,Past 5 Years
+120,3,4,living ceramics,general,90.0,Top,Past 5 Years
+121,3,4,ceramics international,general,49.0,Top,Past 5 Years
+122,3,4,ceramics fliesen,general,48.0,Top,Past 5 Years
+123,3,4,portugal ceramics,general,46.0,Top,Past 5 Years
+124,3,4,technical ceramics,general,37.0,Top,Past 5 Years
+125,3,4,thermal ceramics,general,34.0,Top,Past 5 Years
+126,3,4,handmade ceramics,general,32.0,Top,Past 5 Years
+127,3,4,viola beuscher ceramics,general,29.0,Top,Past 5 Years
+128,3,4,japanese ceramics,general,27.0,Top,Past 5 Years
+129,3,4,hamburg ceramics,general,26.0,Top,Past 5 Years
+130,3,4,system ceramics,general,23.0,Top,Past 5 Years
+131,3,4,qsil ceramics,general,19.0,Top,Past 5 Years
+132,3,4,quail ceramics,general,18.0,Top,Past 5 Years
+133,3,4,love ceramics,general,15.0,Top,Past 5 Years
+134,3,4,north face online ceramics,general,13.0,Top,Past 5 Years
+135,3,4,super ceramics,general,13.0,Top,Past 5 Years
+136,3,4,morgan thermal ceramics,general,13.0,Top,Past 5 Years
+137,3,4,dripdrop ceramics,general,11.0,Top,Past 5 Years
+138,3,4,drip drop ceramics,general,10.0,Top,Past 5 Years
+139,3,4,frizbee ceramics,general,8.0,Top,Past 5 Years
+140,3,4,lilli ceramics,general,7.0,Top,Past 5 Years
+141,3,4,sunday morning ceramics,general,6.0,Top,Past 5 Years
+142,10,3,ceramic coating,general,100.0,Top,Past 5 Years
+143,10,3,ceramic tiles,general,70.0,Top,Past 5 Years
+144,10,3,what is ceramic,general,28.0,Top,Past 5 Years
+145,10,3,ceramic pots,general,27.0,Top,Past 5 Years
+146,10,3,ceramic watch,general,26.0,Top,Past 5 Years
+147,10,3,ceramic coating car,general,25.0,Top,Past 5 Years
+148,10,3,ceramic meaning,general,25.0,Top,Past 5 Years
+149,10,3,ceramic tile,general,24.0,Top,Past 5 Years
+150,10,3,ceramic plates,general,22.0,Top,Past 5 Years
+151,10,3,ceramic glass,general,22.0,Top,Past 5 Years
+152,10,3,ceramic pot,general,20.0,Top,Past 5 Years
+153,10,3,ceramic coating price,general,19.0,Top,Past 5 Years
+154,10,3,ceramic braces,general,18.0,Top,Past 5 Years
+155,10,3,ceramic cup,general,17.0,Top,Past 5 Years
+156,10,3,ceramic plate,general,17.0,Top,Past 5 Years
+157,10,3,ceramic bowl,general,16.0,Top,Past 5 Years
+158,10,3,ceramic mug,general,16.0,Top,Past 5 Years
+159,10,3,bf film ceramic,general,14.0,Top,Past 5 Years
+160,10,3,ceramic pro,general,14.0,Top,Past 5 Years
+161,10,3,ceramic material,general,14.0,Top,Past 5 Years
+162,10,3,bf film ceramic tint,general,13.0,Top,Past 5 Years
+163,10,3,ceramic academy,general,11.0,Top,Past 5 Years
+164,10,3,ceramic cookware,general,10.0,Top,Past 5 Years
+165,10,3,ceramic teeth,general,10.0,Top,Past 5 Years
+166,10,3,ceramic pan,general,9.0,Top,Past 5 Years
+167,11,1,gạch porcelain,general,100.0,Top,Past 5 Years
+168,11,1,porcelain là gì,general,43.0,Top,Past 5 Years
+169,11,1,porcelain tile,general,39.0,Top,Past 5 Years
+170,11,1,ceramic,general,33.0,Top,Past 5 Years
+171,11,1,porcelain tiles,general,32.0,Top,Past 5 Years
+172,11,1,porcelain veneers,general,29.0,Top,Past 5 Years
+173,11,1,white porcelain,general,28.0,Top,Past 5 Years
+174,11,1,porcelain blue,general,22.0,Top,Past 5 Years
+175,11,1,chinese porcelain,general,13.0,Top,Past 5 Years
+176,11,1,porcelain doll,general,11.0,Top,Past 5 Years
+177,11,1,blue and white porcelain,general,10.0,Top,Past 5 Years
+178,11,1,porcelain crown,general,8.0,Top,Past 5 Years
+179,11,1,porcelain teeth,general,8.0,Top,Past 5 Years
+180,11,1,porcelain cup,general,8.0,Top,Past 5 Years
+181,11,1,porcelain blue switch,general,2.0,Top,Past 5 Years
+182,11,1,porcelain mask,general,2.0,Top,Past 5 Years
+183,11,1,how to clean porcelain sink,general,2.0,Top,Past 5 Years
+184,11,1,porcelain dipper,general,2.0,Top,Past 5 Years
+185,11,1,porcelain irelia,general,1.0,Top,Past 5 Years
+186,11,1,kawasaki porcelain q5,general,1.0,Top,Past 5 Years
+187,11,1,porcelain benchtop,general,1.0,Top,Past 5 Years
+188,11,1,porcelain pronunciation,general,1.0,Top,Past 5 Years
+189,2,3,ceramic japan,general,100.0,Top,Past 5 Years
+190,2,3,ceramic coating,general,64.0,Top,Past 5 Years
+191,2,3,ceramic pro,general,44.0,Top,Past 5 Years
+192,2,3,ceramic cup,general,33.0,Top,Past 5 Years
+193,2,3,ceramic international,general,31.0,Top,Past 5 Years
+194,2,3,ceramic tile,general,30.0,Top,Past 5 Years
+195,2,3,ceramic heater,general,28.0,Top,Past 5 Years
+196,2,3,ceramic art,general,27.0,Top,Past 5 Years
+197,2,3,ceramic pottery,general,24.0,Top,Past 5 Years
+198,2,3,ceramic tiles,general,23.0,Top,Past 5 Years
+199,2,3,ceramic mug,general,22.0,Top,Past 5 Years
+200,2,3,ceramic meaning,general,22.0,Top,Past 5 Years
+201,2,3,ceramic pan,general,21.0,Top,Past 5 Years
+202,2,3,ceramic shield,general,21.0,Top,Past 5 Years
+203,2,3,kyoto ceramic,general,20.0,Top,Past 5 Years
+204,2,3,ceramic cookware,general,20.0,Top,Past 5 Years
+205,2,3,porcelain,general,18.0,Top,Past 5 Years
+206,2,3,ceramic 意味,general,18.0,Top,Past 5 Years
+207,2,3,ceramic plate,general,18.0,Top,Past 5 Years
+208,2,3,ceramic bowl,general,18.0,Top,Past 5 Years
+209,2,3,ceramic filter,general,16.0,Top,Past 5 Years
+210,2,3,ceramic coating car,general,15.0,Top,Past 5 Years
+211,2,3,ceramic pot,general,15.0,Top,Past 5 Years
+212,2,3,ceramic capacitor,general,15.0,Top,Past 5 Years
+213,2,3,ceramic network,general,15.0,Top,Past 5 Years
+214,10,1,crystal porcelain painting,general,5000.0,Breakout,Past 5 Years
+215,10,1,porcelain slab,general,350.0,Rising,Past 5 Years
+216,10,1,how to clean porcelain sink,general,250.0,Rising,Past 5 Years
+217,10,1,porcelain slabs,general,200.0,Rising,Past 5 Years
+218,10,1,cold porcelain clay,general,110.0,Rising,Past 5 Years
+219,10,1,porcelain gb,general,110.0,Rising,Past 5 Years
+220,10,1,is porcelain and ceramic the same,general,100.0,Rising,Past 5 Years
+221,10,1,ariane fine porcelain,general,100.0,Rising,Past 5 Years
+222,10,1,porcelain color,general,90.0,Rising,Past 5 Years
+223,10,1,porcelain white,general,90.0,Rising,Past 5 Years
+224,10,1,define porcelain,general,80.0,Rising,Past 5 Years
+225,10,1,porcelain lipstick,general,80.0,Rising,Past 5 Years
+226,10,1,porcelain countertops,general,80.0,Rising,Past 5 Years
+227,10,1,porcelain plates set,general,80.0,Rising,Past 5 Years
+228,10,1,porcelain basin,general,80.0,Rising,Past 5 Years
+229,10,1,porcelain meaning in bengali,general,80.0,Rising,Past 5 Years
+230,10,1,porcelain tiles vs vitrified tiles,general,80.0,Rising,Past 5 Years
+231,10,1,porcelain skin tone,general,80.0,Rising,Past 5 Years
+232,10,1,what is porcelain tiles,general,70.0,Rising,Past 5 Years
+233,10,1,cartridge of porcelain,general,70.0,Rising,Past 5 Years
+234,10,1,porcelain dish laboratory,general,70.0,Rising,Past 5 Years
+235,10,1,porcelain cup,general,70.0,Rising,Past 5 Years
+236,10,1,porcelain colour,general,60.0,Rising,Past 5 Years
+237,10,1,porcelain bowl,general,60.0,Rising,Past 5 Years
+238,10,1,what is porcelain,general,40.0,Rising,Past 5 Years
+239,3,1,porcelain black,general,100.0,Top,Past 5 Years
+240,3,1,porcelain tiles,general,98.0,Top,Past 5 Years
+241,3,1,what is porcelain,general,83.0,Top,Past 5 Years
+242,3,1,moby porcelain,general,64.0,Top,Past 5 Years
+243,3,1,fine porcelain,general,64.0,Top,Past 5 Years
+244,3,1,premium porcelain,general,61.0,Top,Past 5 Years
+245,3,1,porcelain veneers,general,59.0,Top,Past 5 Years
+246,3,1,porcelain doll,general,58.0,Top,Past 5 Years
+247,3,1,chinese porcelain,general,56.0,Top,Past 5 Years
+248,3,1,royal porcelain,general,53.0,Top,Past 5 Years
+249,3,1,porcelain skin,general,52.0,Top,Past 5 Years
+250,3,1,porcelain art,general,43.0,Top,Past 5 Years
+251,3,1,meissen porcelain,general,41.0,Top,Past 5 Years
+252,3,1,porcelain meaning,general,34.0,Top,Past 5 Years
+253,3,1,porcelain plates,general,33.0,Top,Past 5 Years
+254,3,1,porcelain lyrics,general,31.0,Top,Past 5 Years
+255,3,1,japanese porcelain,general,26.0,Top,Past 5 Years
+256,3,1,porcelain tea set,general,24.0,Top,Past 5 Years
+257,3,1,limoges porcelain,general,24.0,Top,Past 5 Years
+258,3,1,magic finish porcelain,general,23.0,Top,Past 5 Years
+259,3,1,rak porcelain,general,23.0,Top,Past 5 Years
+260,3,1,porcelain clay,general,22.0,Top,Past 5 Years
+261,3,1,porcelain dolls,general,22.0,Top,Past 5 Years
+262,3,1,hasami porcelain,general,21.0,Top,Past 5 Years
+263,3,1,porcelain sweater,general,21.0,Top,Past 5 Years
+264,2,2,stoneware mug,general,100.0,Top,Past 5 Years
+265,2,2,ikea stoneware,general,44.0,Top,Past 5 Years
+266,2,2,noritake stoneware,general,35.0,Top,Past 5 Years
+267,2,4,north face online ceramics,general,5000.0,Breakout,Past 5 Years
+268,2,4,nr ceramics,general,5000.0,Breakout,Past 5 Years
+269,2,4,the north face online ceramics,general,5000.0,Breakout,Past 5 Years
+270,2,4,ceramics store near me,general,5000.0,Breakout,Past 5 Years
+271,2,4,roseselsa ceramics ultra,general,5000.0,Breakout,Past 5 Years
+272,2,4,towa ceramics マグカップ,general,1200.0,Rising,Past 5 Years
+273,2,4,open ceramics,general,1000.0,Rising,Past 5 Years
+274,2,4,towa ceramics,general,350.0,Rising,Past 5 Years
+275,2,4,online ceramics,general,180.0,Rising,Past 5 Years
+276,2,4,ceramics meaning,general,140.0,Rising,Past 5 Years
+277,2,4,ceramics near me,general,130.0,Rising,Past 5 Years
+278,2,4,ceramics international,general,60.0,Rising,Past 5 Years
+279,2,4,japan ceramics,general,50.0,Rising,Past 5 Years
+280,10,4,kajaria ceramics,general,100.0,Top,Past 5 Years
+281,10,4,somany ceramics,general,63.0,Top,Past 5 Years
+282,10,4,rak ceramics,general,63.0,Top,Past 5 Years
+283,10,4,kajaria ceramics share,general,50.0,Top,Past 5 Years
+284,10,4,kajaria ceramics share price,general,43.0,Top,Past 5 Years
+285,10,4,lakshmi ceramics,general,40.0,Top,Past 5 Years
+286,10,4,somany ceramics share,general,31.0,Top,Past 5 Years
+287,10,4,ceramics meaning,general,31.0,Top,Past 5 Years
+288,10,4,somany ceramics share price,general,28.0,Top,Past 5 Years
+289,10,4,ceramics international,general,28.0,Top,Past 5 Years
+290,10,4,what is ceramics,general,25.0,Top,Past 5 Years
+291,10,4,aravind ceramics pvt,general,23.0,Top,Past 5 Years
+292,10,4,tata ceramics,general,21.0,Top,Past 5 Years
+293,10,4,murudeshwar ceramics,general,21.0,Top,Past 5 Years
+294,10,4,ceramics materials,general,20.0,Top,Past 5 Years
+295,10,4,murudeshwar ceramics share,general,18.0,Top,Past 5 Years
+296,10,4,regency ceramics,general,18.0,Top,Past 5 Years
+297,10,4,ceramics near me,general,18.0,Top,Past 5 Years
+298,10,4,murudeshwar ceramics share price,general,15.0,Top,Past 5 Years
+299,10,4,regency ceramics share price,general,14.0,Top,Past 5 Years
+300,10,4,kajaria ceramics ltd,general,12.0,Top,Past 5 Years
+301,10,4,simpolo ceramics,general,11.0,Top,Past 5 Years
+302,10,4,what are ceramics,general,9.0,Top,Past 5 Years
+303,10,4,dental ceramics,general,9.0,Top,Past 5 Years
+304,10,4,cera ceramics,general,9.0,Top,Past 5 Years
+305,10,3,ceramic academy app,general,5000.0,Breakout,Past 5 Years
+306,10,3,bf film ceramic tint at night amazon,general,5000.0,Breakout,Past 5 Years
+307,10,3,bf film ceramic tint tarlac,general,4500.0,Rising,Past 5 Years
+308,10,3,ceramic academy,general,2650.0,Rising,Past 5 Years
+309,10,3,bf film ceramic tint pampanga,general,2150.0,Rising,Past 5 Years
+310,10,3,bf film ceramic tint vs 3m,general,1350.0,Rising,Past 5 Years
+311,10,3,graphene coating vs ceramic coating,general,1200.0,Rising,Past 5 Years
+312,10,3,bf film ceramic tint cebu,general,1150.0,Rising,Past 5 Years
+313,10,3,mahaveer ceramic world,general,550.0,Rising,Past 5 Years
+314,10,3,ceramic brake pads,general,500.0,Rising,Past 5 Years
+315,10,3,ceramic coating vs ppf,general,400.0,Rising,Past 5 Years
+316,10,3,nano ceramic roofing tiles,general,250.0,Rising,Past 5 Years
+317,10,3,is ceramic coating worth it,general,150.0,Rising,Past 5 Years
+318,10,3,bf film ceramic tint at night,general,120.0,Rising,Past 5 Years
+319,10,3,3m ceramic coating,general,120.0,Rising,Past 5 Years
+320,10,3,ceramic bowl,general,110.0,Rising,Past 5 Years
+321,10,3,ceramic cup,general,100.0,Rising,Past 5 Years
+322,10,3,bf film ceramic supreme,general,100.0,Rising,Past 5 Years
+323,10,3,ceramic vase,general,90.0,Rising,Past 5 Years
+324,10,3,ceramic coffee mug,general,90.0,Rising,Past 5 Years
+325,10,3,3m ceramic coating price,general,90.0,Rising,Past 5 Years
+326,10,3,ceramic gallery,general,90.0,Rising,Past 5 Years
+327,10,3,dinner set ceramic,general,80.0,Rising,Past 5 Years
+328,10,3,titan edge ceramic watch,general,80.0,Rising,Past 5 Years
+329,10,3,ceramic bowl set,general,80.0,Rising,Past 5 Years
+330,4,2,porcelain stoneware,general,100.0,Top,Past 5 Years
+331,4,2,stoneware mug,general,90.0,Top,Past 5 Years
+332,4,2,stoneware clay,general,55.0,Top,Past 5 Years
+333,4,2,le creuset stoneware,general,48.0,Top,Past 5 Years
+334,4,2,stoneware plates,general,42.0,Top,Past 5 Years
+335,4,2,glazed stoneware,general,33.0,Top,Past 5 Years
+336,4,2,highland stoneware,general,12.0,Top,Past 5 Years
+337,4,2,stoneware dishes,general,12.0,Top,Past 5 Years
+338,4,2,cosy and trendy stoneware,general,11.0,Top,Past 5 Years
+339,4,2,cerutil stoneware,general,9.0,Top,Past 5 Years
+340,4,2,mayco stoneware glazes,general,8.0,Top,Past 5 Years
+341,4,2,sifnos stoneware,general,7.0,Top,Past 5 Years
+342,4,2,hamila stoneware,general,6.0,Top,Past 5 Years
+343,4,2,cosy & trendy stoneware,general,6.0,Top,Past 5 Years
+344,2,2,ikea stoneware,general,350.0,Rising,Past 5 Years
+345,2,2,stoneware mug,general,80.0,Rising,Past 5 Years
+346,3,4,pottery shards minecraft,general,5000.0,Breakout,Past 5 Years
+347,3,4,haven tunin pottery,general,5000.0,Breakout,Past 5 Years
+348,3,4,pottery painting in der nähe,general,5000.0,Breakout,Past 5 Years
+349,3,4,pottery painting inspo,general,5000.0,Breakout,Past 5 Years
+350,3,4,indian sattmattaka pottery piece that stands out golden,general,4550.0,Rising,Past 5 Years
+351,3,4,home pottery kit,general,1850.0,Rising,Past 5 Years
+352,3,4,pottery painting frankfurt,general,1850.0,Rising,Past 5 Years
+353,3,4,pottery lab,general,1400.0,Rising,Past 5 Years
+354,3,4,happy pottery,general,1400.0,Rising,Past 5 Years
+355,3,4,happy pottery karlsruhe,general,1200.0,Rising,Past 5 Years
+356,3,4,pottery painting stuttgart,general,1150.0,Rising,Past 5 Years
+357,3,4,pottery painting düsseldorf,general,1050.0,Rising,Past 5 Years
+358,3,4,minecraft pottery,general,1050.0,Rising,Past 5 Years
+359,3,4,minecraft pottery shard,general,900.0,Rising,Past 5 Years
+360,3,4,pottery painting köln,general,900.0,Rising,Past 5 Years
+361,3,4,pottery painting münchen,general,850.0,Rising,Past 5 Years
+362,3,4,pottery painting,general,700.0,Rising,Past 5 Years
+363,3,4,pottery kit,general,450.0,Rising,Past 5 Years
+364,3,4,pottery workshop,general,250.0,Rising,Past 5 Years
+365,3,4,pottery near me,general,190.0,Rising,Past 5 Years
+366,3,4,pottery set,general,150.0,Rising,Past 5 Years
+367,3,4,pottery class,general,140.0,Rising,Past 5 Years
+368,3,4,pottery ideas,general,130.0,Rising,Past 5 Years
+369,3,4,clay,general,50.0,Rising,Past 5 Years
+370,3,4,pottery clay,general,50.0,Rising,Past 5 Years
+371,3,4,north face online ceramics,general,5000.0,Breakout,Past 5 Years
+372,3,4,dripdrop ceramics,general,5000.0,Breakout,Past 5 Years
+373,3,4,drip drop ceramics,general,5000.0,Breakout,Past 5 Years
+374,3,4,frizbee ceramics,general,5000.0,Breakout,Past 5 Years
+375,3,4,lilli ceramics,general,5000.0,Breakout,Past 5 Years
+376,3,4,sunday morning ceramics,general,5000.0,Breakout,Past 5 Years
+377,3,4,barcela ceramics,general,5000.0,Breakout,Past 5 Years
+378,3,4,marseille ceramics,general,5000.0,Breakout,Past 5 Years
+379,3,4,coco ceramics essen,general,5000.0,Breakout,Past 5 Years
+380,3,4,marsei ceramics,general,5000.0,Breakout,Past 5 Years
+381,3,4,brutal ceramics,general,5000.0,Breakout,Past 5 Years
+382,3,4,alma ceramics,general,1150.0,Rising,Past 5 Years
+383,3,4,portugal ceramics,general,170.0,Rising,Past 5 Years
+384,3,4,online ceramics,general,130.0,Rising,Past 5 Years
+385,3,4,handmade ceramics,general,130.0,Rising,Past 5 Years
+386,3,4,system ceramics,general,110.0,Rising,Past 5 Years
+387,3,4,super ceramics,general,110.0,Rising,Past 5 Years
+388,3,4,hamburg ceramics,general,70.0,Rising,Past 5 Years
+389,3,4,japanese ceramics,general,60.0,Rising,Past 5 Years
+390,3,4,ceramics international,general,50.0,Rising,Past 5 Years
+391,11,2,stoneware dinnerware,general,100.0,Top,Past 5 Years
+392,11,2,stoneware mug,general,71.0,Top,Past 5 Years
+393,11,2,porcelain stoneware,general,60.0,Top,Past 5 Years
+394,11,2,stoneware bowls,general,45.0,Top,Past 5 Years
+395,11,2,stoneware plates,general,39.0,Top,Past 5 Years
+396,11,2,stoneware mugs,general,33.0,Top,Past 5 Years
+397,11,2,stoneware dinnerware sets,general,27.0,Top,Past 5 Years
+398,11,2,stoneware clay,general,22.0,Top,Past 5 Years
+399,11,2,stoneware coffee mugs,general,13.0,Top,Past 5 Years
+400,11,2,porcelain vs stoneware,general,12.0,Top,Past 5 Years
+401,11,2,ohio stoneware ortonville mi,general,7.0,Top,Past 5 Years
+402,1,1,porcelain tile,general,100.0,Top,Past 5 Years
+403,1,1,porcelain floor tile,general,24.0,Top,Past 5 Years
+404,1,1,what is porcelain,general,20.0,Top,Past 5 Years
+405,1,1,porcelain doll,general,20.0,Top,Past 5 Years
+406,1,1,porcelain dolls,general,18.0,Top,Past 5 Years
+407,1,1,porcelain veneers,general,18.0,Top,Past 5 Years
+408,1,1,veneers,general,18.0,Top,Past 5 Years
+409,1,1,porcelain black,general,17.0,Top,Past 5 Years
+410,1,1,porcelain sink,general,17.0,Top,Past 5 Years
+411,1,1,porcelain tiles,general,16.0,Top,Past 5 Years
+412,1,1,china porcelain,general,12.0,Top,Past 5 Years
+413,1,1,white porcelain tile,general,11.0,Top,Past 5 Years
+414,1,1,porcelain bowl,general,8.0,Top,Past 5 Years
+415,1,1,wood porcelain tile,general,8.0,Top,Past 5 Years
+416,1,1,chinese porcelain,general,7.0,Top,Past 5 Years
+417,1,1,porcelain crown,general,7.0,Top,Past 5 Years
+418,1,1,porcelain paint,general,7.0,Top,Past 5 Years
+419,1,1,porcelain color,general,7.0,Top,Past 5 Years
+420,1,1,porcelain tub,general,6.0,Top,Past 5 Years
+421,1,1,porcelain plates,general,6.0,Top,Past 5 Years
+422,1,1,is porcelain ceramic,general,6.0,Top,Past 5 Years
+423,1,1,porcelain countertops,general,6.0,Top,Past 5 Years
+424,1,1,porcelain skin,general,6.0,Top,Past 5 Years
+425,1,1,porcelain teeth,general,6.0,Top,Past 5 Years
+426,1,1,porcelain dinnerware,general,5.0,Top,Past 5 Years
+427,2,3,oura ring 4 ceramic,general,5000.0,Breakout,Past 5 Years
+428,2,3,ceramic keycaps,general,5000.0,Breakout,Past 5 Years
+429,2,3,xiaomi smart band 10 ceramic edition,general,5000.0,Breakout,Past 5 Years
+430,2,3,tirtir ceramic cream,general,5000.0,Breakout,Past 5 Years
+431,2,3,ceramic valley craft camp,general,3450.0,Rising,Past 5 Years
+432,2,3,ceramic network,general,1900.0,Rising,Past 5 Years
+433,2,3,ceramic shield 2,general,1450.0,Rising,Past 5 Years
+434,2,3,tudor black bay ceramic,general,550.0,Rising,Past 5 Years
+435,2,3,ceramic meaning,general,300.0,Rising,Past 5 Years
+436,2,3,ceramic dagger incarnon,general,250.0,Rising,Past 5 Years
+437,2,3,ceramic cookware,general,200.0,Rising,Past 5 Years
+438,2,3,ceramic international,general,180.0,Rising,Past 5 Years
+439,2,3,ceramic coating car,general,180.0,Rising,Past 5 Years
+440,2,3,ceramic pro,general,130.0,Rising,Past 5 Years
+441,2,3,ceramic coating,general,120.0,Rising,Past 5 Years
+442,2,3,ceramic cup,general,120.0,Rising,Past 5 Years
+443,2,3,ceramic shield,general,120.0,Rising,Past 5 Years
+444,2,3,ceramic pan,general,90.0,Rising,Past 5 Years
+445,2,3,ceramic plate,general,80.0,Rising,Past 5 Years
+446,2,3,ceramic tiles,general,70.0,Rising,Past 5 Years
+447,2,3,ceramic bowl,general,50.0,Rising,Past 5 Years
+448,2,3,ceramic tile,general,40.0,Rising,Past 5 Years
+449,2,3,ceramic japan,general,40.0,Rising,Past 5 Years
+450,1,4,shop pottery barn teen mushroom lamp,general,5000.0,Breakout,Past 5 Years
+451,1,4,pottery class,general,170.0,Rising,Past 5 Years
+452,1,4,kintsugi pottery,general,160.0,Rising,Past 5 Years
+453,1,4,pottery studio,general,150.0,Rising,Past 5 Years
+454,1,4,color me mine,general,130.0,Rising,Past 5 Years
+455,1,4,pottery painting,general,130.0,Rising,Past 5 Years
+456,1,4,pottery painting near me,general,130.0,Rising,Past 5 Years
+457,1,4,great pottery throw down,general,130.0,Rising,Past 5 Years
+458,1,4,pottery classes near me,general,120.0,Rising,Past 5 Years
+459,1,4,pottery studio near me,general,120.0,Rising,Past 5 Years
+460,1,4,bitter root pottery,general,110.0,Rising,Past 5 Years
+461,1,4,pottery class near me,general,110.0,Rising,Past 5 Years
+462,1,4,the great pottery throw down,general,110.0,Rising,Past 5 Years
+463,1,4,pottery making near me,general,100.0,Rising,Past 5 Years
+464,1,4,east fork pottery,general,100.0,Rising,Past 5 Years
+465,1,4,pottery barn dining table,general,100.0,Rising,Past 5 Years
+466,1,4,pottery barn easter basket,general,90.0,Rising,Past 5 Years
+467,1,4,pottery classes,general,80.0,Rising,Past 5 Years
+468,1,4,pottery kiln,general,80.0,Rising,Past 5 Years
+469,1,4,pottery barn.,general,80.0,Rising,Past 5 Years
+470,1,4,paint pottery near me,general,80.0,Rising,Past 5 Years
+471,1,4,pottery near me,general,70.0,Rising,Past 5 Years
+472,1,4,pottery barb,general,70.0,Rising,Past 5 Years
+473,1,4,pottery barn dresser,general,70.0,Rising,Past 5 Years
+474,1,4,pottery hollow,general,70.0,Rising,Past 5 Years
+475,2,1,porcelain pixel,general,5000.0,Breakout,Past 5 Years
+476,2,1,porcelain throne,general,5000.0,Breakout,Past 5 Years
+477,2,1,legle porcelain,general,5000.0,Breakout,Past 5 Years
+478,2,1,what is porcelain,general,550.0,Rising,Past 5 Years
+479,2,1,porcelain tile,general,300.0,Rising,Past 5 Years
+480,2,1,porcelain tiles,general,250.0,Rising,Past 5 Years
+481,2,1,porcelain skin,general,200.0,Rising,Past 5 Years
+482,2,1,chinese porcelain,general,130.0,Rising,Past 5 Years
+483,2,1,porcelain meaning,general,110.0,Rising,Past 5 Years
+484,2,1,ceramic,general,80.0,Rising,Past 5 Years
+485,2,1,white porcelain,general,60.0,Rising,Past 5 Years
+486,4,4,pottery sherd minecraft,general,5000.0,Breakout,Past 5 Years
+487,4,4,haven tunin pottery,general,5000.0,Breakout,Past 5 Years
+488,4,4,bat trang pottery village,general,5000.0,Breakout,Past 5 Years
+489,4,4,rd pottery tools,general,5000.0,Breakout,Past 5 Years
+490,4,4,henry watson pottery,general,5000.0,Breakout,Past 5 Years
+491,4,4,sculpd pottery kit,general,5000.0,Breakout,Past 5 Years
+492,4,4,minecraft pottery,general,2350.0,Rising,Past 5 Years
+493,4,4,pottery princess,general,650.0,Rising,Past 5 Years
+494,4,4,pottery painting ideas,general,500.0,Rising,Past 5 Years
+495,4,4,pottery near me,general,300.0,Rising,Past 5 Years
+496,4,4,pottery workshop,general,250.0,Rising,Past 5 Years
+497,4,4,arthur pottery,general,250.0,Rising,Past 5 Years
+498,4,4,pottery painting,general,250.0,Rising,Past 5 Years
+499,4,4,pottery painting near me,general,200.0,Rising,Past 5 Years
+500,4,4,talavera pottery,general,200.0,Rising,Past 5 Years
+501,4,4,pottery class,general,170.0,Rising,Past 5 Years
+502,4,4,hogben pottery,general,150.0,Rising,Past 5 Years
+503,4,4,pottery class london,general,150.0,Rising,Past 5 Years
+504,4,4,pottery kit,general,130.0,Rising,Past 5 Years
+505,4,4,the great pottery throw down streaming,general,120.0,Rising,Past 5 Years
+506,4,4,pottery tools,general,120.0,Rising,Past 5 Years
+507,4,4,pottery cafe,general,90.0,Rising,Past 5 Years
+508,4,4,pottery ideas,general,80.0,Rising,Past 5 Years
+509,4,4,pottery making,general,80.0,Rising,Past 5 Years
+510,4,4,kiln pottery,general,50.0,Rising,Past 5 Years
+511,11,3,ceramic keycap,general,5000.0,Breakout,Past 5 Years
+512,11,3,gt3 pro ceramic,general,5000.0,Breakout,Past 5 Years
+513,11,3,ceramic keycaps,general,5000.0,Breakout,Past 5 Years
+514,11,3,b4c ceramic,general,5000.0,Breakout,Past 5 Years
+515,11,3,sạn gốm ceramic,general,850.0,Rising,Past 5 Years
+516,11,3,boron carbide ceramic,general,750.0,Rising,Past 5 Years
+517,11,3,tu hú ceramic,general,750.0,Rising,Past 5 Years
+518,11,3,tòong teng ceramic,general,700.0,Rising,Past 5 Years
+519,11,3,ceramic club,general,650.0,Rising,Past 5 Years
+520,11,3,bb ceramic,general,600.0,Rising,Past 5 Years
+521,11,3,ceramic international,general,450.0,Rising,Past 5 Years
+522,11,3,bàn ăn mặt đá ceramic,general,400.0,Rising,Past 5 Years
+523,11,3,ceramic speed,general,300.0,Rising,Past 5 Years
+524,11,3,ceramic shield 2,general,250.0,Rising,Past 5 Years
+525,11,3,ceramic cup,general,200.0,Rising,Past 5 Years
+526,11,3,ceramic coating near me,general,180.0,Rising,Past 5 Years
+527,11,3,ceramic art,general,170.0,Rising,Past 5 Years
+528,11,3,ceramic mug,general,150.0,Rising,Past 5 Years
+529,11,3,đá ceramic,general,80.0,Rising,Past 5 Years
+530,11,3,ceramic vase,general,60.0,Rising,Past 5 Years
+531,11,3,porcelain,general,50.0,Rising,Past 5 Years
+532,11,3,ceramic là gì,general,50.0,Rising,Past 5 Years
+533,11,3,ceramic pot,general,40.0,Rising,Past 5 Years
+534,10,4,pottery meaning,general,100.0,Top,Past 5 Years
+535,10,4,pottery barn,general,95.0,Top,Past 5 Years
+536,10,4,blue pottery,general,91.0,Top,Past 5 Years
+537,10,4,pottery near me,general,78.0,Top,Past 5 Years
+538,10,4,pottery classes,general,76.0,Top,Past 5 Years
+539,10,4,clay,general,66.0,Top,Past 5 Years
+540,10,4,pottery clay,general,65.0,Top,Past 5 Years
+541,10,4,what is pottery,general,56.0,Top,Past 5 Years
+542,10,4,pottery art,general,51.0,Top,Past 5 Years
+543,10,4,pottery making,general,50.0,Top,Past 5 Years
+544,10,4,pottery wheel,general,47.0,Top,Past 5 Years
+545,10,4,pottery in hindi,general,44.0,Top,Past 5 Years
+546,10,4,pottery studio,general,42.0,Top,Past 5 Years
+547,10,4,pottery class,general,40.0,Top,Past 5 Years
+548,10,4,pottery workshop,general,40.0,Top,Past 5 Years
+549,10,4,pottery cafe,general,37.0,Top,Past 5 Years
+550,10,4,pottery meaning in hindi,general,32.0,Top,Past 5 Years
+551,10,4,black pottery,general,31.0,Top,Past 5 Years
+552,10,4,ceramic pottery,general,29.0,Top,Past 5 Years
+553,10,4,pottery painting,general,28.0,Top,Past 5 Years
+554,10,4,meaning of pottery,general,27.0,Top,Past 5 Years
+555,10,4,pottery classes near me,general,26.0,Top,Past 5 Years
+556,10,4,blue pottery jaipur,general,23.0,Top,Past 5 Years
+557,10,4,pottery town,general,21.0,Top,Past 5 Years
+558,10,4,pottery shop,general,19.0,Top,Past 5 Years
+559,4,4,pottery barn,general,100.0,Top,Past 5 Years
+560,4,4,pottery near me,general,28.0,Top,Past 5 Years
+561,4,4,pottery studio,general,24.0,Top,Past 5 Years
+562,4,4,pottery class,general,24.0,Top,Past 5 Years
+563,4,4,pottery painting,general,22.0,Top,Past 5 Years
+564,4,4,pottery wheel,general,21.0,Top,Past 5 Years
+565,4,4,pottery clay,general,21.0,Top,Past 5 Years
+566,4,4,pottery throw down,general,18.0,Top,Past 5 Years
+567,4,4,london pottery,general,18.0,Top,Past 5 Years
+568,4,4,pottery barn kids,general,15.0,Top,Past 5 Years
+569,4,4,great pottery throw down,general,14.0,Top,Past 5 Years
+570,4,4,french pottery,general,14.0,Top,Past 5 Years
+571,4,4,pottery pot,general,14.0,Top,Past 5 Years
+572,4,4,pottery workshop,general,14.0,Top,Past 5 Years
+573,4,4,japanese pottery,general,12.0,Top,Past 5 Years
+574,4,4,pottery pots,general,10.0,Top,Past 5 Years
+575,4,4,pottery tools,general,10.0,Top,Past 5 Years
+576,4,4,kiln pottery,general,10.0,Top,Past 5 Years
+577,4,4,pottery kit,general,9.0,Top,Past 5 Years
+578,4,4,the great pottery throw down,general,9.0,Top,Past 5 Years
+579,4,4,pottery cafe,general,9.0,Top,Past 5 Years
+580,4,4,pottery ideas,general,8.0,Top,Past 5 Years
+581,4,4,pottery making,general,8.0,Top,Past 5 Years
+582,4,4,pottery throwdown,general,7.0,Top,Past 5 Years
+583,4,4,minecraft pottery,general,7.0,Top,Past 5 Years
+584,4,3,ceramic pro,general,100.0,Top,Past 5 Years
+585,4,3,ceramic coating,general,100.0,Top,Past 5 Years
+586,4,3,samsung ceramic inside,general,67.0,Top,Past 5 Years
+587,4,3,healthy ceramic green chef,general,57.0,Top,Past 5 Years
+588,4,3,ceramic tiles,general,52.0,Top,Past 5 Years
+589,4,3,ceramic hotel,general,50.0,Top,Past 5 Years
+590,4,3,ceramic speed,general,45.0,Top,Past 5 Years
+591,4,3,ceramic wax,general,44.0,Top,Past 5 Years
+592,4,3,micro onde samsung ceramic inside,general,44.0,Top,Past 5 Years
+593,4,3,ceramic cafe,general,43.0,Top,Past 5 Years
+594,4,3,ceramic store,general,43.0,Top,Past 5 Years
+595,4,3,ceramic house,general,32.0,Top,Past 5 Years
+596,4,3,ceramic pan,general,30.0,Top,Past 5 Years
+597,4,3,love ceramic,general,24.0,Top,Past 5 Years
+598,4,3,ceramic shield,general,24.0,Top,Past 5 Years
+599,4,3,ceramic decor,general,23.0,Top,Past 5 Years
+600,4,3,ceramic stone,general,22.0,Top,Past 5 Years
+601,4,3,grohe bau ceramic,general,22.0,Top,Past 5 Years
+602,4,3,cycling ceramic,general,21.0,Top,Past 5 Years
+603,4,3,meguiars ceramic,general,21.0,Top,Past 5 Years
+604,4,3,living ceramic,general,21.0,Top,Past 5 Years
+605,4,3,ceramic painting,general,20.0,Top,Past 5 Years
+606,4,3,ceramic connection,general,18.0,Top,Past 5 Years
+607,4,3,poêle chef healthy ceramic,general,15.0,Top,Past 5 Years
+608,4,3,greenchef healthy ceramic,general,13.0,Top,Past 5 Years
+609,3,4,pottery art,general,100.0,Top,Past 5 Years
+610,3,4,pottery barn,general,92.0,Top,Past 5 Years
+611,3,4,pottery painting,general,83.0,Top,Past 5 Years
+612,3,4,pottery cafe,general,78.0,Top,Past 5 Years
+613,3,4,pottery art cafe,general,68.0,Top,Past 5 Years
+614,3,4,the pottery,general,55.0,Top,Past 5 Years
+615,3,4,happy pottery,general,39.0,Top,Past 5 Years
+616,3,4,pottery berlin,general,28.0,Top,Past 5 Years
+617,3,4,pottery class,general,26.0,Top,Past 5 Years
+618,3,4,pottery studio,general,22.0,Top,Past 5 Years
+619,3,4,clay,general,21.0,Top,Past 5 Years
+620,3,4,pottery clay,general,21.0,Top,Past 5 Years
+621,3,4,pottery set,general,21.0,Top,Past 5 Years
+622,3,4,pottery workshop,general,18.0,Top,Past 5 Years
+623,3,4,pottery wheel,general,18.0,Top,Past 5 Years
+624,3,4,pottery deutsch,general,17.0,Top,Past 5 Years
+625,3,4,pottery near me,general,16.0,Top,Past 5 Years
+626,3,4,pottery pots,general,15.0,Top,Past 5 Years
+627,3,4,happy pottery karlsruhe,general,15.0,Top,Past 5 Years
+628,3,4,polish pottery,general,14.0,Top,Past 5 Years
+629,3,4,pottery kit,general,14.0,Top,Past 5 Years
+630,3,4,pottery shop,general,13.0,Top,Past 5 Years
+631,3,4,london pottery,general,11.0,Top,Past 5 Years
+632,3,4,minecraft pottery,general,11.0,Top,Past 5 Years
+633,3,4,pottery ideas,general,11.0,Top,Past 5 Years
+634,1,1,thrift store porcelain plate,general,5000.0,Breakout,Past 5 Years
+635,1,1,thrift store rare porcelain plate,general,5000.0,Breakout,Past 5 Years
+636,1,1,vita bella polished porcelain tile,general,1250.0,Rising,Past 5 Years
+637,1,1,porcelain war,general,350.0,Rising,Past 5 Years
+638,1,1,moderno porcelain works,general,300.0,Rising,Past 5 Years
+639,1,1,porcelain pronunciation,general,190.0,Rising,Past 5 Years
+640,1,1,porcelain slabs for shower walls,general,180.0,Rising,Past 5 Years
+641,1,1,marble look porcelain tile,general,170.0,Rising,Past 5 Years
+642,1,1,large format porcelain tile,general,170.0,Rising,Past 5 Years
+643,1,1,porcelain slab,general,140.0,Rising,Past 5 Years
+644,1,1,composite vs porcelain veneers,general,130.0,Rising,Past 5 Years
+645,1,1,composite veneers vs porcelain veneers,general,130.0,Rising,Past 5 Years
+646,1,1,porcelain meaning,general,110.0,Rising,Past 5 Years
+647,1,1,outdoor porcelain tile,general,100.0,Rising,Past 5 Years
+648,1,1,porcelain slabs,general,90.0,Rising,Past 5 Years
+649,1,1,how is porcelain made,general,90.0,Rising,Past 5 Years
+650,1,1,porcelain black,general,80.0,Rising,Past 5 Years
+651,1,1,porcelain vs quartz countertops,general,80.0,Rising,Past 5 Years
+652,1,1,porcelain color,general,80.0,Rising,Past 5 Years
+653,1,1,what is porcelain,general,80.0,Rising,Past 5 Years
+654,1,1,bone china vs porcelain,general,70.0,Rising,Past 5 Years
+655,1,1,porcelain skin,general,70.0,Rising,Past 5 Years
+656,1,1,white porcelain tile,general,70.0,Rising,Past 5 Years
+657,1,1,porcelain pavers,general,60.0,Rising,Past 5 Years
+658,1,1,porcelain clay,general,50.0,Rising,Past 5 Years
+659,10,2,stoneware set,general,100.0,Top,Past 5 Years
+660,10,2,ceramic stoneware,general,89.0,Top,Past 5 Years
+661,10,2,stoneware clay,general,66.0,Top,Past 5 Years
+662,10,2,stoneware pipe,general,64.0,Top,Past 5 Years
+663,10,2,porcelain stoneware,general,56.0,Top,Past 5 Years
+664,10,2,what is stoneware,general,55.0,Top,Past 5 Years
+665,10,2,stoneware plates,general,43.0,Top,Past 5 Years
+666,10,2,stoneware mug,general,39.0,Top,Past 5 Years
+667,10,2,stoneware meaning,general,38.0,Top,Past 5 Years
+668,10,2,stoneware pottery,general,37.0,Top,Past 5 Years
+669,10,2,stoneware bowl,general,34.0,Top,Past 5 Years
+670,10,2,stoneware mugs,general,33.0,Top,Past 5 Years
+671,10,2,stoneware pipes,general,32.0,Top,Past 5 Years
+672,10,2,glazed stoneware,general,32.0,Top,Past 5 Years
+673,10,2,stoneware plate,general,31.0,Top,Past 5 Years
+674,10,2,stoneware crockery,general,25.0,Top,Past 5 Years
+675,10,2,stoneware material,general,25.0,Top,Past 5 Years
+676,10,2,stoneware dinnerware,general,24.0,Top,Past 5 Years
+677,10,2,stoneware bowls,general,18.0,Top,Past 5 Years
+678,10,2,stoneware cups,general,17.0,Top,Past 5 Years
+679,10,2,ceramic vs stoneware,general,15.0,Top,Past 5 Years
+680,10,2,stoneware cookware,general,15.0,Top,Past 5 Years
+681,10,2,stoneware ceramics,general,15.0,Top,Past 5 Years
+682,10,2,ikea stoneware,general,14.0,Top,Past 5 Years
+683,10,2,stoneware vase,general,12.0,Top,Past 5 Years
+684,1,3,ceramic coating,general,100.0,Top,Past 5 Years
+685,1,3,ceramic tile,general,99.0,Top,Past 5 Years
+686,1,3,what is ceramic,general,51.0,Top,Past 5 Years
+687,1,3,ceramic pro,general,44.0,Top,Past 5 Years
+688,1,3,ceramic tint,general,44.0,Top,Past 5 Years
+689,1,3,ceramic cookware,general,38.0,Top,Past 5 Years
+690,1,3,ceramic paint,general,35.0,Top,Past 5 Years
+691,1,3,ceramic glass,general,34.0,Top,Past 5 Years
+692,1,3,ceramic pan,general,33.0,Top,Past 5 Years
+693,1,3,ceramic heater,general,32.0,Top,Past 5 Years
+694,1,3,ceramic pot,general,31.0,Top,Past 5 Years
+695,1,3,ceramic bowl,general,30.0,Top,Past 5 Years
+696,1,3,ceramic mug,general,26.0,Top,Past 5 Years
+697,1,3,porcelain,general,25.0,Top,Past 5 Years
+698,1,3,ceramic lamp,general,23.0,Top,Past 5 Years
+699,1,3,ceramic tiles,general,23.0,Top,Past 5 Years
+700,1,3,ceramic pots,general,22.0,Top,Past 5 Years
+701,1,3,ceramic wax,general,22.0,Top,Past 5 Years
+702,1,3,ceramic pans,general,20.0,Top,Past 5 Years
+703,1,3,ceramic brake pads,general,20.0,Top,Past 5 Years
+704,1,3,ceramic vase,general,20.0,Top,Past 5 Years
+705,1,3,ceramic floor tile,general,19.0,Top,Past 5 Years
+706,1,3,car ceramic coating,general,19.0,Top,Past 5 Years
+707,1,3,ceramic plate,general,17.0,Top,Past 5 Years
+708,1,3,ceramic coat,general,17.0,Top,Past 5 Years
+709,4,2,mayco stoneware glazes,general,5000.0,Breakout,Past 5 Years
+710,4,2,stoneware mug,general,250.0,Rising,Past 5 Years
+711,4,2,highland stoneware,general,80.0,Rising,Past 5 Years
+712,4,2,le creuset stoneware,general,40.0,Rising,Past 5 Years
+713,11,4,roseselsa ceramics ultra,general,5000.0,Breakout,Past 5 Years
+714,11,4,roseselsa ceramics mk2,general,5000.0,Breakout,Past 5 Years
+715,11,4,ancient japanese ceramics,general,5000.0,Breakout,Past 5 Years
+716,11,4,japanese handmade ceramics,general,5000.0,Breakout,Past 5 Years
+717,11,4,traditional japanese ceramics,general,5000.0,Breakout,Past 5 Years
+718,11,4,raku ceramics,general,5000.0,Breakout,Past 5 Years
+719,11,4,ceramics near me,general,350.0,Rising,Past 5 Years
+720,11,4,system ceramics,general,250.0,Rising,Past 5 Years
+721,11,4,online ceramics,general,250.0,Rising,Past 5 Years
+722,11,4,ceramics international,general,160.0,Rising,Past 5 Years
+723,11,4,pottery and ceramics,general,160.0,Rising,Past 5 Years
+724,11,4,glaze ceramics,general,130.0,Rising,Past 5 Years
+725,11,4,japanese ceramics,general,40.0,Rising,Past 5 Years
+726,10,4,pottery cafe delhi,general,4400.0,Rising,Past 5 Years
+727,10,4,studio pottery paradise,general,2500.0,Rising,Past 5 Years
+728,10,4,msn pottery studio,general,1750.0,Rising,Past 5 Years
+729,10,4,claysutra pottery studio,general,1350.0,Rising,Past 5 Years
+730,10,4,healing pottery,general,1050.0,Rising,Past 5 Years
+731,10,4,pottery workshop pune,general,650.0,Rising,Past 5 Years
+732,10,4,pottery cafe near me,general,650.0,Rising,Past 5 Years
+733,10,4,pottery workshop in hyderabad,general,600.0,Rising,Past 5 Years
+734,10,4,pottery workshop delhi,general,450.0,Rising,Past 5 Years
+735,10,4,pottery workshop chennai,general,400.0,Rising,Past 5 Years
+736,10,4,pottery date,general,400.0,Rising,Past 5 Years
+737,10,4,pottery workshop mumbai,general,400.0,Rising,Past 5 Years
+738,10,4,pottery workshop,general,400.0,Rising,Past 5 Years
+739,10,4,pottery barn delhi,general,350.0,Rising,Past 5 Years
+740,10,4,pottery workshop near me,general,350.0,Rising,Past 5 Years
+741,10,4,pottery barn mumbai,general,300.0,Rising,Past 5 Years
+742,10,4,pottery cafe bangalore,general,300.0,Rising,Past 5 Years
+743,10,4,pottery cafe,general,250.0,Rising,Past 5 Years
+744,10,4,pottery workshop bangalore,general,250.0,Rising,Past 5 Years
+745,10,4,pottery studio,general,250.0,Rising,Past 5 Years
+746,10,4,pottery studio near me,general,250.0,Rising,Past 5 Years
+747,10,4,pottery painting near me,general,250.0,Rising,Past 5 Years
+748,10,4,west elm,general,160.0,Rising,Past 5 Years
+749,10,4,nbpw pottery,general,140.0,Rising,Past 5 Years
+750,10,4,3d pottery,general,130.0,Rising,Past 5 Years
+751,2,1,hasami porcelain,general,100.0,Top,Past 5 Years
+752,2,1,porcelain tile,general,87.0,Top,Past 5 Years
+753,2,1,porcelain 意味,general,64.0,Top,Past 5 Years
+754,2,1,what is porcelain,general,58.0,Top,Past 5 Years
+755,2,1,ceramic,general,52.0,Top,Past 5 Years
+756,2,1,white porcelain,general,52.0,Top,Past 5 Years
+757,2,1,arita porcelain,general,49.0,Top,Past 5 Years
+758,2,1,porcelain pixel,general,48.0,Top,Past 5 Years
+759,2,1,porcelain tiles,general,39.0,Top,Past 5 Years
+760,2,1,yumiko iihoshi porcelain,general,36.0,Top,Past 5 Years
+761,2,1,japanese porcelain,general,35.0,Top,Past 5 Years
+762,2,1,porcelain black,general,32.0,Top,Past 5 Years
+763,2,1,porcelain veneers,general,31.0,Top,Past 5 Years
+764,2,1,chinese porcelain,general,28.0,Top,Past 5 Years
+765,2,1,porcelain doll,general,25.0,Top,Past 5 Years
+766,2,1,porcelain meaning,general,23.0,Top,Past 5 Years
+767,2,1,fine porcelain,general,21.0,Top,Past 5 Years
+768,2,1,porcelain skin,general,20.0,Top,Past 5 Years
+769,2,1,porcelain plate,general,19.0,Top,Past 5 Years
+770,2,1,arita porcelain lab,general,16.0,Top,Past 5 Years
+771,2,1,porcelain bowl,general,16.0,Top,Past 5 Years
+772,2,1,royal porcelain,general,14.0,Top,Past 5 Years
+773,2,1,porcelain throne,general,2.0,Top,Past 5 Years
+774,2,1,legle porcelain,general,1.0,Top,Past 5 Years
+775,10,1,porcelain meaning,general,100.0,Top,Past 5 Years
+776,10,1,porcelain tiles,general,82.0,Top,Past 5 Years
+777,10,1,ceramic,general,55.0,Top,Past 5 Years
+778,10,1,what is porcelain,general,43.0,Top,Past 5 Years
+779,10,1,porcelain tile,general,42.0,Top,Past 5 Years
+780,10,1,porcelain white,general,30.0,Top,Past 5 Years
+781,10,1,porcelain veneers,general,24.0,Top,Past 5 Years
+782,10,1,porcelain meaning in hindi,general,21.0,Top,Past 5 Years
+783,10,1,meaning of porcelain,general,17.0,Top,Past 5 Years
+784,10,1,porcelain dish,general,15.0,Top,Past 5 Years
+785,10,1,porcelain insulator,general,15.0,Top,Past 5 Years
+786,10,1,porcelain clay,general,15.0,Top,Past 5 Years
+787,10,1,porcelain material,general,14.0,Top,Past 5 Years
+788,10,1,porcelain crown,general,14.0,Top,Past 5 Years
+789,10,1,porcelain teeth,general,14.0,Top,Past 5 Years
+790,10,1,porcelain skin,general,13.0,Top,Past 5 Years
+791,10,1,porcelain cup,general,13.0,Top,Past 5 Years
+792,10,1,porcelain plates,general,12.0,Top,Past 5 Years
+793,10,1,porcelain plate,general,12.0,Top,Past 5 Years
+794,10,1,porcelain doll,general,12.0,Top,Past 5 Years
+795,10,1,porcelain floor tiles,general,11.0,Top,Past 5 Years
+796,10,1,porcelain gallbladder,general,10.0,Top,Past 5 Years
+797,10,1,porcelain tiles price,general,10.0,Top,Past 5 Years
+798,10,1,ceramic vs porcelain,general,10.0,Top,Past 5 Years
+799,10,1,chinese porcelain,general,9.0,Top,Past 5 Years
+800,11,3,gạch ceramic,general,100.0,Top,Past 5 Years
+801,11,3,phủ ceramic,general,88.0,Top,Past 5 Years
+802,11,3,ceramic là gì,general,68.0,Top,Past 5 Years
+803,11,3,ceramic coating,general,59.0,Top,Past 5 Years
+804,11,3,đá ceramic,general,38.0,Top,Past 5 Years
+805,11,3,ceramic tile,general,26.0,Top,Past 5 Years
+806,11,3,ceramic tiles,general,21.0,Top,Past 5 Years
+807,11,3,ceramic mug,general,19.0,Top,Past 5 Years
+808,11,3,ceramic pro,general,19.0,Top,Past 5 Years
+809,11,3,phủ ceramic ô tô,general,17.0,Top,Past 5 Years
+810,11,3,nano ceramic,general,17.0,Top,Past 5 Years
+811,11,3,porcelain,general,17.0,Top,Past 5 Years
+812,11,3,ceramic cup,general,16.0,Top,Past 5 Years
+813,11,3,chảo ceramic,general,15.0,Top,Past 5 Years
+814,11,3,ceramic art,general,12.0,Top,Past 5 Years
+815,11,3,gạch ceramic 600x600,general,12.0,Top,Past 5 Years
+816,11,3,đồng hồ ceramic,general,11.0,Top,Past 5 Years
+817,11,3,ceramic wax,general,10.0,Top,Past 5 Years
+818,11,3,ceramic bowl,general,10.0,Top,Past 5 Years
+819,11,3,ceramic pot,general,10.0,Top,Past 5 Years
+820,11,3,ceramic vase,general,9.0,Top,Past 5 Years
+821,11,3,ceramic pots,general,9.0,Top,Past 5 Years
+822,11,3,ceramic international,general,7.0,Top,Past 5 Years
+823,11,3,ceramic speed,general,5.0,Top,Past 5 Years
+824,11,3,ceramic club,general,5.0,Top,Past 5 Years
+825,2,4,japan ceramics,general,100.0,Top,Past 5 Years
+826,2,4,online ceramics,general,74.0,Top,Past 5 Years
+827,2,4,ceramics international,general,60.0,Top,Past 5 Years
+828,2,4,kyoto ceramics,general,56.0,Top,Past 5 Years
+829,2,4,japanese ceramics,general,55.0,Top,Past 5 Years
+830,2,4,advanced ceramics,general,27.0,Top,Past 5 Years
+831,2,4,open ceramics,general,25.0,Top,Past 5 Years
+832,2,4,3rd ceramics,general,24.0,Top,Past 5 Years
+833,2,4,towa ceramics,general,23.0,Top,Past 5 Years
+834,2,4,heath ceramics,general,18.0,Top,Past 5 Years
+835,2,4,ceramics meaning,general,17.0,Top,Past 5 Years
+836,2,4,fine ceramics,general,16.0,Top,Past 5 Years
+837,2,4,technical ceramics,general,15.0,Top,Past 5 Years
+838,2,4,ceramics near me,general,14.0,Top,Past 5 Years
+839,2,4,towa ceramics マグカップ,general,8.0,Top,Past 5 Years
+840,2,4,north face online ceramics,general,6.0,Top,Past 5 Years
+841,2,4,nr ceramics,general,4.0,Top,Past 5 Years
+842,2,4,the north face online ceramics,general,4.0,Top,Past 5 Years
+843,2,4,ceramics store near me,general,3.0,Top,Past 5 Years
+844,2,4,roseselsa ceramics ultra,general,2.0,Top,Past 5 Years
+845,4,3,healthy ceramic green chef,general,5000.0,Breakout,Past 5 Years
+846,4,3,poêle chef healthy ceramic,general,5000.0,Breakout,Past 5 Years
+847,4,3,greenchef healthy ceramic,general,5000.0,Breakout,Past 5 Years
+848,4,3,mannol ceramic,general,5000.0,Breakout,Past 5 Years
+849,4,3,green chef healthy ceramic avis,general,5000.0,Breakout,Past 5 Years
+850,4,3,ceramic keycaps,general,5000.0,Breakout,Past 5 Years
+851,4,3,the blue flowers and the ceramic forest,general,5000.0,Breakout,Past 5 Years
+852,4,3,tudor black bay ceramic blue,general,5000.0,Breakout,Past 5 Years
+853,4,3,tirtir ceramic milk ampoule,general,5000.0,Breakout,Past 5 Years
+854,4,3,ceramic art fair,general,2450.0,Rising,Past 5 Years
+855,4,3,ceramic brussels,general,1850.0,Rising,Past 5 Years
+856,4,3,ceramic art fair paris,general,1500.0,Rising,Past 5 Years
+857,4,3,ceramic connection,general,1350.0,Rising,Past 5 Years
+858,4,3,ceramic cafe,general,500.0,Rising,Past 5 Years
+859,4,3,fictech ceramic bubble,general,400.0,Rising,Past 5 Years
+860,4,3,ceramic painting,general,300.0,Rising,Past 5 Years
+861,4,3,ceramic pan,general,140.0,Rising,Past 5 Years
+862,4,3,living ceramic,general,140.0,Rising,Past 5 Years
+863,4,3,ceramic decor,general,120.0,Rising,Past 5 Years
+864,4,3,ceramic stone,general,70.0,Rising,Past 5 Years
+865,4,3,ceramic house,general,60.0,Rising,Past 5 Years
+866,4,3,ceramic coating,general,50.0,Rising,Past 5 Years
+867,3,2,stoneware pampered chef,general,100.0,Top,Past 5 Years
+868,3,2,le creuset stoneware,general,24.0,Top,Past 5 Years
+869,3,2,stoneware mug,general,22.0,Top,Past 5 Years
+870,3,2,porcelain stoneware,general,21.0,Top,Past 5 Years
+871,3,2,stoneware dinnerware,general,20.0,Top,Past 5 Years
+872,3,2,stoneware backblech,general,14.0,Top,Past 5 Years
+873,3,2,stoneware plates,general,13.0,Top,Past 5 Years
+874,3,2,stoneware clay,general,13.0,Top,Past 5 Years
+875,3,2,what is stoneware,general,12.0,Top,Past 5 Years
+876,3,2,stoneware dinner set,general,11.0,Top,Past 5 Years
+877,3,2,stoneware von pampered chef,general,8.0,Top,Past 5 Years
+878,3,2,mayco stoneware,general,8.0,Top,Past 5 Years
+879,3,2,vancasso stoneware,general,4.0,Top,Past 5 Years
+880,3,2,stoneware vs porcelain,general,4.0,Top,Past 5 Years
+881,3,2,stoneware duo,general,3.0,Top,Past 5 Years
+882,3,2,le creuset stoneware mug,general,2.0,Top,Past 5 Years
+883,11,2,ohio stoneware ortonville mi,general,5000.0,Breakout,Past 5 Years
+884,11,2,stoneware mug,general,170.0,Rising,Past 5 Years
+885,11,2,porcelain stoneware,general,160.0,Rising,Past 5 Years
+886,11,2,stoneware clay,general,90.0,Rising,Past 5 Years
+887,11,2,stoneware dinnerware sets,general,80.0,Rising,Past 5 Years
+888,11,2,porcelain vs stoneware,general,60.0,Rising,Past 5 Years
+889,4,4,minimal ceramics,general,5000.0,Breakout,Past 5 Years
+890,4,4,fenua ceramics,general,5000.0,Breakout,Past 5 Years
+891,4,4,lofa ceramics,general,5000.0,Breakout,Past 5 Years
+892,4,4,ceramics brussels,general,5000.0,Breakout,Past 5 Years
+893,4,4,tanti ceramics,general,5000.0,Breakout,Past 5 Years
+894,4,4,nick cave ceramics,general,5000.0,Breakout,Past 5 Years
+895,4,4,vuvu ceramics,general,5000.0,Breakout,Past 5 Years
+896,4,4,mishima ceramics,general,5000.0,Breakout,Past 5 Years
+897,4,4,que rico ceramics,general,5000.0,Breakout,Past 5 Years
+898,4,4,moona ceramics,general,5000.0,Breakout,Past 5 Years
+899,4,4,shayne greco ceramics,general,3750.0,Rising,Past 5 Years
+900,4,4,duro ceramics,general,2900.0,Rising,Past 5 Years
+901,4,4,ceramics now,general,1300.0,Rising,Past 5 Years
+902,4,4,super ceramics,general,450.0,Rising,Past 5 Years
+903,4,4,ceramics near me,general,350.0,Rising,Past 5 Years
+904,4,4,open ceramics,general,350.0,Rising,Past 5 Years
+905,4,4,online ceramics,general,200.0,Rising,Past 5 Years
+906,4,4,quail ceramics,general,130.0,Rising,Past 5 Years
+907,4,4,ceramics international,general,40.0,Rising,Past 5 Years
+908,4,1,porcelain tile,general,100.0,Top,Past 5 Years
+909,4,1,porcelain moby,general,78.0,Top,Past 5 Years
+910,4,1,porcelain tiles,general,69.0,Top,Past 5 Years
+911,4,1,limoges porcelain,general,59.0,Top,Past 5 Years
+912,4,1,porcelain black,general,53.0,Top,Past 5 Years
+913,4,1,porcelain veneers,general,53.0,Top,Past 5 Years
+914,4,1,chinese porcelain,general,48.0,Top,Past 5 Years
+915,4,1,porcelain doll,general,43.0,Top,Past 5 Years
+916,4,1,porcelain art,general,38.0,Top,Past 5 Years
+917,4,1,fine porcelain,general,33.0,Top,Past 5 Years
+918,4,1,porcelain skin,general,31.0,Top,Past 5 Years
+919,4,1,rak porcelain,general,23.0,Top,Past 5 Years
+920,4,1,porcelain lyrics,general,22.0,Top,Past 5 Years
+921,4,1,broken porcelain,general,18.0,Top,Past 5 Years
+922,4,1,blue and white porcelain,general,18.0,Top,Past 5 Years
+923,4,1,meissen porcelain,general,16.0,Top,Past 5 Years
+924,4,1,porcelain dolls,general,14.0,Top,Past 5 Years
+925,4,1,porcelain stoneware,general,14.0,Top,Past 5 Years
+926,4,1,remothered broken porcelain,general,14.0,Top,Past 5 Years
+927,4,1,porcelain war,general,13.0,Top,Past 5 Years
+928,4,1,cold porcelain,general,13.0,Top,Past 5 Years
+929,4,1,limoges france porcelain,general,12.0,Top,Past 5 Years
+930,4,1,how to clean porcelain sink,general,11.0,Top,Past 5 Years
+931,4,1,hasami porcelain,general,11.0,Top,Past 5 Years
+932,4,1,porcelain lux,general,9.0,Top,Past 5 Years
+933,4,1,porcelain lux,general,5000.0,Breakout,Past 5 Years
+934,4,1,porcelain kindred,general,5000.0,Breakout,Past 5 Years
+935,4,1,porcelain skin lol,general,5000.0,Breakout,Past 5 Years
+936,4,1,porcelain ezreal,general,5000.0,Breakout,Past 5 Years
+937,4,1,prestige porcelain kindred,general,5000.0,Breakout,Past 5 Years
+938,4,1,porcelain irelia,general,5000.0,Breakout,Past 5 Years
+939,4,1,amumu porcelain,general,5000.0,Breakout,Past 5 Years
+940,4,1,adidas porcelain samba,general,5000.0,Breakout,Past 5 Years
+941,4,1,porcelain faouzia,general,1200.0,Rising,Past 5 Years
+942,4,1,how to clean porcelain sink,general,1150.0,Rising,Past 5 Years
+943,4,1,porcelain sweater,general,1150.0,Rising,Past 5 Years
+944,4,1,porcelain war,general,850.0,Rising,Past 5 Years
+945,4,1,kutani porcelain,general,500.0,Rising,Past 5 Years
+946,4,1,porcelain veneers near me,general,300.0,Rising,Past 5 Years
+947,4,1,porcelain faouzia lyrics,general,250.0,Rising,Past 5 Years
+948,4,1,porcelain paving,general,200.0,Rising,Past 5 Years
+949,4,1,porcelain vs ceramic,general,200.0,Rising,Past 5 Years
+950,4,1,porcelain skin,general,170.0,Rising,Past 5 Years
+951,4,1,jingdezhen porcelain,general,170.0,Rising,Past 5 Years
+952,4,1,feldspar porcelain,general,140.0,Rising,Past 5 Years
+953,4,1,hasami porcelain,general,90.0,Rising,Past 5 Years
+954,4,1,porcelain tile,general,90.0,Rising,Past 5 Years
+955,4,1,porcelain stoneware,general,90.0,Rising,Past 5 Years
+956,4,1,porcelain tiles,general,80.0,Rising,Past 5 Years
+957,4,1,cold porcelain,general,70.0,Rising,Past 5 Years
+958,1,2,threshold westfield 12pc stoneware dinnerware set,general,5000.0,Breakout,Past 5 Years
+959,1,2,costco denmark stoneware set,general,5000.0,Breakout,Past 5 Years
+960,1,2,stone lain celina dinnerware set stoneware,general,3300.0,Rising,Past 5 Years
+961,1,2,vancasso stoneware,general,2450.0,Rising,Past 5 Years
+962,1,2,sam's club stoneware set,general,550.0,Rising,Past 5 Years
+963,1,2,is stoneware non toxic,general,500.0,Rising,Past 5 Years
+964,1,2,over and back stoneware,general,350.0,Rising,Past 5 Years
+965,1,2,pottery barn mason stoneware,general,350.0,Rising,Past 5 Years
+966,1,2,threshold stoneware mug,general,300.0,Rising,Past 5 Years
+967,1,2,stoneware dinnerware set,general,200.0,Rising,Past 5 Years
+968,1,2,stoneware dinner set,general,190.0,Rising,Past 5 Years
+969,1,2,threshold stoneware,general,190.0,Rising,Past 5 Years
+970,1,2,stoneware plate set,general,150.0,Rising,Past 5 Years
+971,1,2,ohio stoneware fermentation crock,general,150.0,Rising,Past 5 Years
+972,1,2,stoneware set,general,130.0,Rising,Past 5 Years
+973,1,2,what is stoneware,general,80.0,Rising,Past 5 Years
+974,1,2,stoneware baking dish,general,70.0,Rising,Past 5 Years
+975,1,2,stoneware mug,general,60.0,Rising,Past 5 Years
+976,1,2,stoneware bowl,general,60.0,Rising,Past 5 Years
+977,1,2,corelle stoneware,general,50.0,Rising,Past 5 Years
+978,1,2,stoneware dinner plates,general,50.0,Rising,Past 5 Years
+979,1,2,stoneware plates,general,40.0,Rising,Past 5 Years
+980,1,2,stoneware clay,general,40.0,Rising,Past 5 Years
+981,3,2,vancasso stoneware,general,5000.0,Breakout,Past 5 Years
+982,3,2,stoneware duo,general,5000.0,Breakout,Past 5 Years
+983,3,2,le creuset stoneware mug,general,5000.0,Breakout,Past 5 Years
+984,3,2,stoneware dinner set,general,1350.0,Rising,Past 5 Years
+985,3,2,stoneware dinnerware,general,1000.0,Rising,Past 5 Years
+986,3,2,stoneware vs porcelain,general,600.0,Rising,Past 5 Years
+987,3,2,what is stoneware,general,500.0,Rising,Past 5 Years
+988,3,2,stoneware backblech,general,400.0,Rising,Past 5 Years
+989,3,2,mayco stoneware,general,350.0,Rising,Past 5 Years
+990,3,2,stoneware clay,general,300.0,Rising,Past 5 Years
+991,3,2,stoneware mug,general,250.0,Rising,Past 5 Years
+992,3,2,stoneware plates,general,250.0,Rising,Past 5 Years
+993,3,2,le creuset stoneware,general,180.0,Rising,Past 5 Years
+994,3,2,porcelain stoneware,general,50.0,Rising,Past 5 Years
+995,11,4,pottery village,general,100.0,Top,Past 5 Years
+996,11,4,pottery barn,general,72.0,Top,Past 5 Years
+997,11,4,do pottery,general,51.0,Top,Past 5 Years
+998,11,4,make pottery,general,40.0,Top,Past 5 Years
+999,11,4,pottery making,general,39.0,Top,Past 5 Years
+1000,11,4,pottery workshop,general,39.0,Top,Past 5 Years
+1001,11,4,pottery là gì,general,38.0,Top,Past 5 Years
+1002,11,4,bat trang pottery village,general,35.0,Top,Past 5 Years
+1003,11,4,pottery class,general,29.0,Top,Past 5 Years
+1004,11,4,clay,general,29.0,Top,Past 5 Years
+1005,11,4,pottery near me,general,28.0,Top,Past 5 Years
+1006,11,4,ceramic pottery,general,26.0,Top,Past 5 Years
+1007,11,4,pottery painting,general,19.0,Top,Past 5 Years
+1008,11,4,pottery production in ancient akrotiri,general,17.0,Top,Past 5 Years
+1009,11,4,pottery classes,general,15.0,Top,Past 5 Years
+1010,11,4,pottery studio,general,15.0,Top,Past 5 Years
+1011,11,4,pottery wheel,general,15.0,Top,Past 5 Years
+1012,11,4,pottery meaning,general,14.0,Top,Past 5 Years
+1013,11,4,pottery production in ancient akrotiri reading answers,general,4.0,Top,Past 5 Years
+1014,11,4,pottery is passing down from artisans to trainees so that they can maintain the art,general,1.0,Top,Past 5 Years
+1015,11,4,the price of clay supplies and equipment is a small percentage of the total cost to pottery,general,1.0,Top,Past 5 Years
+1016,11,4,scientists working on the site found many ancient tools tombs and pottery and made some important,general,1.0,Top,Past 5 Years
+1017,1,3,ceramic keycaps,general,4650.0,Rising,Past 5 Years
+1018,1,3,cerakote ceramic headlight restoration kit,general,600.0,Rising,Past 5 Years
+1019,1,3,nano ceramic tint,general,450.0,Rising,Past 5 Years
+1020,1,3,ceramic table lamp,general,350.0,Rising,Past 5 Years
+1021,1,3,ceramic cookware set,general,250.0,Rising,Past 5 Years
+1022,1,3,carbon tint vs ceramic,general,200.0,Rising,Past 5 Years
+1023,1,3,are ceramic pans safe,general,200.0,Rising,Past 5 Years
+1024,1,3,ceramic tint vs regular tint,general,180.0,Rising,Past 5 Years
+1025,1,3,ceramic tint,general,180.0,Rising,Past 5 Years
+1026,1,3,ceramic tint near me,general,170.0,Rising,Past 5 Years
+1027,1,3,ceramic speed,general,170.0,Rising,Past 5 Years
+1028,1,3,system x ceramic coating,general,170.0,Rising,Past 5 Years
+1029,1,3,ceramic non stick pans,general,140.0,Rising,Past 5 Years
+1030,1,3,is ceramic coating worth it,general,140.0,Rising,Past 5 Years
+1031,1,3,ceramic window tint near me,general,140.0,Rising,Past 5 Years
+1032,1,3,is ceramic cookware safe,general,140.0,Rising,Past 5 Years
+1033,1,3,what is ceramic coating,general,130.0,Rising,Past 5 Years
+1034,1,3,ceramic lamp,general,130.0,Rising,Past 5 Years
+1035,1,3,ceramic tint cost,general,130.0,Rising,Past 5 Years
+1036,1,3,ceramic window tint,general,130.0,Rising,Past 5 Years
+1037,1,3,ceramic pro,general,100.0,Rising,Past 5 Years
+1038,1,3,ceramic vase,general,90.0,Rising,Past 5 Years
+1039,1,3,what is ceramic,general,90.0,Rising,Past 5 Years
+1040,1,3,ceramic coat,general,90.0,Rising,Past 5 Years
+1041,1,3,ceramic pan,general,70.0,Rising,Past 5 Years
+1042,4,4,paris ceramics,general,100.0,Top,Past 5 Years
+1043,4,4,living ceramics,general,84.0,Top,Past 5 Years
+1044,4,4,thermal ceramics,general,75.0,Top,Past 5 Years
+1045,4,4,bernard ceramics,general,72.0,Top,Past 5 Years
+1046,4,4,online ceramics,general,70.0,Top,Past 5 Years
+1047,4,4,normandy ceramics,general,48.0,Top,Past 5 Years
+1048,4,4,rak ceramics,general,45.0,Top,Past 5 Years
+1049,4,4,ceramics international,general,33.0,Top,Past 5 Years
+1050,4,4,safran ceramics,general,33.0,Top,Past 5 Years
+1051,4,4,imerys ceramics,general,32.0,Top,Past 5 Years
+1052,4,4,quail ceramics,general,29.0,Top,Past 5 Years
+1053,4,4,brutal ceramics,general,28.0,Top,Past 5 Years
+1054,4,4,ceramics near me,general,26.0,Top,Past 5 Years
+1055,4,4,super ceramics,general,24.0,Top,Past 5 Years
+1056,4,4,duro ceramics,general,23.0,Top,Past 5 Years
+1057,4,4,japanese ceramics,general,20.0,Top,Past 5 Years
+1058,4,4,imerys ceramics france,general,20.0,Top,Past 5 Years
+1059,4,4,open ceramics,general,18.0,Top,Past 5 Years
+1060,4,4,morgan thermal ceramics,general,14.0,Top,Past 5 Years
+1061,4,4,kerion ceramics,general,12.0,Top,Past 5 Years
+1062,4,4,thermal ceramics saint marcellin,general,11.0,Top,Past 5 Years
+1063,4,4,minimal ceramics,general,9.0,Top,Past 5 Years
+1064,4,4,ceramics now,general,9.0,Top,Past 5 Years
+1065,4,4,fenua ceramics,general,8.0,Top,Past 5 Years
+1066,4,4,lofa ceramics,general,6.0,Top,Past 5 Years
+1067,11,4,ceramics international,general,100.0,Top,Past 5 Years
+1068,11,4,ceramics near me,general,92.0,Top,Past 5 Years
+1069,11,4,online ceramics,general,76.0,Top,Past 5 Years
+1070,11,4,chinese ceramics,general,55.0,Top,Past 5 Years
+1071,11,4,japanese ceramics,general,53.0,Top,Past 5 Years
+1072,11,4,pottery and ceramics,general,47.0,Top,Past 5 Years
+1073,11,4,system ceramics,general,43.0,Top,Past 5 Years
+1074,11,4,ceramics tiles,general,43.0,Top,Past 5 Years
+1075,11,4,vietnamese ceramics,general,42.0,Top,Past 5 Years
+1076,11,4,handmade ceramics,general,40.0,Top,Past 5 Years
+1077,11,4,ceramics meaning,general,34.0,Top,Past 5 Years
+1078,11,4,glaze ceramics,general,32.0,Top,Past 5 Years
+1079,11,4,roseselsa ceramics ultra,general,18.0,Top,Past 5 Years
+1080,11,4,roseselsa ceramics mk2,general,13.0,Top,Past 5 Years
+1081,11,4,ancient japanese ceramics,general,6.0,Top,Past 5 Years
+1082,11,4,japanese handmade ceramics,general,3.0,Top,Past 5 Years
+1083,11,4,traditional japanese ceramics,general,3.0,Top,Past 5 Years
+1084,11,4,raku ceramics,general,2.0,Top,Past 5 Years
+1085,1,2,stoneware set,general,100.0,Top,Past 5 Years
+1086,1,2,stoneware dinnerware,general,77.0,Top,Past 5 Years
+1087,1,2,stoneware bowl,general,42.0,Top,Past 5 Years
+1088,1,2,stoneware dinnerware set,general,42.0,Top,Past 5 Years
+1089,1,2,stoneware pottery,general,41.0,Top,Past 5 Years
+1090,1,2,stoneware plates,general,37.0,Top,Past 5 Years
+1091,1,2,stoneware dishes,general,36.0,Top,Past 5 Years
+1092,1,2,pampered chef stoneware,general,34.0,Top,Past 5 Years
+1093,1,2,stoneware mug,general,33.0,Top,Past 5 Years
+1094,1,2,stoneware crock,general,33.0,Top,Past 5 Years
+1095,1,2,stoneware bowls,general,30.0,Top,Past 5 Years
+1096,1,2,what is stoneware,general,27.0,Top,Past 5 Years
+1097,1,2,le creuset stoneware,general,23.0,Top,Past 5 Years
+1098,1,2,stoneware mugs,general,22.0,Top,Past 5 Years
+1099,1,2,stoneware clay,general,21.0,Top,Past 5 Years
+1100,1,2,porcelain stoneware,general,19.0,Top,Past 5 Years
+1101,1,2,stoneware pan,general,18.0,Top,Past 5 Years
+1102,1,2,stoneware dinnerware sets,general,15.0,Top,Past 5 Years
+1103,1,2,stoneware dinner set,general,12.0,Top,Past 5 Years
+1104,1,2,ohio stoneware,general,12.0,Top,Past 5 Years
+1105,1,2,threshold stoneware,general,11.0,Top,Past 5 Years
+1106,1,2,target stoneware,general,10.0,Top,Past 5 Years
+1107,1,2,louisville stoneware,general,10.0,Top,Past 5 Years
+1108,1,2,corelle stoneware,general,9.0,Top,Past 5 Years
+1109,1,2,stoneware baking dish,general,9.0,Top,Past 5 Years
+1110,10,2,stoneware plate,general,250.0,Rising,Past 5 Years
+1111,10,2,stoneware vase,general,250.0,Rising,Past 5 Years
+1112,10,2,glazed stoneware dinnerware,general,200.0,Rising,Past 5 Years
+1113,10,2,stoneware bowl,general,170.0,Rising,Past 5 Years
+1114,10,2,ceramic vs stoneware,general,110.0,Rising,Past 5 Years
+1115,10,2,stoneware mug,general,100.0,Rising,Past 5 Years
+1116,10,2,ikea stoneware,general,90.0,Rising,Past 5 Years
+1117,10,2,stoneware vs porcelain,general,90.0,Rising,Past 5 Years
+1118,10,2,stoneware set,general,70.0,Rising,Past 5 Years
+1119,10,2,what is stoneware,general,60.0,Rising,Past 5 Years
+1120,10,2,stoneware clay,general,40.0,Rising,Past 5 Years
+1121,10,2,porcelain stoneware,general,40.0,Rising,Past 5 Years
+1122,11,1,porcelain irelia,general,5000.0,Breakout,Past 5 Years
+1123,11,1,kawasaki porcelain q5,general,5000.0,Breakout,Past 5 Years
+1124,11,1,porcelain benchtop,general,5000.0,Breakout,Past 5 Years
+1125,11,1,porcelain pronunciation,general,5000.0,Breakout,Past 5 Years
+1126,11,1,how to clean porcelain sink,general,1500.0,Rising,Past 5 Years
+1127,11,1,porcelain blue switch,general,700.0,Rising,Past 5 Years
+1128,11,1,porcelain dipper,general,550.0,Rising,Past 5 Years
+1129,11,1,porcelain mask,general,400.0,Rising,Past 5 Years
+1130,11,1,gạch porcelain,general,170.0,Rising,Past 5 Years
+1131,11,1,porcelain blue,general,130.0,Rising,Past 5 Years
+1132,11,1,porcelain cup,general,100.0,Rising,Past 5 Years
+1133,11,1,porcelain là gì,general,100.0,Rising,Past 5 Years
+1134,11,1,chinese porcelain,general,80.0,Rising,Past 5 Years
+1135,11,1,white porcelain,general,70.0,Rising,Past 5 Years
+1136,11,1,blue and white porcelain,general,70.0,Rising,Past 5 Years
+1137,11,1,ceramic,general,60.0,Rising,Past 5 Years
+1138,11,1,porcelain doll,general,40.0,Rising,Past 5 Years
+1139,10,4,ama ceramics private,general,5000.0,Breakout,Past 5 Years
+1140,10,4,ama ceramics pvt ltd,general,5000.0,Breakout,Past 5 Years
+1141,10,4,aravind ceramics a,general,5000.0,Breakout,Past 5 Years
+1142,10,4,aravind ceramics pvt,general,4700.0,Rising,Past 5 Years
+1143,10,4,associated ceramics ltd share price,general,1850.0,Rising,Past 5 Years
+1144,10,4,associated ceramics share price,general,1400.0,Rising,Past 5 Years
+1145,10,4,regency ceramics share price,general,1000.0,Rising,Past 5 Years
+1146,10,4,regency ceramics,general,500.0,Rising,Past 5 Years
+1147,10,4,house of ceramics,general,350.0,Rising,Past 5 Years
+1148,10,4,mp ceramics world,general,300.0,Rising,Past 5 Years
+1149,10,4,lakshmi ceramics rs puram,general,200.0,Rising,Past 5 Years
+1150,10,4,ganesh ceramics vellore,general,160.0,Rising,Past 5 Years
+1151,10,4,amalfiee ceramics,general,150.0,Rising,Past 5 Years
+1152,10,4,zxxg ceramics,general,120.0,Rising,Past 5 Years
+1153,10,4,devaki ceramics,general,120.0,Rising,Past 5 Years
+1154,10,4,mp ceramics,general,100.0,Rising,Past 5 Years
+1155,10,4,maruthi ceramics,general,80.0,Rising,Past 5 Years
+1156,10,4,ksr ceramics,general,80.0,Rising,Past 5 Years
+1157,10,4,ceramics near me,general,70.0,Rising,Past 5 Years
+1158,10,4,ceramics international,general,50.0,Rising,Past 5 Years
+1159,10,4,what is ceramics,general,40.0,Rising,Past 5 Years
+1160,2,4,pottery barn kids backpack,general,5000.0,Breakout,Past 5 Years
+1161,2,4,3d pottery,general,1100.0,Rising,Past 5 Years
+1162,2,4,pottery store near me,general,350.0,Rising,Past 5 Years
+1163,2,4,pottery workshop,general,350.0,Rising,Past 5 Years
+1164,2,4,arita pottery festival,general,300.0,Rising,Past 5 Years
+1165,2,4,pottery shop near me,general,200.0,Rising,Past 5 Years
+1166,2,4,pottery studio,general,150.0,Rising,Past 5 Years
+1167,2,4,pottery near me,general,150.0,Rising,Past 5 Years
+1168,2,4,pottery 読み方,general,120.0,Rising,Past 5 Years
+1169,2,4,pottery class,general,90.0,Rising,Past 5 Years
+1170,2,4,pottery meaning,general,90.0,Rising,Past 5 Years
+1171,2,4,pottery shop,general,80.0,Rising,Past 5 Years
+1172,2,4,japan pottery,general,40.0,Rising,Past 5 Years
+1173,1,4,freestyle ceramics and tufting,general,5000.0,Breakout,Past 5 Years
+1174,1,4,north face online ceramics,general,5000.0,Breakout,Past 5 Years
+1175,1,4,freestyle ceramics,general,5000.0,Breakout,Past 5 Years
+1176,1,4,turnagain ceramics,general,5000.0,Breakout,Past 5 Years
+1177,1,4,sunday morning ceramics,general,2100.0,Rising,Past 5 Years
+1178,1,4,sunroom ceramics,general,1850.0,Rising,Past 5 Years
+1179,1,4,south bay ceramics,general,950.0,Rising,Past 5 Years
+1180,1,4,nova ceramics,general,900.0,Rising,Past 5 Years
+1181,1,4,mora ceramics,general,850.0,Rising,Past 5 Years
+1182,1,4,which is a use for clay? ceramics batteries plaster chalk,general,650.0,Rising,Past 5 Years
+1183,1,4,cass ceramics,general,600.0,Rising,Past 5 Years
+1184,1,4,villa ceramics,general,250.0,Rising,Past 5 Years
+1185,1,4,quail ceramics,general,200.0,Rising,Past 5 Years
+1186,1,4,what are ceramics,general,110.0,Rising,Past 5 Years
+1187,1,4,sin ceramics,general,110.0,Rising,Past 5 Years
+1188,1,4,ceramics for you,general,100.0,Rising,Past 5 Years
+1189,1,4,ceramics in the city,general,100.0,Rising,Past 5 Years
+1190,1,4,ceramics vs pottery,general,100.0,Rising,Past 5 Years
+1191,1,4,painting ceramics near me,general,90.0,Rising,Past 5 Years
+1192,1,4,clay king ceramics,general,90.0,Rising,Past 5 Years
+1193,1,4,what is ceramics,general,80.0,Rising,Past 5 Years
+1194,1,4,ceramics tools,general,80.0,Rising,Past 5 Years
+1195,1,4,fire it ceramics,general,80.0,Rising,Past 5 Years
+1196,1,4,online ceramics,general,70.0,Rising,Past 5 Years
+1197,1,4,ceramics ideas,general,60.0,Rising,Past 5 Years
+1198,1,4,what is ceramics,general,100.0,Top,Past 5 Years
+1199,1,4,ceramics near me,general,93.0,Top,Past 5 Years
+1200,1,4,ceramics art,general,91.0,Top,Past 5 Years
+1201,1,4,online ceramics,general,80.0,Top,Past 5 Years
+1202,1,4,ceramics class,general,65.0,Top,Past 5 Years
+1203,1,4,heath ceramics,general,60.0,Top,Past 5 Years
+1204,1,4,ceramics studio,general,57.0,Top,Past 5 Years
+1205,1,4,paint ceramics,general,54.0,Top,Past 5 Years
+1206,1,4,ceramics classes,general,53.0,Top,Past 5 Years
+1207,1,4,ceramics painting,general,40.0,Top,Past 5 Years
+1208,1,4,what are ceramics,general,39.0,Top,Past 5 Years
+1209,1,4,ceramics definition,general,26.0,Top,Past 5 Years
+1210,1,4,ceramics ideas,general,24.0,Top,Past 5 Years
+1211,1,4,ceramics to paint,general,22.0,Top,Past 5 Years
+1212,1,4,ceramics classes near me,general,21.0,Top,Past 5 Years
+1213,1,4,ceramics for you,general,21.0,Top,Past 5 Years
+1214,1,4,japanese ceramics,general,20.0,Top,Past 5 Years
+1215,1,4,ceramics wheel,general,19.0,Top,Past 5 Years
+1216,1,4,ceramics artists,general,17.0,Top,Past 5 Years
+1217,1,4,ceramics jobs,general,14.0,Top,Past 5 Years
+1218,1,4,bisque ceramics,general,13.0,Top,Past 5 Years
+1219,1,4,ceramics tools,general,13.0,Top,Past 5 Years
+1220,1,4,painting ceramics near me,general,12.0,Top,Past 5 Years
+1221,1,4,dental ceramics,general,12.0,Top,Past 5 Years
+1222,1,4,paint ceramics near me,general,11.0,Top,Past 5 Years
+1223,1,4,pottery barn,general,100.0,Top,Past 5 Years
+1224,1,4,kids pottery barn,general,16.0,Top,Past 5 Years
+1225,1,4,pottery near me,general,8.0,Top,Past 5 Years
+1226,1,4,pottery barn teen,general,6.0,Top,Past 5 Years
+1227,1,4,pottery painting,general,5.0,Top,Past 5 Years
+1228,1,4,pottery barn bed,general,4.0,Top,Past 5 Years
+1229,1,4,pottery classes,general,4.0,Top,Past 5 Years
+1230,1,4,pottery barn furniture,general,4.0,Top,Past 5 Years
+1231,1,4,pottery class,general,3.0,Top,Past 5 Years
+1232,1,4,crate and barrel,general,3.0,Top,Past 5 Years
+1233,1,4,west elm,general,3.0,Top,Past 5 Years
+1234,1,4,pottery wheel,general,3.0,Top,Past 5 Years
+1235,1,4,pottery clay,general,3.0,Top,Past 5 Years
+1236,1,4,pottery barn outlet,general,3.0,Top,Past 5 Years
+1237,1,4,pottery studio,general,3.0,Top,Past 5 Years
+1238,1,4,paint pottery,general,3.0,Top,Past 5 Years
+1239,1,4,pottery barn baby,general,2.0,Top,Past 5 Years
+1240,1,4,old time pottery,general,2.0,Top,Past 5 Years
+1241,1,4,pottery classes near me,general,2.0,Top,Past 5 Years
+1242,1,4,pottery barn sofa,general,2.0,Top,Past 5 Years
+1243,1,4,pottery barn near me,general,2.0,Top,Past 5 Years
+1244,1,4,pottery barn bedding,general,2.0,Top,Past 5 Years
+1245,1,4,pottery barn christmas,general,1.0,Top,Past 5 Years
+1246,1,4,pottery barn desk,general,1.0,Top,Past 5 Years
+1247,1,4,pottery painting near me,general,1.0,Top,Past 5 Years
