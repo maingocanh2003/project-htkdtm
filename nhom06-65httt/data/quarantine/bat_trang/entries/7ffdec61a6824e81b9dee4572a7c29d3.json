@@ -1,0 +1,115 @@
+{
+  "collected_at_iso": "2026-11-27T13:22:47.414815+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "7ffdec61a6824e81b9dee4572a7c29d3",
+  "quarantined_at_iso": "2026-11-28T15:35:27.025643+00:00",
+  "raw_collection_id": "078e6c0a2733420c8c94cca26272ba49",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "LỘC BÌNH BÁT TRÀNG THẾP VÀNG",
+      "status": "confirmed",
+      "value": "DINNERWARE"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": "Giá trị văn bản bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": "Giá trị văn bản bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "0.0",
+      "status": "confirmed",
+      "value": "0.0"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "LỘC BÌNH MEN RẠN TỨ CẢNH THẾP VÀNG",
+      "status": "confirmed",
+      "value": "LỘC BÌNH MEN RẠN TỨ CẢNH THẾP VÀNG"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:22:47.414815+00:00",
+      "raw_collection_id": "078e6c0a2733420c8c94cca26272ba49",
+      "source_id": "bat_trang",
+      "source_url": "https://gombattrang.vn/wp-json/wc/store/products"
+    },
+    "raw_record": {
+      "category": "LỘC BÌNH BÁT TRÀNG THẾP VÀNG",
+      "color": null,
+      "currency": "VND",
+      "description": null,
+      "dimensions": null,
+      "image_url": "https://gombattrang.vn/wp-content/uploads/2023/10/DSC04028-scaled.jpg",
+      "lead_time_days": null,
+      "material": null,
+      "moq": null,
+      "name": "LỘC BÌNH MEN RẠN TỨ CẢNH THẾP VÀNG",
+      "origin_region": null,
+      "pattern": null,
+      "price_html": "",
+      "price_vnd": 0.0,
+      "product_url": "https://gombattrang.vn/san-pham/luc-binh-men-ran-tu-canh-thep-vang/",
+      "sku": null,
+      "source_product_id": "GBT-4828",
+      "store_api_prices": {
+        "currency_code": "VND",
+        "currency_decimal_separator": ",",
+        "currency_minor_unit": 0,
+        "currency_prefix": "",
+        "currency_suffix": "đ",
+        "currency_symbol": "đ",
+        "currency_thousand_separator": ".",
+        "price": "0",
+        "price_range": null,
+        "regular_price": "0",
+        "sale_price": "0"
+      },
+      "wc_id": 4828,
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "GBT-4828",
+      "status": "confirmed",
+      "value": "GBT-4828"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "bat_trang",
+  "source_url": "https://gombattrang.vn/wp-json/wc/store/products",
+  "status": "quarantined"
+}
