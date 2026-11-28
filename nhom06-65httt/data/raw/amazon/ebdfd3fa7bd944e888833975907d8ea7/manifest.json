@@ -1,0 +1,22 @@
+{
+  "collection_id": "ebdfd3fa7bd944e888833975907d8ea7",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "3dd0dccfda4b3a0056aa25b0187f26d36565c09b62f980e35b2a19cc4e4184a6"
+    },
+    "collected_at": "2026-11-28T15:27:43.844470+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Dinnerware Set",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "ceramic dinner plate",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

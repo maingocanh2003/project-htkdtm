@@ -1,0 +1,22 @@
+{
+  "collection_id": "37da3d96b1034438b6267842c08dccb5",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "be838f3a70d71e5d9b424cf5dbc432a2dd7a828528ba5d3a0d0b4fde78d7f961"
+    },
+    "collected_at": "2026-11-28T15:27:24.666931+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Dinnerware Set",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "ceramic bowl set",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

@@ -1,0 +1,22 @@
+{
+  "collection_id": "5337d78d5d444f00aebab7cb7663b13e",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "353d800e40469e1fd96592c2a303eb56daacdd3640a9a135ed7fac0180e2b1f8"
+    },
+    "collected_at": "2026-11-28T15:26:14.863648+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Ceramic Tea Set",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "porcelain teapot",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

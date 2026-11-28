@@ -1,0 +1,22 @@
+{
+  "collection_id": "0b21237ecfbb49339ec6dd704da4bb44",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "ba82926af8496443a782ce375e9b474825443215190b0b03d0232e6a632fab6d"
+    },
+    "collected_at": "2026-11-28T15:28:01.152393+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Decorative Vase",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "ceramic vase",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

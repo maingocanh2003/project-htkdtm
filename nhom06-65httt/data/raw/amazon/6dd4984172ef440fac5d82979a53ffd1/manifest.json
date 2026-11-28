@@ -1,0 +1,22 @@
+{
+  "collection_id": "6dd4984172ef440fac5d82979a53ffd1",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "e1f4c71986390a21bdb55ea1af5b4c04c62babdd2f45ba6ffa3e616e47638832"
+    },
+    "collected_at": "2026-11-28T15:27:08.694894+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Dinnerware Set",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "porcelain dinnerware",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

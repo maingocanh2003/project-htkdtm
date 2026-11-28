@@ -1,0 +1,22 @@
+{
+  "collection_id": "e32b5653423149af9ecf8c75c05d5d1c",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "d46f64767695671d26a770009be49223408fd8ef44da4a82a02802f694bc3a0a"
+    },
+    "collected_at": "2026-11-28T15:26:39.823860+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Ceramic Mug & Cup",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "ceramic mug",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}

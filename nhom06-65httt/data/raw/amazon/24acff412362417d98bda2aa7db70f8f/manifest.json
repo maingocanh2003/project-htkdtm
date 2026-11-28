@@ -1,0 +1,22 @@
+{
+  "collection_id": "24acff412362417d98bda2aa7db70f8f",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "2a552abe7cd8f669f143c3943a543cb4173e55eb6ff4bb17a5abdf93353eebb2"
+    },
+    "collected_at": "2026-11-28T15:26:55.052354+00:00",
+    "data_format": "json",
+    "endpoint": "/catalog/v1/searchItems",
+    "request_parameters": {
+      "category": "Ceramic Mug & Cup",
+      "dataset_origin": "McAuley-Lab/Amazon-Reviews-2023 (milistu/AMAZON-Products-2023)",
+      "keywords": "porcelain coffee cup",
+      "marketplace": "www.amazon.com"
+    },
+    "source_id": "amazon",
+    "status": "success",
+    "version": "v1"
+  },
+  "payload_file": "payload.bin"
+}
