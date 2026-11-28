@@ -1,0 +1,22 @@
+{
+  "collection_id": "d99feb04d138435697da3bc5f742797c",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "0c0afce515a498599f5dc7149b92e0301f8a570221ee96b6f4878d020ac56258"
+    },
+    "collected_at": "2026-11-27T13:24:42.746338+00:00",
+    "data_format": "json",
+    "endpoint": null,
+    "request_parameters": {
+      "page_end": 57,
+      "page_start": 10,
+      "pages_fetched": 48,
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "source_id": "minh_long_1",
+    "status": "success",
+    "version": "d9/v1"
+  },
+  "payload_file": "payload.bin"
+}
