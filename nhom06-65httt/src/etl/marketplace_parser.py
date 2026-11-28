@@ -91,6 +91,7 @@ class EtsyListingParser:
 
         title = _optional_str(raw, "title", sid, cid, f"{prefix}.title")
         url = _optional_str(raw, "url", sid, cid, f"{prefix}.url")
+        category = _optional_str(raw, "category", sid, cid, f"{prefix}.category")
 
         # taxonomy_id — optional positive int
         taxonomy_id: Optional[str] = None
@@ -114,7 +115,7 @@ class EtsyListingParser:
             source_product_id=str(listing_id),
             product_url=url,
             name=title,
-            category=None,
+            category=category,
             category_id=taxonomy_id,
             prices=prices,
         )
