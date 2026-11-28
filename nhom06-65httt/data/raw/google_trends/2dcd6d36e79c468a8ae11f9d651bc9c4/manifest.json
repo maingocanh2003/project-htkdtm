@@ -1,0 +1,59 @@
+{
+  "collection_id": "2dcd6d36e79c468a8ae11f9d651bc9c4",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "d28f1ad526b5b5b1da188962fb8e7b4b31cefe5105bed0c7b6d880e05641ec37"
+    },
+    "collected_at": "2026-11-28T14:59:28.018124+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_IN_ceramic_related_queries_rising_20261128.csv",
+      "geo": "IN",
+      "geo_name": "India",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "ceramic",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "ceramic"
+      ],
+      "original_filename": "g1_IN_ceramic_related_queries_rising_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "rising",
+      "requested_keywords": [
+        "ceramic"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "d28f1ad526b5b5b1da188962fb8e7b4b31cefe5105bed0c7b6d880e05641ec37",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

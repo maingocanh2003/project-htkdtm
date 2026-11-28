@@ -1,0 +1,67 @@
+{
+  "collection_id": "8c366b42c9d74d86abb91b7d7d7ab4c3",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "a561e52d473594e8f16814d9e24043d3484a583cc1753359d5a368cc19b708b4"
+    },
+    "collected_at": "2026-11-28T14:59:28.078990+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "interest_over_time",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_VN_compare5_interest_over_time_20261128.csv",
+      "geo": "VN",
+      "geo_name": "Vietnam",
+      "group_id": "g1",
+      "interval": "weekly",
+      "keyword": null,
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "ceramic",
+        "ceramics",
+        "pottery",
+        "porcelain",
+        "stoneware"
+      ],
+      "original_filename": "g1_VN_compare5_interest_over_time_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": null,
+      "requested_keywords": [
+        "ceramic",
+        "ceramics",
+        "pottery",
+        "porcelain",
+        "stoneware"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "a561e52d473594e8f16814d9e24043d3484a583cc1753359d5a368cc19b708b4",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "100 is peak relative interest in the selected scope; 0 may mean insufficient search volume, not zero absolute searches",
+        "measure": "relative_search_interest",
+        "scale": "0-100 per selected query, geography, and time range",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "dimensionless_index"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

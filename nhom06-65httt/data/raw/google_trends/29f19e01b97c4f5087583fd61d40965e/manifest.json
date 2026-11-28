@@ -1,0 +1,59 @@
+{
+  "collection_id": "29f19e01b97c4f5087583fd61d40965e",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "8484164111ec11b017162e6727d89860f689d70ab58777221cf23af4add3c810"
+    },
+    "collected_at": "2026-11-28T14:59:28.021185+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_IN_ceramics_related_queries_top_20261128.csv",
+      "geo": "IN",
+      "geo_name": "India",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "ceramics",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "ceramics"
+      ],
+      "original_filename": "g1_IN_ceramics_related_queries_top_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "top",
+      "requested_keywords": [
+        "ceramics"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "8484164111ec11b017162e6727d89860f689d70ab58777221cf23af4add3c810",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

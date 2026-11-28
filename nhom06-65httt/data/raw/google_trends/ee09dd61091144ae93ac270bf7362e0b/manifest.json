@@ -1,0 +1,59 @@
+{
+  "collection_id": "ee09dd61091144ae93ac270bf7362e0b",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "7bdc1ebc17d683a83b23dabba379443f50a2639f6802cf2d939ae6b9d28ab886"
+    },
+    "collected_at": "2026-11-28T14:59:28.045952+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_JP_pottery_related_queries_rising_20261128.csv",
+      "geo": "JP",
+      "geo_name": "Japan",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "pottery",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "pottery"
+      ],
+      "original_filename": "g1_JP_pottery_related_queries_rising_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "rising",
+      "requested_keywords": [
+        "pottery"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "7bdc1ebc17d683a83b23dabba379443f50a2639f6802cf2d939ae6b9d28ab886",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

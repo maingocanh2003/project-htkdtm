@@ -1,0 +1,59 @@
+{
+  "collection_id": "e2fc26414ff947129d6da7564817b2f6",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "ac2d8a6fb00b8b0e6e436561cdf362a054d49d9da346310beb45d76d57d4e5a0"
+    },
+    "collected_at": "2026-11-28T14:59:28.069940+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_US_stoneware_related_queries_top_20261128.csv",
+      "geo": "US",
+      "geo_name": "United States",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "stoneware",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "stoneware"
+      ],
+      "original_filename": "g1_US_stoneware_related_queries_top_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "top",
+      "requested_keywords": [
+        "stoneware"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "ac2d8a6fb00b8b0e6e436561cdf362a054d49d9da346310beb45d76d57d4e5a0",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

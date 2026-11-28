@@ -1,0 +1,59 @@
+{
+  "collection_id": "788077b23f9346ddb38413481c47ef43",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "6f86ce681cb5b0ba0c78d7efcdaf6621e184642ec3682e7c75136f187c1c72b5"
+    },
+    "collected_at": "2026-11-28T14:59:27.996412+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_DE_pottery_related_queries_top_20261128.csv",
+      "geo": "DE",
+      "geo_name": "Germany",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "pottery",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "pottery"
+      ],
+      "original_filename": "g1_DE_pottery_related_queries_top_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "top",
+      "requested_keywords": [
+        "pottery"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "6f86ce681cb5b0ba0c78d7efcdaf6621e184642ec3682e7c75136f187c1c72b5",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}

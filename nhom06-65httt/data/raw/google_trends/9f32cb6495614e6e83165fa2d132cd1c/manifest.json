@@ -1,0 +1,59 @@
+{
+  "collection_id": "9f32cb6495614e6e83165fa2d132cd1c",
+  "metadata": {
+    "checksum": {
+      "algorithm": "sha256",
+      "value": "b79719ae8f6fa794f02811ac34c17e180e3d41f4763fc6986bd1a03743b208ed"
+    },
+    "collected_at": "2026-11-28T14:59:28.071796+00:00",
+    "data_format": "csv",
+    "endpoint": null,
+    "request_parameters": {
+      "attribution_required": true,
+      "attribution_text": "Data source: Google Trends (https://trends.google.com).",
+      "category": "All categories",
+      "collection_method": "google_trends_ui_csv_export",
+      "data_type": "related_queries",
+      "export_date": "2026-11-28",
+      "export_timestamp": null,
+      "filename": "g1_VN_ceramic_related_queries_top_20261128.csv",
+      "geo": "VN",
+      "geo_name": "Vietnam",
+      "group_id": "g1",
+      "interval": null,
+      "keyword": "ceramic",
+      "keyword_header_matches_request": true,
+      "keywords": [
+        "ceramic"
+      ],
+      "original_filename": "g1_VN_ceramic_related_queries_top_20261128.csv",
+      "period_end": "2026-11-28",
+      "period_start": "2021-11-28",
+      "related_section": "top",
+      "requested_keywords": [
+        "ceramic"
+      ],
+      "search_type": "web",
+      "search_type_label": "Web Search",
+      "sha256": "b79719ae8f6fa794f02811ac34c17e180e3d41f4763fc6986bd1a03743b208ed",
+      "source": "Google Trends",
+      "source_type": "manual",
+      "time_range": {
+        "end": "2026-11-28",
+        "label": "Past 5 years",
+        "start": "2021-11-28"
+      },
+      "value_semantics": {
+        "meaning": "Preserve the source value; verify whether it is a ranking, relative index, or growth measure before interpreting it",
+        "measure": "source_specific_related_query_or_topic_value",
+        "scale": "not_assumed",
+        "scope": "Google Trends UI CSV export only; not the Google Trends API alpha",
+        "unit": "not_interpreted"
+      }
+    },
+    "source_id": "google_trends",
+    "status": "success",
+    "version": null
+  },
+  "payload_file": "payload.bin"
+}
