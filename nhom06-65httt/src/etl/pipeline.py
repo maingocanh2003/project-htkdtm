@@ -14,8 +14,13 @@ try:
     from .bat_trang_collector import wc_store_raw_payload_to_d9
     from .deduplicator import DeduplicationIndex
     from .domestic_parser import DomesticSupplierCatalogParser
+    from .marketplace_parser import AmazonCreatorsParser, EtsyListingParser
     from .normalizer import (
+        NormalizedProductRecord,
+        NormalizedReviewRecord,
         normalize_domestic_product,
+        normalize_product_record,
+        normalize_review_record,
         normalize_trade_record,
         normalize_trends_row,
     )
@@ -23,8 +28,9 @@ try:
     from .quality_validator import DataQualityValidator
     from .quarantine import QuarantineReasonType, QuarantineStore
     from .raw_storage import RawStorage
+    from .review_parser import EtsyReviewParser
     from .source_registry import create_project_source_registry
-    from .trade_parser import UNComtradeParser
+    from .trade_parser import ITCTradeMapParser, UNComtradeParser
     from .trends_parser import GoogleTrendsParser
 except ImportError:
     _SRC = Path(__file__).resolve().parent.parent
@@ -32,8 +38,13 @@ except ImportError:
     from etl.bat_trang_collector import wc_store_raw_payload_to_d9
     from etl.deduplicator import DeduplicationIndex
     from etl.domestic_parser import DomesticSupplierCatalogParser
+    from etl.marketplace_parser import AmazonCreatorsParser, EtsyListingParser
     from etl.normalizer import (
+        NormalizedProductRecord,
+        NormalizedReviewRecord,
         normalize_domestic_product,
+        normalize_product_record,
+        normalize_review_record,
         normalize_trade_record,
         normalize_trends_row,
     )
@@ -41,8 +52,9 @@ except ImportError:
     from etl.quality_validator import DataQualityValidator
     from etl.quarantine import QuarantineReasonType, QuarantineStore
     from etl.raw_storage import RawStorage
+    from etl.review_parser import EtsyReviewParser
     from etl.source_registry import create_project_source_registry
-    from etl.trade_parser import UNComtradeParser
+    from etl.trade_parser import ITCTradeMapParser, UNComtradeParser
     from etl.trends_parser import GoogleTrendsParser
 
 
@@ -331,6 +343,14 @@ class EtlPipeline:
                 source_url=endpoint,
             )
             return [normalize_trade_record(record) for record in parsed.records]
+        if source_id == "itc_trade_map":
+            parsed = ITCTradeMapParser().parse(
+                payload,
+                collection_id,
+                collected_at_iso=collected_at,
+                source_url=endpoint,
+            )
+            return [normalize_trade_record(record) for record in parsed.records]
         if source_id == "google_trends":
             request = metadata.get("request_parameters", {})
             parsed = GoogleTrendsParser().parse(
@@ -342,6 +362,35 @@ class EtlPipeline:
                 source_keyword=request.get("keyword"),
             )
             return [normalize_trends_row(row) for row in parsed.rows]
+        if source_id == "amazon":
+            parsed = AmazonCreatorsParser().parse(
+                payload,
+                collection_id,
+                collected_at_iso=collected_at,
+                source_url=endpoint,
+            )
+            return [normalize_product_record(record) for record in parsed.records]
+        if source_id == "etsy":
+            request = metadata.get("request_parameters", {})
+            is_reviews = (
+                (isinstance(endpoint, str) and endpoint.endswith("/reviews"))
+                or request.get("record_type") == "reviews"
+            )
+            if is_reviews:
+                parsed = EtsyReviewParser().parse(
+                    payload,
+                    collection_id,
+                    collected_at_iso=collected_at,
+                    source_url=endpoint,
+                )
+                return [normalize_review_record(record) for record in parsed.records]
+            parsed = EtsyListingParser().parse(
+                payload,
+                collection_id,
+                collected_at_iso=collected_at,
+                source_url=endpoint,
+            )
+            return [normalize_product_record(record) for record in parsed.records]
         if source_id in {
             "minh_long_1",
             "thegioigom",
@@ -366,10 +415,14 @@ class EtlPipeline:
 
     @staticmethod
     def _validate(source_id: str, record: Any, record_id: str):
-        if source_id == "un_comtrade":
+        if source_id in {"un_comtrade", "itc_trade_map"}:
             return DataQualityValidator.validate_trade_record(record, record_id)
         if source_id == "google_trends":
             return DataQualityValidator.validate_trends_row(record, record_id)
+        if isinstance(record, NormalizedReviewRecord):
+            return DataQualityValidator.validate_review_record(record, record_id)
+        if isinstance(record, NormalizedProductRecord) or source_id in {"amazon", "etsy"}:
+            return DataQualityValidator.validate_product_record(record, record_id)
         return DataQualityValidator.validate_domestic_product(record, record_id)
 
     @staticmethod
