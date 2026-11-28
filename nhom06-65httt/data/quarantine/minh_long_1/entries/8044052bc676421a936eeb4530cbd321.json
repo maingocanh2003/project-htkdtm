@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "8044052bc676421a936eeb4530cbd321",
+  "quarantined_at_iso": "2026-11-28T15:35:28.502573+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Timless' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Timless",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "127440",
+      "status": "confirmed",
+      "value": "127440"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tô (KL) - Timeless - Đại Dương Sương Mờ",
+      "status": "confirmed",
+      "value": "Tô (KL) - Timeless - Đại Dương Sương Mờ"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Timless",
+      "currency": "VND",
+      "description": "Minh Long gửi đến giới mộ điệu ẩm thực bộ sưu tập mang tên Đại Dương Sương Mờ mang cả không gian biển cả vào gian bếp. Trong hình dáng hiện đại, bộ sản phẩm khoác lên mình chiếc áo của thế giới đại dương cùng các sinh vật tôm, cua, sò, ốc…làm nên một không gian vô cùng sinh động, tạo nên cảm giác hoà hợp giữa con người và thiên nhiên, làm cho các bữa ăn trở nên vui vẻ và giàu tính kích thích. Điều đặc biệt nhất của dòng sản phẩm này, là câu chuyện tạo nên nước men mờ. Cho người dùng cảm giác sâu thật sâu về một trải nghiệm tuyệt vời của buổi sớm mai đứng trước biển, với những lãng đãng của mây mù, của sương sớm, của những mát lành và trong trẻo. Lớp men mượt mờ nhưng không nhám, không bóng nhưng vẫn láng, không chỉ kích thích giác quan đặc biệt của người sử dụng trên những hoạ tiết giàu ý nghĩa mà còn giữ nguyên “tính sạch hoàn mĩ”, dễ dàng vệ sinh sau khi dùng, hạn chế tối đa các vết trầy xước cùng độ mới bền lâu…",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tô (KL) - Timeless - Đại Dương Sương Mờ",
+      "origin_region": "Bình Dương",
+      "price_vnd": 127440,
+      "product_url": "https://minhlong.com/products/to-kl-timeless-dai-duong-suong-mo",
+      "source_product_id": "A001_551463518",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_551463518",
+      "status": "confirmed",
+      "value": "A001_551463518"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

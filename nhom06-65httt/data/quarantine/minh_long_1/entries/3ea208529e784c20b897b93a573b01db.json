@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "3ea208529e784c20b897b93a573b01db",
+  "quarantined_at_iso": "2026-11-28T15:35:28.643115+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Daisy' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Daisy",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "84240",
+      "status": "confirmed",
+      "value": "84240"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa tròn ảo - Daisy - Hồng Mai",
+      "status": "confirmed",
+      "value": "Dĩa tròn ảo - Daisy - Hồng Mai"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Daisy",
+      "currency": "VND",
+      "description": "Hoa mai là biểu tượng của sự may mắn, sung túc và hạnh phúc. Nổi bật trên nền sứ sáng bóng là hình ảnh những nhành mai đua nhau khoe sắc. Từ búp, đọt non, cánh hoa đến nhụy hoa đều được đội ngũ nghệ nhân của Minh Long I phác họa tinh tế và sống động. Những búp mai đang khỏe khoắn, e ấp rồi bung rộ thắm tươi như báo hiệu một mùa mới an lành, ngập tràn hạnh phúc. Sở hữu Daisy Hồng Mai là chủ sở hữu tự tặng cho mình những điều tốt đẹp nhất trong cuộc sống.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa tròn ảo - Daisy - Hồng Mai",
+      "origin_region": "Bình Dương",
+      "price_vnd": 84240,
+      "product_url": "https://minhlong.com/products/dia-tron-ao-daisy-hong-mai",
+      "source_product_id": "A001_041821349",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_041821349",
+      "status": "confirmed",
+      "value": "A001_041821349"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

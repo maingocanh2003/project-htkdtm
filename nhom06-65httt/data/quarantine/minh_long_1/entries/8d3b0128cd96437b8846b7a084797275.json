@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "8d3b0128cd96437b8846b7a084797275",
+  "quarantined_at_iso": "2026-11-28T15:35:28.533194+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Mèo Ngũ Phúc' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Mèo Ngũ Phúc",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "52920000",
+      "status": "confirmed",
+      "value": "52920000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tượng mèo Ngũ Phúc 31.1 cm - Men ngọc sương mờ",
+      "status": "confirmed",
+      "value": "Tượng mèo Ngũ Phúc 31.1 cm - Men ngọc sương mờ"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Mèo Ngũ Phúc",
+      "currency": "VND",
+      "description": "Ý NGHĨA TÊN TƯỢNG MÈO NGŨ PHÚC T ượ ng mèo v ớ i 5 ý ngh ĩ a - nh ữ ng khát v ọ ng l ớ n nh ấ t trong cu ộ c đờ i m ỗ i ng ườ i: phú (may m ắ n) - quý (ti ề n tài) - th ọ (tr ườ ng th ọ ) - ninh (bình an) - khang (s ứ c kh ỏ e) . T ặ ng b ứ c t ượ ng ngày T ế t nh ư “Ng ũ Phúc lâm môn” - đ em nh ữ ng l ờ i chúc t ố t lành, trân tr ọ ng nh ấ t đế n m ọ i gia đ ình. HÌNH DÁNG VÀ MÀU SẮC TƯỢNG MÈO NGŨ PHÚC Hình dáng của tượng mèo mang tính cân đối. Mèo ngồi thế 4 chân chụm vào nhau tạo cảm giác vững chắc, con ngươi trong đôi mắt tròn xoe thể hiện sự tập trung, miệng cười mỉm mang đến sự vui vẻ. Hoạ tiết trên thân mèo dựa trên triết lý ngũ hành. Học thuyết ngũ hành là triết lý kinh điển về sự ra đời, cách tuần hoàn và phát triển của vũ trụ. Đó cũng chính là hình ảnh của sự “cân bằng”. Tổng thể bức tượng, dù nhìn ở mặt trái hay phải, từ sau đến trước đều thể hiện vòng tuần hoàn của tạo hóa. Mèo đứng trên phiến đá có trang trí những đồng tiền vàng (thổ sinh kim), phía lưng có những đồng tiền chảy theo dòng nước (kim sinh thủy), dòng nước này giúp cây cỏ sinh sôi (thủy sinh mộc), từ đó bùng lên ngọn lửa đỏ rực (mộc sinh hỏa), cuối cùng ngọn lửa vun đất thành núi cao (hỏa sinh thổ). Phía hai bên của chú mèo mô phỏng hình ảnh của vũ trụ với nhiều tinh tú, làm rõ hơn thông điệp của triết lý ngũ hành. VÌ SAO MÈO NGŨ PHÚC ĐẶC BIỆT? Men xanh celadon là tên gọi của dòng gốm cổ có niên đại hàng thế kỷ trước. Sắc xanh lục nhạt, nhìn trong như ngọc nên rất được người châu Á ưa chuộng. Dòng sứ này mô phỏng viên ngọc nên mọi tiêu chí đều dựa trên hình mẫu với hai yếu tố: màu sắc và độ trong. Nếu không đủ trong thì đường nét sẽ bị che, kém tinh tế. Đây cũng giống như một đỉnh cao mới trong ngành gốm sứ mà Minh Long cần phải chinh phục. Và sau 50 năm mơ ước và kiên trì theo đuổi, thất bại nhiều lần, Minh Long đã chạm đến được sự tinh hoa trong việc chế tác nên màu men xanh ngọc Celadon huyền thoại này. Bức tượng mang đến cảm giác như tạc từ khối ngọc thạch với hiệu ứng bóng mờ đẹp mắt, khi chạm vào có cảm giác mềm mịn như nhung",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tượng mèo Ngũ Phúc 31.1 cm - Men ngọc sương mờ",
+      "origin_region": "Bình Dương",
+      "price_vnd": 52920000,
+      "product_url": "https://minhlong.com/products/tuong-meo-ngu-phuc-31-1-cm-men-ngoc-suong-mo",
+      "source_product_id": "A001_313196SMNVB",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_313196SMNVB",
+      "status": "confirmed",
+      "value": "A001_313196SMNVB"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

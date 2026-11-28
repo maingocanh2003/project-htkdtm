@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "1dc2846beacb4496b8c1ecf5f6e7ec7e",
+  "quarantined_at_iso": "2026-11-28T15:35:28.490654+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Mẫu Đơn' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Mẫu Đơn",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "825120",
+      "status": "confirmed",
+      "value": "825120"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bộ trà 0.7 L - Mẫu Đơn - Trắng",
+      "status": "confirmed",
+      "value": "Bộ trà 0.7 L - Mẫu Đơn - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Mẫu Đơn",
+      "currency": "VND",
+      "description": "Hoa Mẫu Đơn có vẻ đẹp vừa quyến rũ, sang trọng vừa tao nhã, nhẹ nhàng, cánh hoa mỏng manh và nhiều lớp. Các nghệ nhân Minh Long đã đưa những đường cong uốn lượn mềm mại của hoa mẫu đơn vào trong chi tiết thiết kế ở vành ly và tay cầm của bộ trà Mẫu Đơn. CHI TIẾT BỘ TRÀ: Tách trà 0.11 L 6 Cái Dlót tách 13 cm 6 Cái Bình trà 0.7 L + nắp 1 Cái",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bộ trà 0.7 L - Mẫu Đơn - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 825120,
+      "product_url": "https://minhlong.com/products/bo-tra-0-7-l-mau-don-trang",
+      "source_product_id": "A001_68700800003",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_68700800003",
+      "status": "confirmed",
+      "value": "A001_68700800003"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

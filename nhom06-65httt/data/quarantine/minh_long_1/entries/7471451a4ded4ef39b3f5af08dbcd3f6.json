@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "7471451a4ded4ef39b3f5af08dbcd3f6",
+  "quarantined_at_iso": "2026-11-28T15:35:28.696331+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Anna IFP' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Anna IFP",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "81000",
+      "status": "confirmed",
+      "value": "81000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa lót oval 12.5 cm - Anna - Thiên Kim",
+      "status": "confirmed",
+      "value": "Dĩa lót oval 12.5 cm - Anna - Thiên Kim"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Anna IFP",
+      "currency": "VND",
+      "description": "Dĩa lót oval 12.5 cm - Anna - Thiên Kim Không họa tiết rườm rà hay kiểu cách cầu kỳ nhưng Anna vẫn toát lên sự sang trọng, tinh tế cần có của một bộ trà. Anna đa dạng dòng sản phẩm, từ trắng ngà và chỉ vàng nhằm đáp ứng đa dạng sở thích của khách hàng mà vẫn đảm bảo hoàn hảo về kỹ thuật và mỹ thuật, lưu giữ trọn vẹn hương-vị-sắc của trà và là cầu nối gắn kết những mối tình thâm...",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa lót oval 12.5 cm - Anna - Thiên Kim",
+      "origin_region": "Bình Dương",
+      "price_vnd": 81000,
+      "product_url": "https://minhlong.com/products/dia-lot-oval-12-5-cm-hoa-van-thien-kim",
+      "source_product_id": "A001_571252461",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_571252461",
+      "status": "confirmed",
+      "value": "A001_571252461"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

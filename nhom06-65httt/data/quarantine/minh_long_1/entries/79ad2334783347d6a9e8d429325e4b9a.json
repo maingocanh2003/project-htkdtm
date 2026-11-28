@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "79ad2334783347d6a9e8d429325e4b9a",
+  "quarantined_at_iso": "2026-11-28T15:35:28.559464+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Daisy' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Daisy",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "27000",
+      "status": "confirmed",
+      "value": "27000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Chén chấm - Daisy - Hồng Mai",
+      "status": "confirmed",
+      "value": "Chén chấm - Daisy - Hồng Mai"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Daisy",
+      "currency": "VND",
+      "description": "Chén chấm Daisy Hồng Mai có màu men sáng bóng, láng mịn, tạo hình thon nhẹ ở đáy tạo nên sự thanh thoát. Sản phẩm có màu sứ trắng trang nhã, sang trọng phù hợp cho bố trí bàn ăn tạo sự ấm cúng của gia đình, đem lại cảm giác thân thiện, ấm áp trong các buổi tiệc nhẹ nhàng. Đặc điểm nổi bật của sản phẩm: - Hoàn toàn an toàn cho sức khỏe vì không chứa chì và cadium. - Màu men sáng bóng, hạn chế trầy xước - Thiết kế tinh xảo đến từng chi tiết - Nung ở nhiệt độ cao (từ 1260 độ C đến 1380 độ C) làm cho sản phẩm cứng chắc, bền đẹp - Khó bám bẩn, dễ tẩy rửa do áp dụng công nghệ nano trong sản xuất. Màu sắc : Trắng Lưu ý khi sử dụng: - Sản phẩm sử dụng được trong lò vi sóng, máy rửa chén, lò nướng. - Không nung trực tiếp trên lửa. - Dùng nước rửa chén hoặc chất tẩy rửa an toàn để làm sạch. Thông tin chi tiết sản phẩm: Kích thước: dài 8 cm x rộng 8 cm x cao 3 cm Trọng lượng: 86,3 gr (+-10%)",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Chén chấm - Daisy - Hồng Mai",
+      "origin_region": "Bình Dương",
+      "price_vnd": 27000,
+      "product_url": "https://minhlong.com/products/chen-cham-9-cm-daisy-hong-mai",
+      "source_product_id": "A001_030937349",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_030937349",
+      "status": "confirmed",
+      "value": "A001_030937349"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

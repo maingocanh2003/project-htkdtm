@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "f8fc3aa316d84328b63ee5fef17e28d9",
+  "quarantined_at_iso": "2026-11-28T15:35:28.505374+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Timeless' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Timeless",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "74520",
+      "status": "confirmed",
+      "value": "74520"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tô (KL) - Timeless - Trắng",
+      "status": "confirmed",
+      "value": "Tô (KL) - Timeless - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Timeless",
+      "currency": "VND",
+      "description": "Timeless - bộ sản phẩm có thiết kế đơn giản nhưng đường nét sắc sảo, là lựa chọn thích hợp trong việc bài trí món ăn độc đáo, lạ mắt phù hợp với nhiều không gian và phong cách thưởng thức ẩm thực khác nhau. Sản phẩm được nung ở nhiệt độ cao theo tiêu chuẩn chất lượng của Đức – 1380oC và công nghệ nano giúp đạt được nước men đẹp nhất và độ cứng cao, an toàn với tần suất sử dụng thường xuyên như nhà hàng và dễ dàng vệ sinh, bảo quản.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tô (KL) - Timeless - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 74520,
+      "product_url": "https://minhlong.com/products/to-kl-timeless-trang",
+      "source_product_id": "A001_551463000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_551463000",
+      "status": "confirmed",
+      "value": "A001_551463000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

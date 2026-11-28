@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "243e5ea4a70f4f50997195e7b6775d66",
+  "quarantined_at_iso": "2026-11-28T15:35:28.354106+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Misc Assortment Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "28080",
+      "status": "confirmed",
+      "value": "28080"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Chén chấm hình Chiếc Lá 9 cm - Misc Assortment Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Chén chấm hình Chiếc Lá 9 cm - Misc Assortment Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Misc Assortment Lys",
+      "currency": "VND",
+      "description": "Sản phẩm được làm từ nguyên liệu sứ tinh tuyển, an toàn, lành tính, thân thiện với môi trường. Phù hợp sử dụng đựng các loại nước chấm, nước tương, nước sốt… Thiết kế với kiểu dáng hình chiếc lá độc đáo sẽ mang đến cho bữa ăn thêm phần ngon miệng. Màu sứ trắng ngà sang trọng giúp tô điểm bàn ăn, bàn tiệc đẹp mắt. Sản phẩm thích hợp cho các gia đình, quán ăn, nhà hàng, khách sạn… Đặc tính sản phẩm: Thân sứ siêu cứng với công nghệ phối liệu đặc biệt: Sử dụng bền lâu, hạn chế bể mẻ trong quá trình tẩy rửa. Mặt men cứng, chắc: Khó trầy xước khi sử dụng dao, muỗng, nĩa thường xuyên, giữ sản phẩm luôn mới sau thời gian dài sử dụng. Ứng dụng công nghệ Nano cho bề mặt men láng bóng: Giúp cho sản phẩm khó bám bẩn kể cả dầu mỡ, tiết kiệm thời gian. Kiểu dáng đa dạng sang trọng phù hợp với nhiều không gian ăn uống khác nhau.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Chén chấm hình Chiếc Lá 9 cm - Misc Assortment Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 28080,
+      "product_url": "https://minhlong.com/products/chen-cham-hinh-chiec-la-9-cm-misc-assortment-lys-trang-nga",
+      "source_product_id": "A001_640916000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_640916000",
+      "status": "confirmed",
+      "value": "A001_640916000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

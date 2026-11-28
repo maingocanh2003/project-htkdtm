@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "990dfca60f07466cae7675709e43df81",
+  "quarantined_at_iso": "2026-11-28T15:35:28.534035+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Mẫu Đơn' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Mẫu Đơn",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "132840",
+      "status": "confirmed",
+      "value": "132840"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Ca trà 0.30 L - Mẫu Đơn - Trắng",
+      "status": "confirmed",
+      "value": "Ca trà 0.30 L - Mẫu Đơn - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Mẫu Đơn",
+      "currency": "VND",
+      "description": "Ca trà sứ Minh Long 0.3L - Mẫu đơn trắng Đây là dòng sản phẩm sứ cao cấp được tuyển chọn từ những nguyên liệu tốt nhất cùng công nghệ phối liệu đặc biệt, qua quá trình kiểm định nghiêm ngặt để tạo ra những sản phẩm vừa đảm bảo kỹ thuật và mỹ thuật với tính năng vượt trội: siêu cứng, chắc, mặt men bóng, khó trầy xước; không chứa chì và cadmium nên an toàn cho sức khỏe; đặc biệt sử dụng tiện lợi được trong lò vi sóng, máy rửa chén và lò nướng… Vẻ đẹp tinh tế từ nước men sáng, màu sứ trắng ngà sang trọng, quyến rũ và thiết kế với nhiều hoa văn đa dạng, nhẹ nhàng, bay bổng, bộ bàn ăn thích hợp trong việc trang trí và trình bày món ăn thêm đẹp mắt, giúp tô điểm sự sang trọng cho bàn ăn gia đình đồng thời thể hiện gu thẩm mỹ, sáng tạo và phong cách riêng của chủ nhân. Thông tin chi tiết sản phẩm Chiều dài: 12 cm | 4,72 inch Chiều rộng: 8,50 cm | 3,35 inch Chiều cao: 14 cm | 5,51 inch Dung tích: 0,30 lít | 10,17 oz Trọng lượng: 415 gr Màu sắc: Trắng Phong cách: Hiện đại, Trang nhã #minhlong #minhlongi #gomsuminhlong #catra #casu #cocsu #lysu #canuoc #cocnuoc",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Ca trà 0.30 L - Mẫu Đơn - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 132840,
+      "product_url": "https://minhlong.com/products/ca-tra-su-minh-long-0-3l-ma-u-don-tra-ng",
+      "source_product_id": "A001_153009000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_153009000",
+      "status": "confirmed",
+      "value": "A001_153009000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

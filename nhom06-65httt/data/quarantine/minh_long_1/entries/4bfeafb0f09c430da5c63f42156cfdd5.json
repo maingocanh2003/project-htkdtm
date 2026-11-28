@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "4bfeafb0f09c430da5c63f42156cfdd5",
+  "quarantined_at_iso": "2026-11-28T15:35:28.453726+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Timeless' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Timeless",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "228960",
+      "status": "confirmed",
+      "value": "228960"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tô cạn - Timeless - Đồng Tâm Xanh Dương",
+      "status": "confirmed",
+      "value": "Tô cạn - Timeless - Đồng Tâm Xanh Dương"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Timeless",
+      "currency": "VND",
+      "description": "Gastroline là dòng sản phẩm đạt giải thưởng “Ý tưởng thiết kế sản phẩm xuất sắc nhất” tại cuộc thi thiết kế nổi tiếng thế giới Red Dot Design Award. Bộ sản phẩm nổi bật với vẻ đẹp sang trọng, kiểu dáng tinh tế và có thiết kế đột phá trong từng đường nét, chi tiết. Những họa tiết được thiết kế tinh xảo mang tính đối xứng, lặp lại tạo nên sự mới lạ, khác biệt và nét đẹp hiện đại, ấn tượng. Sự phối màu hài hòa giữa những họa tiết màu xanh dương trên nền sứ trắng và điểm nhấn viền chỉ vàng góp phần tăng thêm sự sang trọng, đẳng cấp. Những sản phẩm của Gastroline - Đồng Tâm Xanh Dương mang đến cho gia đình bạn phong cách hiện đại, tân tiến với nhịp sống sôi động của thành thị và sự tiện nghi cho không gian sống.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tô cạn - Timeless - Đồng Tâm Xanh Dương",
+      "origin_region": "Bình Dương",
+      "price_vnd": 228960,
+      "product_url": "https://minhlong.com/products/to-can-timeless-dong-tam-xanh-duong",
+      "source_product_id": "A001_551446470",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_551446470",
+      "status": "confirmed",
+      "value": "A001_551446470"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

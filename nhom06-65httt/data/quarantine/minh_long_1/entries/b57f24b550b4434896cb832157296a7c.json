@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "b57f24b550b4434896cb832157296a7c",
+  "quarantined_at_iso": "2026-11-28T15:35:28.489362+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Sen IFP' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Sen IFP",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "1760400",
+      "status": "confirmed",
+      "value": "1760400"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bộ trà 0.7 L - Sen IFP - Chỉ Bạch Kim",
+      "status": "confirmed",
+      "value": "Bộ trà 0.7 L - Sen IFP - Chỉ Bạch Kim"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Sen IFP",
+      "currency": "VND",
+      "description": "Các nghệ nhân đã khéo léo khắc họa vẻ đẹp giản dị và thuần khiết của hoa sen trên nền men sứ trắng ngà. Từng đường nét hoa sen hiện lên thanh thoát lúc dứt khoát, lúc lướt nhẹ bay cao làm toát lên dáng vẻ an nhiên, tự tại. Thưởng thức ẩm thực với bộ Sen IFP trắng ngà là tận hưởng những giây phút thư thái, bình yên trong tâm hồn. CHI TIẾT BỘ TRÀ: Bình trà 0.7 L + Nắp 01 Cái Tách trà 0.11 L 06 Cái Dĩa lót tách 13 cm 06 Cái",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bộ trà 0.7 L - Sen IFP - Chỉ Bạch Kim",
+      "origin_region": "Bình Dương",
+      "price_vnd": 1760400,
+      "product_url": "https://minhlong.com/products/bo-tra-0-7-l-sen-ifp-chi-bach-kim-1",
+      "source_product_id": "A001_68701404303",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_68701404303",
+      "status": "confirmed",
+      "value": "A001_68701404303"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "97de6aaa476b46b68d99213ca57fbdce",
+  "quarantined_at_iso": "2026-11-28T15:35:28.581953+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Dưỡng Sinh IFP' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Dưỡng Sinh IFP",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "120960",
+      "status": "confirmed",
+      "value": "120960"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Đũa sứ dưỡng sinh 20.3 cm (2đôi/HQ) - Dưỡng sinh IFP – Trắng Ngà",
+      "status": "confirmed",
+      "value": "Đũa sứ dưỡng sinh 20.3 cm (2đôi/HQ) - Dưỡng sinh IFP – Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Dưỡng Sinh IFP",
+      "currency": "VND",
+      "description": "1. Thông tin sản phẩm Được làm từ nguyên liệu sứ tinh tuyển, lành tính, an toàn cho sức khỏe. Mặt đũa phủ men nano sáng bóng, không thấm hút gia vị, thức ăn. Khó bám bẩn, không bị ẩm mốc, dễ tẩy rửa, nhanh khô. Nung ở nhiệt độ cao 1380oC đảm bảo độ cứng chắc. Sứ cao cấp, chất lượng theo tiêu chuẩn châu Âu. Phù hợp để làm quà tặng; sử dụng trong gia đình, nhà hàng, khách sạn… 2. Hướng dẫn sử dụng và bảo quản Tránh làm rớt, va đập hoặc dùng lực tác động quá mạnh lên sản phẩm. Vệ sinh sản phẩm bằng dung dịch hay các miếng tẩy rửa thông thường. Bảo quản nơi khô thoáng, sạch sẽ, tránh những nơi có khả năng làm rơi vỡ sản phẩm.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Đũa sứ dưỡng sinh 20.3 cm (2đôi/HQ) - Dưỡng sinh IFP – Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 120960,
+      "product_url": "https://minhlong.com/products/bo-2-doi-dua-su-duong-sinh-20-3-cm-trang-nga",
+      "source_product_id": "A001_21207800002Q",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_21207800002Q",
+      "status": "confirmed",
+      "value": "A001_21207800002Q"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

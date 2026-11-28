@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "d084bdd9a97549d981d74acc21956f8d",
+  "quarantined_at_iso": "2026-11-28T15:35:28.446670+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Mẫu Đơn IFP' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Mẫu Đơn IFP",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "304560",
+      "status": "confirmed",
+      "value": "304560"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Ca trà 0.30 L + nắp - Mẫu đơn IFP - Chim Chích Chòe",
+      "status": "confirmed",
+      "value": "Ca trà 0.30 L + nắp - Mẫu đơn IFP - Chim Chích Chòe"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Mẫu Đơn IFP",
+      "currency": "VND",
+      "description": "Hoa Mẫu Đơn có vẻ đẹp vừa quyến rũ, sang trọng vừa tao nhã, nhẹ nhàng, cánh hoa mỏng manh và nhiều lớp. Các nghệ nhân Minh Long đã đưa những đường cong uốn lượn mềm mại của hoa mẫu đơn vào trong chi tiết thiết kế ở vành ly và tay cầm của bộ trà Mẫu Đơn.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Ca trà 0.30 L + nắp - Mẫu đơn IFP - Chim Chích Chòe",
+      "origin_region": "Bình Dương",
+      "price_vnd": 304560,
+      "product_url": "https://minhlong.com/products/ca-tra-0-30-l-nap-mau-don-ifp-chim-chich-choe",
+      "source_product_id": "A001_153048395CC",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_153048395CC",
+      "status": "confirmed",
+      "value": "A001_153048395CC"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

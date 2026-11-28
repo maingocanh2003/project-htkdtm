@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "e00fa78e22174e37a87a056da6787486",
+  "quarantined_at_iso": "2026-11-28T15:35:28.586142+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Daisy' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Daisy",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "95040",
+      "status": "confirmed",
+      "value": "95040"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa oval ảo 28 cm - Daisy Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Dĩa oval ảo 28 cm - Daisy Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Daisy",
+      "currency": "VND",
+      "description": "Dĩa được thiết kế mềm mại uyển chuyển với màu trắng ngà sang trọng thích hợp bày trí món ăn cho gia đình hoặc nhà hàng khách sạn. Đặc tính sản phẩm: Được làm từ sứ lành tính không chì, cadmium, an toàn cho sức khỏe Mặt men cứng, chắc: Khó trầy xước Thiết kế tinh xảo đến từng chi tiết Nung ở nhiệt độ cao (từ 1260 độ C đến 1380 độ C) giúp sản phẩm bền chắc theo thời gian Khó bám bẩn, dễ tẩy rửa do áp dụng công nghệ nano trong sản xuất.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa oval ảo 28 cm - Daisy Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 95040,
+      "product_url": "https://minhlong.com/products/to-chen-dia-muong-daisy-lys-trang-nga-oval-28-cm",
+      "source_product_id": "A001_052826000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_052826000",
+      "status": "confirmed",
+      "value": "A001_052826000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

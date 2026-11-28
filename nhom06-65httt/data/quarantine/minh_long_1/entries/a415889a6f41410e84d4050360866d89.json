@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "a415889a6f41410e84d4050360866d89",
+  "quarantined_at_iso": "2026-11-28T15:35:28.649579+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Sago' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Sago",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "237600",
+      "status": "confirmed",
+      "value": "237600"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa tròn - Sago - Thiên Tuế",
+      "status": "confirmed",
+      "value": "Dĩa tròn - Sago - Thiên Tuế"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Sago",
+      "currency": "VND",
+      "description": "Sago là dòng sản phẩm được thiết kế theo phong cách Châu Âu với những đóa hồng nhỏ được khắc nổi viền quanh là điểm nhấn thiết kế đặc trưng tạo ấn tượng ngay ánh nhìn đầu tiên. Bộ trà Sago Thiên Tuế là sự kết hợp tinh tế giữa màu trắng và xám kim loại mang đến cho bộ sản phẩm vẻ đẹp độc đáo và khác biệt.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa tròn - Sago - Thiên Tuế",
+      "origin_region": "Bình Dương",
+      "price_vnd": 237600,
+      "product_url": "https://minhlong.com/products/dia-tron-hoa-van-thien-tue",
+      "source_product_id": "A001_041601018",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_041601018",
+      "status": "confirmed",
+      "value": "A001_041601018"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "bdede97a702146658917bc2b70999dd6",
+  "quarantined_at_iso": "2026-11-28T15:35:28.574725+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Camellia' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Camellia",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "778680",
+      "status": "confirmed",
+      "value": "778680"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bộ trà 0.8 L - Camellia - Trắng",
+      "status": "confirmed",
+      "value": "Bộ trà 0.8 L - Camellia - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Camellia",
+      "currency": "VND",
+      "description": "Camellia trắng như như cô gái mộc mạc, trong sáng, mang nét duyên thầm và luôn tỏa hương thơm dịu dàng làm đắm say lòng người. Chẳng cần họa tiết rườm rà, Camellia trắng vẫn là lựa chọn hàng đầu của nhiều gia đình bởi kiểu dáng đơn giản nhưng vẫn tôn lên sự sang trọng, tiện nghi của không gian ẩm thực. Bộ trà 0.8 L bao gồm: - 01 bình trà 0.8 L + Nắp - 06 tách 0.11 L - 06 dĩa lót tách 12.5 cm",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bộ trà 0.8 L - Camellia - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 778680,
+      "product_url": "https://minhlong.com/products/bo-tra-0-5l-0-8l-1-1l-camellia-trang-0-8l",
+      "source_product_id": "A001_01803800003",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_01803800003",
+      "status": "confirmed",
+      "value": "A001_01803800003"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

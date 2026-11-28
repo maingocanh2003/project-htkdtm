@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "f564330be04e4b3b8b9dade5006f88bf",
+  "quarantined_at_iso": "2026-11-28T15:35:28.706196+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Tượng' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Tượng",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "810000",
+      "status": "confirmed",
+      "value": "810000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Thỏ Như Ý - Trang trí vàng 24K",
+      "status": "confirmed",
+      "value": "Thỏ Như Ý - Trang trí vàng 24K"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Tượng",
+      "currency": "VND",
+      "description": "Tượng thỏ Như Ý nổi bật với vẻ đẹp khỏe khoắn, trẻ trung, thần thái vui tươi. Linh vật được chế tác tinh xảo với tạo hình đầy đặn, có khuôn mặt hoan hỷ, đôi mắt tinh anh. Tượng có nhiều chi tiết được trang trí vàng 24k tinh tế, sang trọng. Chế tác mang thông điệp về sự hạnh phúc, bình an và may mắn gửi đến chủ sở hữu, trưng bày theo phong thủy mang đến cát tường, phú quý. Tượng thỏ Như Ý là món quà ý nghĩa dành tặng người thân, bạn bè, đối tác.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Thỏ Như Ý - Trang trí vàng 24K",
+      "origin_region": "Bình Dương",
+      "price_vnd": 810000,
+      "product_url": "https://minhlong.com/products/mkt-tho-nhu-y-t-t-vang-5-6-cm",
+      "source_product_id": "A001_310598TRV",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_310598TRV",
+      "status": "confirmed",
+      "value": "A001_310598TRV"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

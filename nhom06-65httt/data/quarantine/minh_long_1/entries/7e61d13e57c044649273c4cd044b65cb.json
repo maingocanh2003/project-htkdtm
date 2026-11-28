@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "7e61d13e57c044649273c4cd044b65cb",
+  "quarantined_at_iso": "2026-11-28T15:35:28.652281+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Gourmet Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "79920",
+      "status": "confirmed",
+      "value": "79920"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa tam giác tròn cạn 18 cm - Gourmet Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Dĩa tam giác tròn cạn 18 cm - Gourmet Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Gourmet Lys",
+      "currency": "VND",
+      "description": "Sản phẩm thuộc bộ sưu tập Gourmet Ly's với màu trắng ngà sang trọng có nhiều kiểu dáng lạ mắt như dĩa chia ngăn tiện lợi, dĩa hình hạt lúa độc đáo, dĩa tam giác bo tròn phá cách, hay tô súp cắt nửa nghệ thuật đã phá vỡ mọi định kiến hình dáng về thiết kế tô - chén - dĩa từ trước đến nay. Bộ sưu tập Gourmet khơi nguồn cảm hứng cho bạn trong việc trang trí món ăn. Đặc tính sản phẩm: Thân sứ siêu cứng với công nghệ phối liệu đặc biệt: Sử dụng bền lâu, hạn chế bể mẻ trong quá trình tẩy rửa. Mặt men cứng, chắc: Khó trầy xước khi sử dụng dao, muỗng, nĩa thường xuyên, giữ sản phẩm luôn mới sau thời gian dài sử dụng. Ứng dụng công nghệ Nano cho bề mặt men láng bóng: Giúp cho sản phẩm khó bám bẩn kể cả dầu mỡ, tiết kiệm thời gian. Kiểu dáng đa dạng sang trọng phù hợp với nhiều không gian ăn uống khác nhau.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa tam giác tròn cạn 18 cm - Gourmet Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 79920,
+      "product_url": "https://minhlong.com/products/dia-tam-giac-tron-can-18-cm-hoa-van-trang-nga",
+      "source_product_id": "A001_531801000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_531801000",
+      "status": "confirmed",
+      "value": "A001_531801000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

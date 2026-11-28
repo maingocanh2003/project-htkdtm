@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "97610d30c50b452193d177c892036851",
+  "quarantined_at_iso": "2026-11-28T15:35:28.597896+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Jasmine' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Jasmine",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "99360",
+      "status": "confirmed",
+      "value": "99360"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tô - Jasmine - Tích Tuyết Thảo",
+      "status": "confirmed",
+      "value": "Tô - Jasmine - Tích Tuyết Thảo"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine",
+      "currency": "VND",
+      "description": "Từ tên gọi đến màu sắc và thiết kế, bộ hoa văn Tích Tuyết Thảo (rau má) đem lại không gian tươi mát, ngọt lành cho bữa cơm gia đình. Không đơn thuần là một loại thảo dược, rau má còn gửi gắm ý nghĩa về tinh thần không lùi bước trước khó khăn, với sức sống mãnh liệt, bền bỉ qua thử thách. Tái hiện không gian với màu xanh lá sống động, tự nhiên nhờ nghệ thuật sử dụng màu và công nghệ nung ở nhiệt độ cao cho màu sắc sản phẩm đồng nhất, tươi tắn. Khéo léo đưa thiên nhiên tươi mát vào từng sản phẩm, Tích Tuyết Thảo giúp bữa ăn và không gian gia đình trở nên tươi mới, thú vị.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tô - Jasmine - Tích Tuyết Thảo",
+      "origin_region": "Bình Dương",
+      "price_vnd": 99360,
+      "product_url": "https://minhlong.com/products/to-jasmine-tich-tuyet-thao",
+      "source_product_id": "A001_071505314",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_071505314",
+      "status": "confirmed",
+      "value": "A001_071505314"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

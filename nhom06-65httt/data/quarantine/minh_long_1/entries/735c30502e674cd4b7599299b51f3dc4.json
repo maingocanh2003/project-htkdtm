@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "735c30502e674cd4b7599299b51f3dc4",
+  "quarantined_at_iso": "2026-11-28T15:35:28.611359+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Daisy' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Daisy",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "159840",
+      "status": "confirmed",
+      "value": "159840"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa sâu lòng - Daisy - Cỏ Tím",
+      "status": "confirmed",
+      "value": "Dĩa sâu lòng - Daisy - Cỏ Tím"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Daisy",
+      "currency": "VND",
+      "description": "Dĩa sâu lòng 23 cm - Daisy - Cỏ Tím Daisy là hoa cúc trắng với nét tinh khôi, mỏng manh và thuần khiết; các nghệ nhân gốm sứ Minh Long đã liên tưởng từ những đường nét của hoa cúc vào kiểu dáng thiết kế của bộ Daisy. Daisy có màu men sáng bóng, láng mịn, tạo hình thon nhẹ phần đáy bình và vững chãi trong từng bình trà, tách, tô, chén chấm tạo nên sự thanh thoát, yêu kiều.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa sâu lòng - Daisy - Cỏ Tím",
+      "origin_region": "Bình Dương",
+      "price_vnd": 159840,
+      "product_url": "https://minhlong.com/products/to-chen-dia-muong-bo-daisy-co-tim-dia-sau-long-23-cm",
+      "source_product_id": "A001_042398267",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_042398267",
+      "status": "confirmed",
+      "value": "A001_042398267"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

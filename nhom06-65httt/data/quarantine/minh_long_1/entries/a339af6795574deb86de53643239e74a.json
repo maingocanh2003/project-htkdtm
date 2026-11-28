@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "a339af6795574deb86de53643239e74a",
+  "quarantined_at_iso": "2026-11-28T15:35:28.549394+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Gastroline' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Gastroline",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "322920",
+      "status": "confirmed",
+      "value": "322920"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tô sâu 16 cm - Gastroline Xanh Ngọc",
+      "status": "confirmed",
+      "value": "Tô sâu 16 cm - Gastroline Xanh Ngọc"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Gastroline",
+      "currency": "VND",
+      "description": "Tô sâu 16 cm - Gastroline Xanh Ngọc Gastroline là dòng sản phẩm đạt giải thưởng “Ý tưởng thiết kế sản phẩm xuất sắc nhất” tại cuộc thi thiết kế nổi tiếng thế giới Red Dot Design Award. Gastroline có thiết kế và kỹ thuật tạo hình sản phẩm đỉnh cao bởi độ khó thể hiện qua tạo hình ở những góc vuông cực kỳ sắc nét mà rất hiếm công ty gốm sứ nào trên thế giới có thể đạt được cho đến thời điểm hiện tại. Bộ trà Gastroline được nung ở nhiệt độ đúng tiêu chuẩn chất lượng của Đức (1380 độ C) tạo nên độ bền cao, mặt men cứng chắc, khó trầy xước khi sử dụng lâu dài. Công nghệ nano giúp sản phẩm sáng bóng, láng mịn, giữ màu luôn tươi mới và dễ dàng tẩy rửa.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tô sâu 16 cm - Gastroline Xanh Ngọc",
+      "origin_region": "Bình Dương",
+      "price_vnd": 322920,
+      "product_url": "https://minhlong.com/products/to-sau-16-cm-gastroline-xanh-ngoc",
+      "source_product_id": "A001_551658489",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_551658489",
+      "status": "confirmed",
+      "value": "A001_551658489"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

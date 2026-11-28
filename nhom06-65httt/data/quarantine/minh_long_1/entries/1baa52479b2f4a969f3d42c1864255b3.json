@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "1baa52479b2f4a969f3d42c1864255b3",
+  "quarantined_at_iso": "2026-11-28T15:35:28.437521+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Anh Vũ Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "261360",
+      "status": "confirmed",
+      "value": "261360"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bình trà cao 0.45 L + nắp - Harmony Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Bình trà cao 0.45 L + nắp - Harmony Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Anh Vũ Lys",
+      "currency": "VND",
+      "description": "Lấy cảm hứng từ loài chim có hình thể tuyệt đẹp, bộ trà Anh Vũ là tuyệt tác nghệ thuật ấn tượng và độc đáo với thiết kế tay cầm mang hình dáng của chiếc lông chim mềm mại, uyển chuyển. Chính điểm này làm cho bộ trà Anh Vũ hoàn toàn nổi bật nhất trong tất cả các bộ trà có trên thị trường hiện nay. Đặc tính sản phẩm: - Được làm từ sứ lành tính không chì, cadmium, an toàn cho sức khỏe - Mặt men cứng, chắc: Khó trầy xước - Thiết kế tinh xảo đến từng chi tiết - Nung ở nhiệt độ cao 1380 độ C giúp sản phẩm bền chắc theo thời gian - Khó bám bẩn, dễ tẩy rửa do áp dụng công nghệ nano trong sản xuất.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bình trà cao 0.45 L + nắp - Harmony Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 261360,
+      "product_url": "https://minhlong.com/products/binh-tra-cao-0-45-l-nap-harmony-lys-trang-nga",
+      "source_product_id": "A001_014579000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_014579000",
+      "status": "confirmed",
+      "value": "A001_014579000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

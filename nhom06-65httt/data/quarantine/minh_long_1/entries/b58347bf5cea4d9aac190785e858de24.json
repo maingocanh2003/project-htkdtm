@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "b58347bf5cea4d9aac190785e858de24",
+  "quarantined_at_iso": "2026-11-28T15:35:28.596887+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Jasmine' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Jasmine",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "33480",
+      "status": "confirmed",
+      "value": "33480"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Chén cơm - Jasmine - Trắng",
+      "status": "confirmed",
+      "value": "Chén cơm - Jasmine - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine",
+      "currency": "VND",
+      "description": "Chén cơm 11.5 cm - Jasmine - Trắng Dãy sản phẩm Jasmine đa dạng các kiểu dáng với chất liệu men sứ sáng bóng, láng mịn được nung ở nhiệt độ cao. Không họa tiết cầu kỳ nhưng các sản phẩm Jasmine luôn được lòng khách bởi màu sắc trang nhã, dù là trắng trơn hay viền chỉ vàng, chỉ xanh dương đều giúp lưu giữ vị ngon của tách trà nóng, của món ăn ngon và khơi gợi cảm hứng cho người thưởng thức. Đặc điểm nổi bật của sản phẩm: - Hoàn toàn an toàn cho sức khỏe vì không chứa chì và cadium. - Màu men sáng bóng, hạn chế trầy xước - Thiết kế tinh xảo đến từng chi tiết - Nung ở nhiệt độ cao (từ 1260 độ C đến 1380 độ C) làm cho sản phẩm cứng chắc, bền đẹp - Khó bám bẩn, dễ tẩy rửa do áp dụng công nghệ nano trong sản xuất. Màu sắc: Trắng Lưu ý khi sử dụng: - Sản phẩm sử dụng được trong lò vi sóng, máy rửa chén, lò nướng. - Không nung trực tiếp trên lửa. - Dùng nước rửa chén hoặc chất tẩy rửa an toàn để làm sạch.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Chén cơm - Jasmine - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 33480,
+      "product_url": "https://minhlong.com/products/to-chen-dia-muong-bo-jasmine-trang-chen-com",
+      "source_product_id": "A001_031106000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_031106000",
+      "status": "confirmed",
+      "value": "A001_031106000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

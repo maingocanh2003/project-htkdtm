@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "0a39e24161f342b0b7327b4f24d022f1",
+  "quarantined_at_iso": "2026-11-28T15:35:28.523426+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Misc Assortment' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Misc Assortment",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "27000",
+      "status": "confirmed",
+      "value": "27000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Cá Gác đũa 4 - Misc Assortment - Trắng",
+      "status": "confirmed",
+      "value": "Cá Gác đũa 4 - Misc Assortment - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Misc Assortment",
+      "currency": "VND",
+      "description": "Cá Gác đũa 4 Tuyển chọn từ những nguyên liệu quý hiếm mỗi sản phẩm của Misc Assortment đảm bảo những tiêu chí cao nhất về chất lượng. Sở hữu nhiều tính năng vượt trội siêu cứng chắc, mặt men sáng bóng, khó trầy xước. Misc Assortment được nhiều người ưa chuộng và lựa chọn bởi sự cao cấp, an toàn, bền đẹp và thân thiện với môi trường.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Cá Gác đũa 4 - Misc Assortment - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 27000,
+      "product_url": "https://minhlong.com/products/mkt-ca-gac-dua-4-hoa-van-trang",
+      "source_product_id": "A001_190721000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_190721000",
+      "status": "confirmed",
+      "value": "A001_190721000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

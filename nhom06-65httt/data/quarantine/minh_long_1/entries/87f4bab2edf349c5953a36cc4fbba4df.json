@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "87f4bab2edf349c5953a36cc4fbba4df",
+  "quarantined_at_iso": "2026-11-28T15:35:28.352476+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Cordon' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Cordon",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "2775600",
+      "status": "confirmed",
+      "value": "2775600"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bộ trà 0.8 L Cordon - Men Ngọc Sương Mờ",
+      "status": "confirmed",
+      "value": "Bộ trà 0.8 L Cordon - Men Ngọc Sương Mờ"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Cordon",
+      "currency": "VND",
+      "description": "Cordon men ngọc sương mờ thể hiện vẻ đẹp mỹ thuật tinh tế, tạo phong cách đồng nhất và sang trọng cho không gian bàn ăn. Sản phẩm nổi bật với màu men Celadon khó chinh phục nhất trong lịch sử gốm sứ. Nay các nghệ nhân Minh Long ứng dụng thêm kỹ thuật chế tác phủ lớp sương mờ, tạo cảm giác mềm mượt như nhung. Sự hài hòa trong kiểu dáng và màu sắc giúp tôn lên hương vị và nâng tầm trải nghiệm của thực khách. CHI TIẾT BỘ TRÀ: Bình trà 0.8 L + nắp: 1 cái Dĩa lót tách 13 cm : 6 cái Tách trà 0.11 L: 6 cái",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bộ trà 0.8 L Cordon - Men Ngọc Sương Mờ",
+      "origin_region": "Bình Dương",
+      "price_vnd": 2775600,
+      "product_url": "https://minhlong.com/products/bo-tra-0-8-l-cordon-men-ngoc-suong-mo",
+      "source_product_id": "A001_01080252203",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_01080252203",
+      "status": "confirmed",
+      "value": "A001_01080252203"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

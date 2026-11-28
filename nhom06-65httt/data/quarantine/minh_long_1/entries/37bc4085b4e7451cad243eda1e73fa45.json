@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-26T16:04:00.723002+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "37bc4085b4e7451cad243eda1e73fa45",
+  "quarantined_at_iso": "2026-11-28T15:35:28.197837+00:00",
+  "raw_collection_id": "3ec750f3a12549b5a489b69faf43e955",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Bình Hoa",
+      "status": "confirmed",
+      "value": "VASE_DECOR"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Gốm sứ",
+      "status": "confirmed",
+      "value": "Gốm sứ"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "0",
+      "status": "confirmed",
+      "value": "0"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bình hoa Sen Vàng",
+      "status": "confirmed",
+      "value": "Bình hoa Sen Vàng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-26T16:04:00.723002+00:00",
+      "raw_collection_id": "3ec750f3a12549b5a489b69faf43e955",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Bình Hoa",
+      "currency": "VND",
+      "description": null,
+      "lead_time_days": null,
+      "material": "Gốm sứ",
+      "moq": null,
+      "name": "Bình hoa Sen Vàng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 0,
+      "product_url": "https://minhlong.com/products/binh-hoa-sen-vang",
+      "source_product_id": "1073781122",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "1073781122",
+      "status": "confirmed",
+      "value": "1073781122"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

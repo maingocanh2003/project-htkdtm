@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "c2ca762927814a779331609ce836473d",
+  "quarantined_at_iso": "2026-11-28T15:35:28.647563+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Tulip Ngà' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Tulip Ngà",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "171720",
+      "status": "confirmed",
+      "value": "171720"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa tròn 20 cm - Tulip Ngà - Hương Đồng",
+      "status": "confirmed",
+      "value": "Dĩa tròn 20 cm - Tulip Ngà - Hương Đồng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Tulip Ngà",
+      "currency": "VND",
+      "description": "Không cầu kỳ trong kiểu cách nhưng bộ Tulip ngà vẫn “đốn tim” người khác bằng màu sắc sang trọng và thiết kế ấn tượng. Đó là những hoa văn mộc mạc mang hương sắc của đồng xa nội cỏ trên miệng chén, tô, đĩa. Nét tinh xảo trong từng đường nét, độ mảnh lượn càng tôn lên sự trẻ trung và tinh tế của sản phẩm. Với Tulip ngà Hương Đồng, bữa ăn lúc nào cũng gợi nhớ về những miền quê thanh bình và mang lại cảm giác ngon miệng!",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa tròn 20 cm - Tulip Ngà - Hương Đồng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 171720,
+      "product_url": "https://minhlong.com/products/dia-tron-20-cm-hoa-van-huong-dong",
+      "source_product_id": "A001_042081431",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_042081431",
+      "status": "confirmed",
+      "value": "A001_042081431"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

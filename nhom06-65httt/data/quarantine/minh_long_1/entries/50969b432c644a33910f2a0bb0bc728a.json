@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "50969b432c644a33910f2a0bb0bc728a",
+  "quarantined_at_iso": "2026-11-28T15:35:28.395802+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Misc Assortment Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "125280",
+      "status": "confirmed",
+      "value": "125280"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa chữ nhật phẳng 27 x 18 cm - Misc Assortment Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Dĩa chữ nhật phẳng 27 x 18 cm - Misc Assortment Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Misc Assortment Lys",
+      "currency": "VND",
+      "description": "Misc Assortment Ly's với men sứ trắng ngà, bóng, sáng, kết hợp nhiều kiểu dáng thiết kế khác biệt nhất trong cùng bộ, tạo nên tính đa dạng cho sản phẩm. Misc Assortment Ly's được nhiều người lựa chọn và sử dụng bởi sự cao cấp, an toàn, bền đẹp và thân thiện khi sử dụng. Đặc tính sản phẩm: Thân sứ siêu cứng với công nghệ phối liệu đặc biệt: Sử dụng bền lâu, hạn chế bể mẻ trong quá trình tẩy rửa. Mặt men cứng, chắc: Khó trầy xước khi sử dụng dao, muỗng, nĩa thường xuyên, giữ sản phẩm luôn mới sau thời gian dài sử dụng. Ứng dụng công nghệ Nano cho bề mặt men láng bóng: Giúp cho sản phẩm khó bám bẩn kể cả dầu mỡ, tiết kiệm thời gian. Kiểu dáng đa dạng sang trọng phù hợp với nhiều không gian ăn uống khác nhau.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa chữ nhật phẳng 27 x 18 cm - Misc Assortment Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 125280,
+      "product_url": "https://minhlong.com/products/dia-chu-nhat-phang-27-x-18-cm-misc-assortment-lys-trang-nga",
+      "source_product_id": "A001_432720000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_432720000",
+      "status": "confirmed",
+      "value": "A001_432720000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

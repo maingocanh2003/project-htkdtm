@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-26T16:04:00.723002+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed ID differs, but normalized name matches an existing record; not treated as exact duplicate on name alone"
+  ],
+  "history": [],
+  "quarantine_id": "c92d4f18621f4d29869e89f39eb6fa2e",
+  "quarantined_at_iso": "2026-11-28T15:35:28.206853+00:00",
+  "raw_collection_id": "3ec750f3a12549b5a489b69faf43e955",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Bình Hoa",
+      "status": "confirmed",
+      "value": "VASE_DECOR"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Gốm sứ",
+      "status": "confirmed",
+      "value": "Gốm sứ"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "16200000",
+      "status": "confirmed",
+      "value": "16200000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bình hoa 41 cm - Hoa Sen - Bình Hoa - Trang Trí",
+      "status": "confirmed",
+      "value": "Bình hoa 41 cm - Hoa Sen - Bình Hoa - Trang Trí"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-26T16:04:00.723002+00:00",
+      "raw_collection_id": "3ec750f3a12549b5a489b69faf43e955",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Bình Hoa",
+      "currency": "VND",
+      "description": "Bình hoa được các Nghệ nhân Minh Long vẽ tay hoàn toàn, các hoạ tiết được phác hoạ tỉ mỉ, khéo léo với màu sắc hài hoà.&nbsp; Như một tác phẩm nghệ thuật, bình hoa Minh Long luôn luôn được sáng tác kì công trong từng nét vẽ, để kể một câu chuyện đặc sắc về thiên nhiên, con người hoặc văn hoá.&nbsp; Ngoài việc sử dụng để tôn lên vẻ đẹp mĩ miều của các loài hoa, bình thủ công còn là một tác phẩm trang trí nâng tầm không gian sống của gia đình hoặc xứng đáng là vật phẩm quà tặng giá trị cao cho những dịp đặc biệt. Bình vẽ tay thủ công nên hình ảnh sản phẩm chỉ mang tính chất minh họa.",
+      "lead_time_days": null,
+      "material": "Gốm sứ",
+      "moq": null,
+      "name": "Bình hoa 41 cm - Hoa Sen - Bình Hoa - Trang Trí",
+      "origin_region": "Bình Dương",
+      "price_vnd": 16200000,
+      "product_url": "https://minhlong.com/products/binh-hoa-41-cm-hoa-sen-binh-hoa-trang-tri",
+      "source_product_id": "A001_R024123004",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_R024123004",
+      "status": "confirmed",
+      "value": "A001_R024123004"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "68a237723f8b4ad8a86ae623011121c1",
+  "quarantined_at_iso": "2026-11-28T15:35:28.545664+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Timeless IFP' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Timeless IFP",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "98280",
+      "status": "confirmed",
+      "value": "98280"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa tròn (KL) - Timeless IFP - Vườn Nhà",
+      "status": "confirmed",
+      "value": "Dĩa tròn (KL) - Timeless IFP - Vườn Nhà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Timeless IFP",
+      "currency": "VND",
+      "description": "Lấy ý tưởng từ những hình ảnh của vườn quê thân thuộc, Vườn Nhà tái hiện sống động bức tranh khung cảnh khu vườn quê vào mùa đơm hoa, kết trái với vẻ đẹp thân thuộc, mộc mạc và thanh bình. Trên nền sứ trắng thanh khiết, hình ảnh những quả bí ngô to tròn, những bông hoa đang bung nở được phác họa một cách chân thực, tinh tế. Khéo léo chọn màu xanh cobalt để tô vẽ lên sứ trắng là cách những nghệ nhân Minh Long tạo điểm nhấn khác biệt và mang đến sự đột phá mới lạ, độc đáo cho bộ sản phẩm. Sự phối màu hài hòa giữa sắc xanh cobalt trang nhã, thanh lịch trên nền sứ trắng thanh khiết, tươi mát tạo nên bức tranh mang vẻ đẹp tinh tế, đầy hồn sắc và thanh bình. Từng chiếc lá mềm mại, những cánh hoa mỏng manh cho đến quả chín được nghệ thuật hóa chân thực, khéo léo với những đường nét uyển chuyển, tinh tế. Trong văn hóa phương Tây, bí ngô là biểu tượng cho sự may mắn, vụ mùa bội thu và hạnh phúc. Khắc họa hình ảnh những quả bí ngô vào mùa quả chín với những nét vẽ thanh thoát, hiện đại, các nghệ nhân muốn gửi gắm thông điệp về sự sung túc, đủ đầy và nhiều may mắn đến chủ sở hữu.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa tròn (KL) - Timeless IFP - Vườn Nhà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 98280,
+      "product_url": "https://minhlong.com/products/dia-tron-kl-timeless-ifp-vuon-nha",
+      "source_product_id": "A001_542024498",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_542024498",
+      "status": "confirmed",
+      "value": "A001_542024498"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

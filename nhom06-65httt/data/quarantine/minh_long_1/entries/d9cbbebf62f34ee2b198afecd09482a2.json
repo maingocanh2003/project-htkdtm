@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "d9cbbebf62f34ee2b198afecd09482a2",
+  "quarantined_at_iso": "2026-11-28T15:35:28.464101+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Camellia' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Camellia",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "100440",
+      "status": "confirmed",
+      "value": "100440"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa elip - Camellia - Trắng",
+      "status": "confirmed",
+      "value": "Dĩa elip - Camellia - Trắng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Camellia",
+      "currency": "VND",
+      "description": "Camellia trắng như như cô gái mộc mạc, trong sáng, mang nét duyên thầm và luôn tỏa hương thơm dịu dàng làm đắm say lòng người. Chẳng cần họa tiết rườm rà, Camellia trắng vẫn là lựa chọn hàng đầu của nhiều gia đình bởi kiểu dáng đơn giản nhưng vẫn tôn lên sự sang trọng, tiện nghi của không gian ẩm thực.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa elip - Camellia - Trắng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 100440,
+      "product_url": "https://minhlong.com/products/dia-elip-camellia-trang",
+      "source_product_id": "A001_052113000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_052113000",
+      "status": "confirmed",
+      "value": "A001_052113000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "d240f4d1155c4093b1e72ea831a01497",
+  "quarantined_at_iso": "2026-11-28T15:35:28.360868+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Jasmine Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "48600",
+      "status": "confirmed",
+      "value": "48600"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa vành sâu 16 cm - Jasmine Lys - Trắng Ngà",
+      "status": "confirmed",
+      "value": "Dĩa vành sâu 16 cm - Jasmine Lys - Trắng Ngà"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine Lys",
+      "currency": "VND",
+      "description": "Jasmine Ly's có màu men sứ trắng ngà, đa dạng chủng loại từ chén, dĩa, tô, tách...có kiểu dáng thiết kế đồng nhất, đáp ứng đầy đủ nhu cầu sử dụng cho các loại bàn tiệc đa dạng và phong phú của khách hàng. Đặc tính sản phẩm: Thân sứ siêu cứng với công nghệ phối liệu đặc biệt: Sử dụng bền lâu, hạn chế bể mẻ trong quá trình tẩy rửa. Mặt men cứng, chắc: Khó trầy xước khi sử dụng dao, muỗng, nĩa thường xuyên, giữ sản phẩm luôn mới sau thời gian dài sử dụng. Ứng dụng công nghệ Nano cho bề mặt men láng bóng: Giúp cho sản phẩm khó bám bẩn kể cả dầu mỡ, tiết kiệm thời gian. Kiểu dáng đa dạng sang trọng phù hợp với nhiều không gian ăn uống khác nhau. Độ sốc nhiệt cao (có thể sử dụng từ nóng sang lạnh và ngược lại với độ sốc nhiệt từ 0 đến 200 độ C).",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa vành sâu 16 cm - Jasmine Lys - Trắng Ngà",
+      "origin_region": "Bình Dương",
+      "price_vnd": 48600,
+      "product_url": "https://minhlong.com/products/dia-vanh-sau-16-cm-jasmine-lys-trang-nga",
+      "source_product_id": "A001_631602000",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_631602000",
+      "status": "confirmed",
+      "value": "A001_631602000"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

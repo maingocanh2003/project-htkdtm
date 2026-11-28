@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "b88d5f6b534f4a2fbc67cea24e1c6409",
+  "quarantined_at_iso": "2026-11-28T15:35:28.524612+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Jasmine' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Jasmine",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "2030400",
+      "status": "confirmed",
+      "value": "2030400"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bộ đồ ăn 10 người 36 sản phẩm - Jasmine - Chỉ Xanh Lá (check)",
+      "status": "confirmed",
+      "value": "Bộ đồ ăn 10 người 36 sản phẩm - Jasmine - Chỉ Xanh Lá (check)"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine",
+      "currency": "VND",
+      "description": "Sự phối kết giữa men sứ trắng và đường chỉ xanh lá chưa bao giờ lỗi mốt và đã tạo cho Jasmine Chỉ xanh lá điểm nhấn đặc biệt bởi nét mềm mại, thanh thoát mà sang trọng, tô điểm không gian ẩm thực thêm phần tươi mát và mới mẻ. Sản phẩm được nung ở nhiệt độ cao, không chứa chì, không cadmium, phù hợp sử dụng trong gia đình hoặc làm quà tặng cho người thân, bạn bè... CHI TIẾT SẢN PHẨM BỘ BÀN ĂN Chén cơm 11.5 cm - 10 cái Dĩa lót chén cơm 15 cm - 10 cái Chén chấm 9 cm - 10 cái Dìa tròn 25 cm - 3 cái Dĩa súp 23 cm - 2 cái Tô cao 20 cm - 1 cái",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bộ đồ ăn 10 người 36 sản phẩm - Jasmine - Chỉ Xanh Lá (check)",
+      "origin_region": "Bình Dương",
+      "price_vnd": 2030400,
+      "product_url": "https://minhlong.com/products/mkt-bo-do-an-24-36-san-pham-jasmine-chi-xanh-la-bo-36-san-pham",
+      "source_product_id": "A001_36009",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_36009",
+      "status": "confirmed",
+      "value": "A001_36009"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

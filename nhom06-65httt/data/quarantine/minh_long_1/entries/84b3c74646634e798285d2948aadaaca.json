@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "84b3c74646634e798285d2948aadaaca",
+  "quarantined_at_iso": "2026-11-28T15:35:28.520276+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Jasmine' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Jasmine",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "49680",
+      "status": "confirmed",
+      "value": "49680"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Dĩa lót chén 15 cm - Jasmine - Chỉ xanh lá",
+      "status": "confirmed",
+      "value": "Dĩa lót chén 15 cm - Jasmine - Chỉ xanh lá"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine",
+      "currency": "VND",
+      "description": "Dĩa lót chén 15 cm - Jasmine - Chỉ xanh lá Lấy cảm hứng từ hoa nhài thuần khiết với hương thơm ngào ngạt, vẻ đẹp thanh tao được nhiều người yêu thích, chúng tôi đã chế tác nên bộ trà Jasmine với những đường nét uốn lượn mềm mại. Bộ Jasmine có kiểu dáng thanh lịch, chất liệu men sứ sáng bóng và láng mịn được ung ở nhiệt độ cao, giúp lưu giữ vị ngon và đem đến những giây phút thư thái, an nhiên khi thưởng trà. Việc nhấn nhá với đường viền chỉ màu xanh lá đậm giúp cho sản phẩm thêm phần tinh tế và nhẹ nhàng.",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Dĩa lót chén 15 cm - Jasmine - Chỉ xanh lá",
+      "origin_region": "Bình Dương",
+      "price_vnd": 49680,
+      "product_url": "https://minhlong.com/products/mkt-to-chen-dia-muong-bo-jasmine-chi-xanh-la-dia-lot",
+      "source_product_id": "A001_041550009",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_041550009",
+      "status": "confirmed",
+      "value": "A001_041550009"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

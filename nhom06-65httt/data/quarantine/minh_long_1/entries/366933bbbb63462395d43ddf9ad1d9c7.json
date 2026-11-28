@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "366933bbbb63462395d43ddf9ad1d9c7",
+  "quarantined_at_iso": "2026-11-28T15:35:28.500684+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Tượng' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Tượng",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "37800000",
+      "status": "confirmed",
+      "value": "37800000"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Tượng rồng Khải Đức 23.9 cm - Men Ngọc Sương Mờ",
+      "status": "confirmed",
+      "value": "Tượng rồng Khải Đức 23.9 cm - Men Ngọc Sương Mờ"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Tượng",
+      "currency": "VND",
+      "description": "Tác phẩm cuốn hút trong vẻ đẹp kỳ diệu của men Celadon xanh ngọc - màu men khó chinh phục nhất trong lịch sử gốm sứ. Nay các nghệ nhân Minh Long ứng dụng thêm kỹ thuật chế tác phủ lớp sương mờ, tạo cảm giác mềm mượt như nhung. Khải Đức chạm đến sự sang trọng cho mọi không gian, tỏa sáng những giá trị đẹp của chủ sở hữu. \"Như thép đã tôi qua lửa” để hóa Rồng, Khải Đức có tạo hình nổi bật với vẻ đẹp trong như ngọc mà vẫn rạng ngời nét quyền quý và oai phong. Dáng Rồng uyển chuyển tựa một thước phim tái hiện hành trình vượt Vũ Môn của những chú cá chép tràn đầy năng lượng, sẵn sàng cuộc chinh phục mới. Từ bộ phận nâng đỡ như thân, đuôi đến các hình ảnh đắt giá được trang trí vàng ở phần đầu linh vật đều toát lên phong thái khỏe khoắn, khoan thai. “Hóa Rồng” thành công, Khải Đức không “ngủ quên” trong chiến thắng, vừa phun nước đem lại sức sống cho muôn loài, vừa chủ động với những chuyển biến mới. Ánh sáng lấp lánh của viên châu càng tôn thêm giá trị của linh vật. Viên châu là tinh hoa của tạo hóa, tượng trưng cho thành quả đạt được sau khi vượt khó khăn, cũng là biểu tượng cho những phẩm chất cao quý của con người. Chi tiết này không chỉ trang trí, mà còn kết hợp với đôi mắt sáng long lanh của Rồng Khải Đức luôn hướng về viên châu, thể hiện tinh thần vươn lên phía trước, hướng đến những giá trị tốt đẹp trong cuộc sống. Cá chép hóa Rồng phải vượt Vũ Môn, con người muốn thành công cần kiên trì, nhẫn nại, trau dồi kiến thức và rèn luyện kỹ năng. Khải Đức là lời chúc thăng tiến trong sự nghiệp, thịnh vượng trong cuộc sống, may mắn và tài lộc trong vạn sự. Mong tất cả thăng hoa, bay lên đẹp đẽ và kiêu hãnh như Cá Chép Hóa Rồng. Thông tin kỹ thuật: Dài ~ 22 cm Rộng ~ 9.02 cm Cao ~ 23.86 cm Cân nặng ~ 871 gr (+-10%)",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Tượng rồng Khải Đức 23.9 cm - Men Ngọc Sương Mờ",
+      "origin_region": "Bình Dương",
+      "price_vnd": 37800000,
+      "product_url": "https://minhlong.com/products/tuong-rong-khai-duc-23-9-cm-1",
+      "source_product_id": "A001_312357522V",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_312357522V",
+      "status": "confirmed",
+      "value": "A001_312357522V"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

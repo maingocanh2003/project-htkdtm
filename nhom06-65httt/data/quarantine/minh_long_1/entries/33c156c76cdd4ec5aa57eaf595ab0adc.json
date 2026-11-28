@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "33c156c76cdd4ec5aa57eaf595ab0adc",
+  "quarantined_at_iso": "2026-11-28T15:35:28.692407+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": "Dòng sản phẩm 'Camellia' chưa được xác nhận trong danh mục 4 dòng chủ lực; chờ xác nhận từ Thành viên 1 (Trần Mai Ngọc Anh)",
+      "raw": "Camellia",
+      "status": "waiting_confirmation_member_1",
+      "value": null
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "422280",
+      "status": "confirmed",
+      "value": "422280"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bình trà 0.5 L- Camellia - Chỉ Vàng",
+      "status": "confirmed",
+      "value": "Bình trà 0.5 L- Camellia - Chỉ Vàng"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Camellia",
+      "currency": "VND",
+      "description": "Dãy sản phẩm Camellia đa dạng các kiểu dáng với chất liệu men sứ sáng bóng, láng mịn được nung ở nhiệt độ cao. Không họa tiết cầu kỳ nhưng các sản phẩm Camellia luôn được lòng khách bởi màu sắc trang nhã, dù là trắng trơn hay viền chỉ vàng, chỉ xanh dương đều giúp lưu giữ vị ngon của tách trà nóng, của món ăn ngon và khơi gợi cảm hứng cho người thưởng thức. Bộ trà 0.5 L bao gồm: - 01 bình trà 0.5 L + Nắp - 06 tách 0.08 L - 06 dĩa lót tách 11 cm",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bình trà 0.5 L- Camellia - Chỉ Vàng",
+      "origin_region": "Bình Dương",
+      "price_vnd": 422280,
+      "product_url": "https://minhlong.com/products/binh-tra-0-5-l-nap-hoa-van-chi-vang",
+      "source_product_id": "A001_015038014",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_015038014",
+      "status": "confirmed",
+      "value": "A001_015038014"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}

@@ -1,0 +1,95 @@
+{
+  "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+  "entity_type": "supplier_products",
+  "error_codes": [
+    "potential_duplicate"
+  ],
+  "error_reasons": [
+    "Confirmed business key matches, but source values differ; retained as a potential duplicate for review"
+  ],
+  "history": [],
+  "quarantine_id": "da54bd9613b74eb1b5b530fffd5585c8",
+  "quarantined_at_iso": "2026-11-28T15:35:28.416221+00:00",
+  "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+  "reason_type": "potential_duplicate",
+  "record_snapshot": {
+    "category": {
+      "note": null,
+      "raw": "Jasmine Lys",
+      "status": "confirmed",
+      "value": "MUG_CUP"
+    },
+    "lead_time_days": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "material": {
+      "note": null,
+      "raw": "Sứ cao cấp",
+      "status": "confirmed",
+      "value": "Sứ cao cấp"
+    },
+    "moq": {
+      "note": "Giá trị số bị thiếu",
+      "raw": null,
+      "status": "missing",
+      "value": null
+    },
+    "origin_region": {
+      "note": null,
+      "raw": "Bình Dương",
+      "status": "confirmed",
+      "value": "Bình Dương"
+    },
+    "price_vnd": {
+      "note": null,
+      "raw": "77760",
+      "status": "confirmed",
+      "value": "77760"
+    },
+    "product_name": {
+      "note": null,
+      "raw": "Bình nước tương + nắp - Jasmine Lys - Chữ Nước Mắm",
+      "status": "confirmed",
+      "value": "Bình nước tương + nắp - Jasmine Lys - Chữ Nước Mắm"
+    },
+    "provenance": {
+      "collected_at_iso": "2026-11-27T13:24:42.746338+00:00",
+      "raw_collection_id": "d99feb04d138435697da3bc5f742797c",
+      "source_id": "minh_long_1",
+      "source_url": "https://minhlong.com/collections/all/products.json"
+    },
+    "raw_record": {
+      "category": "Jasmine Lys",
+      "currency": "VND",
+      "description": "Jasmine Ly's có màu men sứ trắng ngà, đa dạng chủng loại từ chén, dĩa, tô, tách...có kiểu dáng thiết kế đồng nhất, đáp ứng đầy đủ nhu cầu sử dụng cho các loại bàn tiệc đa dạng và phong phú của khách hàng. Đặc tính sản phẩm: Thân sứ siêu cứng với công nghệ phối liệu đặc biệt: Sử dụng bền lâu, hạn chế bể mẻ trong quá trình tẩy rửa. Mặt men cứng, chắc: Khó trầy xước khi sử dụng dao, muỗng, nĩa thường xuyên, giữ sản phẩm luôn mới sau thời gian dài sử dụng. Ứng dụng công nghệ Nano cho bề mặt men láng bóng: Giúp cho sản phẩm khó bám bẩn kể cả dầu mỡ, tiết kiệm thời gian. Kiểu dáng đa dạng sang trọng phù hợp với nhiều không gian ăn uống khác nhau. Độ sốc nhiệt cao (có thể sử dụng từ nóng sang lạnh và ngược lại với độ sốc nhiệt từ 0 đến 200 độ C).",
+      "lead_time_days": null,
+      "material": "Sứ cao cấp",
+      "moq": null,
+      "name": "Bình nước tương + nắp - Jasmine Lys - Chữ Nước Mắm",
+      "origin_region": "Bình Dương",
+      "price_vnd": 77760,
+      "product_url": "https://minhlong.com/products/binh-nuoc-tuong-nap-jasmine-lys-chu-nuoc-mam",
+      "source_product_id": "A001_081227350",
+      "wholesale_available": null
+    },
+    "source_product_id": {
+      "note": null,
+      "raw": "A001_081227350",
+      "status": "confirmed",
+      "value": "A001_081227350"
+    },
+    "wholesale_available": {
+      "note": null,
+      "raw": null,
+      "status": "missing",
+      "value": null
+    }
+  },
+  "record_type": "NormalizedDomesticProductRecord",
+  "source_id": "minh_long_1",
+  "source_url": "https://minhlong.com/collections/all/products.json",
+  "status": "quarantined"
+}
